@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0f;
+  color: #e0d8ff;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0d0d1a; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00f0ff, #b44dff);
+  border-radius: 3px;
+}
+
+/* Hero gradient animation */
+.hero-glow {
+  background: radial-gradient(ellipse 80% 60% at 50% -10%,
+    rgba(0, 240, 255, 0.15) 0%,
+    rgba(180, 77, 255, 0.08) 40%,
+    transparent 70%);
+}
+
+/* Glass card effect */
+.glass-card {
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card:hover {
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.03) 100%);
+  border-color: rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.1),
+              0 0 60px rgba(180, 77, 255, 0.05);
+}
+
+/* Neon button */
+.neon-btn {
+  background: linear-gradient(135deg, #00f0ff, #b44dff);
+  color: #0a0a0f;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.neon-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.4),
+              0 0 60px rgba(180, 77, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Animated border */
+.animated-border {
+  position: relative;
+  background: #12122a;
+}
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #00f0ff, #b44dff, #ff2d95, #00f0ff);
+  background-size: 300% 300%;
+  animation: border-spin 4s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Chapter reader styles */
+.reader-content {
+  font-size: 1.125rem;
+  line-height: 2;
+  color: #d1d5db;
+}
+.reader-content p {
+  margin-bottom: 1.5rem;
+  text-indent: 2rem;
+}
+
+/* Starfield animation */
+.star {
+  animation: twinkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #00f0ff, #b44dff, #ff2d95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Typewriter cursor */
+.typewriter-cursor::after {
+  content: "|";
+  color: #00f0ff;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
