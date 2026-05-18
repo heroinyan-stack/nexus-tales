@@ -7,17 +7,17 @@ import {
   Search,
   Star,
   TrendingUp,
-  Clock,
-  Filter,
+  Crown,
+  Sparkles,
   X,
+  Library,
+  Lock,
 } from "lucide-react";
 
 interface Novel {
   id: number;
   slug: string;
-  title_zh: string;
   title_en: string;
-  author_zh: string;
   author_en: string;
   genre: string;
   tags: string[];
@@ -26,8 +26,8 @@ interface Novel {
   rating: number;
   total_chapters: number;
   readers: number;
-  description_zh: string;
   description_en: string;
+  zone: string;
 }
 
 interface Genre {
@@ -63,6 +63,7 @@ export default function HomePage() {
 
   const genreLabels: Record<string, string> = {
     all: "All",
+    "free-classics": "📜 Classics",
     xianxia: "Xianxia",
     xuanhuan: "Xuanhuan",
     fantasy: "Fantasy",
@@ -72,20 +73,20 @@ export default function HomePage() {
     wuxia: "Wuxia",
     urban: "Urban",
     erotica: "Adult 🔞",
-    smut: "Smut 🔞",
   };
 
+  const freeBooks = useMemo(() => novels.filter((n) => n.zone === "free"), [novels]);
+  const vipBooks = useMemo(() => novels.filter((n) => n.zone === "vip"), [novels]);
+
   const filteredNovels = useMemo(() => {
-    let result = [...novels];
+    let result = [...vipBooks];
 
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       result = result.filter(
         (n) =>
           n.title_en.toLowerCase().includes(q) ||
-          n.title_zh.toLowerCase().includes(q) ||
           n.author_en.toLowerCase().includes(q) ||
-          n.author_zh.toLowerCase().includes(q) ||
           n.tags.some((t) => t.toLowerCase().includes(q))
       );
     }
@@ -111,7 +112,7 @@ export default function HomePage() {
     }
 
     return result;
-  }, [novels, searchQuery, selectedGenre, sortBy, showAdult]);
+  }, [vipBooks, searchQuery, selectedGenre, sortBy, showAdult]);
 
   if (loading) {
     return (
@@ -125,8 +126,8 @@ export default function HomePage() {
   return (
     <div className="pt-24 pb-24">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Top banner */}
-        <div className="text-center mb-12">
+        {/* ========== HERO ========== */}
+        <div className="text-center mb-14">
           <h1
             className="text-3xl lg:text-5xl font-bold mb-3"
             style={{ fontFamily: "Orbitron" }}
@@ -135,92 +136,152 @@ export default function HomePage() {
             <span className="text-stardust">TALES</span>
           </h1>
           <p className="text-moon/50 text-lg max-w-xl mx-auto">
-            Premium translations of the best Chinese web novels
+            Chinese web novels &mdash; translated for English readers
           </p>
         </div>
 
-        {/* Search + Filters */}
-        <div className="glass-card rounded-2xl p-4 mb-10">
-          <div className="flex flex-col lg:flex-row gap-4">
-            {/* Search */}
-            <div className="flex-1 relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-moon/30" />
-              <input
-                type="text"
-                placeholder="Search novels, authors, tags..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-transparent border border-white/10 rounded-xl pl-12 pr-4 py-3 text-stardust placeholder:text-moon/30 focus:outline-none focus:border-neon-cyan/50 transition-all"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-4 top-1/2 -translate-y-1/2"
-                >
-                  <X className="w-4 h-4 text-moon/30 hover:text-moon" />
-                </button>
-              )}
+        {/* ========== FREE ZONE (Classics + AdSense) ========== */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20">
+              <Library className="w-5 h-5 text-amber-400" />
             </div>
-
-            {/* Genre filter */}
-            <div className="flex gap-2 overflow-x-auto pb-1">
-              <button
-                onClick={() => setSelectedGenre("all")}
-                className={`text-xs md:text-sm px-4 py-2 rounded-full border transition-all whitespace-nowrap ${
-                  selectedGenre === "all"
-                    ? "bg-neon-cyan/10 border-neon-cyan/50 text-neon-cyan"
-                    : "bg-white/5 border-white/5 text-moon/50 hover:text-moon hover:border-white/20"
-                }`}
-              >
-                All
-              </button>
-              {genres.map((g) => (
-                <button
-                  key={g.name}
-                  onClick={() => setSelectedGenre(g.name)}
-                  className={`text-xs md:text-sm px-4 py-2 rounded-full border transition-all whitespace-nowrap ${
-                    selectedGenre === g.name
-                      ? "bg-neon-cyan/10 border-neon-cyan/50 text-neon-cyan"
-                      : "bg-white/5 border-white/5 text-moon/50 hover:text-moon hover:border-white/20"
-                  }`}
-                >
-                  {genreLabels[g.name] || g.name} ({g.count})
-                </button>
-              ))}
+            <div>
+              <h2 className="text-xl font-bold text-stardust" style={{ fontFamily: "Orbitron" }}>
+                Free Zone
+              </h2>
+              <p className="text-moon/40 text-sm">
+                Timeless Chinese classics &mdash; completely free, forever
+              </p>
             </div>
+            <Link
+              href="?zone=free"
+              className="ml-auto text-sm text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1"
+            >
+              View all <span className="text-xs">→</span>
+            </Link>
+          </div>
 
-            {/* Sort + Adult toggle */}
-            <div className="flex gap-2">
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as any)}
-                className="bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-sm text-moon focus:outline-none focus:border-neon-cyan/50"
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {freeBooks.slice(0, 4).map((novel) => (
+              <Link
+                key={novel.id}
+                href={`/novel/${novel.slug}`}
+                className="block group"
               >
-                <option value="rating">⭐ Rating</option>
-                <option value="readers">👥 Popular</option>
-                <option value="newest">🆕 Newest</option>
-              </select>
-              <button
-                onClick={() => setShowAdult(!showAdult)}
-                className={`text-sm px-3 py-2 rounded-xl border transition-all ${
-                  showAdult
-                    ? "bg-neon-pink/10 border-neon-pink/50 text-neon-pink"
-                    : "bg-white/5 border-white/5 text-moon/30"
-                }`}
-              >
-                🔞
-              </button>
+                <div className="glass-card rounded-2xl overflow-hidden h-full hover:border-amber-500/30 transition-all duration-300 border-amber-500/10">
+                  {/* Cover */}
+                  <div className="relative h-36 overflow-hidden bg-gradient-to-br from-amber-900/30 via-amber-800/20 to-cosmic">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Sparkles className="w-8 h-8 text-amber-500/20" />
+                    </div>
+                    <div className="absolute top-2 left-2">
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 font-medium">
+                        FREE
+                      </span>
+                    </div>
+                    <div className="absolute bottom-2 right-2">
+                      <span className="text-xs text-amber-400/60">
+                        {novel.status === "completed" ? "✓ Complete" : "⟳ Ongoing"}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-4">
+                    <h3 className="font-bold text-stardust group-hover:text-amber-400 transition-colors line-clamp-1 text-sm mb-1">
+                      {novel.title_en}
+                    </h3>
+                    <p className="text-moon/40 text-xs mb-2">{novel.author_en}</p>
+                    <div className="flex items-center gap-3 text-xs text-moon/30">
+                      <span className="flex items-center gap-1">
+                        <Star className="w-3 h-3 fill-amber-400 text-amber-400" /> {novel.rating}
+                      </span>
+                      <span>{novel.total_chapters} ch</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+
+            {/* AdSense Placeholder */}
+            <div className="glass-card rounded-2xl overflow-hidden border-dashed border-2 border-amber-500/15 flex items-center justify-center h-full min-h-[200px]">
+              <div className="text-center p-4">
+                <p className="text-amber-400/30 text-xs uppercase tracking-wider mb-1">Advertisement</p>
+                <p className="text-moon/20 text-sm">AdSense Banner</p>
+                <p className="text-moon/10 text-xs mt-1">728 × 90</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Novel Grid */}
-        {filteredNovels.length === 0 ? (
-          <div className="text-center py-20">
-            <BookOpen className="w-16 h-16 text-moon/10 mx-auto mb-4" />
-            <p className="text-moon/30 text-lg">No novels found. Try different filters.</p>
+        {/* ========== VIP ZONE ========== */}
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="p-2 rounded-xl bg-neon-purple/10 border border-neon-purple/20">
+              <Crown className="w-5 h-5 text-neon-purple" />
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-stardust" style={{ fontFamily: "Orbitron" }}>
+                VIP Zone
+              </h2>
+              <p className="text-moon/40 text-sm">
+                Premium translations &mdash; first 20 chapters free, full access with subscription
+              </p>
+            </div>
           </div>
-        ) : (
+
+          {/* Search + Filters */}
+          <div className="glass-card rounded-2xl p-4 mb-8">
+            <div className="flex flex-col lg:flex-row gap-4">
+              <div className="flex-1 relative">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-moon/30" />
+                <input
+                  type="text"
+                  placeholder="Search web novels..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full bg-transparent border border-white/10 rounded-xl pl-12 pr-4 py-3 text-stardust placeholder:text-moon/30 focus:outline-none focus:border-neon-cyan/50 transition-all"
+                />
+                {searchQuery && (
+                  <button onClick={() => setSearchQuery("")} className="absolute right-4 top-1/2 -translate-y-1/2">
+                    <X className="w-4 h-4 text-moon/30 hover:text-moon" />
+                  </button>
+                )}
+              </div>
+
+              <div className="flex gap-2 overflow-x-auto pb-1">
+                {genres
+                  .filter((g) => !g.is_adult && g.name !== "free-classics")
+                  .map((g) => (
+                    <button
+                      key={g.name}
+                      onClick={() => setSelectedGenre(g.name === selectedGenre ? "all" : g.name)}
+                      className={`text-xs md:text-sm px-4 py-2 rounded-full border transition-all whitespace-nowrap ${
+                        selectedGenre === g.name
+                          ? "bg-neon-cyan/10 border-neon-cyan/50 text-neon-cyan"
+                          : "bg-white/5 border-white/5 text-moon/50 hover:text-moon hover:border-white/20"
+                      }`}
+                    >
+                      {genreLabels[g.name] || g.name} ({g.count})
+                    </button>
+                  ))}
+              </div>
+
+              <div className="flex gap-2">
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as any)}
+                  className="bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-sm text-moon focus:outline-none focus:border-neon-cyan/50"
+                >
+                  <option value="rating">⭐ Rating</option>
+                  <option value="readers">👥 Popular</option>
+                  <option value="newest">🆕 Newest</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          {/* Novel Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredNovels.map((novel) => (
               <Link
@@ -229,11 +290,10 @@ export default function HomePage() {
                 className="block group"
               >
                 <div className="glass-card rounded-2xl overflow-hidden h-full hover:border-neon-cyan/30 transition-all duration-300">
-                  {/* Cover area */}
                   <div className="relative h-44 overflow-hidden bg-cosmic">
                     <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/20 via-neon-purple/10 to-cosmic" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <BookOpen className="w-10 h-10 text-white/10" />
+                      <Lock className="w-10 h-10 text-white/10" />
                     </div>
                     <div className="absolute top-3 left-3">
                       <span
@@ -246,27 +306,17 @@ export default function HomePage() {
                         {novel.status === "completed" ? "✓ Complete" : "⟳ Ongoing"}
                       </span>
                     </div>
-                    {novel.is_adult && (
-                      <div className="absolute top-3 right-3 bg-neon-pink/20 text-neon-pink text-xs px-2 py-1 rounded-full border border-neon-pink/30">
-                        🔞
-                      </div>
-                    )}
                   </div>
 
                   <div className="p-5">
-                    <div className="flex items-start justify-between gap-2 mb-1">
-                      <h3 className="font-bold text-stardust group-hover:text-neon-cyan transition-colors line-clamp-1 text-lg">
-                        {novel.title_en || novel.title_zh}
-                      </h3>
-                    </div>
-                    <p className="text-moon/40 text-sm mb-3">
-                      {novel.author_en || novel.author_zh}
-                    </p>
+                    <h3 className="font-bold text-stardust group-hover:text-neon-cyan transition-colors line-clamp-1 text-lg mb-1">
+                      {novel.title_en}
+                    </h3>
+                    <p className="text-moon/40 text-sm mb-3">{novel.author_en}</p>
 
                     <div className="flex items-center justify-between text-sm mb-3">
                       <span className="flex items-center gap-1 text-neon-cyan font-medium">
-                        <Star className="w-3.5 h-3.5 fill-neon-cyan" />
-                        {novel.rating}
+                        <Star className="w-3.5 h-3.5 fill-neon-cyan" /> {novel.rating}
                       </span>
                       <span className="flex items-center gap-1 text-moon/30">
                         <BookOpen className="w-3.5 h-3.5" />
@@ -279,7 +329,7 @@ export default function HomePage() {
                     </div>
 
                     <p className="text-moon/50 text-sm leading-relaxed line-clamp-2">
-                      {novel.description_en || novel.description_zh}
+                      {novel.description_en}
                     </p>
 
                     <div className="flex flex-wrap gap-1.5 mt-3">
@@ -297,11 +347,11 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-        )}
 
-        <div className="text-center mt-10 text-moon/30 text-sm">
-          Showing {filteredNovels.length} of {novels.length} novels
-        </div>
+          <div className="text-center mt-10 text-moon/30 text-sm">
+            {filteredNovels.length} novels in VIP Zone &middot; First 20 chapters free, subscribe for full access
+          </div>
+        </section>
       </div>
     </div>
   );

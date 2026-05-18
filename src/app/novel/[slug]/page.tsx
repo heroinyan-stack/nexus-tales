@@ -75,11 +75,8 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
             >
               {novel.title_en}
             </h1>
-            {novel.title_zh !== novel.title_en && (
-              <p className="text-moon/30 text-lg mb-1">{novel.title_zh}</p>
-            )}
             <p className="text-moon/50 mb-6">
-              by {novel.author_en || novel.author_zh}
+              by {novel.author_en}
             </p>
 
             {/* Stats */}
@@ -117,7 +114,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
             <div className="glass-card rounded-2xl p-6">
               <h3 className="text-lg font-bold text-stardust mb-3">Synopsis</h3>
               <p className="text-moon/60 leading-relaxed">
-                {novel.description_en || novel.description_zh}
+                {novel.description_en}
               </p>
             </div>
           </div>
@@ -149,7 +146,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
                     Ch. {ch.num}
                   </div>
                   <div className="text-xs text-moon/40 mt-0.5 truncate">
-                    {ch.title_en || ch.title_zh}
+                    {ch.title_en}
                   </div>
                 </div>
               </Link>

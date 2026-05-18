@@ -7,7 +7,13 @@
     "author_zh": "善良的蜜蜂",
     "author_en": "Kindhearted Bee",
     "genre": "xianxia",
-    "tags": ["Xianxia", "Action", "Romance", "Harem", "Overpowered MC"],
+    "tags": [
+      "Xianxia",
+      "Action",
+      "Romance",
+      "Harem",
+      "Overpowered MC"
+    ],
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.8,
@@ -19,7 +25,8 @@
     "source_url": "https://www.biquge5200.com/bqge/1/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 2,
@@ -29,7 +36,12 @@
     "author_zh": "火星引力",
     "author_en": "Mars Gravity",
     "genre": "xuanhuan",
-    "tags": ["Xuanhuan", "Harem", "Revenge", "Overpowered MC"],
+    "tags": [
+      "Xuanhuan",
+      "Harem",
+      "Revenge",
+      "Overpowered MC"
+    ],
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.9,
@@ -41,7 +53,8 @@
     "source_url": "https://www.biquge5200.com/bqge/2/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 3,
@@ -51,7 +64,13 @@
     "author_zh": "耳根",
     "author_en": "Er Gen",
     "genre": "xianxia",
-    "tags": ["Xianxia", "Comedy", "Tragedy", "Alchemy", "Cultivation"],
+    "tags": [
+      "Xianxia",
+      "Comedy",
+      "Tragedy",
+      "Alchemy",
+      "Cultivation"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.9,
@@ -63,7 +82,8 @@
     "source_url": "https://www.biquge5200.com/bqge/3/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 4,
@@ -73,7 +93,13 @@
     "author_zh": "蛊真人",
     "author_en": "Gu Zhen Ren",
     "genre": "xianxia",
-    "tags": ["Xianxia", "Dark", "Anti-Hero", "Ruthless MC", "Philosophy"],
+    "tags": [
+      "Xianxia",
+      "Dark",
+      "Anti-Hero",
+      "Ruthless MC",
+      "Philosophy"
+    ],
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.7,
@@ -85,7 +111,8 @@
     "source_url": "https://www.biquge5200.com/bqge/4/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 5,
@@ -95,7 +122,12 @@
     "author_zh": "耳根",
     "author_en": "Er Gen",
     "genre": "xianxia",
-    "tags": ["Xianxia", "Comedy", "Alchemy", "Cultivation"],
+    "tags": [
+      "Xianxia",
+      "Comedy",
+      "Alchemy",
+      "Cultivation"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.8,
@@ -107,7 +139,8 @@
     "source_url": "https://www.biquge5200.com/bqge/5/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 6,
@@ -117,7 +150,12 @@
     "author_zh": "Alphatart",
     "author_en": "Alphatart",
     "genre": "romance",
-    "tags": ["Romance", "Drama", "Historical", "Strong Female Lead"],
+    "tags": [
+      "Romance",
+      "Drama",
+      "Historical",
+      "Strong Female Lead"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.9,
@@ -129,7 +167,8 @@
     "source_url": "https://www.biquge5200.com/bqge/6/",
     "source_site": "biquge5200",
     "created_at": "2025-05-17",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 7,
@@ -139,7 +178,12 @@
     "author_zh": "墨香铜臭",
     "author_en": "Mo Xiang Tong Xiu",
     "genre": "romance",
-    "tags": ["Romance", "Adult", "Modern", "Mature"],
+    "tags": [
+      "Romance",
+      "Adult",
+      "Modern",
+      "Mature"
+    ],
     "is_adult": true,
     "status": "ongoing",
     "rating": 4.3,
@@ -151,7 +195,8 @@
     "source_url": "",
     "source_site": "manual",
     "created_at": "2025-05-17",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 8,
@@ -161,7 +206,12 @@
     "author_zh": "天蚕土豆",
     "author_en": "Heavenly Silkworm Potato",
     "genre": "xuanhuan",
-    "tags": ["Xuanhuan", "Action", "Adventure", "Cultivation"],
+    "tags": [
+      "Xuanhuan",
+      "Action",
+      "Adventure",
+      "Cultivation"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.7,
@@ -173,7 +223,8 @@
     "source_url": "https://www.biquge5200.com/bqge/8/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 9,
@@ -183,7 +234,12 @@
     "author_zh": "耳根",
     "author_en": "Er Gen",
     "genre": "xianxia",
-    "tags": ["Xianxia", "Dark", "Tragedy", "Philosophical"],
+    "tags": [
+      "Xianxia",
+      "Dark",
+      "Tragedy",
+      "Philosophical"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.8,
@@ -195,7 +251,8 @@
     "source_url": "https://www.biquge5200.com/bqge/9/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 10,
@@ -205,7 +262,13 @@
     "author_zh": "顾漫",
     "author_en": "Gu Man",
     "genre": "romance",
-    "tags": ["Romance", "CEO", "Modern", "Strong Female Lead", "Adult"],
+    "tags": [
+      "Romance",
+      "CEO",
+      "Modern",
+      "Strong Female Lead",
+      "Adult"
+    ],
     "is_adult": true,
     "status": "completed",
     "rating": 4.5,
@@ -217,7 +280,8 @@
     "source_url": "",
     "source_site": "manual",
     "created_at": "2025-05-17",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 11,
@@ -227,7 +291,12 @@
     "author_zh": "烟雨江南",
     "author_en": "Misty Rain of Jiangnan",
     "genre": "fantasy",
-    "tags": ["Dark Fantasy", "Western", "Kingdom Building", "Politics"],
+    "tags": [
+      "Dark Fantasy",
+      "Western",
+      "Kingdom Building",
+      "Politics"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.6,
@@ -239,7 +308,8 @@
     "source_url": "https://www.biquge5200.com/bqge/11/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
   },
   {
     "id": 12,
@@ -249,7 +319,12 @@
     "author_zh": "十二翼黑暗炽天使",
     "author_en": "Twelve-Winged Dark Seraphim",
     "genre": "scifi",
-    "tags": ["Sci-Fi", "Futuristic", "Evolution", "Monsters"],
+    "tags": [
+      "Sci-Fi",
+      "Futuristic",
+      "Evolution",
+      "Monsters"
+    ],
     "is_adult": false,
     "status": "completed",
     "rating": 4.4,
@@ -261,6 +336,192 @@
     "source_url": "https://www.biquge5200.com/bqge/12/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2025-05-17"
+    "updated_at": "2025-05-17",
+    "zone": "vip"
+  },
+  {
+    "id": 13,
+    "slug": "journey-to-the-west",
+    "title_en": "Journey to the West",
+    "author_en": "Wu Cheng'en",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Mythology",
+      "Adventure",
+      "Buddhism",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.9,
+    "total_chapters": 100,
+    "readers": 5000000,
+    "description_en": "The epic tale of the Monkey King Sun Wukong, a Buddhist monk Tang Sanzang, and their companions Pigsy and Sandy as they journey westward to India to obtain sacred Buddhist scriptures. One of the Four Great Classical Novels of Chinese literature, this mythological adventure has captivated readers worldwide for over 400 years.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/23962",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "id": 14,
+    "slug": "romance-of-the-three-kingdoms",
+    "title_en": "Romance of the Three Kingdoms",
+    "author_en": "Luo Guanzhong",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Historical",
+      "War",
+      "Strategy",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.8,
+    "total_chapters": 120,
+    "readers": 3000000,
+    "description_en": "The greatest historical epic of Chinese literature, chronicling the fall of the Han Dynasty and the rise of the Three Kingdoms. Filled with legendary heroes like Guan Yu and Zhuge Liang, battlefield tactics, political intrigue, and timeless lessons in loyalty and strategy. An essential read for anyone interested in Chinese history and culture.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/24030",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "id": 15,
+    "slug": "dream-of-the-red-chamber",
+    "title_en": "Dream of the Red Chamber",
+    "author_en": "Cao Xueqin",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Romance",
+      "Drama",
+      "Family",
+      "Free",
+      "Tragedy"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.7,
+    "total_chapters": 120,
+    "readers": 2500000,
+    "description_en": "Considered the pinnacle of Chinese fiction, this sprawling masterpiece follows the rise and fall of the aristocratic Jia family. A profound exploration of love, fate, and the impermanence of worldly glory. Set against the backdrop of 18th century Qing Dynasty society, it weaves together over 400 characters in a tapestry of unparalleled complexity.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/9603",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "id": 16,
+    "slug": "water-margin",
+    "title_en": "Water Margin (Outlaws of the Marsh)",
+    "author_en": "Shi Nai'an",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Action",
+      "Adventure",
+      "Rebellion",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.6,
+    "total_chapters": 100,
+    "readers": 2000000,
+    "description_en": "The legendary tale of 108 outlaws who gather at Mount Liangshan to form an army of righteous rebels. Fighting against corrupt officials and oppressive rulers, these colorful heroes embody the timeless spirit of brotherhood and justice. The original Chinese 'band of misfits' epic, predating modern team-up stories by centuries.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/23864",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "id": 17,
+    "slug": "art-of-war",
+    "title_en": "The Art of War",
+    "author_en": "Sun Tzu",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Philosophy",
+      "Strategy",
+      "Military",
+      "Free",
+      "SEO Gold"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.9,
+    "total_chapters": 13,
+    "readers": 10000000,
+    "description_en": "The world's most influential treatise on military strategy, written 2,500 years ago and still studied in military academies and business schools worldwide. Sun Tzu's timeless wisdom extends far beyond the battlefield—his principles of strategic thinking have influenced leaders from Napoleon to modern CEOs. Short, profound, and endlessly quotable.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/132",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "id": 18,
+    "slug": "tao-te-ching",
+    "title_en": "Tao Te Ching",
+    "author_en": "Lao Tzu (Laozi)",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Philosophy",
+      "Taoism",
+      "Wisdom",
+      "Free",
+      "SEO Gold"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.8,
+    "total_chapters": 81,
+    "readers": 8000000,
+    "description_en": "The foundational text of Taoism and one of the most translated books in human history. Lao Tzu's 81 brief chapters contain a universe of wisdom on living in harmony with the natural order, the power of non-action (wu-wei), and the profound simplicity of the Tao. A spiritual classic that has guided seekers for 2,500 years.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/216",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "id": 19,
+    "slug": "analects-of-confucius",
+    "title_en": "The Analects of Confucius",
+    "author_en": "Confucius (Kongzi)",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Philosophy",
+      "Ethics",
+      "Wisdom",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.7,
+    "total_chapters": 20,
+    "readers": 5000000,
+    "description_en": "The collected teachings of China's greatest philosopher. Through conversations with his disciples, Confucius laid the foundation for East Asian ethics, governance, and personal cultivation. His emphasis on virtue (ren), ritual propriety (li), and the ideal of the 'gentleman' (junzi) continues to resonate across cultures.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/3330",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
   }
 ]

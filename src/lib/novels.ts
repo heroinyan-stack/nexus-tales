@@ -5,9 +5,7 @@ import path from 'path';
 export interface Novel {
   id: number;
   slug: string;
-  title_zh: string;
   title_en: string;
-  author_zh: string;
   author_en: string;
   genre: string;
   tags: string[];
@@ -16,20 +14,18 @@ export interface Novel {
   rating: number;
   total_chapters: number;
   readers: number;
-  description_zh: string;
   description_en: string;
   cover_url: string;
   source_url: string;
   source_site: string;
+  zone: string;
   created_at: string;
   updated_at: string;
 }
 
 export interface Chapter {
   num: number;
-  title_zh: string;
   title_en: string;
-  content_zh: string;
   content_en: string;
   translated: boolean;
 }
@@ -94,11 +90,17 @@ export function searchNovels(query: string): Novel[] {
   return novels.filter(
     (n) =>
       n.title_en.toLowerCase().includes(lowerQuery) ||
-      n.title_zh.toLowerCase().includes(lowerQuery) ||
       n.author_en.toLowerCase().includes(lowerQuery) ||
-      n.author_zh.toLowerCase().includes(lowerQuery) ||
       n.tags.some((tag) => tag.toLowerCase().includes(lowerQuery))
   );
+}
+
+export function getFreeNovels(): Novel[] {
+  return getAllNovels().filter((n) => n.zone === 'free');
+}
+
+export function getVipNovels(): Novel[] {
+  return getAllNovels().filter((n) => n.zone === 'vip');
 }
 
 export function getGenres(): { name: string; count: number; is_adult: boolean }[] {
@@ -127,7 +129,7 @@ export function getChapter(novelSlug: string, chapterNum: number): Chapter | nul
   return readJsonFile<Chapter>(chapterPath);
 }
 
-export function getChapterList(novelSlug: string): { num: number; title_en: string; title_zh: string }[] {
+export function getChapterList(novelSlug: string): { num: number; title_en: string }[] {
   const novelDir = path.join(CHAPTERS_DIR, novelSlug);
   
   if (!fs.existsSync(novelDir)) {
@@ -138,18 +140,17 @@ export function getChapterList(novelSlug: string): { num: number; title_en: stri
     return Array.from({ length: Math.min(novel.total_chapters, 50) }, (_, i) => ({
       num: i + 1,
       title_en: `Chapter ${i + 1}`,
-      title_zh: `第${i + 1}章`,
     }));
   }
   
   const files = fs.readdirSync(novelDir).filter((f) => f.startsWith('ch-') && f.endsWith('.json'));
   
-  const result: { num: number; title_en: string; title_zh: string }[] = [];
+  const result: { num: number; title_en: string }[] = [];
   
   for (const file of files) {
     const chapter = readJsonFile<Chapter>(path.join(novelDir, file));
     if (chapter) {
-      result.push({ num: chapter.num, title_en: chapter.title_en, title_zh: chapter.title_zh });
+      result.push({ num: chapter.num, title_en: chapter.title_en });
     }
   }
   
@@ -160,10 +161,8 @@ export function getChapterContent(novelSlug: string, chapterNum: number): string
   const chapter = getChapter(novelSlug, chapterNum);
   
   if (!chapter) {
-    // 返回模拟内容
-    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!\n\n（本章正在翻译中，请稍后再来！）`;
+    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
   }
   
-  // 返回英文内容，如果没有就用中文
-  return chapter.content_en || chapter.content_zh || 'Content not available.';
+  return chapter.content_en || 'Content not available.';
 }
