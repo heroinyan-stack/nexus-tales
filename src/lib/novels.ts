@@ -144,15 +144,16 @@ export function getChapterList(novelSlug: string): { num: number; title_en: stri
   
   const files = fs.readdirSync(novelDir).filter((f) => f.startsWith('ch-') && f.endsWith('.json'));
   
-  return files
-    .map((file) => {
-      const chapter = readJsonFile<Chapter>(path.join(novelDir, file));
-      return chapter
-        ? { num: chapter.num, title_en: chapter.title_en, title_zh: chapter.title_zh }
-        : null;
-    })
-    .filter(Boolean)
-    .sort((a, b) => a!.num - b!.num);
+  const result: { num: number; title_en: string; title_zh: string }[] = [];
+  
+  for (const file of files) {
+    const chapter = readJsonFile<Chapter>(path.join(novelDir, file));
+    if (chapter) {
+      result.push({ num: chapter.num, title_en: chapter.title_en, title_zh: chapter.title_zh });
+    }
+  }
+  
+  return result.sort((a, b) => a.num - b.num);
 }
 
 export function getChapterContent(novelSlug: string, chapterNum: number): string {
