@@ -1,404 +1,308 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import {
   BookOpen,
-  Sparkles,
-  TrendingUp,
+  Search,
   Star,
-  Shield,
-  Globe,
+  TrendingUp,
+  Clock,
+  Filter,
+  X,
 } from "lucide-react";
 
-const FEATURED_NOVELS = [
-  {
-    slug: "martial-god-asura",
-    title: "Martial God Asura",
-    author: "Kindhearted Bee",
-    genre: "Cultivation",
-    rating: 4.8,
-    chapters: 5842,
-    cover: "/covers/martial-god-asura.jpg",
-    description:
-      "In a world where the strong prey on the weak, one young man defies the heavens with forbidden martial techniques.",
-    tags: ["Xianxia", "Action", "Romance"],
-  },
-  {
-    slug: "against-the-gods",
-    title: "Against the Gods",
-    author: "Mars Gravity",
-    genre: "Fantasy",
-    rating: 4.9,
-    chapters: 2014,
-    cover: "/covers/against-the-gods.jpg",
-    description:
-      "A boy cursed with crippled meridians obtains a mysterious pearl that changes his destiny forever.",
-    tags: ["Xuanhuan", "Harem", "Revenge"],
-  },
-  {
-    slug: "i-shall-seal-the-heavens",
-    title: "I Shall Seal the Heavens",
-    author: "Er Gen",
-    genre: "Cultivation",
-    rating: 4.9,
-    chapters: 1614,
-    cover: "/covers/issth.jpg",
-    description:
-      "A failed scholar is kidnapped and thrust into the world of cultivation, where he must seal the heavens themselves.",
-    tags: ["Xianxia", "Comedy", "Tragedy"],
-  },
-  {
-    slug: "reverend-insanity",
-    title: "Reverend Insanity",
-    author: "Gu Zhen Ren",
-    genre: "Dark Fantasy",
-    rating: 4.7,
-    chapters: 2334,
-    cover: "/covers/reverend-insanity.jpg",
-    description:
-      "A demon lord travels 500 years back in time, determined to achieve eternal life — no matter the cost.",
-    tags: ["Xianxia", "Dark", "Anti-Hero"],
-  },
-];
+interface Novel {
+  id: number;
+  slug: string;
+  title_zh: string;
+  title_en: string;
+  author_zh: string;
+  author_en: string;
+  genre: string;
+  tags: string[];
+  is_adult: boolean;
+  status: string;
+  rating: number;
+  total_chapters: number;
+  readers: number;
+  description_zh: string;
+  description_en: string;
+}
 
-const STATS = [
-  { icon: BookOpen, value: "500+", label: "Novels" },
-  { icon: Globe, value: "12+", label: "Languages" },
-  { icon: Sparkles, value: "50K+", label: "Daily Readers" },
-  { icon: TrendingUp, value: "2M+", label: "Chapters" },
-];
+interface Genre {
+  name: string;
+  count: number;
+  is_adult: boolean;
+}
 
 export default function HomePage() {
+  const [novels, setNovels] = useState<Novel[]>([]);
+  const [genres, setGenres] = useState<Genre[]>([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedGenre, setSelectedGenre] = useState("all");
+  const [sortBy, setSortBy] = useState<"rating" | "readers" | "newest">("rating");
+  const [showAdult, setShowAdult] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await fetch("/api/novels");
+        const data = await res.json();
+        setNovels(data.novels || data);
+        setGenres(data.genres || []);
+      } catch (e) {
+        console.error("Failed to fetch novels:", e);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
+
+  const genreLabels: Record<string, string> = {
+    all: "All",
+    xianxia: "Xianxia",
+    xuanhuan: "Xuanhuan",
+    fantasy: "Fantasy",
+    scifi: "Sci-Fi",
+    romance: "Romance",
+    history: "History",
+    wuxia: "Wuxia",
+    urban: "Urban",
+    erotica: "Adult 🔞",
+    smut: "Smut 🔞",
+  };
+
+  const filteredNovels = useMemo(() => {
+    let result = [...novels];
+
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      result = result.filter(
+        (n) =>
+          n.title_en.toLowerCase().includes(q) ||
+          n.title_zh.toLowerCase().includes(q) ||
+          n.author_en.toLowerCase().includes(q) ||
+          n.author_zh.toLowerCase().includes(q) ||
+          n.tags.some((t) => t.toLowerCase().includes(q))
+      );
+    }
+
+    if (selectedGenre !== "all") {
+      result = result.filter((n) => n.genre === selectedGenre);
+    }
+
+    if (!showAdult) {
+      result = result.filter((n) => !n.is_adult);
+    }
+
+    switch (sortBy) {
+      case "rating":
+        result.sort((a, b) => b.rating - a.rating);
+        break;
+      case "readers":
+        result.sort((a, b) => b.readers - a.readers);
+        break;
+      case "newest":
+        result.sort((a, b) => b.id - a.id);
+        break;
+    }
+
+    return result;
+  }, [novels, searchQuery, selectedGenre, sortBy, showAdult]);
+
+  if (loading) {
+    return (
+      <div className="pt-32 pb-24 text-center">
+        <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-neon-cyan"></div>
+        <p className="mt-4 text-moon/50">Loading novels...</p>
+      </div>
+    );
+  }
+
   return (
-    <>
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-16">
-        <div className="hero-glow absolute inset-0 -top-20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 text-sm">
-                <Sparkles className="w-4 h-4 text-neon-cyan" />
-                <span className="text-moon">
-                  #1 Source for Translated Chinese Novels
-                </span>
-              </div>
-
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-                <span
-                  className="text-gradient block"
-                  style={{ fontFamily: "Orbitron" }}
-                >
-                  CULTIVATE
-                </span>
-                <span className="text-stardust">Your Imagination</span>
-              </h1>
-
-              <p className="text-lg text-moon/70 mb-10 max-w-lg leading-relaxed">
-                Dive into epic tales of immortal heroes, forbidden arts, and
-                world-shaking battles. Thousands of translated Chinese novels at
-                your fingertips.
-              </p>
-
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/novels"
-                  className="neon-btn px-8 py-4 rounded-xl text-lg inline-flex items-center gap-2"
-                >
-                  <BookOpen className="w-5 h-5" />
-                  Start Reading
-                </Link>
-                <Link
-                  href="#featured"
-                  className="glass-card px-8 py-4 rounded-xl text-lg text-moon hover:text-neon-cyan transition-all"
-                >
-                  Featured Novels
-                </Link>
-              </div>
-
-              {/* Stats row */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-16">
-                {STATS.map((stat) => (
-                  <div key={stat.label} className="text-center">
-                    <stat.icon className="w-5 h-5 text-neon-purple mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-stardust">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-moon/50 mt-1">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Hero visual */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="hidden lg:block"
-            >
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/20 via-neon-purple/10 to-transparent rounded-3xl blur-3xl" />
-                <div className="relative glass-card rounded-3xl p-8 aspect-[4/5] overflow-hidden">
-                  {/* Simulated book shelf */}
-                  {[...Array(5)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="mb-4 p-4 rounded-xl"
-                      style={{
-                        background: `rgba(255,255,255,${0.03 + i * 0.01})`,
-                      }}
-                    >
-                      <div className="flex gap-4 items-center">
-                        <div
-                          className="w-10 h-14 rounded flex-shrink-0"
-                          style={{
-                            background: `linear-gradient(135deg, 
-                              ${["#00f0ff", "#b44dff", "#ff2d95", "#39ff14", "#ff8c00"][i]}40, 
-                              ${["#00f0ff", "#b44dff", "#ff2d95", "#39ff14", "#ff8c00"][i]}10)`,
-                          }}
-                        />
-                        <div className="flex-1">
-                          <div className="h-3 bg-white/10 rounded w-3/4 mb-2" />
-                          <div className="h-2 bg-white/5 rounded w-1/2" />
-                        </div>
-                        <Star className="w-4 h-4 text-neon-cyan" />
-                      </div>
-                    </div>
-                  ))}
-                  {/* Floating glow orbs */}
-                  <div className="absolute top-10 right-10 w-20 h-20 bg-neon-cyan/20 rounded-full blur-2xl animate-pulse" />
-                  <div className="absolute bottom-20 left-10 w-32 h-32 bg-neon-purple/15 rounded-full blur-3xl animate-pulse" />
-                </div>
-              </div>
-            </motion.div>
-          </div>
+    <div className="pt-24 pb-24">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Top banner */}
+        <div className="text-center mb-12">
+          <h1
+            className="text-3xl lg:text-5xl font-bold mb-3"
+            style={{ fontFamily: "Orbitron" }}
+          >
+            <span className="text-gradient">NEXUS</span>{" "}
+            <span className="text-stardust">TALES</span>
+          </h1>
+          <p className="text-moon/50 text-lg max-w-xl mx-auto">
+            Premium translations of the best Chinese web novels
+          </p>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1">
-            <div className="w-1.5 h-3 bg-neon-cyan rounded-full animate-pulse" />
-          </div>
-        </motion.div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-24 relative">
-        <div className="max-w-7xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2
-              className="text-4xl lg:text-5xl font-bold mb-4"
-              style={{ fontFamily: "Orbitron" }}
-            >
-              <span className="text-gradient">Why</span>{" "}
-              <span className="text-stardust">Nexus Tales?</span>
-            </h2>
-            <p className="text-moon/60 text-lg max-w-2xl mx-auto">
-              We bring the best Chinese web novels to readers worldwide, with
-              daily updates and quality translations.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: Shield,
-                title: "Quality Translations",
-                desc: "Every chapter is carefully translated and edited by our team to preserve the original flavor and nuance.",
-              },
-              {
-                icon: Sparkles,
-                title: "Daily Updates",
-                desc: "New chapters every day. Never wait weeks between updates — follow multiple novels simultaneously.",
-              },
-              {
-                icon: Globe,
-                title: "Worldwide Community",
-                desc: "Join thousands of readers from 150+ countries. Discuss theories, share memes, and connect with fellow fans.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.15 }}
-                className="glass-card rounded-2xl p-8 text-center group"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-neon-cyan/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-neon-cyan/20 transition-all">
-                  <item.icon className="w-8 h-8 text-neon-cyan" />
-                </div>
-                <h3 className="text-xl font-bold text-stardust mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-moon/60 text-sm leading-relaxed">
-                  {item.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Novels */}
-      <section id="featured" className="py-24 relative">
-        <div className="max-w-7xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex items-end justify-between mb-12"
-          >
-            <div>
-              <h2
-                className="text-4xl lg:text-5xl font-bold mb-3"
-                style={{ fontFamily: "Orbitron" }}
-              >
-                <span className="text-gradient">Featured</span>{" "}
-                <span className="text-stardust">Novels</span>
-              </h2>
-              <p className="text-moon/60">
-                Start your cultivation journey with these epic tales
-              </p>
+        {/* Search + Filters */}
+        <div className="glass-card rounded-2xl p-4 mb-10">
+          <div className="flex flex-col lg:flex-row gap-4">
+            {/* Search */}
+            <div className="flex-1 relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-moon/30" />
+              <input
+                type="text"
+                placeholder="Search novels, authors, tags..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-transparent border border-white/10 rounded-xl pl-12 pr-4 py-3 text-stardust placeholder:text-moon/30 focus:outline-none focus:border-neon-cyan/50 transition-all"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2"
+                >
+                  <X className="w-4 h-4 text-moon/30 hover:text-moon" />
+                </button>
+              )}
             </div>
-            <Link
-              href="/novels"
-              className="hidden sm:flex items-center gap-2 text-neon-cyan hover:text-neon-purple transition-colors text-sm font-semibold"
-            >
-              View All <span className="text-lg">&rarr;</span>
-            </Link>
-          </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {FEATURED_NOVELS.map((novel, i) => (
-              <motion.div
-                key={novel.slug}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+            {/* Genre filter */}
+            <div className="flex gap-2 overflow-x-auto pb-1">
+              <button
+                onClick={() => setSelectedGenre("all")}
+                className={`text-xs md:text-sm px-4 py-2 rounded-full border transition-all whitespace-nowrap ${
+                  selectedGenre === "all"
+                    ? "bg-neon-cyan/10 border-neon-cyan/50 text-neon-cyan"
+                    : "bg-white/5 border-white/5 text-moon/50 hover:text-moon hover:border-white/20"
+                }`}
               >
-                <Link
-                  href={`/novel/${novel.slug}`}
-                  className="block glass-card rounded-2xl overflow-hidden group h-full"
+                All
+              </button>
+              {genres.map((g) => (
+                <button
+                  key={g.name}
+                  onClick={() => setSelectedGenre(g.name)}
+                  className={`text-xs md:text-sm px-4 py-2 rounded-full border transition-all whitespace-nowrap ${
+                    selectedGenre === g.name
+                      ? "bg-neon-cyan/10 border-neon-cyan/50 text-neon-cyan"
+                      : "bg-white/5 border-white/5 text-moon/50 hover:text-moon hover:border-white/20"
+                  }`}
                 >
-                  {/* Cover */}
-                  <div className="relative h-48 overflow-hidden bg-cosmic">
-                    <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/30 via-neon-purple/20 to-cosmic" />
+                  {genreLabels[g.name] || g.name} ({g.count})
+                </button>
+              ))}
+            </div>
+
+            {/* Sort + Adult toggle */}
+            <div className="flex gap-2">
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as any)}
+                className="bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-sm text-moon focus:outline-none focus:border-neon-cyan/50"
+              >
+                <option value="rating">⭐ Rating</option>
+                <option value="readers">👥 Popular</option>
+                <option value="newest">🆕 Newest</option>
+              </select>
+              <button
+                onClick={() => setShowAdult(!showAdult)}
+                className={`text-sm px-3 py-2 rounded-xl border transition-all ${
+                  showAdult
+                    ? "bg-neon-pink/10 border-neon-pink/50 text-neon-pink"
+                    : "bg-white/5 border-white/5 text-moon/30"
+                }`}
+              >
+                🔞
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Novel Grid */}
+        {filteredNovels.length === 0 ? (
+          <div className="text-center py-20">
+            <BookOpen className="w-16 h-16 text-moon/10 mx-auto mb-4" />
+            <p className="text-moon/30 text-lg">No novels found. Try different filters.</p>
+          </div>
+        ) : (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredNovels.map((novel) => (
+              <Link
+                key={novel.id}
+                href={`/novel/${novel.slug}`}
+                className="block group"
+              >
+                <div className="glass-card rounded-2xl overflow-hidden h-full hover:border-neon-cyan/30 transition-all duration-300">
+                  {/* Cover area */}
+                  <div className="relative h-44 overflow-hidden bg-cosmic">
+                    <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/20 via-neon-purple/10 to-cosmic" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <BookOpen className="w-12 h-12 text-white/20" />
+                      <BookOpen className="w-10 h-10 text-white/10" />
                     </div>
-                    <div className="absolute top-3 right-3 glass-card px-3 py-1 rounded-full text-xs font-bold text-neon-cyan">
-                      {novel.genre}
+                    <div className="absolute top-3 left-3">
+                      <span
+                        className={`text-xs px-2.5 py-1 rounded-full font-medium ${
+                          novel.status === "completed"
+                            ? "bg-neon-green/20 text-neon-green border border-neon-green/30"
+                            : "bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30"
+                        }`}
+                      >
+                        {novel.status === "completed" ? "✓ Complete" : "⟳ Ongoing"}
+                      </span>
                     </div>
+                    {novel.is_adult && (
+                      <div className="absolute top-3 right-3 bg-neon-pink/20 text-neon-pink text-xs px-2 py-1 rounded-full border border-neon-pink/30">
+                        🔞
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-5">
-                    <h3 className="font-bold text-stardust mb-1 text-lg group-hover:text-neon-cyan transition-colors line-clamp-1">
-                      {novel.title}
-                    </h3>
-                    <p className="text-moon/50 text-sm mb-3">{novel.author}</p>
+                    <div className="flex items-start justify-between gap-2 mb-1">
+                      <h3 className="font-bold text-stardust group-hover:text-neon-cyan transition-colors line-clamp-1 text-lg">
+                        {novel.title_en || novel.title_zh}
+                      </h3>
+                    </div>
+                    <p className="text-moon/40 text-sm mb-3">
+                      {novel.author_en || novel.author_zh}
+                    </p>
 
-                    {/* Rating + Stats */}
-                    <div className="flex items-center gap-4 text-sm mb-3">
-                      <span className="flex items-center gap-1 text-neon-cyan">
+                    <div className="flex items-center justify-between text-sm mb-3">
+                      <span className="flex items-center gap-1 text-neon-cyan font-medium">
                         <Star className="w-3.5 h-3.5 fill-neon-cyan" />
                         {novel.rating}
                       </span>
-                      <span className="text-moon/40">
-                        {novel.chapters.toLocaleString()} ch
+                      <span className="flex items-center gap-1 text-moon/30">
+                        <BookOpen className="w-3.5 h-3.5" />
+                        {novel.total_chapters.toLocaleString()}
+                      </span>
+                      <span className="flex items-center gap-1 text-moon/30">
+                        <TrendingUp className="w-3.5 h-3.5" />
+                        {(novel.readers / 1000).toFixed(0)}K
                       </span>
                     </div>
 
-                    <p className="text-moon/50 text-sm leading-relaxed line-clamp-2 mb-4">
-                      {novel.description}
+                    <p className="text-moon/50 text-sm leading-relaxed line-clamp-2">
+                      {novel.description_en || novel.description_zh}
                     </p>
 
-                    <div className="flex flex-wrap gap-2">
-                      {novel.tags.map((tag) => (
+                    <div className="flex flex-wrap gap-1.5 mt-3">
+                      {novel.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}
-                          className="text-xs px-2.5 py-1 rounded-full bg-white/5 text-moon/60 border border-white/5"
+                          className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-moon/40 border border-white/5"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
                   </div>
-                </Link>
-              </motion.div>
+                </div>
+              </Link>
             ))}
           </div>
+        )}
 
-          {/* Mobile view all link */}
-          <div className="text-center mt-8 sm:hidden">
-            <Link
-              href="/novels"
-              className="neon-btn px-8 py-3 rounded-xl inline-flex items-center gap-2"
-            >
-              View All Novels <span>&rarr;</span>
-            </Link>
-          </div>
+        <div className="text-center mt-10 text-moon/30 text-sm">
+          Showing {filteredNovels.length} of {novels.length} novels
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 hero-glow" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto px-6 text-center relative z-10"
-        >
-          <div className="glass-card rounded-3xl p-12 lg:p-16">
-            <Sparkles className="w-12 h-12 text-neon-cyan mx-auto mb-6" />
-            <h2
-              className="text-3xl lg:text-5xl font-bold mb-4"
-              style={{ fontFamily: "Orbitron" }}
-            >
-              <span className="text-gradient">Ready</span>{" "}
-              <span className="text-stardust">to Cultivate?</span>
-            </h2>
-            <p className="text-moon/60 text-lg mb-8 max-w-2xl mx-auto">
-              Join thousands of readers discovering the best Chinese web novels.
-              Free to read, updated daily.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/novels"
-                className="neon-btn px-10 py-4 rounded-xl text-lg inline-flex items-center justify-center gap-2"
-              >
-                <BookOpen className="w-5 h-5" />
-                Browse Novels
-              </Link>
-              <Link
-                href="/novels"
-                className="glass-card px-10 py-4 rounded-xl text-lg text-moon hover:text-neon-cyan transition-all"
-              >
-                Top Rankings
-              </Link>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
