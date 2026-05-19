@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 
@@ -12,10 +12,26 @@ const orbitron = Orbitron({
   variable: "--font-orbitron",
 });
 
+const BASE_URL = "https://nexus-tales.vercel.app";
+const SITE_NAME = "Nexus Tales";
+const TAGLINE = "Read Cultivation & Fantasy Novels Online Free";
+const DESCRIPTION =
+  "Discover translated Chinese cultivation novels, xianxia, wuxia, and fantasy stories. Free classics like Journey to the West, Art of War & Tao Te Ching. Read free chapters daily.";
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a1a",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
-  title: "Nexus Tales — Read Cultivation & Fantasy Novels Online Free",
-  description:
-    "Discover translated Chinese cultivation novels, xianxia, wuxia, and fantasy stories. Read free chapters daily. Your gateway to the world of immortal heroes and epic adventures.",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: `${SITE_NAME} — ${TAGLINE}`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DESCRIPTION,
   keywords: [
     "cultivation novels",
     "xianxia",
@@ -23,13 +39,49 @@ export const metadata: Metadata = {
     "chinese novels translated",
     "fantasy novels",
     "web novels",
-    "read free novels",
+    "free novels",
+    "Journey to the West",
+    "Art of War",
+    "Tao Te Ching",
+    "Romance of the Three Kingdoms",
+    "Dream of the Red Chamber",
+    "Water Margin",
+    "Martial God Asura",
+    "Against the Gods",
+    "I Shall Seal the Heavens",
+    "Reverend Insanity",
   ],
+  authors: [{ name: "Nexus Tales" }],
+  creator: "Nexus Tales",
+  publisher: "Nexus Tales",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  alternates: {
+    canonical: BASE_URL,
+    types: { "application/rss+xml": `${BASE_URL}/rss.xml` },
+  },
   openGraph: {
-    title: "Nexus Tales — Read Cultivation & Fantasy Novels Online Free",
-    description:
-      "Discover translated Chinese cultivation novels, xianxia, wuxia, and fantasy stories.",
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — ${TAGLINE}`,
+    description: DESCRIPTION,
+    url: BASE_URL,
     type: "website",
+    locale: "en_US",
+    images: [{ url: `${BASE_URL}/og-default.png`, width: 1200, height: 630, alt: SITE_NAME }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@nexustales",
+    creator: "@nexustales",
+    title: `${SITE_NAME} — ${TAGLINE}`,
+    description: DESCRIPTION,
+    images: [`${BASE_URL}/og-default.png`],
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -40,7 +92,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* JSON-LD structured data for the site */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: SITE_NAME,
+              url: BASE_URL,
+              description: DESCRIPTION,
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${BASE_URL}/novels?q={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${orbitron.variable} antialiased`}>
+        {/* Google AdSense verification placeholder */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous" />
         <Starfield />
         <Header />
         <main className="relative z-10 min-h-screen">{children}</main>

@@ -1,10 +1,42 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { BookOpen, Star, TrendingUp, Search, ChevronLeft } from "lucide-react";
 import { getNovelBySlug, getChapterList, getAllNovels } from "@/lib/novels";
 import { notFound } from "next/navigation";
 
+const BASE_URL = "https://nexus-tales.vercel.app";
+
 export function generateStaticParams() {
   return getAllNovels().map((n) => ({ slug: n.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const novel = getNovelBySlug(params.slug);
+  if (!novel) return {};
+
+  const isFree = novel.zone === "free";
+  const title = `${novel.title_en} ${isFree ? "— Read Free" : "— Read Online"} | Nexus Tales`;
+  const desc = novel.description_en.slice(0, 160);
+
+  return {
+    title: novel.title_en,
+    description: desc,
+    keywords: [novel.title_en, novel.author_en, novel.genre, ...novel.tags, "read online", "free", "translated"],
+    alternates: { canonical: `${BASE_URL}/novel/${novel.slug}` },
+    openGraph: {
+      title,
+      description: desc,
+      url: `${BASE_URL}/novel/${novel.slug}`,
+      type: "book",
+      images: [{ url: `${BASE_URL}/og-default.png`, width: 1200, height: 630, alt: novel.title_en }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: desc,
+      images: [`${BASE_URL}/og-default.png`],
+    },
+  };
 }
 
 export default function NovelDetailPage({ params }: { params: { slug: string } }) {
@@ -16,8 +48,27 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
 
   const chapters = getChapterList(novel.slug);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: novel.title_en,
+    author: { "@type": "Person", name: novel.author_en },
+    description: novel.description_en.slice(0, 200),
+    genre: novel.genre,
+    keywords: novel.tags.join(", "),
+    inLanguage: "en",
+    isAccessibleForFree: novel.zone === "free",
+    url: `${BASE_URL}/novel/${novel.slug}`,
+    publisher: { "@type": "Organization", name: "Nexus Tales" },
+    numberOfPages: chapters.length,
+  };
+
   return (
     <div className="pt-24 pb-24">
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(jsonLd),
+      }} />
       <div className="max-w-7xl mx-auto px-6">
         {/* Back */}
         <Link
