@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { BookOpen, Star, TrendingUp, Search, ChevronLeft } from "lucide-react";
-import { getNovelBySlug, getChapterList, getAllNovels } from "@/lib/novels";
+import { getNovelBySlug, getChapterList, getAllNovels, getCoverUrl } from "@/lib/novels";
 import { notFound } from "next/navigation";
 
 const BASE_URL = "https://nexus-tales.vercel.app";
@@ -47,6 +47,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
   }
 
   const chapters = getChapterList(novel.slug);
+  const coverUrl = getCoverUrl(novel.slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -84,9 +85,11 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
           {/* Cover */}
           <div>
             <div className="aspect-[3/4] rounded-2xl overflow-hidden glass-card">
-              <div className="w-full h-full bg-gradient-to-br from-neon-cyan/30 via-neon-purple/20 to-cosmic flex items-center justify-center">
-                <BookOpen className="w-16 h-16 text-white/10" />
-              </div>
+                <img
+                  src={coverUrl}
+                  alt={`Cover: ${novel.title_en}`}
+                  className="w-full h-full object-cover"
+                />
             </div>
             <div className="mt-4">
               <Link

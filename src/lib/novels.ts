@@ -35,6 +35,16 @@ const DATA_DIR = path.join(process.cwd(), 'data');
 const NOVELS_FILE = path.join(DATA_DIR, 'novels.json');
 const CHAPTERS_DIR = path.join(DATA_DIR, 'chapters');
 
+const PUBLIC_DIR = path.join(process.cwd(), 'public');
+
+export function getCoverUrl(slug: string): string {
+  const jpgPath = path.join(PUBLIC_DIR, 'covers', `${slug}.jpg`);
+  const svgPath = path.join(PUBLIC_DIR, 'covers', `${slug}.svg`);
+  if (fs.existsSync(jpgPath)) return `/covers/${slug}.jpg`;
+  if (fs.existsSync(svgPath)) return `/covers/${slug}.svg`;
+  return `/covers/${slug}.jpg`; // fallback
+}
+
 // ========== 工具函数 ==========
 function readJsonFile<T>(filePath: string): T | null {
   try {

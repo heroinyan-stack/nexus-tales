@@ -28,6 +28,7 @@ interface Novel {
   readers: number;
   description_en: string;
   zone: string;
+  cover_ext?: string;
 }
 
 interface Genre {
@@ -172,9 +173,11 @@ export default function HomePage() {
                 <div className="glass-card rounded-2xl overflow-hidden h-full hover:border-amber-500/30 transition-all duration-300 border-amber-500/10">
                   {/* Cover */}
                   <div className="relative h-36 overflow-hidden bg-gradient-to-br from-amber-900/30 via-amber-800/20 to-cosmic">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Sparkles className="w-8 h-8 text-amber-500/20" />
-                    </div>
+                    <img
+                      src={`/covers/${novel.slug}.${novel.cover_ext || 'jpg'}`}
+                      alt={`Cover: ${novel.title_en}`}
+                      className="w-full h-full object-cover"
+                    />
                     <div className="absolute top-2 left-2">
                       <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 font-medium">
                         FREE
@@ -291,10 +294,11 @@ export default function HomePage() {
               >
                 <div className="glass-card rounded-2xl overflow-hidden h-full hover:border-neon-cyan/30 transition-all duration-300">
                   <div className="relative h-44 overflow-hidden bg-cosmic">
-                    <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/20 via-neon-purple/10 to-cosmic" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Lock className="w-10 h-10 text-white/10" />
-                    </div>
+                    <img
+                      src={`/covers/${novel.slug}.${novel.cover_ext || 'jpg'}`}
+                      alt={`Cover: ${novel.title_en}`}
+                      className="w-full h-full object-cover"
+                    />
                     <div className="absolute top-3 left-3">
                       <span
                         className={`text-xs px-2.5 py-1 rounded-full font-medium ${
