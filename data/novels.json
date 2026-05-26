@@ -17,7 +17,7 @@
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.8,
-    "total_chapters": 21,
+    "total_chapters": 22,
     "readers": 1200000,
     "description_zh": "九洲大陆，武道为尊。弱者如蝼蚁，强者如神明。青州少年楚枫，一个被所有人看不起的外门弟子，凭借一件神秘至宝，觉醒了万中无一的天赐神体，从此逆天改命，踏上了一条让天地颤抖的武神之路。",
     "description_en": "In the Nine Provinces, martial strength reigns supreme. The weak are trampled like ants, while the strong stand as gods. Chu Feng, a despised outer disciple of the Azure Dragon School, awakens a legendary divine physique through a mysterious treasure, defying destiny and embarking on an epic journey to become the Martial God.",
@@ -25,7 +25,7 @@
     "source_url": "https://www.biquge5200.com/bqge/1/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-21T13:57:03.989452+00:00",
+    "updated_at": "2026-05-26T06:19:06.140723+00:00",
     "zone": "vip"
   },
   {
@@ -45,7 +45,7 @@
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.9,
-    "total_chapters": 21,
+    "total_chapters": 22,
     "readers": 980000,
     "description_zh": "少年云澈，在世人眼中是一个废人。天生经脉尽断，受尽欺凌与嘲笑。直到一颗来自天外的邪神之种，与他融为一体。从那一刻起，一个被踩在脚下的废物少年，将让整个苍风大陆为之颤抖。",
     "description_en": "Yun Che was a crippled youth despised by all until a mysterious pearl from beyond the heavens fused with his body. From that moment forward, the boy once trampled underfoot would make an entire continent tremble before his might.",
@@ -53,8 +53,34 @@
     "source_url": "https://www.biquge5200.com/bqge/2/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-21T13:57:03.992411+00:00",
+    "updated_at": "2026-05-26T06:19:06.145542+00:00",
     "zone": "vip"
+  },
+  {
+    "id": 13,
+    "slug": "journey-to-the-west",
+    "title_en": "Journey to the West",
+    "author_en": "Wu Cheng'en",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Mythology",
+      "Adventure",
+      "Buddhism",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.9,
+    "total_chapters": 13,
+    "readers": 5000000,
+    "description_en": "The epic tale of the Monkey King Sun Wukong, a Buddhist monk Tang Sanzang, and their companions Pigsy and Sandy as they journey westward to India to obtain sacred Buddhist scriptures. One of the Four Great Classical Novels of Chinese literature, this mythological adventure has captivated readers worldwide for over 400 years.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/23962",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
   },
   {
     "id": 3,
@@ -74,7 +100,7 @@
     "is_adult": false,
     "status": "completed",
     "rating": 4.9,
-    "total_chapters": 21,
+    "total_chapters": 22,
     "readers": 850000,
     "description_zh": "书生孟浩，三次科举不中，心灰意冷之际，被南域靠山宗强行收为弟子。一介凡人，如何在这残酷的修真界生存？且看他凭借一面铜镜，走上一条与众不同的封天之路。",
     "description_en": "Meng Hao, a scholar who failed the imperial exams three times, was forcibly recruited by the Reliance Sect. Armed with nothing but a bronze mirror and unwavering determination, he would forge his own unique path to sealing the heavens.",
@@ -82,8 +108,39 @@
     "source_url": "https://www.biquge5200.com/bqge/3/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-21T13:57:04.096887+00:00",
+    "updated_at": "2026-05-26T06:19:06.148290+00:00",
     "zone": "vip"
+  },
+  {
+    "slug": "strange-tales-chinese-studio",
+    "title_en": "Strange Tales from a Chinese Studio",
+    "title_cn": "聊斋志异",
+    "author_en": "Pu Songling",
+    "author_cn": "蒲松龄",
+    "cover": "/covers/strange-tales.jpg",
+    "zone": "free",
+    "tags": [
+      "supernatural",
+      "fox-spirits",
+      "classic",
+      "horror",
+      "romance"
+    ],
+    "description": "Nearly 500 supernatural tales from Qing Dynasty China. Fox spirits, ghosts, and immortals walk among mortals in this timeless classic of Chinese weird fiction.",
+    "total_chapters": 12,
+    "rating": 4.6,
+    "reads": 156000,
+    "status": "completed",
+    "genre": "classic",
+    "description_en": "Nearly 500 supernatural tales from Qing Dynasty China. Fox spirits, ghosts, and immortals walk among mortals in this timeless classic of Chinese weird fiction.",
+    "is_adult": false,
+    "readers": 156000,
+    "cover_url": "/covers/strange-tales.jpg",
+    "source_url": "",
+    "source_site": "Nexus Tales",
+    "created_at": "2026-05-25T00:00:00Z",
+    "updated_at": "2026-05-25T00:00:00Z",
+    "id": 5
   },
   {
     "id": 4,
@@ -103,7 +160,7 @@
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.7,
-    "total_chapters": 21,
+    "total_chapters": 22,
     "readers": 720000,
     "description_zh": "五百年前，方源是魔道巨擘，纵横天下无可匹敌。然而，天下正道围攻，他在绝境中催动春秋蝉——一只让他重回五百年前的蛊虫。这一世，他将不惜一切代价追求永生。",
     "description_en": "Five hundred years ago, Fang Yuan was a demon lord without equal. Cornered by the righteous factions, he activated the Spring Autumn Cicada, a gu worm that sent him back five centuries. In this new life, he will stop at nothing to achieve eternal life.",
@@ -111,8 +168,34 @@
     "source_url": "https://www.biquge5200.com/bqge/4/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-21T13:57:04.098276+00:00",
+    "updated_at": "2026-05-26T06:19:06.151604+00:00",
     "zone": "vip"
+  },
+  {
+    "id": 14,
+    "slug": "romance-of-the-three-kingdoms",
+    "title_en": "Romance of the Three Kingdoms",
+    "author_en": "Luo Guanzhong",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Historical",
+      "War",
+      "Strategy",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.8,
+    "total_chapters": 9,
+    "readers": 3000000,
+    "description_en": "The greatest historical epic of Chinese literature, chronicling the fall of the Han Dynasty and the rise of the Three Kingdoms. Filled with legendary heroes like Guan Yu and Zhuge Liang, battlefield tactics, political intrigue, and timeless lessons in loyalty and strategy. An essential read for anyone interested in Chinese history and culture.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/24030",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
   },
   {
     "id": 5,
@@ -143,6 +226,37 @@
     "zone": "vip"
   },
   {
+    "slug": "investiture-of-the-gods",
+    "title_en": "Investiture of the Gods",
+    "title_cn": "封神演义",
+    "author_en": "Xu Zhonglin",
+    "author_cn": "许仲琳",
+    "cover": "/covers/investiture-gods.jpg",
+    "zone": "free",
+    "tags": [
+      "mythology",
+      "gods",
+      "epic",
+      "classic",
+      "war"
+    ],
+    "description": "The great war between the Shang and Zhou dynasties becomes a battlefield for gods and demons. Jiang Ziya must bestow divine titles upon the fallen.",
+    "total_chapters": 12,
+    "rating": 4.7,
+    "reads": 189000,
+    "status": "completed",
+    "genre": "xianxia",
+    "description_en": "The great war between Shang and Zhou becomes a battlefield for gods and demons. Jiang Ziya must bestow divine titles upon the fallen in this epic of Chinese mythology.",
+    "is_adult": false,
+    "readers": 189000,
+    "cover_url": "/covers/investiture-gods.jpg",
+    "source_url": "",
+    "source_site": "Nexus Tales",
+    "created_at": "2026-05-25T00:00:00Z",
+    "updated_at": "2026-05-25T00:00:00Z",
+    "id": 9
+  },
+  {
     "id": 6,
     "slug": "the-remarried-empress",
     "title_zh": "再婚皇后",
@@ -169,6 +283,33 @@
     "created_at": "2025-05-17",
     "updated_at": "2026-05-23T02:49:45.144050+00:00",
     "zone": "vip"
+  },
+  {
+    "id": 15,
+    "slug": "dream-of-the-red-chamber",
+    "title_en": "Dream of the Red Chamber",
+    "author_en": "Cao Xueqin",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Romance",
+      "Drama",
+      "Family",
+      "Free",
+      "Tragedy"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.7,
+    "total_chapters": 7,
+    "readers": 2500000,
+    "description_en": "Considered the pinnacle of Chinese fiction, this sprawling masterpiece follows the rise and fall of the aristocratic Jia family. A profound exploration of love, fate, and the impermanence of worldly glory. Set against the backdrop of 18th century Qing Dynasty society, it weaves together over 400 characters in a tapestry of unparalleled complexity.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/9603",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
   },
   {
     "id": 7,
@@ -225,6 +366,62 @@
     "created_at": "2025-05-01",
     "updated_at": "2026-05-23T02:49:45.145345+00:00",
     "zone": "vip"
+  },
+  {
+    "slug": "gullivers-travels",
+    "title_en": "Gulliver's Travels",
+    "title_cn": "格列佛游记",
+    "author_en": "Jonathan Swift",
+    "author_cn": "乔纳森·斯威夫特",
+    "cover": "/covers/gulliver.jpg",
+    "zone": "free",
+    "tags": [
+      "adventure",
+      "fantasy",
+      "classic",
+      "satire"
+    ],
+    "description": "Lemuel Gulliver voyages to Lilliput, Brobdingnag, Laputa, and beyond — a timeless adventure of wonder, satire, and dark truth about human nature.",
+    "total_chapters": 8,
+    "rating": 4.3,
+    "reads": 320000,
+    "status": "completed",
+    "genre": "fantasy",
+    "description_en": "Lemuel Gulliver voyages to Lilliput, Brobdingnag, Laputa, and beyond — a timeless adventure of wonder, satire, and dark truth about human nature.",
+    "is_adult": false,
+    "readers": 320000,
+    "cover_url": "/covers/gulliver.jpg",
+    "source_url": "",
+    "source_site": "Nexus Tales",
+    "created_at": "2026-05-25T00:00:00Z",
+    "updated_at": "2026-05-25T00:00:00Z",
+    "id": 14
+  },
+  {
+    "id": 16,
+    "slug": "water-margin",
+    "title_en": "Water Margin (Outlaws of the Marsh)",
+    "author_en": "Shi Nai'an",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Action",
+      "Adventure",
+      "Rebellion",
+      "Free"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.6,
+    "total_chapters": 7,
+    "readers": 2000000,
+    "description_en": "The legendary tale of 108 outlaws who gather at Mount Liangshan to form an army of righteous rebels. Fighting against corrupt officials and oppressive rulers, these colorful heroes embody the timeless spirit of brotherhood and justice. The original Chinese 'band of misfits' epic, predating modern team-up stories by centuries.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/23864",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
   },
   {
     "id": 9,
@@ -284,6 +481,63 @@
     "zone": "vip"
   },
   {
+    "id": 17,
+    "slug": "art-of-war",
+    "title_en": "The Art of War",
+    "author_en": "Sun Tzu",
+    "genre": "free-classics",
+    "tags": [
+      "Classics",
+      "Philosophy",
+      "Strategy",
+      "Military",
+      "Free",
+      "SEO Gold"
+    ],
+    "is_adult": false,
+    "status": "completed",
+    "rating": 4.9,
+    "total_chapters": 10,
+    "readers": 10000000,
+    "description_en": "The world's most influential treatise on military strategy, written 2,500 years ago and still studied in military academies and business schools worldwide. Sun Tzu's timeless wisdom extends far beyond the battlefield—his principles of strategic thinking have influenced leaders from Napoleon to modern CEOs. Short, profound, and endlessly quotable.",
+    "cover_url": "",
+    "source_url": "https://www.gutenberg.org/ebooks/132",
+    "source_site": "public_domain",
+    "created_at": "2025-05-18",
+    "updated_at": "2025-05-18",
+    "zone": "free"
+  },
+  {
+    "slug": "creation-of-the-gods",
+    "title_en": "Creation of the Gods",
+    "title_cn": "开天辟地",
+    "author_en": "Nexus Tales",
+    "author_cn": "裂缝故事",
+    "cover": "/covers/creation-gods.jpg",
+    "zone": "free",
+    "tags": [
+      "mythology",
+      "creation",
+      "origins",
+      "pantheon"
+    ],
+    "description": "Before heaven and earth, there was chaos. Witness the birth of Pangu, the mending of the sky by Nüwa, and the first gods taking their celestial thrones.",
+    "total_chapters": 7,
+    "rating": 4.4,
+    "reads": 41000,
+    "status": "completed",
+    "genre": "classic",
+    "description_en": "Before heaven and earth, there was chaos. Witness the birth of Pangu, the mending of the sky by Nüwa, and the first gods taking their celestial thrones.",
+    "is_adult": false,
+    "readers": 41000,
+    "cover_url": "/covers/creation-gods.jpg",
+    "source_url": "",
+    "source_site": "Nexus Tales",
+    "created_at": "2026-05-25T00:00:00Z",
+    "updated_at": "2026-05-25T00:00:00Z",
+    "id": 19
+  },
+  {
     "id": 11,
     "slug": "city-of-sin",
     "title_zh": "罪恶之城",
@@ -340,138 +594,6 @@
     "zone": "vip"
   },
   {
-    "id": 13,
-    "slug": "journey-to-the-west",
-    "title_en": "Journey to the West",
-    "author_en": "Wu Cheng'en",
-    "genre": "free-classics",
-    "tags": [
-      "Classics",
-      "Mythology",
-      "Adventure",
-      "Buddhism",
-      "Free"
-    ],
-    "is_adult": false,
-    "status": "completed",
-    "rating": 4.9,
-    "total_chapters": 13,
-    "readers": 5000000,
-    "description_en": "The epic tale of the Monkey King Sun Wukong, a Buddhist monk Tang Sanzang, and their companions Pigsy and Sandy as they journey westward to India to obtain sacred Buddhist scriptures. One of the Four Great Classical Novels of Chinese literature, this mythological adventure has captivated readers worldwide for over 400 years.",
-    "cover_url": "",
-    "source_url": "https://www.gutenberg.org/ebooks/23962",
-    "source_site": "public_domain",
-    "created_at": "2025-05-18",
-    "updated_at": "2025-05-18",
-    "zone": "free"
-  },
-  {
-    "id": 14,
-    "slug": "romance-of-the-three-kingdoms",
-    "title_en": "Romance of the Three Kingdoms",
-    "author_en": "Luo Guanzhong",
-    "genre": "free-classics",
-    "tags": [
-      "Classics",
-      "Historical",
-      "War",
-      "Strategy",
-      "Free"
-    ],
-    "is_adult": false,
-    "status": "completed",
-    "rating": 4.8,
-    "total_chapters": 9,
-    "readers": 3000000,
-    "description_en": "The greatest historical epic of Chinese literature, chronicling the fall of the Han Dynasty and the rise of the Three Kingdoms. Filled with legendary heroes like Guan Yu and Zhuge Liang, battlefield tactics, political intrigue, and timeless lessons in loyalty and strategy. An essential read for anyone interested in Chinese history and culture.",
-    "cover_url": "",
-    "source_url": "https://www.gutenberg.org/ebooks/24030",
-    "source_site": "public_domain",
-    "created_at": "2025-05-18",
-    "updated_at": "2025-05-18",
-    "zone": "free"
-  },
-  {
-    "id": 15,
-    "slug": "dream-of-the-red-chamber",
-    "title_en": "Dream of the Red Chamber",
-    "author_en": "Cao Xueqin",
-    "genre": "free-classics",
-    "tags": [
-      "Classics",
-      "Romance",
-      "Drama",
-      "Family",
-      "Free",
-      "Tragedy"
-    ],
-    "is_adult": false,
-    "status": "completed",
-    "rating": 4.7,
-    "total_chapters": 7,
-    "readers": 2500000,
-    "description_en": "Considered the pinnacle of Chinese fiction, this sprawling masterpiece follows the rise and fall of the aristocratic Jia family. A profound exploration of love, fate, and the impermanence of worldly glory. Set against the backdrop of 18th century Qing Dynasty society, it weaves together over 400 characters in a tapestry of unparalleled complexity.",
-    "cover_url": "",
-    "source_url": "https://www.gutenberg.org/ebooks/9603",
-    "source_site": "public_domain",
-    "created_at": "2025-05-18",
-    "updated_at": "2025-05-18",
-    "zone": "free"
-  },
-  {
-    "id": 16,
-    "slug": "water-margin",
-    "title_en": "Water Margin (Outlaws of the Marsh)",
-    "author_en": "Shi Nai'an",
-    "genre": "free-classics",
-    "tags": [
-      "Classics",
-      "Action",
-      "Adventure",
-      "Rebellion",
-      "Free"
-    ],
-    "is_adult": false,
-    "status": "completed",
-    "rating": 4.6,
-    "total_chapters": 7,
-    "readers": 2000000,
-    "description_en": "The legendary tale of 108 outlaws who gather at Mount Liangshan to form an army of righteous rebels. Fighting against corrupt officials and oppressive rulers, these colorful heroes embody the timeless spirit of brotherhood and justice. The original Chinese 'band of misfits' epic, predating modern team-up stories by centuries.",
-    "cover_url": "",
-    "source_url": "https://www.gutenberg.org/ebooks/23864",
-    "source_site": "public_domain",
-    "created_at": "2025-05-18",
-    "updated_at": "2025-05-18",
-    "zone": "free"
-  },
-  {
-    "id": 17,
-    "slug": "art-of-war",
-    "title_en": "The Art of War",
-    "author_en": "Sun Tzu",
-    "genre": "free-classics",
-    "tags": [
-      "Classics",
-      "Philosophy",
-      "Strategy",
-      "Military",
-      "Free",
-      "SEO Gold"
-    ],
-    "is_adult": false,
-    "status": "completed",
-    "rating": 4.9,
-    "total_chapters": 10,
-    "readers": 10000000,
-    "description_en": "The world's most influential treatise on military strategy, written 2,500 years ago and still studied in military academies and business schools worldwide. Sun Tzu's timeless wisdom extends far beyond the battlefield—his principles of strategic thinking have influenced leaders from Napoleon to modern CEOs. Short, profound, and endlessly quotable.",
-    "cover_url": "",
-    "source_url": "https://www.gutenberg.org/ebooks/132",
-    "source_site": "public_domain",
-    "created_at": "2025-05-18",
-    "updated_at": "2025-05-18",
-    "zone": "free"
-  },
-  {
     "id": 18,
     "slug": "tao-te-ching",
     "title_en": "Tao Te Ching",
@@ -497,6 +619,37 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free"
+  },
+  {
+    "slug": "monkey-kings-birth",
+    "title_en": "The Monkey King's Birth",
+    "title_cn": "美猴王出世",
+    "author_en": "Nexus Tales",
+    "author_cn": "裂缝故事",
+    "cover": "/covers/monkey-king-birth.jpg",
+    "zone": "free",
+    "tags": [
+      "cultivation",
+      "origins",
+      "mythology",
+      "adventure",
+      "humor"
+    ],
+    "description": "From a stone egg atop the Mountain of Flowers and Fruit, Sun Wukong is born. Follow his earliest days: the discovery of the Water Curtain Cave, his quest for immortality, and the mischief that makes him legend.",
+    "total_chapters": 8,
+    "rating": 4.8,
+    "reads": 87000,
+    "status": "completed",
+    "genre": "xianxia",
+    "description_en": "From a stone egg atop the Mountain of Flowers and Fruit, Sun Wukong is born. Follow his earliest days: the Water Curtain Cave, the quest for immortality, and the mischief that makes him legend.",
+    "is_adult": false,
+    "readers": 87000,
+    "cover_url": "/covers/monkey-king-birth.jpg",
+    "source_url": "",
+    "source_site": "Nexus Tales",
+    "created_at": "2026-05-25T00:00:00Z",
+    "updated_at": "2026-05-25T00:00:00Z",
+    "id": 23
   },
   {
     "id": 19,
@@ -544,7 +697,9 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -566,7 +721,39 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
+  },
+  {
+    "slug": "white-snake-legend",
+    "title_en": "Legend of the White Snake",
+    "title_cn": "白蛇传",
+    "author_en": "Nexus Tales",
+    "author_cn": "裂缝故事",
+    "cover": "/covers/white-snake.jpg",
+    "zone": "free",
+    "tags": [
+      "romance",
+      "supernatural",
+      "immortal",
+      "tragedy"
+    ],
+    "description": "A thousand-year-old white snake spirit falls in love with a mortal man at West Lake. One of China's Four Great Folktales, retold for modern readers.",
+    "total_chapters": 8,
+    "rating": 4.6,
+    "reads": 124000,
+    "status": "completed",
+    "genre": "romance",
+    "description_en": "A thousand-year-old white snake spirit falls in love with a mortal man at West Lake. One of China's Four Great Folktales, retold for modern readers.",
+    "is_adult": false,
+    "readers": 124000,
+    "cover_url": "/covers/white-snake.jpg",
+    "source_url": "",
+    "source_site": "Nexus Tales",
+    "created_at": "2026-05-25T00:00:00Z",
+    "updated_at": "2026-05-25T00:00:00Z",
+    "id": 27
   },
   {
     "slug": "the-book-of-songs",
@@ -588,7 +775,9 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   },
   {
     "slug": "chinese-poetry",
@@ -610,7 +799,9 @@
     "total_chapters": 1,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   },
   {
     "slug": "zhuangzi",
@@ -632,7 +823,9 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   },
   {
     "slug": "the-flight-of-dragons",
@@ -654,7 +847,9 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -676,7 +871,9 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   },
   {
     "slug": "the-story-of-the-stone",
@@ -698,6 +895,8 @@
     "total_chapters": 15,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0
+    "rating": 0.0,
+    "is_adult": false,
+    "readers": 1000
   }
 ]
