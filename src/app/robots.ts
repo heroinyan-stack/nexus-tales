@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://nexus-tales.vercel.app/sitemap.xml",
+    sitemap: "https://novelhub.beauty/sitemap.xml",
   };
 }

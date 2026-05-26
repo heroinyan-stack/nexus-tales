@@ -1,10 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { BookOpen, Star, TrendingUp, Search, ChevronLeft } from "lucide-react";
+import { BookOpen, Star, TrendingUp, Search, ChevronLeft, Lock } from "lucide-react";
 import { getNovelBySlug, getChapterList, getAllNovels, getCoverUrl } from "@/lib/novels";
 import { notFound } from "next/navigation";
+import ChapterListClient from "@/components/ChapterListClient";
 
-const BASE_URL = "https://nexus-tales.vercel.app";
+const BASE_URL = "https://novelhub.beauty";
 
 export function generateStaticParams() {
   return getAllNovels().map((n) => ({ slug: n.slug }));
@@ -91,12 +92,22 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
                   className="w-full h-full object-cover"
                 />
             </div>
+            {novel.zone === "vip" && (
+              <div className="mt-4 mb-2">
+                <div className="flex items-center gap-2 p-3 rounded-xl bg-neon-cyan/5 border border-neon-cyan/10">
+                  <Lock className="w-4 h-4 text-neon-cyan" />
+                  <span className="text-xs text-neon-cyan/80">
+                    First <strong>5 chapters free</strong> — Premium to unlock all
+                  </span>
+                </div>
+              </div>
+            )}
             <div className="mt-4">
               <Link
                 href={`/novel/${novel.slug}/chapter/1`}
                 className="block w-full neon-btn py-3 rounded-xl text-sm font-bold text-center"
               >
-                ▶ Start Reading
+                ▶ {novel.zone === "vip" ? "Read Free Chapters" : "Start Reading"}
               </Link>
             </div>
           </div>
@@ -188,24 +199,12 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {chapters.map((ch) => (
-              <Link
-                key={ch.num}
-                href={`/novel/${novel.slug}/chapter/${ch.num}`}
-                className="flex items-center justify-between p-4 rounded-xl glass-card hover:border-neon-cyan/30 transition-all group"
-              >
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium text-stardust group-hover:text-neon-cyan transition-colors">
-                    Ch. {ch.num}
-                  </div>
-                  <div className="text-xs text-moon/40 mt-0.5 truncate">
-                    {ch.title_en}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ChapterListClient
+            slug={novel.slug}
+            zone={novel.zone}
+            chapters={chapters}
+            totalChapters={novel.total_chapters}
+          />
         </section>
       </div>
     </div>

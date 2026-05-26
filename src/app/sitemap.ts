@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllNovels, getChapterList } from "@/lib/novels";
 
-const BASE_URL = "https://nexus-tales.vercel.app";
+const BASE_URL = "https://novelhub.beauty";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const novels = getAllNovels();

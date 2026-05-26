@@ -45,12 +45,15 @@ export default function ChapterReaderClient({
   novelSlug,
   chapterNum,
   totalChapters,
+  novelTitle = "",
+  zone = "free",
 }: {
   content: string;
   novelSlug: string;
   chapterNum: number;
   totalChapters: number;
   novelTitle?: string;
+  zone?: string;
 }) {
   const [theme, setTheme] = useState<Theme>("dark");
   const [fontFamily, setFontFamily] = useState<FontFamily>("serif");

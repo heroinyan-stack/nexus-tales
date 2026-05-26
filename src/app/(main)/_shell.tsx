@@ -5,7 +5,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 
-export const BASE_URL = "https://nexus-tales.vercel.app";
+export const BASE_URL = "https://novelhub.beauty";
 export const SITE_NAME = "Nexus Tales";
 export const TAGLINE = "Read Cultivation & Fantasy Novels Online Free";
 export const DESCRIPTION =

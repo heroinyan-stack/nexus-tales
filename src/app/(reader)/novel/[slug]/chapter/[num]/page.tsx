@@ -1,13 +1,10 @@
-import Link from "next/link";
 import type { Metadata } from "next";
-import { ChevronLeft, ChevronRight, Sun, Moon, Type, ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getNovelBySlug, getChapterContent } from "@/lib/novels";
-
-// This is a client component for the reading controls
 import ChapterReaderClient from "./ChapterReaderClient";
+import ChapterGate from "@/components/ChapterGate";
 
-const BASE_URL = "https://nexus-tales.vercel.app";
+const BASE_URL = "https://novelhub.beauty";
 
 export async function generateMetadata({ params }: { params: { slug: string; num: string } }): Promise<Metadata> {
   const novel = getNovelBySlug(params.slug);
@@ -66,6 +63,15 @@ export default async function ChapterPage({ params }: { params: { slug: string; 
         __html: JSON.stringify(jsonLdArticle),
       }} />
       
+      {/* Access gate — locks chapter 6+ for non-premium users */}
+      <ChapterGate
+        chapterNum={chapterNum}
+        novelSlug={params.slug}
+        novelTitle={novel.title_en}
+        zone={novel.zone}
+        totalChapters={novel.total_chapters}
+      />
+
       {/* Full-screen reader - no header/footer, fully immersive */}
       <ChapterReaderClient
         content={content}
@@ -73,6 +79,7 @@ export default async function ChapterPage({ params }: { params: { slug: string; 
         chapterNum={chapterNum}
         totalChapters={novel.total_chapters}
         novelTitle={novel.title_en}
+        zone={novel.zone}
       />
     </>
   );
