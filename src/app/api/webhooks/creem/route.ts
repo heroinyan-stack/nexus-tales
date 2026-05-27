@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import * as crypto from "crypto";
 import { prisma } from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 // ── Signature verification ──────────────────────────────────
 function verifySignature(
   payload: string,
