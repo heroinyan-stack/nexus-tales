@@ -26,7 +26,8 @@
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
     "updated_at": "2026-05-26T06:19:06.140723+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 2,
@@ -54,7 +55,8 @@
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
     "updated_at": "2026-05-26T06:19:06.145542+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 13,
@@ -80,7 +82,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "jpg"
   },
   {
     "id": 3,
@@ -109,7 +112,8 @@
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
     "updated_at": "2026-05-26T06:19:06.148290+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -169,7 +173,8 @@
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
     "updated_at": "2026-05-26T06:19:06.151604+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 14,
@@ -195,7 +200,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "jpg"
   },
   {
     "id": 5,
@@ -223,7 +229,8 @@
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
     "updated_at": "2026-05-27T06:25:30.403441+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "jpg"
   },
   {
     "slug": "investiture-of-the-gods",
@@ -282,7 +289,8 @@
     "source_site": "biquge5200",
     "created_at": "2025-05-17",
     "updated_at": "2026-05-27T06:25:30.403997+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 15,
@@ -309,7 +317,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "svg"
   },
   {
     "id": 7,
@@ -337,7 +346,8 @@
     "source_site": "manual",
     "created_at": "2025-05-17",
     "updated_at": "2026-05-27T06:25:30.404453+00:00",
-    "zone": "vip"
+    "zone": "vip",
+    "cover_ext": "jpg"
   },
   {
     "id": 8,
@@ -395,7 +405,8 @@
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
-    "id": 14
+    "id": 14,
+    "cover_ext": "jpg"
   },
   {
     "id": 16,
@@ -421,7 +432,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "jpg"
   },
   {
     "id": 9,
@@ -440,7 +452,7 @@
     "is_adult": false,
     "status": "completed",
     "rating": 4.8,
-    "total_chapters": 6,
+    "total_chapters": 7,
     "readers": 780000,
     "description_zh": "王林，一个资质平庸的普通少年，为了给父母报仇，他踏上了修真之路。逆天而行，以凡人之躯走完了修真界最艰难的道路，开创了一条前所未有的仙逆之路。",
     "description_en": "Wang Lin, an ordinary youth with mediocre talent, steps onto the path of cultivation to avenge his parents. Defying the heavens at every turn, he walks the most grueling road in the cultivation world, creating a path of immortal defiance never seen before.",
@@ -448,8 +460,9 @@
     "source_url": "https://www.biquge5200.com/bqge/9/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-24T02:27:06.754126+00:00",
-    "zone": "vip"
+    "updated_at": "2026-05-28T04:45:44.241251+00:00",
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 10,
@@ -469,7 +482,7 @@
     "is_adult": true,
     "status": "completed",
     "rating": 4.5,
-    "total_chapters": 6,
+    "total_chapters": 7,
     "readers": 1600000,
     "description_zh": "一夜荒唐，她惹上帝国总裁。她以为天亮之后就是陌生人了，谁知道他拿着一纸婚书，将她的人生彻底改写。五年的隐婚，她以为自己只是他协议上的妻子，却不知道从第一天起，他就已经认定了她。",
     "description_en": "One reckless night entangled her with the CEO of an empire. She thought they'd be strangers by morning — but he showed up with a marriage certificate that changed her life forever. Five years of hidden marriage passed before she realized: he had chosen her from the very first day.",
@@ -477,8 +490,9 @@
     "source_url": "",
     "source_site": "manual",
     "created_at": "2025-05-17",
-    "updated_at": "2026-05-24T02:27:06.754654+00:00",
-    "zone": "vip"
+    "updated_at": "2026-05-28T04:45:44.241770+00:00",
+    "zone": "vip",
+    "cover_ext": "jpg"
   },
   {
     "id": 17,
@@ -505,7 +519,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "jpg"
   },
   {
     "slug": "creation-of-the-gods",
@@ -535,7 +550,8 @@
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
-    "id": 19
+    "id": 19,
+    "cover_ext": "jpg"
   },
   {
     "id": 11,
@@ -554,7 +570,7 @@
     "is_adult": false,
     "status": "completed",
     "rating": 4.6,
-    "total_chapters": 6,
+    "total_chapters": 7,
     "readers": 560000,
     "description_zh": "在浮冰海湾的尽头，矗立着一座聚集了所有罪恶的城市。理查德，一个背负着沉重命运的年轻贵族，将在这里掀起一场席卷整个大陆的风暴。",
     "description_en": "At the edge of the Floating Ice Bay stands a city that has gathered every sin imaginable. Richard, a young noble burdened by fate, will unleash a storm here that will sweep across the entire continent.",
@@ -562,8 +578,9 @@
     "source_url": "https://www.biquge5200.com/bqge/11/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-24T02:27:06.755653+00:00",
-    "zone": "vip"
+    "updated_at": "2026-05-28T04:45:44.242589+00:00",
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 12,
@@ -582,7 +599,7 @@
     "is_adult": false,
     "status": "completed",
     "rating": 4.4,
-    "total_chapters": 6,
+    "total_chapters": 7,
     "readers": 480000,
     "description_zh": "人类进入星际时代，但他们的敌人从来不只是外星人。在无尽星海中，有一种古老而神秘的力量在苏醒。少年韩森，凭借一枚神秘的血脉基因，在这个残酷的宇宙中开启了他的进化之路。",
     "description_en": "Humanity has entered the interstellar age, but their enemies have never been limited to aliens. In the boundless star ocean, an ancient and mysterious power is awakening. Armed with a mysterious gene, Han Sen begins his evolutionary journey in a brutal universe.",
@@ -590,8 +607,9 @@
     "source_url": "https://www.biquge5200.com/bqge/12/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-24T02:27:06.756277+00:00",
-    "zone": "vip"
+    "updated_at": "2026-05-28T04:45:44.243149+00:00",
+    "zone": "vip",
+    "cover_ext": "svg"
   },
   {
     "id": 18,
@@ -618,7 +636,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "jpg"
   },
   {
     "slug": "monkey-kings-birth",
@@ -649,7 +668,8 @@
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
-    "id": 23
+    "id": 23,
+    "cover_ext": "jpg"
   },
   {
     "id": 19,
@@ -675,7 +695,8 @@
     "source_site": "public_domain",
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
-    "zone": "free"
+    "zone": "free",
+    "cover_ext": "jpg"
   },
   {
     "slug": "kai-lung-unrolls-his-mat",
@@ -699,7 +720,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "svg"
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -723,7 +745,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "jpg"
   },
   {
     "slug": "white-snake-legend",
@@ -753,7 +776,8 @@
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
-    "id": 27
+    "id": 27,
+    "cover_ext": "jpg"
   },
   {
     "slug": "the-book-of-songs",
@@ -777,7 +801,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "jpg"
   },
   {
     "slug": "chinese-poetry",
@@ -801,7 +826,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "svg"
   },
   {
     "slug": "zhuangzi",
@@ -825,7 +851,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "jpg"
   },
   {
     "slug": "the-flight-of-dragons",
@@ -849,7 +876,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "jpg"
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -873,7 +901,8 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "svg"
   },
   {
     "slug": "the-story-of-the-stone",
@@ -897,6 +926,7 @@
     "views": 0,
     "rating": 0.0,
     "is_adult": false,
-    "readers": 1000
+    "readers": 1000,
+    "cover_ext": "jpg"
   }
 ]
