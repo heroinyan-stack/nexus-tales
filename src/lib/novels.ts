@@ -134,37 +134,73 @@ export function getGenres(): { name: string; count: number; is_adult: boolean }[
 }
 
 // ========== Chapter 数据访问 ==========
-export function getChapter(novelSlug: string, chapterNum: number): Chapter | null {
-  const chapterPath = path.join(CHAPTERS_DIR, novelSlug, `ch-${chapterNum}.json`);
-  return readJsonFile<Chapter>(chapterPath);
+// ── Chapter helpers (supports both old ch-N.json and new chapter-N.json) ──
+function findChapterFile(novelDir: string, chapterNum: number): string | null {
+  const patterns = [`ch-${chapterNum}.json`, `chapter-${chapterNum}.json`];
+  for (const name of patterns) {
+    const p = path.join(novelDir, name);
+    if (fs.existsSync(p)) return name;
+  }
+  return null;
 }
 
+function listChapterFiles(novelDir: string): string[] {
+  if (!fs.existsSync(novelDir)) return [];
+  return fs.readdirSync(novelDir).filter(
+    (f) => (f.startsWith('ch-') || f.startsWith('chapter-')) && f.endsWith('.json')
+  );
+}
+
+// Reads JSON that may have 'title' (crawler) or 'title_en' (legacy)
+function readChapterSafe(filePath: string): Chapter | null {
+  try {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    return {
+      num: raw.num || 0,
+      title_en: raw.title_en || raw.title || '',
+      content_en: raw.content_en || raw.content || '',
+      translated: raw.translated ?? true,
+    };
+  } catch {
+    return null;
+  }
+}
+
+export function getChapter(novelSlug: string, chapterNum: number): Chapter | null {
+  const novelDir = path.join(CHAPTERS_DIR, novelSlug);
+  const fileName = findChapterFile(novelDir, chapterNum);
+  if (!fileName) return null;
+  return readChapterSafe(path.join(novelDir, fileName));
+}
+
+/** Returns REAL chapters only (no placeholders) */
 export function getChapterList(novelSlug: string): { num: number; title_en: string }[] {
   const novelDir = path.join(CHAPTERS_DIR, novelSlug);
-  
-  if (!fs.existsSync(novelDir)) {
-    // 返回模拟章节列表
-    const novel = getNovelBySlug(novelSlug);
-    if (!novel) return [];
-    
-    return Array.from({ length: Math.min(novel.total_chapters, 50) }, (_, i) => ({
-      num: i + 1,
-      title_en: `Chapter ${i + 1}`,
-    }));
-  }
-  
-  const files = fs.readdirSync(novelDir).filter((f) => f.startsWith('ch-') && f.endsWith('.json'));
-  
+  const files = listChapterFiles(novelDir);
   const result: { num: number; title_en: string }[] = [];
   
   for (const file of files) {
-    const chapter = readJsonFile<Chapter>(path.join(novelDir, file));
-    if (chapter) {
-      result.push({ num: chapter.num, title_en: chapter.title_en });
+    const chapter = readChapterSafe(path.join(novelDir, file));
+    if (chapter && chapter.num > 0) {
+      result.push({ num: chapter.num, title_en: chapter.title_en || `Chapter ${chapter.num}` });
     }
   }
   
   return result.sort((a, b) => a.num - b.num);
+}
+
+/** Returns only placeholder chapters for novels with no actual files */
+export function getChapterListFallback(novelSlug: string, max = 50): { num: number; title_en: string }[] {
+  const real = getChapterList(novelSlug);
+  if (real.length > 0) return real;
+  
+  const novel = getNovelBySlug(novelSlug);
+  if (!novel) return [];
+  const count = Math.min(novel.total_chapters, max);
+  return Array.from({ length: count }, (_, i) => ({
+    num: i + 1,
+    title_en: `Chapter ${i + 1}`,
+  }));
 }
 
 export function getChapterContent(novelSlug: string, chapterNum: number): string {
