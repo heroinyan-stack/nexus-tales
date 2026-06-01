@@ -14,14 +14,15 @@
     "is_adult": true,
     "status": "ongoing",
     "rating": 0.5,
-    "total_chapters": 6607,
+    "total_chapters": 6608,
     "readers": 0,
     "description_en": "Regarding potential&mdash;even if you are not considered a genius, you can still learn Mysterious Techniques and martial skills. Anyone can be enlightened without a master.Regarding&nbsp;strength&mdash;despite having a myriad of artifacts, you may not defeat my army of World Spirits.Who am I? All of the world&rsquo;s living perceives me as Asura, but I was ignorant to such a thing. I thus ascend to be the Martial God as Asura.",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/mga.webp?ver=f51d4365ab256b97d7d8ee60adf82b99e1815609",
-    "abbreviation": "MGA"
+    "abbreviation": "MGA",
+    "updated_at": "2026-06-01T08:20:26.712557+00:00"
   },
   {
     "id": 21,
@@ -38,14 +39,15 @@
     "is_adult": true,
     "status": "ongoing",
     "rating": 0.76,
-    "total_chapters": 2192,
+    "total_chapters": 2193,
     "readers": 0,
     "description_en": "Hunted for possessing a heaven-defying object, Yun Che is a young man in both that life and the next. Throwing himself off a cliff to spite his pursuers, Yun Che is reincarnated as Xiao Che, a recently poisoned teen in another realm. Just as hated in this life as the previous one, Che must overcome his own hostile clan, his own inability to cultivate, and his own frosty fianc&eacute;e.",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/atg.webp?ver=9961e990ab27db1b314db311c7994d04601f2071",
-    "abbreviation": "ATG"
+    "abbreviation": "ATG",
+    "updated_at": "2026-06-01T08:20:26.716760+00:00"
   },
   {
     "id": 13,
@@ -89,14 +91,15 @@
     "is_adult": false,
     "status": "completed",
     "rating": 0.83,
-    "total_chapters": 1620,
+    "total_chapters": 1621,
     "readers": 0,
     "description_en": "I Shall Seal the Heavens is the story of the young scholar Meng Hao, who gets forcibly recruited into a sect of immortal cultivators. In the cultivation world, the strong prey on the weak, and the law of the jungle prevails. Meng Hao must adapt to survive. Filled with both comedy and drama, I Shall Seal the Heavens remains one of the most beloved xianxia stories ever translated. What does it mean to &ldquo;Seal the Heavens?&rdquo; This is a secret that you will have to uncover along with Meng Ha",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/issth.webp?v=1b3d8e01982e64b2238156f83551f22e540fe24a",
-    "abbreviation": "ISSTH"
+    "abbreviation": "ISSTH",
+    "updated_at": "2026-06-01T08:20:26.724838+00:00"
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -147,7 +150,7 @@
     "is_adult": false,
     "status": "ongoing",
     "rating": 4.7,
-    "total_chapters": 23,
+    "total_chapters": 24,
     "readers": 720000,
     "description_zh": "五百年前，方源是魔道巨擘，纵横天下无可匹敌。然而，天下正道围攻，他在绝境中催动春秋蝉——一只让他重回五百年前的蛊虫。这一世，他将不惜一切代价追求永生。",
     "description_en": "Five hundred years ago, Fang Yuan was a demon lord without equal. Cornered by the righteous factions, he activated the Spring Autumn Cicada, a gu worm that sent him back five centuries. In this new life, he will stop at nothing to achieve eternal life.",
@@ -155,7 +158,7 @@
     "source_url": "https://www.biquge5200.com/bqge/4/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
-    "updated_at": "2026-05-29T05:10:40.765237+00:00",
+    "updated_at": "2026-06-01T08:20:26.734490+00:00",
     "zone": "vip",
     "cover_ext": "svg"
   },
