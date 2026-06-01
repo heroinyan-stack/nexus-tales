@@ -14,15 +14,14 @@
     "is_adult": true,
     "status": "ongoing",
     "rating": 0.5,
-    "total_chapters": 6608,
+    "total_chapters": 6610,
     "readers": 0,
     "description_en": "Regarding potential&mdash;even if you are not considered a genius, you can still learn Mysterious Techniques and martial skills. Anyone can be enlightened without a master.Regarding&nbsp;strength&mdash;despite having a myriad of artifacts, you may not defeat my army of World Spirits.Who am I? All of the world&rsquo;s living perceives me as Asura, but I was ignorant to such a thing. I thus ascend to be the Martial God as Asura.",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/mga.webp?ver=f51d4365ab256b97d7d8ee60adf82b99e1815609",
-    "abbreviation": "MGA",
-    "updated_at": "2026-06-01T08:20:26.712557+00:00"
+    "abbreviation": "MGA"
   },
   {
     "id": 21,
@@ -46,8 +45,7 @@
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/atg.webp?ver=9961e990ab27db1b314db311c7994d04601f2071",
-    "abbreviation": "ATG",
-    "updated_at": "2026-06-01T08:20:26.716760+00:00"
+    "abbreviation": "ATG"
   },
   {
     "id": 13,
@@ -91,15 +89,14 @@
     "is_adult": false,
     "status": "completed",
     "rating": 0.83,
-    "total_chapters": 1621,
+    "total_chapters": 1620,
     "readers": 0,
     "description_en": "I Shall Seal the Heavens is the story of the young scholar Meng Hao, who gets forcibly recruited into a sect of immortal cultivators. In the cultivation world, the strong prey on the weak, and the law of the jungle prevails. Meng Hao must adapt to survive. Filled with both comedy and drama, I Shall Seal the Heavens remains one of the most beloved xianxia stories ever translated. What does it mean to &ldquo;Seal the Heavens?&rdquo; This is a secret that you will have to uncover along with Meng Ha",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/issth.webp?v=1b3d8e01982e64b2238156f83551f22e540fe24a",
-    "abbreviation": "ISSTH",
-    "updated_at": "2026-06-01T08:20:26.724838+00:00"
+    "abbreviation": "ISSTH"
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -204,15 +201,14 @@
     "is_adult": false,
     "status": "completed",
     "rating": 0.92,
-    "total_chapters": 1322,
+    "total_chapters": 1321,
     "readers": 0,
     "description_en": "A Will Eternal is the fourth major xianxia novel by the renowned Er Gen. It tells the tale of Bai Xiaochun, an endearing but exasperating young man who is driven primarily by his fear of death and desire to live forever, but who deeply values friendship and family. The story takes place in the same Universe as Er Gen&#39;s other novels, but is a separate story and can be read alone. That said, it does have connections to the other novels, especially I Shall Seal the Heavens. Those connections on",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/awe.webp?v=0c91b8d904130c510296a6925f31839982040557",
-    "abbreviation": "AWE",
-    "updated_at": "2026-05-30T02:21:36.560825+00:00"
+    "abbreviation": "AWE"
   },
   {
     "slug": "investiture-of-the-gods",
@@ -346,15 +342,14 @@
     "is_adult": false,
     "status": "completed",
     "rating": 0.71,
-    "total_chapters": 1649,
+    "total_chapters": 1648,
     "readers": 0,
     "description_en": "In a land where no magic is present. A land where the strong make the rules and weak have to obey. A land filled with alluring treasures and beauty, yet also filled with unforeseen danger. &nbsp;Three years ago, Xiao Yan, who had shown talents none had seen in decades, suddenly lost everything. &nbsp;His powers, his reputation, and his promise to his mother. What sorcery has caused him to lose all of his powers? And why has his fiancee suddenly shown up?",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/btth.webp?v=b49ecfeb59e7f8a1e94379b5bfa58828e70883a4",
-    "abbreviation": "BTTH",
-    "updated_at": "2026-05-30T02:21:36.563107+00:00"
+    "abbreviation": "BTTH"
   },
   {
     "slug": "gullivers-travels",
@@ -428,16 +423,15 @@
     ],
     "is_adult": false,
     "status": "completed",
-    "rating": 0.84,
-    "total_chapters": 2095,
+    "rating": 0.85,
+    "total_chapters": 2094,
     "readers": 0,
     "description_en": "Renegade Immortal / Xian Ni (仙逆) &ndash; Wang Lin is a very smart boy with loving parents. Although he and his parents are shunned by the rest of their relatives, his parents have always held high hopes that he will one day become someone great. One day, Wang Lin suddenly gained the chance to walk the path of an immortal but found that he only had mediocre talent at best. Watch Wang Lin as he breaks through his lack of talent and walks the path towards becoming a real immortal!",
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/rge.webp?v=f264adaaecabc7ba05c33497868dac78e3a37c63",
-    "abbreviation": "RGE",
-    "updated_at": "2026-05-31T02:00:27.118003+00:00"
+    "abbreviation": "RGE"
   },
   {
     "id": 10,
