@@ -21,7 +21,10 @@
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/mga.webp?ver=f51d4365ab256b97d7d8ee60adf82b99e1815609",
-    "abbreviation": "MGA"
+    "abbreviation": "MGA",
+    "totalChapters": 96,
+    "author": "Kindhearted Bee",
+    "cover": "/covers/martial-god-asura.jpg"
   },
   {
     "id": 21,
@@ -45,7 +48,10 @@
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/atg.webp?ver=9961e990ab27db1b314db311c7994d04601f2071",
-    "abbreviation": "ATG"
+    "abbreviation": "ATG",
+    "totalChapters": 50,
+    "author": "Mars Gravity",
+    "cover": "/covers/against-the-gods.jpg"
   },
   {
     "id": 13,
@@ -72,7 +78,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "author": "Wu Cheng'en",
+    "totalChapters": 1,
+    "cover": "/covers/journey-to-the-west.jpg"
   },
   {
     "id": 12,
@@ -96,7 +105,10 @@
     "zone": "vip",
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/issth.webp?v=1b3d8e01982e64b2238156f83551f22e540fe24a",
-    "abbreviation": "ISSTH"
+    "abbreviation": "ISSTH",
+    "totalChapters": 3,
+    "author": "Er Gen",
+    "cover": "/covers/i-shall-seal-the-heavens.jpg"
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -104,7 +116,7 @@
     "title_cn": "聊斋志异",
     "author_en": "Pu Songling",
     "author_cn": "蒲松龄",
-    "cover": "/covers/strange-tales.jpg",
+    "cover": "/covers/strange-tales-chinese-studio.jpg",
     "zone": "free",
     "tags": [
       "supernatural",
@@ -127,7 +139,9 @@
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
-    "id": 5
+    "id": 5,
+    "author": "Pu Songling",
+    "totalChapters": 1
   },
   {
     "id": 4,
@@ -157,7 +171,10 @@
     "created_at": "2025-05-01",
     "updated_at": "2026-06-01T08:20:26.734490+00:00",
     "zone": "vip",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "author": "Gu Zhen Ren",
+    "totalChapters": 1,
+    "cover": "/covers/reverend-insanity.jpg"
   },
   {
     "id": 14,
@@ -184,7 +201,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "author": "Luo Guanzhong",
+    "totalChapters": 1,
+    "cover": "/covers/romance-of-the-three-kingdoms.jpg"
   },
   {
     "id": 20,
@@ -209,7 +229,10 @@
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/awe.webp?v=0c91b8d904130c510296a6925f31839982040557",
     "abbreviation": "AWE",
-    "updated_at": "2026-06-02T07:02:34.735459+00:00"
+    "updated_at": "2026-06-02T07:02:34.735459+00:00",
+    "totalChapters": 50,
+    "author": "Er Gen",
+    "cover": "/covers/a-will-eternal.jpg"
   },
   {
     "slug": "investiture-of-the-gods",
@@ -217,7 +240,7 @@
     "title_cn": "封神演义",
     "author_en": "Xu Zhonglin",
     "author_cn": "许仲琳",
-    "cover": "/covers/investiture-gods.jpg",
+    "cover": "/covers/investiture-of-the-gods.jpg",
     "zone": "free",
     "tags": [
       "mythology",
@@ -240,7 +263,9 @@
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
-    "id": 9
+    "id": 9,
+    "author": "Xu Zhonglin",
+    "totalChapters": 1
   },
   {
     "id": 6,
@@ -269,7 +294,10 @@
     "created_at": "2025-05-17",
     "updated_at": "2026-06-02T07:02:34.736526+00:00",
     "zone": "vip",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "author": "Alpha Tart",
+    "totalChapters": 1,
+    "cover": "/covers/the-remarried-empress.jpg"
   },
   {
     "id": 15,
@@ -297,7 +325,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "author": "Cao Xueqin",
+    "totalChapters": 1,
+    "cover": "/covers/dream-of-the-red-chamber.jpg"
   },
   {
     "id": 7,
@@ -326,7 +357,9 @@
     "created_at": "2025-05-17",
     "updated_at": "2026-06-02T07:02:34.736990+00:00",
     "zone": "vip",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1,
+    "cover": "/covers/secret-lovers.jpg"
   },
   {
     "id": 23,
@@ -351,7 +384,10 @@
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/btth.webp?v=b49ecfeb59e7f8a1e94379b5bfa58828e70883a4",
     "abbreviation": "BTTH",
-    "updated_at": "2026-06-02T07:02:34.738129+00:00"
+    "updated_at": "2026-06-02T07:02:34.738129+00:00",
+    "totalChapters": 50,
+    "author": "Heavenly Silkworm Potato",
+    "cover": "/covers/battle-through-the-heavens.jpg"
   },
   {
     "slug": "gullivers-travels",
@@ -359,7 +395,7 @@
     "title_cn": "格列佛游记",
     "author_en": "Jonathan Swift",
     "author_cn": "乔纳森·斯威夫特",
-    "cover": "/covers/gulliver.jpg",
+    "cover": "/covers/gullivers-travels.jpg",
     "zone": "free",
     "tags": [
       "adventure",
@@ -382,7 +418,8 @@
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 14,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "id": 16,
@@ -409,7 +446,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "author": "Shi Nai'an",
+    "totalChapters": 1,
+    "cover": "/covers/water-margin.jpg"
   },
   {
     "id": 40,
@@ -434,7 +474,9 @@
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/rge.webp?v=f264adaaecabc7ba05c33497868dac78e3a37c63",
     "abbreviation": "RGE",
-    "updated_at": "2026-06-03T06:03:03.773716+00:00"
+    "updated_at": "2026-06-03T06:03:03.773716+00:00",
+    "totalChapters": 50,
+    "cover": "/covers/renegade-immortal.jpg"
   },
   {
     "id": 10,
@@ -464,7 +506,9 @@
     "created_at": "2025-05-17",
     "updated_at": "2026-06-03T06:03:03.774172+00:00",
     "zone": "vip",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1,
+    "cover": "/covers/hidden-marriage.jpg"
   },
   {
     "id": 17,
@@ -492,7 +536,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "author": "Sun Tzu",
+    "totalChapters": 1,
+    "cover": "/covers/art-of-war.jpg"
   },
   {
     "slug": "creation-of-the-gods",
@@ -500,7 +547,7 @@
     "title_cn": "开天辟地",
     "author_en": "Nexus Tales",
     "author_cn": "裂缝故事",
-    "cover": "/covers/creation-gods.jpg",
+    "cover": "/covers/creation-of-the-gods.jpg",
     "zone": "free",
     "tags": [
       "mythology",
@@ -523,7 +570,8 @@
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 19,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "id": 11,
@@ -552,7 +600,9 @@
     "created_at": "2025-05-01",
     "updated_at": "2026-06-03T06:03:03.774949+00:00",
     "zone": "vip",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "totalChapters": 1,
+    "cover": "/covers/city-of-sin.jpg"
   },
   {
     "id": 12,
@@ -581,7 +631,9 @@
     "created_at": "2025-05-01",
     "updated_at": "2026-06-03T06:03:03.775395+00:00",
     "zone": "vip",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "totalChapters": 1,
+    "cover": "/covers/super-gene.jpg"
   },
   {
     "id": 18,
@@ -609,7 +661,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "author": "Lao Tzu",
+    "totalChapters": 1,
+    "cover": "/covers/tao-te-ching.jpg"
   },
   {
     "slug": "monkey-kings-birth",
@@ -617,7 +672,7 @@
     "title_cn": "美猴王出世",
     "author_en": "Nexus Tales",
     "author_cn": "裂缝故事",
-    "cover": "/covers/monkey-king-birth.jpg",
+    "cover": "/covers/monkey-kings-birth.jpg",
     "zone": "free",
     "tags": [
       "cultivation",
@@ -641,7 +696,8 @@
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 23,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "id": 19,
@@ -668,7 +724,10 @@
     "created_at": "2025-05-18",
     "updated_at": "2025-05-18",
     "zone": "free",
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "author": "Confucius",
+    "totalChapters": 1,
+    "cover": "/covers/analects-of-confucius.jpg"
   },
   {
     "slug": "kai-lung-unrolls-his-mat",
@@ -693,7 +752,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "totalChapters": 1
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -718,7 +778,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "slug": "white-snake-legend",
@@ -726,7 +787,7 @@
     "title_cn": "白蛇传",
     "author_en": "Nexus Tales",
     "author_cn": "裂缝故事",
-    "cover": "/covers/white-snake.jpg",
+    "cover": "/covers/white-snake-legend.jpg",
     "zone": "free",
     "tags": [
       "romance",
@@ -749,7 +810,8 @@
     "created_at": "2026-05-25T00:00:00Z",
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 27,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "slug": "the-book-of-songs",
@@ -774,7 +836,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "slug": "chinese-poetry",
@@ -799,7 +862,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "totalChapters": 1
   },
   {
     "slug": "zhuangzi",
@@ -824,7 +888,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "slug": "the-flight-of-dragons",
@@ -849,7 +914,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -874,7 +940,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "totalChapters": 1
   },
   {
     "slug": "the-story-of-the-stone",
@@ -899,7 +966,8 @@
     "rating": 0.0,
     "is_adult": false,
     "readers": 1000,
-    "cover_ext": "jpg"
+    "cover_ext": "jpg",
+    "totalChapters": 1
   },
   {
     "id": 34,
@@ -923,7 +991,9 @@
     "description": "古典中文经典：论语·学而",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/xue-er"
+    "ctext_urn": "ctp:analects/xue-er",
+    "totalChapters": 1,
+    "cover": "/covers/analects-xue-er.jpg"
   },
   {
     "id": 35,
@@ -947,7 +1017,9 @@
     "description": "古典中文经典：论语·为政",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/xu-wen"
+    "ctext_urn": "ctp:analects/xu-wen",
+    "totalChapters": 1,
+    "cover": "/covers/analects-xu-wen.jpg"
   },
   {
     "id": 36,
@@ -971,7 +1043,9 @@
     "description": "古典中文经典：论语·八佾",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/ba-yi"
+    "ctext_urn": "ctp:analects/ba-yi",
+    "totalChapters": 1,
+    "cover": "/covers/analects-ba-yi.jpg"
   },
   {
     "id": 37,
@@ -995,7 +1069,9 @@
     "description": "古典中文经典：论语·里仁",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/li-ren"
+    "ctext_urn": "ctp:analects/li-ren",
+    "totalChapters": 1,
+    "cover": "/covers/analects-li-ren.jpg"
   },
   {
     "id": 38,
@@ -1019,7 +1095,9 @@
     "description": "古典中文经典：论语·公冶长",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/gong-ye-chang"
+    "ctext_urn": "ctp:analects/gong-ye-chang",
+    "totalChapters": 1,
+    "cover": "/covers/analects-gong-ye-chang.jpg"
   },
   {
     "id": 39,
@@ -1043,7 +1121,9 @@
     "description": "古典中文经典：论语·雍也",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/yong-ye"
+    "ctext_urn": "ctp:analects/yong-ye",
+    "totalChapters": 1,
+    "cover": "/covers/analects-yong-ye.jpg"
   },
   {
     "id": 40,
@@ -1067,7 +1147,9 @@
     "description": "古典中文经典：论语·述而",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/shu-er"
+    "ctext_urn": "ctp:analects/shu-er",
+    "totalChapters": 1,
+    "cover": "/covers/analects-shu-er.jpg"
   },
   {
     "id": 41,
@@ -1091,7 +1173,9 @@
     "description": "古典中文经典：论语·泰伯",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/tai-bo"
+    "ctext_urn": "ctp:analects/tai-bo",
+    "totalChapters": 1,
+    "cover": "/covers/analects-tai-bo.jpg"
   },
   {
     "id": 42,
@@ -1115,7 +1199,9 @@
     "description": "古典中文经典：论语·子罕",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/zi-han"
+    "ctext_urn": "ctp:analects/zi-han",
+    "totalChapters": 1,
+    "cover": "/covers/analects-zi-han.jpg"
   },
   {
     "id": 43,
@@ -1139,7 +1225,9 @@
     "description": "古典中文经典：论语·乡党",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/xiang-dang"
+    "ctext_urn": "ctp:analects/xiang-dang",
+    "totalChapters": 1,
+    "cover": "/covers/analects-xiang-dang.jpg"
   },
   {
     "id": 44,
@@ -1163,7 +1251,9 @@
     "description": "古典中文经典：论语·先进",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/xian-jin"
+    "ctext_urn": "ctp:analects/xian-jin",
+    "totalChapters": 1,
+    "cover": "/covers/analects-xian-jin.jpg"
   },
   {
     "id": 45,
@@ -1187,7 +1277,9 @@
     "description": "古典中文经典：论语·颜渊",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/gu-shan"
+    "ctext_urn": "ctp:analects/gu-shan",
+    "totalChapters": 1,
+    "cover": "/covers/analects-gu-shan.jpg"
   },
   {
     "id": 46,
@@ -1211,7 +1303,9 @@
     "description": "古典中文经典：论语·子路",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/zi-lu"
+    "ctext_urn": "ctp:analects/zi-lu",
+    "totalChapters": 1,
+    "cover": "/covers/analects-zi-lu.jpg"
   },
   {
     "id": 47,
@@ -1235,7 +1329,9 @@
     "description": "古典中文经典：论语·卫灵公",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/wei-zheng"
+    "ctext_urn": "ctp:analects/wei-zheng",
+    "totalChapters": 1,
+    "cover": "/covers/analects-wei-zheng.jpg"
   },
   {
     "id": 48,
@@ -1259,7 +1355,9 @@
     "description": "古典中文经典：论语·季氏",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/ji-shi"
+    "ctext_urn": "ctp:analects/ji-shi",
+    "totalChapters": 1,
+    "cover": "/covers/analects-ji-shi.jpg"
   },
   {
     "id": 49,
@@ -1283,7 +1381,9 @@
     "description": "古典中文经典：论语·阳货",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/yang-huo"
+    "ctext_urn": "ctp:analects/yang-huo",
+    "totalChapters": 1,
+    "cover": "/covers/analects-yang-huo.jpg"
   },
   {
     "id": 50,
@@ -1307,7 +1407,9 @@
     "description": "古典中文经典：论语·微子",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/wei-ling-gong"
+    "ctext_urn": "ctp:analects/wei-ling-gong",
+    "totalChapters": 1,
+    "cover": "/covers/analects-wei-ling-gong.jpg"
   },
   {
     "id": 51,
@@ -1331,7 +1433,9 @@
     "description": "古典中文经典：论语·尧曰",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:analects/yao-yue"
+    "ctext_urn": "ctp:analects/yao-yue",
+    "totalChapters": 1,
+    "cover": "/covers/analects-yao-yue.jpg"
   },
   {
     "id": 52,
@@ -1355,7 +1459,9 @@
     "description": "古典中文经典：道德经",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:dao-de-jing"
+    "ctext_urn": "ctp:dao-de-jing",
+    "totalChapters": 1,
+    "cover": "/covers/dao-de-jing.jpg"
   },
   {
     "id": 53,
@@ -1379,7 +1485,9 @@
     "description": "古典中文经典：三字经",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:three-character-classic"
+    "ctext_urn": "ctp:three-character-classic",
+    "totalChapters": 1,
+    "cover": "/covers/three-character-classic.jpg"
   },
   {
     "id": 54,
@@ -1403,7 +1511,9 @@
     "description": "古典中文经典：诗经·国风",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:book-of-songs/shijing-min-yao"
+    "ctext_urn": "ctp:book-of-songs/shijing-min-yao",
+    "totalChapters": 1,
+    "cover": "/covers/book-of-songs-shijing-min-yao.jpg"
   },
   {
     "id": 55,
@@ -1427,7 +1537,9 @@
     "description": "古典中文经典：诗经·商颂",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:book-of-songs/shijing-ya-song"
+    "ctext_urn": "ctp:book-of-songs/shijing-ya-song",
+    "totalChapters": 1,
+    "cover": "/covers/book-of-songs-shijing-ya-song.jpg"
   },
   {
     "id": 56,
@@ -1451,7 +1563,9 @@
     "description": "古典中文经典：诗经·大雅",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:book-of-songs/shijing-da-ya-1"
+    "ctext_urn": "ctp:book-of-songs/shijing-da-ya-1",
+    "totalChapters": 1,
+    "cover": "/covers/book-of-songs-shijing-da-ya-1.jpg"
   },
   {
     "id": 57,
@@ -1475,7 +1589,9 @@
     "description": "古典中文经典：诗经·小雅",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:book-of-songs/shijing-xiao-ya"
+    "ctext_urn": "ctp:book-of-songs/shijing-xiao-ya",
+    "totalChapters": 1,
+    "cover": "/covers/book-of-songs-shijing-xiao-ya.jpg"
   },
   {
     "id": 58,
@@ -1499,7 +1615,9 @@
     "description": "古典中文经典：庄子·逍遥游",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:zhuangzi/xiao-yao-you"
+    "ctext_urn": "ctp:zhuangzi/xiao-yao-you",
+    "totalChapters": 1,
+    "cover": "/covers/zhuangzi-xiao-yao-you.jpg"
   },
   {
     "id": 59,
@@ -1523,7 +1641,9 @@
     "description": "古典中文经典：庄子·齐物论",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:zhuangzi/qi-wu-lun"
+    "ctext_urn": "ctp:zhuangzi/qi-wu-lun",
+    "totalChapters": 1,
+    "cover": "/covers/zhuangzi-qi-wu-lun.jpg"
   },
   {
     "id": 60,
@@ -1547,7 +1667,9 @@
     "description": "古典中文经典：孙子兵法",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:sunzi/the-strategist"
+    "ctext_urn": "ctp:sunzi/the-strategist",
+    "totalChapters": 1,
+    "cover": "/covers/sunzi-the-strategist.jpg"
   },
   {
     "id": 61,
@@ -1571,7 +1693,9 @@
     "description": "古典中文经典：孙子兵法十三篇",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:sunzi/shiliu-jin"
+    "ctext_urn": "ctp:sunzi/shiliu-jin",
+    "totalChapters": 1,
+    "cover": "/covers/sunzi-shiliu-jin.jpg"
   },
   {
     "id": 62,
@@ -1595,7 +1719,9 @@
     "description": "古典中文经典：荀子·劝学",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:xunzi/qiang-guo"
+    "ctext_urn": "ctp:xunzi/qiang-guo",
+    "totalChapters": 1,
+    "cover": "/covers/xunzi-qiang-guo.jpg"
   },
   {
     "id": 63,
@@ -1619,7 +1745,9 @@
     "description": "古典中文经典：韩非子·五蠹",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:hanfeizi/wu-du"
+    "ctext_urn": "ctp:hanfeizi/wu-du",
+    "totalChapters": 1,
+    "cover": "/covers/hanfeizi-wu-du.jpg"
   },
   {
     "id": 64,
@@ -1643,7 +1771,9 @@
     "description": "古典中文经典：大学",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:da-xue"
+    "ctext_urn": "ctp:da-xue",
+    "totalChapters": 1,
+    "cover": "/covers/da-xue.jpg"
   },
   {
     "id": 65,
@@ -1667,7 +1797,9 @@
     "description": "古典中文经典：中庸",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:zhong-yong"
+    "ctext_urn": "ctp:zhong-yong",
+    "totalChapters": 1,
+    "cover": "/covers/zhong-yong.jpg"
   },
   {
     "id": 66,
@@ -1691,7 +1823,9 @@
     "description": "古典中文经典：李白诗选",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:tang-shi/ti-huai-nong"
+    "ctext_urn": "ctp:tang-shi/ti-huai-nong",
+    "totalChapters": 1,
+    "cover": "/covers/tang-shi-ti-huai-nong.jpg"
   },
   {
     "id": 67,
@@ -1715,7 +1849,9 @@
     "description": "古典中文经典：杜甫诗选",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:tang-shi/ti-huai-shi"
+    "ctext_urn": "ctp:tang-shi/ti-huai-shi",
+    "totalChapters": 1,
+    "cover": "/covers/tang-shi-ti-huai-shi.jpg"
   },
   {
     "id": 68,
@@ -1739,6 +1875,8 @@
     "description": "古典中文经典：三十六计",
     "zone": "free",
     "source": "ctext.org",
-    "ctext_urn": "ctp:thirty-six-stratagems"
+    "ctext_urn": "ctp:thirty-six-stratagems",
+    "totalChapters": 1,
+    "cover": "/covers/thirty-six-stratagems.jpg"
   }
 ]

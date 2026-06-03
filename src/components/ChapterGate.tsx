@@ -54,7 +54,7 @@ export default function ChapterGate({
       title="Upgrade to Continue"
       description={`You're on the Free plan. Upgrade to Premium to read all ${totalChapters} chapters of "${novelTitle}".`}
       actions={[
-        { label: "Upgrade to Premium — $4.99/mo", href: "/pricing", primary: true },
+        { label: "Upgrade to Premium — $7.99/mo", href: "/pricing", primary: true },
         { label: "Back to Free Chapters", href: `/novel/${novelSlug}`, primary: false },
       ]}
     />

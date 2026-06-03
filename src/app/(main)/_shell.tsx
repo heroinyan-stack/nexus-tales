@@ -147,12 +147,7 @@ export function Header() {
           <a href="/novels" className="text-moon hover:text-neon-cyan transition-colors">
             Browse Novels
           </a>
-          <a href="#" className="text-moon hover:text-neon-cyan transition-colors">
-            Rankings
-          </a>
-          <a href="#" className="text-moon hover:text-neon-cyan transition-colors">
-            Latest Updates
-          </a>
+
         </nav>
         <div className="flex items-center gap-4">
           <button className="text-moon hover:text-neon-cyan transition-colors text-sm">
@@ -189,25 +184,17 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-stardust mb-3">Browse</h4>
             <div className="flex flex-col gap-2 text-sm text-moon/60">
               <a href="/novels" className="hover:text-neon-cyan transition-colors">All Novels</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">Cultivation</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">Fantasy</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">Sci-Fi</a>
+              <a href="/novels?genre=cultivation" className="hover:text-neon-cyan transition-colors">Cultivation</a>
+              <a href="/novels?genre=fantasy" className="hover:text-neon-cyan transition-colors">Fantasy</a>
+              <a href="/novels?genre=sci-fi" className="hover:text-neon-cyan transition-colors">Sci-Fi</a>
             </div>
           </div>
-          <div>
-            <h4 className="text-sm font-semibold text-stardust mb-3">Community</h4>
-            <div className="flex flex-col gap-2 text-sm text-moon/60">
-              <a href="#" className="hover:text-neon-cyan transition-colors">Discord</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">Reddit</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">Twitter</a>
-            </div>
-          </div>
+
           <div>
             <h4 className="text-sm font-semibold text-stardust mb-3">Legal</h4>
             <div className="flex flex-col gap-2 text-sm text-moon/60">
-              <a href="#" className="hover:text-neon-cyan transition-colors">Terms</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">Privacy</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">DMCA</a>
+              <a href="/terms" className="hover:text-neon-cyan transition-colors">Terms</a>
+              <a href="/privacy" className="hover:text-neon-cyan transition-colors">Privacy</a>
             </div>
           </div>
         </div>
