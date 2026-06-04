@@ -82,7 +82,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Wu Cheng'en",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/journey-to-the-west.jpg"
   },
   {
@@ -144,7 +144,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 5,
     "author": "Pu Songling",
-    "totalChapters": 1
+    "totalChapters": 3
   },
   {
     "id": 4,
@@ -176,7 +176,7 @@
     "zone": "vip",
     "cover_ext": "svg",
     "author": "Gu Zhen Ren",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/reverend-insanity.jpg"
   },
   {
@@ -206,7 +206,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Luo Guanzhong",
-    "totalChapters": 1,
+    "totalChapters": 4,
     "cover": "/covers/romance-of-the-three-kingdoms.jpg"
   },
   {
@@ -268,7 +268,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 9,
     "author": "Xu Zhonglin",
-    "totalChapters": 1
+    "totalChapters": 3
   },
   {
     "id": 6,
@@ -330,7 +330,7 @@
     "zone": "free",
     "cover_ext": "svg",
     "author": "Cao Xueqin",
-    "totalChapters": 1,
+    "totalChapters": 4,
     "cover": "/covers/dream-of-the-red-chamber.jpg"
   },
   {
@@ -422,7 +422,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 14,
     "cover_ext": "jpg",
-    "totalChapters": 1
+    "totalChapters": 3
   },
   {
     "id": 16,
@@ -451,7 +451,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Shi Nai'an",
-    "totalChapters": 1,
+    "totalChapters": 4,
     "cover": "/covers/water-margin.jpg"
   },
   {
@@ -541,7 +541,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Sun Tzu",
-    "totalChapters": 1,
+    "totalChapters": 3,
     "cover": "/covers/art-of-war.jpg"
   },
   {
@@ -574,7 +574,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 19,
     "cover_ext": "jpg",
-    "totalChapters": 1
+    "totalChapters": 3
   },
   {
     "id": 11,
@@ -666,7 +666,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Lao Tzu",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/tao-te-ching.jpg"
   },
   {
@@ -782,7 +782,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 1
+    "totalChapters": 3
   },
   {
     "slug": "white-snake-legend",
@@ -918,7 +918,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 1
+    "totalChapters": 2
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -970,7 +970,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 1
+    "totalChapters": 4
   },
   {
     "id": 34,
@@ -995,7 +995,7 @@
     "zone": "free",
     "source": "ctext.org",
     "ctext_urn": "ctp:analects/xue-er",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/analects-xue-er.jpg"
   },
   {
@@ -1047,7 +1047,7 @@
     "zone": "free",
     "source": "ctext.org",
     "ctext_urn": "ctp:analects/ba-yi",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/analects-ba-yi.jpg"
   },
   {
@@ -1073,7 +1073,7 @@
     "zone": "free",
     "source": "ctext.org",
     "ctext_urn": "ctp:analects/li-ren",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/analects-li-ren.jpg"
   },
   {
@@ -1099,7 +1099,7 @@
     "zone": "free",
     "source": "ctext.org",
     "ctext_urn": "ctp:analects/gong-ye-chang",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "cover": "/covers/analects-gong-ye-chang.jpg"
   },
   {
