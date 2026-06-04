@@ -100,12 +100,7 @@ export function SiteScripts() {
           }),
         }}
       />
-      {/* Google AdSense — replace ca-pub-XXXXXXXXXXXXXXXX with your real ID */}
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-        crossOrigin="anonymous"
-      />
+
     </>
   );
 }

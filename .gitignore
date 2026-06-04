@@ -28,4 +28,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.tsdata/chapters/wu-ling-da-lu-zhi-guang-ying-cheng-shen/
+next-env.d.ts
+data/chapters/wu-ling-da-lu-zhi-guang-ying-cheng-shen/
+.env.bak

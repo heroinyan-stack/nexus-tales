@@ -6,6 +6,13 @@ import { createCheckout } from "@/lib/creem";
 
 export const dynamic = "force-dynamic";
 
+// CREEM compliance: only registered production domains may create checkouts
+const ALLOWED_DOMAINS = new Set(["novelhub.beauty", "www.novelhub.beauty"]);
+
+function isAllowed(host: string): boolean {
+  return ALLOWED_DOMAINS.has(host) || host.endsWith(".novelhub.beauty");
+}
+
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
@@ -15,6 +22,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         { error: "productId is required" },
         { status: 400 }
+      );
+    }
+
+    // Block checkout from unregistered domains (CREEM compliance)
+    const host = req.headers.get("host") || "";
+    if (!isAllowed(host)) {
+      return NextResponse.json(
+        { error: "Please visit novelhub.beauty to subscribe." },
+        { status: 403 }
       );
     }
 
