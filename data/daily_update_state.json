@@ -1,6 +1,6 @@
 {
-  "last_index": 0,
-  "last_run": "2026-06-03T06:03:03.780654+00:00",
+  "last_index": 4,
+  "last_run": "2026-06-04T04:41:26.829949+00:00",
   "history": [
     {
       "date": "2026-05-21",
@@ -108,6 +108,15 @@
         "hidden-marriage",
         "city-of-sin",
         "super-gene"
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "updated": [
+        "martial-god-asura",
+        "against-the-gods",
+        "i-shall-seal-the-heavens",
+        "reverend-insanity"
       ]
     }
   ]
