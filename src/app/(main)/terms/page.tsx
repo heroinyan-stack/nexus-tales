@@ -35,10 +35,9 @@ export default function TermsPage() {
       <section className="glass-card rounded-2xl p-8 mb-6">
         <h2 className="text-xl font-bold text-stardust mb-4">3. Subscription & Payments</h2>
         <p className="text-moon/60 text-sm leading-relaxed">
-          Premium and Ultimate subscriptions are billed monthly through our payment provider (CREEM).
-          You may cancel at any time from your profile page. Cancellation takes effect at the end of
-          the current billing period. Refund requests within the first 7 days of new subscriptions
-          will be honored.
+          Premium and Ultimate are one-time purchases for 30-day access, processed through
+          our crypto payment provider (NowPayments). No auto-renewal. You may purchase again
+          at any time. Refund requests within the first 7 days of new purchases will be honored.
         </p>
       </section>
 

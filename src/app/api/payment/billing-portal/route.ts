@@ -1,8 +1,8 @@
-// POST /api/payment/billing-portal — Generate Creem Customer Portal link
+// POST /api/payment/billing-portal — Return subscription info
+// NowPayments has no customer portal; users renew by purchasing again
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
-import { getCustomerByEmail, createPortalLink } from "@/lib/creem";
 
 export const dynamic = "force-dynamic";
 
@@ -14,21 +14,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
     }
 
-    // Find the Creem customer by email
-    const customer = await getCustomerByEmail(email);
-    if (!customer?.id) {
-      return NextResponse.json(
-        { error: "No subscription found. Purchase a plan first." },
-        { status: 404 }
-      );
-    }
-
-    const portalUrl = await createPortalLink(customer.id);
-    return NextResponse.json({ url: portalUrl });
+    // Crypto payments don't have a management portal.
+    // Return info so frontend can redirect to /pricing for renewal.
+    return NextResponse.json({
+      message: "Crypto subscriptions are one-time purchases. Visit /pricing to renew.",
+    });
   } catch (err: any) {
-    console.error("Creem billing portal error:", err);
+    console.error("Billing portal error:", err);
     return NextResponse.json(
-      { error: err.message || "Failed to open billing portal" },
+      { error: err.message || "Failed" },
       { status: 500 }
     );
   }

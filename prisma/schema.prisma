@@ -20,7 +20,8 @@ model User {
   password      String?   // bcrypt hash, null for OAuth users
   role          String    @default("free") // free | premium | ultimate | admin
   stripeId      String?   // Stripe customer ID (legacy)
-  creemCustomerId String?   // Creem customer ID
+  creemCustomerId String?  // Creem customer ID (deprecated)
+  nowpaymentsPaymentId String? // NowPayments latest payment ID
   subscription  String?   // active | cancelled | past_due | null
   subExpiresAt  DateTime?
 

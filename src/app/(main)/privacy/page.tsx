@@ -20,7 +20,7 @@ export default function PrivacyPage() {
         <p className="text-moon/60 text-sm leading-relaxed">
           When you create an account, we collect your email address and name. For Google OAuth
           sign-ins, we receive basic profile information from Google. Payment information is
-          processed by our payment provider (CREEM) and is not stored on our servers.
+          processed by our payment provider (NowPayments) and is not stored on our servers.
         </p>
       </section>
 
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         <p className="text-moon/60 text-sm leading-relaxed">
           Your account data is stored on PostgreSQL databases hosted by Neon. We use
           industry-standard encryption (TLS) for all data transmission. Payment data is
-          processed by CREEM and follows their security standards.
+          processed by NowPayments and follows their security standards.
         </p>
       </section>
 
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
         <h2 className="text-xl font-bold text-stardust mb-4">5. Third-Party Services</h2>
         <p className="text-moon/60 text-sm leading-relaxed">
           We use Google OAuth for authentication (Google Privacy Policy applies to OAuth
-          data) and CREEM for payment processing. Data shared with these services is
+          data) and NowPayments for payment processing. Data shared with these services is
           governed by their respective privacy policies.
         </p>
       </section>

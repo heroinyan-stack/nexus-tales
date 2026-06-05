@@ -5,11 +5,6 @@ import { Check, Sparkles, Zap, Crown, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const PREMIUM_PRODUCT_ID =
-  process.env.NEXT_PUBLIC_CREEM_PREMIUM_PRODUCT_ID || "";
-const ULTIMATE_PRODUCT_ID =
-  process.env.NEXT_PUBLIC_CREEM_ULTIMATE_PRODUCT_ID || "";
-
 const TIERS = [
   {
     id: "free",
@@ -33,7 +28,7 @@ const TIERS = [
     name: "Premium",
     icon: Zap,
     price: "$7.99",
-    period: "month",
+    period: "30 days",
     description: "Unlimited reading for avid readers",
     features: [
       "Everything in Free",
@@ -44,7 +39,7 @@ const TIERS = [
       "Priority support",
     ],
     cta: "Start Premium",
-    productId: PREMIUM_PRODUCT_ID,
+    plan: "premium",
     highlighted: true,
   },
   {
@@ -52,7 +47,7 @@ const TIERS = [
     name: "Ultimate",
     icon: Crown,
     price: "$14.99",
-    period: "month",
+    period: "30 days",
     description: "The complete Nexus Tales experience",
     features: [
       "Everything in Premium",
@@ -64,7 +59,7 @@ const TIERS = [
       "Early access (24h before Premium)",
     ],
     cta: "Go Ultimate",
-    productId: ULTIMATE_PRODUCT_ID,
+    plan: "ultimate",
     highlighted: false,
   },
 ];
@@ -73,13 +68,13 @@ export default function PricingPage() {
   const { data: session } = useSession();
   const [loading, setLoading] = useState<string | null>(null);
 
-  async function handleCheckout(tierId: string, productId: string) {
+  async function handleCheckout(tierId: string, plan: string) {
     setLoading(tierId);
     try {
       const res = await fetch("/api/payment/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ productId }),
+        body: JSON.stringify({ plan }),
       });
       const data = await res.json();
       if (data.url) {
@@ -166,11 +161,11 @@ export default function PricingPage() {
               ) : (
                 <button
                   onClick={() =>
-                    "productId" in tier &&
-                    tier.productId &&
-                    handleCheckout(tier.id, tier.productId)
+                    "plan" in tier &&
+                    tier.plan &&
+                    handleCheckout(tier.id, tier.plan)
                   }
-                  disabled={loading === tier.id || !("productId" in tier && tier.productId)}
+                  disabled={loading === tier.id || !("plan" in tier && tier.plan)}
                   className={`w-full py-3 rounded-xl font-bold text-sm transition-all ${
                     tier.highlighted
                       ? "neon-btn"
@@ -179,8 +174,8 @@ export default function PricingPage() {
                 >
                   {loading === tier.id ? (
                     <Loader2 className="w-4 h-4 animate-spin mx-auto" />
-                  ) : "productId" in tier && !tier.productId ? (
-                    "Configure Product ID"
+                  ) : !("plan" in tier && tier.plan) ? (
+                    tier.cta
                   ) : (
                     tier.cta
                   )}
@@ -200,8 +195,8 @@ export default function PricingPage() {
 
       {/* Bottom note */}
       <p className="text-center text-xs text-moon/30 mt-12 max-w-md mx-auto">
-        All prices in USD. Cancel anytime from your profile. 7-day refund for
-        first-time subscribers.
+        All prices in USD. Pay with USDT, USDC, BTC, ETH, or credit card via
+        NowPayments. Purchase is for 30-day access — no auto-renewal.
       </p>
     </div>
   );

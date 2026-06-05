@@ -1,58 +1,44 @@
-// POST /api/payment/checkout — Create Creem checkout session
+// POST /api/payment/checkout — Create NowPayments crypto payment
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
-import { createCheckout } from "@/lib/creem";
+import { createPayment } from "@/lib/nowpayments";
 
 export const dynamic = "force-dynamic";
-
-// CREEM compliance: only registered production domains may create checkouts
-const ALLOWED_DOMAINS = new Set(["novelhub.beauty", "www.novelhub.beauty"]);
-
-function isAllowed(host: string): boolean {
-  return ALLOWED_DOMAINS.has(host) || host.endsWith(".novelhub.beauty");
-}
 
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
-    const { productId } = await req.json();
+    const { plan } = await req.json();
 
-    if (!productId) {
+    if (!plan || !["premium", "ultimate"].includes(plan)) {
       return NextResponse.json(
-        { error: "productId is required" },
+        { error: 'plan must be "premium" or "ultimate"' },
         { status: 400 }
       );
     }
 
-    // Block checkout from unregistered domains (CREEM compliance)
-    const host = req.headers.get("host") || "";
-    if (!isAllowed(host)) {
-      return NextResponse.json(
-        { error: "Please visit novelhub.beauty to subscribe." },
-        { status: 403 }
-      );
-    }
+    const priceAmount = plan === "ultimate" ? 14.99 : 7.99;
+    const planLabel = plan === "ultimate" ? "Ultimate" : "Premium";
+    const email = session?.user?.email || "guest";
+    const orderId = `nt_${plan}_${email.replace(/[^a-zA-Z0-9]/g, "_")}_${Date.now()}`;
 
     const origin = req.nextUrl.origin;
-    const successUrl = `${origin}/profile?checkout=success`;
 
-    const result = await createCheckout({
-      productId,
-      requestId: session?.user?.email
-        ? `user_${session.user.email}_${Date.now()}`
-        : undefined,
-      successUrl,
-      customer: session?.user?.email
-        ? { email: session.user.email }
-        : undefined,
+    const result = await createPayment({
+      priceAmount,
+      priceCurrency: "usd",
+      orderId,
+      orderDescription: `Nexus Tales ${planLabel} — 1 Month`,
+      successUrl: `${origin}/profile?checkout=success`,
+      cancelUrl: `${origin}/pricing`,
     });
 
-    return NextResponse.json({ url: result.checkout_url });
+    return NextResponse.json({ url: result.invoice_url });
   } catch (err: any) {
-    console.error("Creem checkout error:", err);
+    console.error("NowPayments checkout error:", err);
     return NextResponse.json(
-      { error: err.message || "Failed to create checkout" },
+      { error: err.message || "Failed to create payment" },
       { status: 500 }
     );
   }
