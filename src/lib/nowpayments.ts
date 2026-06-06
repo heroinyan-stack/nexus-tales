@@ -70,8 +70,12 @@ export async function createPayment(
     cancel_url: params.cancelUrl,
   };
 
-  // NowPayments requires pay_currency. USDT ARC20 has lowest stablecoin minimum (~$11.70).
-  body.pay_currency = params.payCurrency || "usdtarc20";
+  // Allow user to specify pay currency; defaults to USDT ARC20 (lowest stablecoin minimum ~$11.70)
+  if (params.payCurrency) {
+    body.pay_currency = params.payCurrency;
+  } else {
+    body.pay_currency = "usdtarc20";
+  }
 
   const res = await fetch(`${BASE_URL}/payment`, {
     method: "POST",

@@ -80,7 +80,7 @@ export default function PricingPage() {
       });
       const data = await res.json();
       if (data.paymentId) {
-        router.push(`/checkout?pid=${data.paymentId}`);
+        router.push(`/checkout?pid=${data.paymentId}&plan=${plan}`);
       } else {
         console.error("No checkout URL returned");
         alert(data.error || "Checkout failed. Please try again.");

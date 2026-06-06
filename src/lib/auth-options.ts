@@ -33,28 +33,38 @@ export const authOptions: AuthOptions = {
   ],
   session: { strategy: "jwt" },
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, account }) {
+      // On first sign-in, set user info from OAuth/credentials
       if (user) {
-        const dbUser = await prisma.user.findUnique({
-          where: { id: user.id || token.sub },
-          select: { id: true, role: true, subscription: true, subExpiresAt: true },
-        });
-        if (dbUser) {
-          token.role = dbUser.role;
-          token.subscription = dbUser.subscription;
-          token.subExpiresAt = dbUser.subExpiresAt?.toISOString() ?? null;
+        try {
+          const dbUser = await prisma.user.findUnique({
+            where: { id: user.id || token.sub },
+            select: { id: true, role: true, subscription: true, subExpiresAt: true },
+          });
+          if (dbUser) {
+            token.role = dbUser.role;
+            token.subscription = dbUser.subscription;
+            token.subExpiresAt = dbUser.subExpiresAt?.toISOString() ?? null;
+          }
+        } catch (e) {
+          console.error("jwt callback (first sign-in) DB error:", e);
         }
       }
       // Refresh role on every request
       if (token.sub) {
-        const fresh = await prisma.user.findUnique({
-          where: { id: token.sub as string },
-          select: { role: true, subscription: true, subExpiresAt: true },
-        });
-        if (fresh) {
-          token.role = fresh.role;
-          token.subscription = fresh.subscription;
-          token.subExpiresAt = fresh.subExpiresAt?.toISOString() ?? null;
+        try {
+          const fresh = await prisma.user.findUnique({
+            where: { id: token.sub as string },
+            select: { role: true, subscription: true, subExpiresAt: true },
+          });
+          if (fresh) {
+            token.role = fresh.role;
+            token.subscription = fresh.subscription;
+            token.subExpiresAt = fresh.subExpiresAt?.toISOString() ?? null;
+          }
+        } catch (e) {
+          console.error("jwt callback (refresh) DB error:", e);
+          // Keep existing token values on transient DB errors
         }
       }
       return token;

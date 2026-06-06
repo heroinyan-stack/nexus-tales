@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
-    const { plan } = await req.json();
+    const { plan, payCurrency } = await req.json();
 
     if (!plan || !["premium", "ultimate"].includes(plan)) {
       return NextResponse.json(
@@ -29,13 +29,17 @@ export async function POST(req: NextRequest) {
     const result = await createPayment({
       priceAmount,
       priceCurrency: "usd",
+      payCurrency: payCurrency || undefined, // let user choose, default to USDT ARC20
       orderId,
       orderDescription: `Nexus Tales ${planLabel} — 1 Month`,
       successUrl: `${origin}/profile?checkout=success`,
       cancelUrl: `${origin}/pricing`,
     });
 
-    return NextResponse.json({ paymentId: result.payment_id });
+    return NextResponse.json({
+      paymentId: result.payment_id,
+      invoiceUrl: result.invoice_url, // for credit card payments
+    });
   } catch (err: any) {
     console.error("NowPayments checkout error:", err);
     return NextResponse.json(
