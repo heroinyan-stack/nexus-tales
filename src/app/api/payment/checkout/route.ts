@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
       cancelUrl: `${origin}/pricing`,
     });
 
-    return NextResponse.json({ url: result.invoice_url });
+    return NextResponse.json({ paymentId: result.payment_id });
   } catch (err: any) {
     console.error("NowPayments checkout error:", err);
     return NextResponse.json(

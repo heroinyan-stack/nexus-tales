@@ -1,6 +1,7 @@
 "use client";
 
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import { Check, Sparkles, Zap, Crown, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -66,6 +67,7 @@ const TIERS = [
 
 export default function PricingPage() {
   const { data: session } = useSession();
+  const router = useRouter();
   const [loading, setLoading] = useState<string | null>(null);
 
   async function handleCheckout(tierId: string, plan: string) {
@@ -77,8 +79,8 @@ export default function PricingPage() {
         body: JSON.stringify({ plan }),
       });
       const data = await res.json();
-      if (data.url) {
-        window.location.href = data.url;
+      if (data.paymentId) {
+        router.push(`/checkout?pid=${data.paymentId}`);
       } else {
         console.error("No checkout URL returned");
         alert(data.error || "Checkout failed. Please try again.");
