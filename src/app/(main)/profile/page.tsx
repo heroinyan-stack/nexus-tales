@@ -118,7 +118,7 @@ export default function ProfilePage() {
               <div className="p-3 rounded-xl bg-white/5">
                 <div className="text-xs text-moon/40 mb-1">Price</div>
                 <div className="font-bold text-stardust text-sm">
-                  {role === "ultimate" ? "$14.99" : "$7.99"}/30d
+                  {role === "ultimate" ? "$14.99" : "$11.99"}/30d
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@ export default function ProfilePage() {
               <div>
                 <h3 className="font-bold text-stardust">Unlock Unlimited Reading</h3>
                 <p className="text-xs text-moon/40 mt-1">
-                  Premium $7.99/30 days — buy once, read for a month
+                  Premium $11.99/30 days — buy once, read for a month
                 </p>
               </div>
               <Link

@@ -27,7 +27,7 @@ const TIERS = [
     id: "premium",
     name: "Premium",
     icon: Zap,
-    price: "$7.99",
+    price: "$11.99",
     period: "30 days",
     description: "Unlimited reading for avid readers",
     features: [
