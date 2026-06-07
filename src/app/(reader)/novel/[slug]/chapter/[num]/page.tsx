@@ -69,7 +69,7 @@ export default async function ChapterPage({ params }: { params: { slug: string; 
         novelSlug={params.slug}
         novelTitle={novel.title_en}
         zone={novel.zone}
-        totalChapters={novel.total_chapters}
+        totalChapters={Math.min(novel.total_chapters, novel.available_chapters || novel.total_chapters)}
       />
 
       {/* Full-screen reader - no header/footer, fully immersive */}
@@ -77,7 +77,7 @@ export default async function ChapterPage({ params }: { params: { slug: string; 
         content={content}
         novelSlug={params.slug}
         chapterNum={chapterNum}
-        totalChapters={novel.total_chapters}
+        totalChapters={Math.min(novel.total_chapters, novel.available_chapters || novel.total_chapters)}
         novelTitle={novel.title_en}
         zone={novel.zone}
       />
