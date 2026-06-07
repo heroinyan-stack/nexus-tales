@@ -2091,7 +2091,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 12
   },
   {
     "id": 70,
@@ -2125,7 +2125,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 4
+    "available_chapters": 7
   },
   {
     "id": 71,
@@ -2159,7 +2159,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 5
+    "available_chapters": 8
   },
   {
     "id": 72,
@@ -2193,7 +2193,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 73,
@@ -2227,7 +2227,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 74,
@@ -2261,7 +2261,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 75,
@@ -2295,7 +2295,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 76,
@@ -2329,7 +2329,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 77,
@@ -2363,7 +2363,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 78,
@@ -2397,7 +2397,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 79,
@@ -2431,7 +2431,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 80,
@@ -2465,7 +2465,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 81,
@@ -2499,7 +2499,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 82,
@@ -2533,7 +2533,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 83,
@@ -2567,7 +2567,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 84,
@@ -2601,7 +2601,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 85,
@@ -2635,7 +2635,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 86,
@@ -2669,7 +2669,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 87,
@@ -2703,7 +2703,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   },
   {
     "id": 88,
@@ -2737,6 +2737,6 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 3
+    "available_chapters": 6
   }
 ]
