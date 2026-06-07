@@ -15,7 +15,7 @@
     "status": "ongoing",
     "rating": 0.5,
     "total_chapters": 97,
-    "readers": 0,
+    "readers": 16092,
     "description_en": "Regarding potential&mdash;even if you are not considered a genius, you can still learn Mysterious Techniques and martial skills. Anyone can be enlightened without a master.Regarding&nbsp;strength&mdash;despite having a myriad of artifacts, you may not defeat my army of World Spirits.Who am I? All of the world&rsquo;s living perceives me as Asura, but I was ignorant to such a thing. I thus ascend to be the Martial God as Asura.",
     "description": "",
     "zone": "vip",
@@ -27,7 +27,8 @@
     "cover": "/covers/martial-god-asura.jpg",
     "updated_at": "2026-06-07T01:05:31.764007+00:00",
     "title": "Martial God Asura",
-    "featured": true
+    "featured": true,
+    "available_chapters": 98
   },
   {
     "id": 21,
@@ -45,7 +46,7 @@
     "status": "ongoing",
     "rating": 0.76,
     "total_chapters": 51,
-    "readers": 0,
+    "readers": 4778,
     "description_en": "Hunted for possessing a heaven-defying object, Yun Che is a young man in both that life and the next. Throwing himself off a cliff to spite his pursuers, Yun Che is reincarnated as Xiao Che, a recently poisoned teen in another realm. Just as hated in this life as the previous one, Che must overcome his own hostile clan, his own inability to cultivate, and his own frosty fianc&eacute;e.",
     "description": "",
     "zone": "vip",
@@ -57,7 +58,8 @@
     "cover": "/covers/against-the-gods.jpg",
     "updated_at": "2026-06-07T01:05:31.765721+00:00",
     "title": "Against The Gods",
-    "featured": true
+    "featured": true,
+    "available_chapters": 52
   },
   {
     "id": 13,
@@ -89,7 +91,8 @@
     "totalChapters": 2,
     "cover": "/covers/journey-to-the-west.jpg",
     "title": "Journey To The West",
-    "featured": false
+    "featured": false,
+    "available_chapters": 15
   },
   {
     "id": 12,
@@ -107,7 +110,7 @@
     "status": "completed",
     "rating": 0.83,
     "total_chapters": 4,
-    "readers": 0,
+    "readers": 37548,
     "description_en": "I Shall Seal the Heavens is the story of the young scholar Meng Hao, who gets forcibly recruited into a sect of immortal cultivators. In the cultivation world, the strong prey on the weak, and the law of the jungle prevails. Meng Hao must adapt to survive. Filled with both comedy and drama, I Shall Seal the Heavens remains one of the most beloved xianxia stories ever translated. What does it mean to &ldquo;Seal the Heavens?&rdquo; This is a secret that you will have to uncover along with Meng Ha",
     "description": "",
     "zone": "vip",
@@ -119,7 +122,8 @@
     "cover": "/covers/i-shall-seal-the-heavens.jpg",
     "updated_at": "2026-06-07T01:05:31.766282+00:00",
     "title": "I Shall Seal The Heavens",
-    "featured": false
+    "featured": false,
+    "available_chapters": 5
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -154,7 +158,8 @@
     "author": "Pu Songling",
     "totalChapters": 3,
     "title": "Strange Tales Chinese Studio",
-    "featured": false
+    "featured": false,
+    "available_chapters": 15
   },
   {
     "id": 4,
@@ -189,7 +194,8 @@
     "totalChapters": 2,
     "cover": "/covers/reverend-insanity.jpg",
     "title": "Reverend Insanity",
-    "featured": false
+    "featured": false,
+    "available_chapters": 27
   },
   {
     "id": 14,
@@ -221,7 +227,8 @@
     "totalChapters": 4,
     "cover": "/covers/romance-of-the-three-kingdoms.jpg",
     "title": "Romance Of The Three Kingdoms",
-    "featured": false
+    "featured": false,
+    "available_chapters": 13
   },
   {
     "id": 20,
@@ -239,7 +246,7 @@
     "status": "completed",
     "rating": 0.92,
     "total_chapters": 51,
-    "readers": 0,
+    "readers": 33598,
     "description_en": "A Will Eternal is the fourth major xianxia novel by the renowned Er Gen. It tells the tale of Bai Xiaochun, an endearing but exasperating young man who is driven primarily by his fear of death and desire to live forever, but who deeply values friendship and family. The story takes place in the same Universe as Er Gen&#39;s other novels, but is a separate story and can be read alone. That said, it does have connections to the other novels, especially I Shall Seal the Heavens. Those connections on",
     "description": "",
     "zone": "vip",
@@ -251,7 +258,8 @@
     "author": "Er Gen",
     "cover": "/covers/a-will-eternal.jpg",
     "title": "A Will Eternal",
-    "featured": true
+    "featured": true,
+    "available_chapters": 52
   },
   {
     "slug": "investiture-of-the-gods",
@@ -286,7 +294,8 @@
     "author": "Xu Zhonglin",
     "totalChapters": 3,
     "title": "Investiture Of The Gods",
-    "featured": false
+    "featured": false,
+    "available_chapters": 15
   },
   {
     "id": 6,
@@ -320,7 +329,8 @@
     "totalChapters": 1,
     "cover": "/covers/the-remarried-empress.jpg",
     "title": "The Remarried Empress",
-    "featured": false
+    "featured": false,
+    "available_chapters": 10
   },
   {
     "id": 15,
@@ -353,7 +363,8 @@
     "totalChapters": 4,
     "cover": "/covers/dream-of-the-red-chamber.jpg",
     "title": "Dream Of The Red Chamber",
-    "featured": false
+    "featured": false,
+    "available_chapters": 11
   },
   {
     "id": 7,
@@ -386,7 +397,8 @@
     "totalChapters": 1,
     "cover": "/covers/secret-lovers.jpg",
     "title": "Secret Lovers",
-    "featured": false
+    "featured": false,
+    "available_chapters": 10
   },
   {
     "id": 23,
@@ -404,7 +416,7 @@
     "status": "completed",
     "rating": 0.71,
     "total_chapters": 51,
-    "readers": 0,
+    "readers": 30756,
     "description_en": "In a land where no magic is present. A land where the strong make the rules and weak have to obey. A land filled with alluring treasures and beauty, yet also filled with unforeseen danger. &nbsp;Three years ago, Xiao Yan, who had shown talents none had seen in decades, suddenly lost everything. &nbsp;His powers, his reputation, and his promise to his mother. What sorcery has caused him to lose all of his powers? And why has his fiancee suddenly shown up?",
     "description": "",
     "zone": "vip",
@@ -416,7 +428,8 @@
     "author": "Heavenly Silkworm Potato",
     "cover": "/covers/battle-through-the-heavens.jpg",
     "title": "Battle Through The Heavens",
-    "featured": true
+    "featured": true,
+    "available_chapters": 52
   },
   {
     "slug": "gullivers-travels",
@@ -450,7 +463,8 @@
     "cover_ext": "jpg",
     "totalChapters": 3,
     "title": "Gullivers Travels",
-    "featured": false
+    "featured": false,
+    "available_chapters": 11
   },
   {
     "id": 16,
@@ -482,7 +496,8 @@
     "totalChapters": 4,
     "cover": "/covers/water-margin.jpg",
     "title": "Water Margin",
-    "featured": false
+    "featured": false,
+    "available_chapters": 11
   },
   {
     "id": 40,
@@ -500,7 +515,7 @@
     "status": "completed",
     "rating": 0.85,
     "total_chapters": 51,
-    "readers": 0,
+    "readers": 19789,
     "description_en": "Renegade Immortal / Xian Ni (仙逆) &ndash; Wang Lin is a very smart boy with loving parents. Although he and his parents are shunned by the rest of their relatives, his parents have always held high hopes that he will one day become someone great. One day, Wang Lin suddenly gained the chance to walk the path of an immortal but found that he only had mediocre talent at best. Watch Wang Lin as he breaks through his lack of talent and walks the path towards becoming a real immortal!",
     "description": "",
     "zone": "vip",
@@ -511,7 +526,8 @@
     "totalChapters": 50,
     "cover": "/covers/renegade-immortal.jpg",
     "title": "Renegade Immortal",
-    "featured": false
+    "featured": false,
+    "available_chapters": 52
   },
   {
     "id": 10,
@@ -545,7 +561,8 @@
     "totalChapters": 1,
     "cover": "/covers/hidden-marriage.jpg",
     "title": "Hidden Marriage",
-    "featured": false
+    "featured": false,
+    "available_chapters": 10
   },
   {
     "id": 17,
@@ -578,7 +595,8 @@
     "totalChapters": 3,
     "cover": "/covers/art-of-war.jpg",
     "title": "Art Of War",
-    "featured": false
+    "featured": false,
+    "available_chapters": 13
   },
   {
     "slug": "creation-of-the-gods",
@@ -612,7 +630,8 @@
     "cover_ext": "jpg",
     "totalChapters": 3,
     "title": "Creation Of The Gods",
-    "featured": false
+    "featured": false,
+    "available_chapters": 10
   },
   {
     "id": 11,
@@ -645,7 +664,8 @@
     "totalChapters": 1,
     "cover": "/covers/city-of-sin.jpg",
     "title": "City Of Sin",
-    "featured": false
+    "featured": false,
+    "available_chapters": 10
   },
   {
     "id": 12,
@@ -678,7 +698,8 @@
     "totalChapters": 1,
     "cover": "/covers/super-gene.jpg",
     "title": "Super Gene",
-    "featured": false
+    "featured": false,
+    "available_chapters": 10
   },
   {
     "id": 18,
@@ -711,7 +732,8 @@
     "totalChapters": 2,
     "cover": "/covers/tao-te-ching.jpg",
     "title": "Tao Te Ching",
-    "featured": false
+    "featured": false,
+    "available_chapters": 83
   },
   {
     "slug": "monkey-kings-birth",
@@ -746,7 +768,8 @@
     "cover_ext": "jpg",
     "totalChapters": 1,
     "title": "Monkey Kings Birth",
-    "featured": false
+    "featured": false,
+    "available_chapters": 9
   },
   {
     "id": 19,
@@ -778,7 +801,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-of-confucius.jpg",
     "title": "Analects Of Confucius",
-    "featured": false
+    "featured": false,
+    "available_chapters": 21
   },
   {
     "slug": "kai-lung-unrolls-his-mat",
@@ -800,14 +824,15 @@
     "total_chapters": 1,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 4.5,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "svg",
     "totalChapters": 1,
     "title": "Kai Lung Unrolls His Mat",
     "featured": false,
-    "id": 89
+    "id": 89,
+    "available_chapters": 16
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -829,14 +854,15 @@
     "total_chapters": 3,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 4.4,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
     "totalChapters": 3,
     "title": "Chinese Ghost And Love Stories",
     "featured": false,
-    "id": 90
+    "id": 90,
+    "available_chapters": 18
   },
   {
     "slug": "white-snake-legend",
@@ -870,7 +896,8 @@
     "cover_ext": "jpg",
     "totalChapters": 1,
     "title": "White Snake Legend",
-    "featured": false
+    "featured": false,
+    "available_chapters": 9
   },
   {
     "slug": "the-book-of-songs",
@@ -892,14 +919,15 @@
     "total_chapters": 1,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 4.7,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
     "totalChapters": 1,
     "title": "The Book Of Songs",
     "featured": false,
-    "id": 91
+    "id": 91,
+    "available_chapters": 16
   },
   {
     "slug": "chinese-poetry",
@@ -921,14 +949,15 @@
     "total_chapters": 1,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 3.6,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "svg",
     "totalChapters": 1,
     "title": "Chinese Poetry",
     "featured": false,
-    "id": 92
+    "id": 92,
+    "available_chapters": 2
   },
   {
     "slug": "zhuangzi",
@@ -950,14 +979,15 @@
     "total_chapters": 1,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 4.1,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
     "totalChapters": 1,
     "title": "Zhuangzi",
     "featured": false,
-    "id": 93
+    "id": 93,
+    "available_chapters": 16
   },
   {
     "slug": "the-flight-of-dragons",
@@ -979,14 +1009,15 @@
     "total_chapters": 2,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 3.5,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
     "totalChapters": 2,
     "title": "The Flight Of Dragons",
     "featured": false,
-    "id": 94
+    "id": 94,
+    "available_chapters": 17
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -1008,14 +1039,15 @@
     "total_chapters": 1,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 3.8,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "svg",
     "totalChapters": 1,
     "title": "Personal Narrative Of Heavenly Revelations",
     "featured": false,
-    "id": 95
+    "id": 95,
+    "available_chapters": 16
   },
   {
     "slug": "the-story-of-the-stone",
@@ -1037,14 +1069,15 @@
     "total_chapters": 4,
     "updated_at": "2026-05-19",
     "views": 0,
-    "rating": 0.0,
+    "rating": 4.2,
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
     "totalChapters": 4,
     "title": "The Story Of The Stone",
     "featured": false,
-    "id": 96
+    "id": 96,
+    "available_chapters": 19
   },
   {
     "id": 34,
@@ -1063,7 +1096,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 2,
-    "readers": 0,
+    "readers": 4978,
     "description_en": "Classical Chinese text: The Analects (论语·学而)",
     "description": "古典中文经典：论语·学而",
     "zone": "free",
@@ -1071,7 +1104,8 @@
     "ctext_urn": "ctp:analects/xue-er",
     "totalChapters": 2,
     "cover": "/covers/analects-xue-er.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 2
   },
   {
     "id": 35,
@@ -1090,7 +1124,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 75063,
     "description_en": "Classical Chinese text: The Analects 2 (论语·为政)",
     "description": "古典中文经典：论语·为政",
     "zone": "free",
@@ -1098,7 +1132,8 @@
     "ctext_urn": "ctp:analects/xu-wen",
     "totalChapters": 1,
     "cover": "/covers/analects-xu-wen.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 36,
@@ -1117,7 +1152,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 2,
-    "readers": 0,
+    "readers": 27562,
     "description_en": "Classical Chinese text: The Analects 3 (论语·八佾)",
     "description": "古典中文经典：论语·八佾",
     "zone": "free",
@@ -1125,7 +1160,8 @@
     "ctext_urn": "ctp:analects/ba-yi",
     "totalChapters": 2,
     "cover": "/covers/analects-ba-yi.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 2
   },
   {
     "id": 37,
@@ -1144,7 +1180,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 2,
-    "readers": 0,
+    "readers": 72926,
     "description_en": "Classical Chinese text: The Analects 4 (论语·里仁)",
     "description": "古典中文经典：论语·里仁",
     "zone": "free",
@@ -1152,7 +1188,8 @@
     "ctext_urn": "ctp:analects/li-ren",
     "totalChapters": 2,
     "cover": "/covers/analects-li-ren.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 2
   },
   {
     "id": 38,
@@ -1171,7 +1208,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 2,
-    "readers": 0,
+    "readers": 56487,
     "description_en": "Classical Chinese text: The Analects 5 (论语·公冶长)",
     "description": "古典中文经典：论语·公冶长",
     "zone": "free",
@@ -1179,7 +1216,8 @@
     "ctext_urn": "ctp:analects/gong-ye-chang",
     "totalChapters": 2,
     "cover": "/covers/analects-gong-ye-chang.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 2
   },
   {
     "id": 39,
@@ -1198,7 +1236,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 30393,
     "description_en": "Classical Chinese text: The Analects 6 (论语·雍也)",
     "description": "古典中文经典：论语·雍也",
     "zone": "free",
@@ -1206,7 +1244,8 @@
     "ctext_urn": "ctp:analects/yong-ye",
     "totalChapters": 1,
     "cover": "/covers/analects-yong-ye.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 40,
@@ -1225,7 +1264,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 60378,
     "description_en": "Classical Chinese text: The Analects 7 (论语·述而)",
     "description": "古典中文经典：论语·述而",
     "zone": "free",
@@ -1233,7 +1272,8 @@
     "ctext_urn": "ctp:analects/shu-er",
     "totalChapters": 1,
     "cover": "/covers/analects-shu-er.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 41,
@@ -1252,7 +1292,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 78736,
     "description_en": "Classical Chinese text: The Analects 8 (论语·泰伯)",
     "description": "古典中文经典：论语·泰伯",
     "zone": "free",
@@ -1260,7 +1300,8 @@
     "ctext_urn": "ctp:analects/tai-bo",
     "totalChapters": 1,
     "cover": "/covers/analects-tai-bo.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 42,
@@ -1279,7 +1320,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 37963,
     "description_en": "Classical Chinese text: The Analects 9 (论语·子罕)",
     "description": "古典中文经典：论语·子罕",
     "zone": "free",
@@ -1287,7 +1328,8 @@
     "ctext_urn": "ctp:analects/zi-han",
     "totalChapters": 1,
     "cover": "/covers/analects-zi-han.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 43,
@@ -1306,7 +1348,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 2351,
     "description_en": "Classical Chinese text: The Analects 10 (论语·乡党)",
     "description": "古典中文经典：论语·乡党",
     "zone": "free",
@@ -1314,7 +1356,8 @@
     "ctext_urn": "ctp:analects/xiang-dang",
     "totalChapters": 1,
     "cover": "/covers/analects-xiang-dang.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 44,
@@ -1333,7 +1376,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 22426,
     "description_en": "Classical Chinese text: The Analects 11 (论语·先进)",
     "description": "古典中文经典：论语·先进",
     "zone": "free",
@@ -1341,7 +1384,8 @@
     "ctext_urn": "ctp:analects/xian-jin",
     "totalChapters": 1,
     "cover": "/covers/analects-xian-jin.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 45,
@@ -1360,7 +1404,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 56892,
     "description_en": "Classical Chinese text: The Analects 12 (论语·颜渊)",
     "description": "古典中文经典：论语·颜渊",
     "zone": "free",
@@ -1368,7 +1412,8 @@
     "ctext_urn": "ctp:analects/gu-shan",
     "totalChapters": 1,
     "cover": "/covers/analects-gu-shan.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 46,
@@ -1387,7 +1432,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 46097,
     "description_en": "Classical Chinese text: The Analects 13 (论语·子路)",
     "description": "古典中文经典：论语·子路",
     "zone": "free",
@@ -1395,7 +1440,8 @@
     "ctext_urn": "ctp:analects/zi-lu",
     "totalChapters": 1,
     "cover": "/covers/analects-zi-lu.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 47,
@@ -1414,7 +1460,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 37921,
     "description_en": "Classical Chinese text: The Analects 14 (论语·卫灵公)",
     "description": "古典中文经典：论语·卫灵公",
     "zone": "free",
@@ -1422,7 +1468,8 @@
     "ctext_urn": "ctp:analects/wei-zheng",
     "totalChapters": 1,
     "cover": "/covers/analects-wei-zheng.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 48,
@@ -1441,7 +1488,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 21879,
     "description_en": "Classical Chinese text: The Analects 15 (论语·季氏)",
     "description": "古典中文经典：论语·季氏",
     "zone": "free",
@@ -1449,7 +1496,8 @@
     "ctext_urn": "ctp:analects/ji-shi",
     "totalChapters": 1,
     "cover": "/covers/analects-ji-shi.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 49,
@@ -1468,7 +1516,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 29721,
     "description_en": "Classical Chinese text: The Analects 16 (论语·阳货)",
     "description": "古典中文经典：论语·阳货",
     "zone": "free",
@@ -1476,7 +1524,8 @@
     "ctext_urn": "ctp:analects/yang-huo",
     "totalChapters": 1,
     "cover": "/covers/analects-yang-huo.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 50,
@@ -1495,7 +1544,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 45618,
     "description_en": "Classical Chinese text: The Analects 17 (论语·微子)",
     "description": "古典中文经典：论语·微子",
     "zone": "free",
@@ -1503,7 +1552,8 @@
     "ctext_urn": "ctp:analects/wei-ling-gong",
     "totalChapters": 1,
     "cover": "/covers/analects-wei-ling-gong.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 51,
@@ -1522,7 +1572,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 14896,
     "description_en": "Classical Chinese text: The Analects 18 (论语·尧曰)",
     "description": "古典中文经典：论语·尧曰",
     "zone": "free",
@@ -1530,7 +1580,8 @@
     "ctext_urn": "ctp:analects/yao-yue",
     "totalChapters": 1,
     "cover": "/covers/analects-yao-yue.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 52,
@@ -1549,7 +1600,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 13656,
     "description_en": "Classical Chinese text: Dao De Jing (道德经)",
     "description": "古典中文经典：道德经",
     "zone": "free",
@@ -1557,7 +1608,8 @@
     "ctext_urn": "ctp:dao-de-jing",
     "totalChapters": 1,
     "cover": "/covers/dao-de-jing.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 53,
@@ -1576,7 +1628,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 51297,
     "description_en": "Classical Chinese text: Three Character Classic (三字经)",
     "description": "古典中文经典：三字经",
     "zone": "free",
@@ -1584,7 +1636,8 @@
     "ctext_urn": "ctp:three-character-classic",
     "totalChapters": 1,
     "cover": "/covers/three-character-classic.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 54,
@@ -1603,7 +1656,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 14176,
     "description_en": "Classical Chinese text: Songs of the People (诗经·国风)",
     "description": "古典中文经典：诗经·国风",
     "zone": "free",
@@ -1611,7 +1664,8 @@
     "ctext_urn": "ctp:book-of-songs/shijing-min-yao",
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-min-yao.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 55,
@@ -1630,7 +1684,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 48552,
     "description_en": "Classical Chinese text: Odes of Shang (诗经·商颂)",
     "description": "古典中文经典：诗经·商颂",
     "zone": "free",
@@ -1638,7 +1692,8 @@
     "ctext_urn": "ctp:book-of-songs/shijing-ya-song",
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-ya-song.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 56,
@@ -1657,7 +1712,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 46582,
     "description_en": "Classical Chinese text: Great Odes 1 (诗经·大雅)",
     "description": "古典中文经典：诗经·大雅",
     "zone": "free",
@@ -1665,7 +1720,8 @@
     "ctext_urn": "ctp:book-of-songs/shijing-da-ya-1",
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-da-ya-1.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 57,
@@ -1684,7 +1740,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 80631,
     "description_en": "Classical Chinese text: Minor Odes (诗经·小雅)",
     "description": "古典中文经典：诗经·小雅",
     "zone": "free",
@@ -1692,7 +1748,8 @@
     "ctext_urn": "ctp:book-of-songs/shijing-xiao-ya",
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-xiao-ya.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 58,
@@ -1711,7 +1768,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 36171,
     "description_en": "Classical Chinese text: Zhuangzi: Happy Excursion (庄子·逍遥游)",
     "description": "古典中文经典：庄子·逍遥游",
     "zone": "free",
@@ -1719,7 +1776,8 @@
     "ctext_urn": "ctp:zhuangzi/xiao-yao-you",
     "totalChapters": 1,
     "cover": "/covers/zhuangzi-xiao-yao-you.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 59,
@@ -1738,7 +1796,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 7195,
     "description_en": "Classical Chinese text: Zhuangzi: Adjustment of Circumstances (庄子·齐物论)",
     "description": "古典中文经典：庄子·齐物论",
     "zone": "free",
@@ -1746,7 +1804,8 @@
     "ctext_urn": "ctp:zhuangzi/qi-wu-lun",
     "totalChapters": 1,
     "cover": "/covers/zhuangzi-qi-wu-lun.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 60,
@@ -1765,7 +1824,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 61717,
     "description_en": "Classical Chinese text: The Art of War (孙子兵法)",
     "description": "古典中文经典：孙子兵法",
     "zone": "free",
@@ -1773,7 +1832,8 @@
     "ctext_urn": "ctp:sunzi/the-strategist",
     "totalChapters": 1,
     "cover": "/covers/sunzi-the-strategist.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 61,
@@ -1792,7 +1852,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 71784,
     "description_en": "Classical Chinese text: Art of War: 13 Articles (孙子兵法十三篇)",
     "description": "古典中文经典：孙子兵法十三篇",
     "zone": "free",
@@ -1800,7 +1860,8 @@
     "ctext_urn": "ctp:sunzi/shiliu-jin",
     "totalChapters": 1,
     "cover": "/covers/sunzi-shiliu-jin.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 62,
@@ -1819,7 +1880,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 17861,
     "description_en": "Classical Chinese text: Xunzi: Encouraging Learning (荀子·劝学)",
     "description": "古典中文经典：荀子·劝学",
     "zone": "free",
@@ -1827,7 +1888,8 @@
     "ctext_urn": "ctp:xunzi/qiang-guo",
     "totalChapters": 1,
     "cover": "/covers/xunzi-qiang-guo.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 63,
@@ -1846,7 +1908,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 51115,
     "description_en": "Classical Chinese text: Han Feizi: Five Vermin (韩非子·五蠹)",
     "description": "古典中文经典：韩非子·五蠹",
     "zone": "free",
@@ -1854,7 +1916,8 @@
     "ctext_urn": "ctp:hanfeizi/wu-du",
     "totalChapters": 1,
     "cover": "/covers/hanfeizi-wu-du.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 64,
@@ -1873,7 +1936,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 11828,
     "description_en": "Classical Chinese text: The Great Learning (大学)",
     "description": "古典中文经典：大学",
     "zone": "free",
@@ -1881,7 +1944,8 @@
     "ctext_urn": "ctp:da-xue",
     "totalChapters": 1,
     "cover": "/covers/da-xue.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 65,
@@ -1900,7 +1964,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 73857,
     "description_en": "Classical Chinese text: The Doctrine of the Mean (中庸)",
     "description": "古典中文经典：中庸",
     "zone": "free",
@@ -1908,7 +1972,8 @@
     "ctext_urn": "ctp:zhong-yong",
     "totalChapters": 1,
     "cover": "/covers/zhong-yong.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 66,
@@ -1927,7 +1992,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 39927,
     "description_en": "Classical Chinese text: Poems of Li Bai (李白诗选)",
     "description": "古典中文经典：李白诗选",
     "zone": "free",
@@ -1935,7 +2000,8 @@
     "ctext_urn": "ctp:tang-shi/ti-huai-nong",
     "totalChapters": 1,
     "cover": "/covers/tang-shi-ti-huai-nong.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 67,
@@ -1954,7 +2020,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 83897,
     "description_en": "Classical Chinese text: Poems of Du Fu (杜甫诗选)",
     "description": "古典中文经典：杜甫诗选",
     "zone": "free",
@@ -1962,7 +2028,8 @@
     "ctext_urn": "ctp:tang-shi/ti-huai-shi",
     "totalChapters": 1,
     "cover": "/covers/tang-shi-ti-huai-shi.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 68,
@@ -1981,7 +2048,7 @@
     "status": "completed",
     "rating": 4.5,
     "total_chapters": 1,
-    "readers": 0,
+    "readers": 82570,
     "description_en": "Classical Chinese text: Thirty-Six Stratagems (三十六计)",
     "description": "古典中文经典：三十六计",
     "zone": "free",
@@ -1989,7 +2056,8 @@
     "ctext_urn": "ctp:thirty-six-stratagems",
     "totalChapters": 1,
     "cover": "/covers/thirty-six-stratagems.jpg",
-    "featured": false
+    "featured": false,
+    "available_chapters": 1
   },
   {
     "id": 69,
@@ -1999,13 +2067,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "玄幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.3,
     "total_chapters": 10,
     "totalChapters": 10,
-    "readers": 0,
+    "readers": 48900,
     "description_en": "道士下山之749局",
     "description": "",
     "zone": "vip",
@@ -2018,7 +2090,8 @@
     "title": "道士下山之749局",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 9
   },
   {
     "id": 70,
@@ -2028,13 +2101,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "玄幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.6,
     "total_chapters": 28,
     "totalChapters": 28,
-    "readers": 0,
+    "readers": 10616,
     "description_en": "斗罗V：开局绑定朱竹清，创建神级家族",
     "description": "",
     "zone": "vip",
@@ -2047,7 +2124,8 @@
     "title": "斗罗V：开局绑定朱竹清，创建神级家族",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 4
   },
   {
     "id": 71,
@@ -2057,13 +2135,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "武侠",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.6,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 31371,
     "description_en": "70年代开局，我靠零元购发家",
     "description": "",
     "zone": "vip",
@@ -2076,7 +2158,8 @@
     "title": "70年代开局，我靠零元购发家",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 5
   },
   {
     "id": 72,
@@ -2086,13 +2169,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.7,
     "total_chapters": 101,
     "totalChapters": 101,
-    "readers": 0,
+    "readers": 11958,
     "description_en": "全民饥荒：SSS级天赋酿酒师",
     "description": "",
     "zone": "vip",
@@ -2105,7 +2192,8 @@
     "title": "全民饥荒：SSS级天赋酿酒师",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 73,
@@ -2115,13 +2203,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.0,
     "total_chapters": 22,
     "totalChapters": 22,
-    "readers": 0,
+    "readers": 14738,
     "description_en": "无CP废土：基建养出全",
     "description": "",
     "zone": "vip",
@@ -2134,7 +2226,8 @@
     "title": "无CP废土：基建养出全",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 74,
@@ -2144,13 +2237,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.4,
     "total_chapters": 40,
     "totalChapters": 40,
-    "readers": 0,
+    "readers": 60929,
     "description_en": "第19次末日",
     "description": "",
     "zone": "vip",
@@ -2163,7 +2260,8 @@
     "title": "第19次末日",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 75,
@@ -2173,13 +2271,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.7,
     "total_chapters": 36,
     "totalChapters": 36,
-    "readers": 0,
+    "readers": 49319,
     "description_en": "开局三预言？我直播通关S级末世",
     "description": "",
     "zone": "vip",
@@ -2192,7 +2294,8 @@
     "title": "开局三预言？我直播通关S级末世",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 76,
@@ -2202,13 +2305,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.8,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 48066,
     "description_en": "城隍是我老祖，原来我是神N代",
     "description": "",
     "zone": "vip",
@@ -2221,7 +2328,8 @@
     "title": "城隍是我老祖，原来我是神N代",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 77,
@@ -2231,13 +2339,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.5,
     "total_chapters": 26,
     "totalChapters": 26,
-    "readers": 0,
+    "readers": 36493,
     "description_en": "同时被N个S级哨兵盯上怎么办",
     "description": "",
     "zone": "vip",
@@ -2250,7 +2362,8 @@
     "title": "同时被N个S级哨兵盯上怎么办",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 78,
@@ -2260,13 +2373,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.4,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 10858,
     "description_en": "反派BOSS有毒",
     "description": "",
     "zone": "vip",
@@ -2279,7 +2396,8 @@
     "title": "反派BOSS有毒",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 79,
@@ -2289,13 +2407,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "科幻",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.2,
     "total_chapters": 42,
     "totalChapters": 42,
-    "readers": 0,
+    "readers": 23931,
     "description_en": "末世入侵：我在副本里面当NPC",
     "description": "",
     "zone": "vip",
@@ -2308,7 +2430,8 @@
     "title": "末世入侵：我在副本里面当NPC",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 80,
@@ -2318,13 +2441,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.7,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 33587,
     "description_en": "重生2000：撕了协议我暴富了",
     "description": "",
     "zone": "vip",
@@ -2337,7 +2464,8 @@
     "title": "重生2000：撕了协议我暴富了",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 81,
@@ -2347,13 +2475,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.9,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 51235,
     "description_en": "华娱2008：从分手快乐开始",
     "description": "",
     "zone": "vip",
@@ -2366,7 +2498,8 @@
     "title": "华娱2008：从分手快乐开始",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 82,
@@ -2376,13 +2509,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.8,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 74500,
     "description_en": "重生80，分家后带妻女吃香喝辣",
     "description": "",
     "zone": "vip",
@@ -2395,7 +2532,8 @@
     "title": "重生80，分家后带妻女吃香喝辣",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 83,
@@ -2405,13 +2543,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.7,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 44004,
     "description_en": "穿越60带着空间当保安",
     "description": "",
     "zone": "vip",
@@ -2424,7 +2566,8 @@
     "title": "穿越60带着空间当保安",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 84,
@@ -2434,13 +2577,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.8,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 8831,
     "description_en": "系统送编，从外卖员成007探员",
     "description": "",
     "zone": "vip",
@@ -2453,7 +2600,8 @@
     "title": "系统送编，从外卖员成007探员",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 85,
@@ -2463,13 +2611,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.6,
     "total_chapters": 63,
     "totalChapters": 63,
-    "readers": 0,
+    "readers": 5707,
     "description_en": "穿越2006小手替被影帝追着宠",
     "description": "",
     "zone": "vip",
@@ -2482,7 +2634,8 @@
     "title": "穿越2006小手替被影帝追着宠",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 86,
@@ -2492,13 +2645,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 3.9,
     "total_chapters": 105,
     "totalChapters": 105,
-    "readers": 0,
+    "readers": 54081,
     "description_en": "我发现了世界BUG",
     "description": "",
     "zone": "vip",
@@ -2511,7 +2668,8 @@
     "title": "我发现了世界BUG",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 87,
@@ -2521,13 +2679,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.8,
     "total_chapters": 41,
     "totalChapters": 41,
-    "readers": 0,
+    "readers": 29153,
     "description_en": "我养的AI竟是京圈太子爷",
     "description": "",
     "zone": "vip",
@@ -2540,7 +2702,8 @@
     "title": "我养的AI竟是京圈太子爷",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   },
   {
     "id": 88,
@@ -2550,13 +2713,17 @@
     "author_en": "",
     "author_zh": "",
     "genre": "都市",
-    "tags": [],
+    "tags": [
+      "fiction",
+      "adventure",
+      "drama"
+    ],
     "is_adult": false,
     "status": "ongoing",
-    "rating": 0,
+    "rating": 4.7,
     "total_chapters": 112,
     "totalChapters": 112,
-    "readers": 0,
+    "readers": 75841,
     "description_en": "赶山1957：二斤猪肉换个媳妇",
     "description": "",
     "zone": "vip",
@@ -2569,6 +2736,7 @@
     "title": "赶山1957：二斤猪肉换个媳妇",
     "featured": false,
     "cover_ext": "jpg",
-    "abbreviation": ""
+    "abbreviation": "",
+    "available_chapters": 3
   }
 ]
