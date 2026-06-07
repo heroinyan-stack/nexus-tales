@@ -21,8 +21,8 @@ export async function POST(req: NextRequest) {
     // Premium $11.99 (above USDT ARC20 minimum $11.70), Ultimate $14.99
     const priceAmount = plan === "ultimate" ? 14.99 : 11.99;
     const planLabel = plan === "ultimate" ? "Ultimate" : "Premium";
-    const email = session?.user?.email || "guest";
-    const orderId = `nt_${plan}_${email.replace(/[^a-zA-Z0-9]/g, "_")}_${Date.now()}`;
+    const userId = (session?.user as any)?.id || session?.user?.email?.replace(/[^a-zA-Z0-9]/g, "_") || "guest";
+    const orderId = `nt_${plan}_u${userId}_${Date.now()}`;
 
     const origin = req.nextUrl.origin;
 
@@ -38,7 +38,6 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       paymentId: result.payment_id,
-      invoiceUrl: result.invoice_url, // for credit card payments
     });
   } catch (err: any) {
     console.error("NowPayments checkout error:", err);

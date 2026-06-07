@@ -90,49 +90,53 @@ export async function POST(req: NextRequest) {
       // ── Payment confirmed / finished → activate subscription ──
       case "finished":
       case "confirmed": {
-        // Extract email from order_id: nt_premium_xxx@gmail_com_1234567890
-        const emailMatch = order_id?.match(/nt_(?:premium|ultimate)_(.+?)_\d+$/);
-        const email = emailMatch
-          ? emailMatch[1].replace(/_/g, (c: string) =>
-              c === "_at_" ? "@" : c === "_" ? "." : c
-            )
-          : null;
+        // Extract user ID from order_id: nt_premium_uUSER_ID_TIMESTAMP
+        // or fall back to email format: nt_premium_user@gmail_com_TIMESTAMP
+        const userIdMatch = order_id?.match(/nt_(?:premium|ultimate)_u(.+?)_\d+$/);
+        const emailMatch = !userIdMatch ? order_id?.match(/nt_(?:premium|ultimate)_([^_].+?)_\d+$/) : null;
 
-        // Fallback: try from description
+        // Try user ID first (most reliable)
+        let user: any = null;
+        if (userIdMatch) {
+          const userId = userIdMatch[1];
+          user = await prisma.user.findUnique({ where: { id: userId }, select: { id: true, email: true } });
+        }
+
+        // Fallback: email extraction
+        if (!user && emailMatch) {
+          // Reverse sanitization: _dot_ → . , _at_ → @ , remaining _ → .
+          const email = emailMatch[1]
+            .replace(/_at_/g, "@")
+            .replace(/_dot_/g, ".")
+            .replace(/_/g, ".");
+          user = await prisma.user.findUnique({ where: { email }, select: { id: true, email: true } });
+        }
+
+        if (!user) {
+          console.warn(`[NowPayments] Cannot find user from order_id: ${order_id}`);
+          break;
+        }
+
         const role = order_description?.toLowerCase().includes("ultimate")
           ? "ultimate"
           : "premium";
 
-        // 30 days from now
         const subExpiresAt = new Date();
         subExpiresAt.setDate(subExpiresAt.getDate() + 30);
 
-        if (email) {
-          await prisma.user.upsert({
-            where: { email },
-            create: {
-              email,
-              role,
-              subscription: "active",
-              subExpiresAt,
-              nowpaymentsPaymentId: payment_id,
-            },
-            update: {
-              role,
-              subscription: "active",
-              subExpiresAt,
-              nowpaymentsPaymentId: payment_id,
-            },
-          });
-        }
+        await prisma.user.update({
+          where: { id: user.id },
+          data: {
+            role,
+            subscription: "active",
+            subExpiresAt,
+            nowpaymentsPaymentId: payment_id,
+          },
+        });
 
-        // Also try direct email lookup from order_id without parsing
-        // (handles edge cases where email extraction fails)
-        if (!email || !emailMatch) {
-          console.warn(
-            `[NowPayments] Could not extract email from order_id: ${order_id}`
-          );
-        }
+        console.log(
+          `[NowPayments] Activated ${role} for user ${user.email || user.id} (payment: ${payment_id})`
+        );
         break;
       }
 

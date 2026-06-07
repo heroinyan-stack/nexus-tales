@@ -16,7 +16,6 @@ interface PaymentInfo {
   network: string;
   valid_until: string;
   order_description: string;
-  invoice_url?: string;
 }
 
 interface CurrencyInfo {
@@ -52,6 +51,8 @@ function CheckoutContent() {
   const [copied, setCopied] = useState(false);
   const [timeLeft, setTimeLeft] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState("usdtarc20");
+
+  const [invoicing, setInvoicing] = useState(false);
 
   // Create initial payment if no pid
   useEffect(() => {
@@ -156,6 +157,27 @@ function CheckoutContent() {
     await navigator.clipboard.writeText(payment.pay_address);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  }
+
+  async function payWithCard() {
+    setInvoicing(true);
+    try {
+      const res = await fetch("/api/payment/invoice", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ plan }),
+      });
+      const data = await res.json();
+      if (data.invoiceUrl) {
+        window.open(data.invoiceUrl, "_blank");
+      } else {
+        alert(data.error || "Failed to create credit card payment");
+      }
+    } catch {
+      alert("Network error. Please try again.");
+    } finally {
+      setInvoicing(false);
+    }
   }
 
   if (loading) {
@@ -307,18 +329,19 @@ function CheckoutContent() {
           </div>
 
           {/* Credit Card Payment */}
-          {payment.invoice_url && (
-            <a
-              href={payment.invoice_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2"
-            >
+          <button
+            onClick={payWithCard}
+            disabled={invoicing}
+            className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+          >
+            {invoicing ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
               <CreditCard className="w-4 h-4" />
-              Pay with Credit Card
-              <ExternalLink className="w-3 h-3 opacity-70" />
-            </a>
-          )}
+            )}
+            {invoicing ? "Creating..." : "Pay with Credit Card"}
+            <ExternalLink className="w-3 h-3 opacity-70" />
+          </button>
 
           {/* Status */}
           <div className="text-center p-4 rounded-xl bg-neon-cyan/10 border border-neon-cyan/20">
