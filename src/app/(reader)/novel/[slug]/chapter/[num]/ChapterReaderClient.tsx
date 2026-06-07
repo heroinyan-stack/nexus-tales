@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ChevronDown, Settings, List, X, Minus, Plus } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown, Settings, List, X, Minus, Plus, ArrowLeft, Home } from "lucide-react";
 
 type Theme = "dark" | "light" | "sepia";
 type FontFamily = "sans" | "serif";
@@ -115,9 +115,16 @@ export default function ChapterReaderClient({
         />
       </div>
 
-      {/* Immersive mode toggle */}
+      {/* Top bar: back button + full screen toggle */}
       {!isImmersive && (
-        <div className="fixed top-4 right-4 z-40">
+        <div className="fixed top-4 left-4 right-4 z-40 flex items-center justify-between">
+          <Link
+            href={`/novel/${novelSlug}`}
+            className={`flex items-center gap-1.5 ${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>Back to Novel</span>
+          </Link>
           <button
             onClick={() => setIsImmersive(true)}
             className={`${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
@@ -180,7 +187,16 @@ export default function ChapterReaderClient({
           )}
 
           {/* Center controls */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            {/* Back to novel */}
+            <Link
+              href={`/novel/${novelSlug}`}
+              className={`flex items-center gap-1 ${colors.text} opacity-60 hover:opacity-100 transition-opacity`}
+            >
+              <Home className="w-4 h-4" />
+              <span className="text-xs">Novel</span>
+            </Link>
+
             {/* Chapter list button */}
             <button
               onClick={() => setShowChapterList(true)}
