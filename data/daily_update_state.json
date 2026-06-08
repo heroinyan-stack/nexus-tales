@@ -1,6 +1,6 @@
 {
-  "last_index": 4,
-  "last_run": "2026-06-07T01:05:31.774829+00:00",
+  "last_index": 8,
+  "last_run": "2026-06-08T02:01:13.030925+00:00",
   "history": [
     {
       "date": "2026-05-21",
@@ -144,6 +144,15 @@
         "against-the-gods",
         "i-shall-seal-the-heavens",
         "reverend-insanity"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "updated": [
+        "a-will-eternal",
+        "the-remarried-empress",
+        "secret-lovers",
+        "battle-through-the-heavens"
       ]
     }
   ]
