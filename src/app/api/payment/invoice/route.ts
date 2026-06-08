@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "API key not configured" }, { status: 500 });
     }
 
-    const priceAmount = plan === "ultimate" ? 14.99 : 11.99;
+    const priceAmount = plan === "ultimate" ? 29.99 : 19.99;
     const planLabel = plan === "ultimate" ? "Ultimate" : "Premium";
     const userId = (session?.user as any)?.id || "guest";
     const orderId = `nt_${plan}_u${userId}_${Date.now()}`;

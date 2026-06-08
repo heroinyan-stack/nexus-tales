@@ -20,7 +20,7 @@
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
-    "cover_url": "https://cdn.wuxiaworld.com/images/covers/mga.webp?ver=f51d4365ab256b97d7d8ee60adf82b99e1815609",
+    "cover_url": "/covers/martial-god-asura.jpg",
     "abbreviation": "MGA",
     "totalChapters": 98,
     "author": "Kindhearted Bee",
@@ -52,7 +52,7 @@
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
-    "cover_url": "https://cdn.wuxiaworld.com/images/covers/atg.webp?ver=9961e990ab27db1b314db311c7994d04601f2071",
+    "cover_url": "/covers/against-the-gods.jpg",
     "abbreviation": "ATG",
     "totalChapters": 52,
     "author": "Mars Gravity",
@@ -82,7 +82,7 @@
     "total_chapters": 2,
     "readers": 5000000,
     "description_en": "The epic tale of the Monkey King Sun Wukong, a Buddhist monk Tang Sanzang, and their companions Pigsy and Sandy as they journey westward to India to obtain sacred Buddhist scriptures. One of the Four Great Classical Novels of Chinese literature, this mythological adventure has captivated readers worldwide for over 400 years.",
-    "cover_url": "",
+    "cover_url": "/covers/journey-to-the-west.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/23962",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -118,7 +118,7 @@
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
-    "cover_url": "https://cdn.wuxiaworld.com/images/covers/issth.webp?v=1b3d8e01982e64b2238156f83551f22e540fe24a",
+    "cover_url": "/covers/i-shall-seal-the-heavens.jpg",
     "abbreviation": "ISSTH",
     "totalChapters": 5,
     "author": "Er Gen",
@@ -153,7 +153,7 @@
     "description_en": "Nearly 500 supernatural tales from Qing Dynasty China. Fox spirits, ghosts, and immortals walk among mortals in this timeless classic of Chinese weird fiction.",
     "is_adult": false,
     "readers": 156000,
-    "cover_url": "/covers/strange-tales.jpg",
+    "cover_url": "/covers/strange-tales-chinese-studio.jpg",
     "source_url": "",
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
@@ -188,7 +188,7 @@
     "readers": 720000,
     "description_zh": "五百年前，方源是魔道巨擘，纵横天下无可匹敌。然而，天下正道围攻，他在绝境中催动春秋蝉——一只让他重回五百年前的蛊虫。这一世，他将不惜一切代价追求永生。",
     "description_en": "Five hundred years ago, Fang Yuan was a demon lord without equal. Cornered by the righteous factions, he activated the Spring Autumn Cicada, a gu worm that sent him back five centuries. In this new life, he will stop at nothing to achieve eternal life.",
-    "cover_url": "",
+    "cover_url": "/covers/reverend-insanity.jpg",
     "source_url": "https://www.biquge5200.com/bqge/4/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
@@ -222,7 +222,7 @@
     "total_chapters": 4,
     "readers": 3000000,
     "description_en": "The greatest historical epic of Chinese literature, chronicling the fall of the Han Dynasty and the rise of the Three Kingdoms. Filled with legendary heroes like Guan Yu and Zhuge Liang, battlefield tactics, political intrigue, and timeless lessons in loyalty and strategy. An essential read for anyone interested in Chinese history and culture.",
-    "cover_url": "",
+    "cover_url": "/covers/romance-of-the-three-kingdoms.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/24030",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -258,7 +258,7 @@
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
-    "cover_url": "https://cdn.wuxiaworld.com/images/covers/awe.webp?v=0c91b8d904130c510296a6925f31839982040557",
+    "cover_url": "/covers/a-will-eternal.jpg",
     "abbreviation": "AWE",
     "updated_at": "2026-06-08T02:01:13.016946+00:00",
     "totalChapters": 53,
@@ -293,7 +293,7 @@
     "description_en": "The great war between Shang and Zhou becomes a battlefield for gods and demons. Jiang Ziya must bestow divine titles upon the fallen in this epic of Chinese mythology.",
     "is_adult": false,
     "readers": 189000,
-    "cover_url": "/covers/investiture-gods.jpg",
+    "cover_url": "/covers/investiture-of-the-gods.jpg",
     "source_url": "",
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
@@ -327,7 +327,7 @@
     "readers": 2100000,
     "description_zh": "我嫁给了皇帝，却从不曾得到他的真心。当外邦的奴隶被册封为妃，我知道我们的婚姻已经走到了尽头。但我没有流泪，也没有哀求。我要堂堂正正地离开，然后在另一个国度重新开始。",
     "description_en": "Navier was the perfect empress, but her husband the emperor never loved her. When he brings a slave girl into the palace and makes her his concubine, Navier doesn't cry or beg. She divorces him — and finds a new beginning in a neighboring kingdom.",
-    "cover_url": "",
+    "cover_url": "/covers/the-remarried-empress.jpg",
     "source_url": "https://www.biquge5200.com/bqge/6/",
     "source_site": "biquge5200",
     "created_at": "2025-05-17",
@@ -362,7 +362,7 @@
     "total_chapters": 4,
     "readers": 2500000,
     "description_en": "Considered the pinnacle of Chinese fiction, this sprawling masterpiece follows the rise and fall of the aristocratic Jia family. A profound exploration of love, fate, and the impermanence of worldly glory. Set against the backdrop of 18th century Qing Dynasty society, it weaves together over 400 characters in a tapestry of unparalleled complexity.",
-    "cover_url": "",
+    "cover_url": "/covers/dream-of-the-red-chamber.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/9603",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -398,7 +398,7 @@
     "readers": 450000,
     "description_zh": "她以为自己只是他众多女人中的一个。直到有一天，她发现自己成了他最想占有的猎物。在她和总裁展开的秘密恋情中，权力的游戏远比爱情更为凶险。",
     "description_en": "She thought she was just one of his many women — until she realized she had become the prey he wanted most. In their secret affair with the CEO of a powerful corporation, the game of power proves far more dangerous than the game of love.",
-    "cover_url": "",
+    "cover_url": "/covers/secret-lovers.jpg",
     "source_url": "",
     "source_site": "manual",
     "created_at": "2025-05-17",
@@ -434,7 +434,7 @@
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
-    "cover_url": "https://cdn.wuxiaworld.com/images/covers/btth.webp?v=b49ecfeb59e7f8a1e94379b5bfa58828e70883a4",
+    "cover_url": "/covers/battle-through-the-heavens.jpg",
     "abbreviation": "BTTH",
     "updated_at": "2026-06-08T02:01:13.020219+00:00",
     "totalChapters": 53,
@@ -468,7 +468,7 @@
     "description_en": "Lemuel Gulliver voyages to Lilliput, Brobdingnag, Laputa, and beyond — a timeless adventure of wonder, satire, and dark truth about human nature.",
     "is_adult": false,
     "readers": 320000,
-    "cover_url": "/covers/gulliver.jpg",
+    "cover_url": "/covers/gullivers-travels.jpg",
     "source_url": "",
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
@@ -501,7 +501,7 @@
     "total_chapters": 4,
     "readers": 2000000,
     "description_en": "The legendary tale of 108 outlaws who gather at Mount Liangshan to form an army of righteous rebels. Fighting against corrupt officials and oppressive rulers, these colorful heroes embody the timeless spirit of brotherhood and justice. The original Chinese 'band of misfits' epic, predating modern team-up stories by centuries.",
-    "cover_url": "",
+    "cover_url": "/covers/water-margin.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/23864",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -537,7 +537,7 @@
     "description": "",
     "zone": "vip",
     "source": "wuxiaworld",
-    "cover_url": "https://cdn.wuxiaworld.com/images/covers/rge.webp?v=f264adaaecabc7ba05c33497868dac78e3a37c63",
+    "cover_url": "/covers/renegade-immortal.jpg",
     "abbreviation": "RGE",
     "updated_at": "2026-06-06T01:06:03.276027+00:00",
     "totalChapters": 52,
@@ -570,7 +570,7 @@
     "readers": 1600000,
     "description_zh": "一夜荒唐，她惹上帝国总裁。她以为天亮之后就是陌生人了，谁知道他拿着一纸婚书，将她的人生彻底改写。五年的隐婚，她以为自己只是他协议上的妻子，却不知道从第一天起，他就已经认定了她。",
     "description_en": "One reckless night entangled her with the CEO of an empire. She thought they'd be strangers by morning — but he showed up with a marriage certificate that changed her life forever. Five years of hidden marriage passed before she realized: he had chosen her from the very first day.",
-    "cover_url": "",
+    "cover_url": "/covers/hidden-marriage.jpg",
     "source_url": "",
     "source_site": "manual",
     "created_at": "2025-05-17",
@@ -605,7 +605,7 @@
     "total_chapters": 3,
     "readers": 10000000,
     "description_en": "The world's most influential treatise on military strategy, written 2,500 years ago and still studied in military academies and business schools worldwide. Sun Tzu's timeless wisdom extends far beyond the battlefield—his principles of strategic thinking have influenced leaders from Napoleon to modern CEOs. Short, profound, and endlessly quotable.",
-    "cover_url": "",
+    "cover_url": "/covers/art-of-war.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/132",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -643,7 +643,7 @@
     "description_en": "Before heaven and earth, there was chaos. Witness the birth of Pangu, the mending of the sky by Nüwa, and the first gods taking their celestial thrones.",
     "is_adult": false,
     "readers": 41000,
-    "cover_url": "/covers/creation-gods.jpg",
+    "cover_url": "/covers/creation-of-the-gods.jpg",
     "source_url": "",
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
@@ -678,7 +678,7 @@
     "readers": 560000,
     "description_zh": "在浮冰海湾的尽头，矗立着一座聚集了所有罪恶的城市。理查德，一个背负着沉重命运的年轻贵族，将在这里掀起一场席卷整个大陆的风暴。",
     "description_en": "At the edge of the Floating Ice Bay stands a city that has gathered every sin imaginable. Richard, a young noble burdened by fate, will unleash a storm here that will sweep across the entire continent.",
-    "cover_url": "",
+    "cover_url": "/covers/city-of-sin.jpg",
     "source_url": "https://www.biquge5200.com/bqge/11/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
@@ -714,7 +714,7 @@
     "readers": 480000,
     "description_zh": "人类进入星际时代，但他们的敌人从来不只是外星人。在无尽星海中，有一种古老而神秘的力量在苏醒。少年韩森，凭借一枚神秘的血脉基因，在这个残酷的宇宙中开启了他的进化之路。",
     "description_en": "Humanity has entered the interstellar age, but their enemies have never been limited to aliens. In the boundless star ocean, an ancient and mysterious power is awakening. Armed with a mysterious gene, Han Sen begins his evolutionary journey in a brutal universe.",
-    "cover_url": "",
+    "cover_url": "/covers/super-gene.jpg",
     "source_url": "https://www.biquge5200.com/bqge/12/",
     "source_site": "biquge5200",
     "created_at": "2025-05-01",
@@ -749,7 +749,7 @@
     "total_chapters": 2,
     "readers": 8000000,
     "description_en": "The foundational text of Taoism and one of the most translated books in human history. Lao Tzu's 81 brief chapters contain a universe of wisdom on living in harmony with the natural order, the power of non-action (wu-wei), and the profound simplicity of the Tao. A spiritual classic that has guided seekers for 2,500 years.",
-    "cover_url": "",
+    "cover_url": "/covers/tao-te-ching.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/216",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -788,7 +788,7 @@
     "description_en": "From a stone egg atop the Mountain of Flowers and Fruit, Sun Wukong is born. Follow his earliest days: the Water Curtain Cave, the quest for immortality, and the mischief that makes him legend.",
     "is_adult": false,
     "readers": 87000,
-    "cover_url": "/covers/monkey-king-birth.jpg",
+    "cover_url": "/covers/monkey-kings-birth.jpg",
     "source_url": "",
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
@@ -821,7 +821,7 @@
     "total_chapters": 1,
     "readers": 5000000,
     "description_en": "The collected teachings of China's greatest philosopher. Through conversations with his disciples, Confucius laid the foundation for East Asian ethics, governance, and personal cultivation. His emphasis on virtue (ren), ritual propriety (li), and the ideal of the 'gentleman' (junzi) continues to resonate across cultures.",
-    "cover_url": "",
+    "cover_url": "/covers/analects-of-confucius.jpg",
     "source_url": "https://www.gutenberg.org/ebooks/3330",
     "source_site": "public_domain",
     "created_at": "2025-05-18",
@@ -866,7 +866,8 @@
     "id": 89,
     "available_chapters": 16,
     "author": "Ernest Bramah",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/kai-lung-unrolls-his-mat.jpg"
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -898,7 +899,8 @@
     "id": 90,
     "available_chapters": 18,
     "author": "Pu Songling",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/chinese-ghost-and-love-stories.jpg"
   },
   {
     "slug": "white-snake-legend",
@@ -923,7 +925,7 @@
     "description_en": "A thousand-year-old white snake spirit falls in love with a mortal man at West Lake. One of China's Four Great Folktales, retold for modern readers.",
     "is_adult": false,
     "readers": 124000,
-    "cover_url": "/covers/white-snake.jpg",
+    "cover_url": "/covers/white-snake-legend.jpg",
     "source_url": "",
     "source_site": "Nexus Tales",
     "created_at": "2026-05-25T00:00:00Z",
@@ -967,7 +969,8 @@
     "id": 91,
     "available_chapters": 16,
     "author": "Confucius (compiler)",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/the-book-of-songs.jpg"
   },
   {
     "slug": "chinese-poetry",
@@ -999,7 +1002,8 @@
     "id": 92,
     "available_chapters": 2,
     "author": "Li Bai, Du Fu & Others",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/chinese-poetry.jpg"
   },
   {
     "slug": "zhuangzi",
@@ -1031,7 +1035,8 @@
     "id": 93,
     "available_chapters": 16,
     "author": "Zhuang Zhou",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/zhuangzi.jpg"
   },
   {
     "slug": "the-flight-of-dragons",
@@ -1063,7 +1068,8 @@
     "id": 94,
     "available_chapters": 17,
     "author": "Peter Dickinson",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/the-flight-of-dragons.jpg"
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -1095,7 +1101,8 @@
     "id": 95,
     "available_chapters": 16,
     "author": "Emanuel Swedenborg",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/personal-narrative-of-heavenly-revelations.jpg"
   },
   {
     "slug": "the-story-of-the-stone",
@@ -1127,7 +1134,8 @@
     "id": 96,
     "available_chapters": 19,
     "author": "Cao Xueqin",
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/the-story-of-the-stone.jpg"
   },
   {
     "id": 34,
@@ -1156,7 +1164,8 @@
     "cover": "/covers/analects-xue-er.jpg",
     "featured": false,
     "available_chapters": 2,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-xue-er.jpg"
   },
   {
     "id": 35,
@@ -1185,7 +1194,8 @@
     "cover": "/covers/analects-xu-wen.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-xu-wen.jpg"
   },
   {
     "id": 36,
@@ -1214,7 +1224,8 @@
     "cover": "/covers/analects-ba-yi.jpg",
     "featured": false,
     "available_chapters": 2,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-ba-yi.jpg"
   },
   {
     "id": 37,
@@ -1243,7 +1254,8 @@
     "cover": "/covers/analects-li-ren.jpg",
     "featured": false,
     "available_chapters": 2,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-li-ren.jpg"
   },
   {
     "id": 38,
@@ -1272,7 +1284,8 @@
     "cover": "/covers/analects-gong-ye-chang.jpg",
     "featured": false,
     "available_chapters": 2,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-gong-ye-chang.jpg"
   },
   {
     "id": 39,
@@ -1301,7 +1314,8 @@
     "cover": "/covers/analects-yong-ye.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-yong-ye.jpg"
   },
   {
     "id": 40,
@@ -1330,7 +1344,8 @@
     "cover": "/covers/analects-shu-er.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-shu-er.jpg"
   },
   {
     "id": 41,
@@ -1359,7 +1374,8 @@
     "cover": "/covers/analects-tai-bo.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-tai-bo.jpg"
   },
   {
     "id": 42,
@@ -1388,7 +1404,8 @@
     "cover": "/covers/analects-zi-han.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-zi-han.jpg"
   },
   {
     "id": 43,
@@ -1417,7 +1434,8 @@
     "cover": "/covers/analects-xiang-dang.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-xiang-dang.jpg"
   },
   {
     "id": 44,
@@ -1446,7 +1464,8 @@
     "cover": "/covers/analects-xian-jin.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-xian-jin.jpg"
   },
   {
     "id": 45,
@@ -1475,7 +1494,8 @@
     "cover": "/covers/analects-gu-shan.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-gu-shan.jpg"
   },
   {
     "id": 46,
@@ -1504,7 +1524,8 @@
     "cover": "/covers/analects-zi-lu.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-zi-lu.jpg"
   },
   {
     "id": 47,
@@ -1533,7 +1554,8 @@
     "cover": "/covers/analects-wei-zheng.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-wei-zheng.jpg"
   },
   {
     "id": 48,
@@ -1562,7 +1584,8 @@
     "cover": "/covers/analects-ji-shi.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-ji-shi.jpg"
   },
   {
     "id": 49,
@@ -1591,7 +1614,8 @@
     "cover": "/covers/analects-yang-huo.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-yang-huo.jpg"
   },
   {
     "id": 50,
@@ -1620,7 +1644,8 @@
     "cover": "/covers/analects-wei-ling-gong.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-wei-ling-gong.jpg"
   },
   {
     "id": 51,
@@ -1649,7 +1674,8 @@
     "cover": "/covers/analects-yao-yue.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/analects-yao-yue.jpg"
   },
   {
     "id": 52,
@@ -1678,7 +1704,8 @@
     "cover": "/covers/dao-de-jing.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/dao-de-jing.jpg"
   },
   {
     "id": 53,
@@ -1707,7 +1734,8 @@
     "cover": "/covers/three-character-classic.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/three-character-classic.jpg"
   },
   {
     "id": 54,
@@ -1736,7 +1764,8 @@
     "cover": "/covers/book-of-songs-shijing-min-yao.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/book-of-songs-shijing-min-yao.jpg"
   },
   {
     "id": 55,
@@ -1765,7 +1794,8 @@
     "cover": "/covers/book-of-songs-shijing-ya-song.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/book-of-songs-shijing-ya-song.jpg"
   },
   {
     "id": 56,
@@ -1794,7 +1824,8 @@
     "cover": "/covers/book-of-songs-shijing-da-ya-1.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/book-of-songs-shijing-da-ya-1.jpg"
   },
   {
     "id": 57,
@@ -1823,7 +1854,8 @@
     "cover": "/covers/book-of-songs-shijing-xiao-ya.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/book-of-songs-shijing-xiao-ya.jpg"
   },
   {
     "id": 58,
@@ -1852,7 +1884,8 @@
     "cover": "/covers/zhuangzi-xiao-yao-you.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/zhuangzi-xiao-yao-you.jpg"
   },
   {
     "id": 59,
@@ -1881,7 +1914,8 @@
     "cover": "/covers/zhuangzi-qi-wu-lun.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/zhuangzi-qi-wu-lun.jpg"
   },
   {
     "id": 60,
@@ -1910,7 +1944,8 @@
     "cover": "/covers/sunzi-the-strategist.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/sunzi-the-strategist.jpg"
   },
   {
     "id": 61,
@@ -1939,7 +1974,8 @@
     "cover": "/covers/sunzi-shiliu-jin.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/sunzi-shiliu-jin.jpg"
   },
   {
     "id": 62,
@@ -1968,7 +2004,8 @@
     "cover": "/covers/xunzi-qiang-guo.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/xunzi-qiang-guo.jpg"
   },
   {
     "id": 63,
@@ -1997,7 +2034,8 @@
     "cover": "/covers/hanfeizi-wu-du.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/hanfeizi-wu-du.jpg"
   },
   {
     "id": 64,
@@ -2026,7 +2064,8 @@
     "cover": "/covers/da-xue.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/da-xue.jpg"
   },
   {
     "id": 65,
@@ -2055,7 +2094,8 @@
     "cover": "/covers/zhong-yong.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/zhong-yong.jpg"
   },
   {
     "id": 66,
@@ -2084,7 +2124,8 @@
     "cover": "/covers/tang-shi-ti-huai-nong.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/tang-shi-ti-huai-nong.jpg"
   },
   {
     "id": 67,
@@ -2113,7 +2154,8 @@
     "cover": "/covers/tang-shi-ti-huai-shi.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/tang-shi-ti-huai-shi.jpg"
   },
   {
     "id": 68,
@@ -2142,7 +2184,8 @@
     "cover": "/covers/thirty-six-stratagems.jpg",
     "featured": false,
     "available_chapters": 1,
-    "category": "Classics"
+    "category": "Classics",
+    "cover_url": "/covers/thirty-six-stratagems.jpg"
   },
   {
     "id": 69,
@@ -2168,7 +2211,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133988/",
-    "cover_url": "/covers/749.jpg",
+    "cover_url": "/covers/novel-133988.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Daoist Master of Mystery",
     "cover": "749.jpg",
@@ -2203,7 +2246,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133515/",
-    "cover_url": "/covers/v.jpg",
+    "cover_url": "/covers/novel-133515.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Douluo Dalu Fan Author",
     "cover": "v.jpg",
@@ -2238,7 +2281,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/134/134081/",
-    "cover_url": "/covers/70.jpg",
+    "cover_url": "/covers/novel-134081.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Urban Rebirth Author",
     "cover": "70.jpg",
@@ -2273,7 +2316,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/134/134033/",
-    "cover_url": "/covers/sss.jpg",
+    "cover_url": "/covers/novel-134033.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Apocalypse Survival Author",
     "cover": "sss.jpg",
@@ -2308,7 +2351,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133775/",
-    "cover_url": "/covers/cp.jpg",
+    "cover_url": "/covers/novel-133775.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Post-Apocalyptic Builder",
     "cover": "cp.jpg",
@@ -2343,7 +2386,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133647/",
-    "cover_url": "/covers/19.jpg",
+    "cover_url": "/covers/novel-133647.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Doomsday Chronicler",
     "cover": "19.jpg",
@@ -2378,7 +2421,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133748/",
-    "cover_url": "/covers/s.jpg",
+    "cover_url": "/covers/novel-133629.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "System Stream Author",
     "cover": "s.jpg",
@@ -2413,7 +2456,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133742/",
-    "cover_url": "/covers/n.jpg",
+    "cover_url": "/covers/novel-134053.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Urban Fantasy Author",
     "cover": "n.jpg",
@@ -2448,7 +2491,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133385/",
-    "cover_url": "/covers/n-s.jpg",
+    "cover_url": "/covers/novel-134056.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Sentinel Romance Author",
     "cover": "n-s.jpg",
@@ -2483,7 +2526,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133473/",
-    "cover_url": "/covers/boss.jpg",
+    "cover_url": "/covers/novel-133975.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Villain Protagonist Author",
     "cover": "boss.jpg",
@@ -2518,7 +2561,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133209/",
-    "cover_url": "/covers/npc.jpg",
+    "cover_url": "/covers/novel-133977.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Dungeon Master Author",
     "cover": "npc.jpg",
@@ -2553,7 +2596,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133981/",
-    "cover_url": "/covers/2000.jpg",
+    "cover_url": "/covers/novel-133981.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Rebirth 2000 Author",
     "cover": "2000.jpg",
@@ -2588,7 +2631,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133930/",
-    "cover_url": "/covers/2008.jpg",
+    "cover_url": "/covers/novel-133930.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Entertainment Circle Author",
     "cover": "2008.jpg",
@@ -2623,7 +2666,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133934/",
-    "cover_url": "/covers/80.jpg",
+    "cover_url": "/covers/novel-133934.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Rebirth Farming Author",
     "cover": "80.jpg",
@@ -2658,7 +2701,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133856/",
-    "cover_url": "/covers/60.jpg",
+    "cover_url": "/covers/novel-133856.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Time Travel Survival Author",
     "cover": "60.jpg",
@@ -2693,7 +2736,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133896/",
-    "cover_url": "/covers/007.jpg",
+    "cover_url": "/covers/novel-133896.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "System Delivery Author",
     "cover": "007.jpg",
@@ -2728,7 +2771,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133941/",
-    "cover_url": "/covers/2006.jpg",
+    "cover_url": "/covers/novel-133941.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Film Empress Romance Author",
     "cover": "2006.jpg",
@@ -2763,7 +2806,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133765/",
-    "cover_url": "/covers/bug.jpg",
+    "cover_url": "/covers/novel-133879.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "World Bug Discoverer",
     "cover": "bug.jpg",
@@ -2798,7 +2841,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133732/",
-    "cover_url": "/covers/ai.jpg",
+    "cover_url": "/covers/novel-133985.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "AI CEO Romance Author",
     "cover": "ai.jpg",
@@ -2833,7 +2876,7 @@
     "zone": "vip",
     "source": "bxwx9",
     "source_url": "https://www.bxwx9.org/b/133/133651/",
-    "cover_url": "/covers/1957.jpg",
+    "cover_url": "/covers/novel-133651.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
     "author": "Mountain Life Author",
     "cover": "1957.jpg",

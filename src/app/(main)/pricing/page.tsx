@@ -28,7 +28,7 @@ const TIERS = [
     id: "premium",
     name: "Premium",
     icon: Zap,
-    price: "$11.99",
+    price: "$19.99",
     period: "30 days",
     description: "Unlimited reading for avid readers",
     features: [
@@ -47,7 +47,7 @@ const TIERS = [
     id: "ultimate",
     name: "Ultimate",
     icon: Crown,
-    price: "$14.99",
+    price: "$29.99",
     period: "30 days",
     description: "The complete Nexus Tales experience",
     features: [

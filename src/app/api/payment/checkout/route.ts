@@ -18,8 +18,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Premium $11.99 (above USDT ARC20 minimum $11.70), Ultimate $14.99
-    const priceAmount = plan === "ultimate" ? 14.99 : 11.99;
+    // Premium $19.99, Ultimate $29.99 (above NowPayments min $19.04)
+    const priceAmount = plan === "ultimate" ? 29.99 : 19.99;
     const planLabel = plan === "ultimate" ? "Ultimate" : "Premium";
     const userId = (session?.user as any)?.id || session?.user?.email?.replace(/[^a-zA-Z0-9]/g, "_") || "guest";
     const orderId = `nt_${plan}_u${userId}_${Date.now()}`;
