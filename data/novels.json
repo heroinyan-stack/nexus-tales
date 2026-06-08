@@ -28,7 +28,8 @@
     "updated_at": "2026-06-07T01:05:31.764007+00:00",
     "title": "Martial God Asura",
     "featured": true,
-    "available_chapters": 98
+    "available_chapters": 98,
+    "category": "Xianxia"
   },
   {
     "id": 21,
@@ -59,7 +60,8 @@
     "updated_at": "2026-06-07T01:05:31.765721+00:00",
     "title": "Against The Gods",
     "featured": true,
-    "available_chapters": 52
+    "available_chapters": 52,
+    "category": "Xianxia"
   },
   {
     "id": 13,
@@ -92,7 +94,8 @@
     "cover": "/covers/journey-to-the-west.jpg",
     "title": "Journey To The West",
     "featured": false,
-    "available_chapters": 15
+    "available_chapters": 15,
+    "category": "Classics"
   },
   {
     "id": 12,
@@ -123,7 +126,8 @@
     "updated_at": "2026-06-07T01:05:31.766282+00:00",
     "title": "I Shall Seal The Heavens",
     "featured": false,
-    "available_chapters": 5
+    "available_chapters": 5,
+    "category": "Xianxia"
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -159,7 +163,8 @@
     "totalChapters": 15,
     "title": "Strange Tales Chinese Studio",
     "featured": false,
-    "available_chapters": 15
+    "available_chapters": 15,
+    "category": "Classics"
   },
   {
     "id": 4,
@@ -195,7 +200,8 @@
     "cover": "/covers/reverend-insanity.jpg",
     "title": "Reverend Insanity",
     "featured": false,
-    "available_chapters": 27
+    "available_chapters": 27,
+    "category": "Xianxia"
   },
   {
     "id": 14,
@@ -228,7 +234,8 @@
     "cover": "/covers/romance-of-the-three-kingdoms.jpg",
     "title": "Romance Of The Three Kingdoms",
     "featured": false,
-    "available_chapters": 13
+    "available_chapters": 13,
+    "category": "Classics"
   },
   {
     "id": 20,
@@ -259,7 +266,8 @@
     "cover": "/covers/a-will-eternal.jpg",
     "title": "A Will Eternal",
     "featured": true,
-    "available_chapters": 53
+    "available_chapters": 53,
+    "category": "Xianxia"
   },
   {
     "slug": "investiture-of-the-gods",
@@ -295,7 +303,8 @@
     "totalChapters": 15,
     "title": "Investiture Of The Gods",
     "featured": false,
-    "available_chapters": 15
+    "available_chapters": 15,
+    "category": "Xianxia"
   },
   {
     "id": 6,
@@ -330,7 +339,8 @@
     "cover": "/covers/the-remarried-empress.jpg",
     "title": "The Remarried Empress",
     "featured": false,
-    "available_chapters": 10
+    "available_chapters": 10,
+    "category": "Romance"
   },
   {
     "id": 15,
@@ -364,7 +374,8 @@
     "cover": "/covers/dream-of-the-red-chamber.jpg",
     "title": "Dream Of The Red Chamber",
     "featured": false,
-    "available_chapters": 11
+    "available_chapters": 11,
+    "category": "Classics"
   },
   {
     "id": 7,
@@ -398,7 +409,9 @@
     "cover": "/covers/secret-lovers.jpg",
     "title": "Secret Lovers",
     "featured": false,
-    "available_chapters": 10
+    "available_chapters": 10,
+    "author": "Romance Author",
+    "category": "Romance"
   },
   {
     "id": 23,
@@ -429,7 +442,8 @@
     "cover": "/covers/battle-through-the-heavens.jpg",
     "title": "Battle Through The Heavens",
     "featured": true,
-    "available_chapters": 53
+    "available_chapters": 53,
+    "category": "Xianxia"
   },
   {
     "slug": "gullivers-travels",
@@ -464,7 +478,9 @@
     "totalChapters": 11,
     "title": "Gullivers Travels",
     "featured": false,
-    "available_chapters": 11
+    "available_chapters": 11,
+    "author": "Jonathan Swift",
+    "category": "Fantasy"
   },
   {
     "id": 16,
@@ -497,7 +513,8 @@
     "cover": "/covers/water-margin.jpg",
     "title": "Water Margin",
     "featured": false,
-    "available_chapters": 11
+    "available_chapters": 11,
+    "category": "Classics"
   },
   {
     "id": 40,
@@ -527,7 +544,9 @@
     "cover": "/covers/renegade-immortal.jpg",
     "title": "Renegade Immortal",
     "featured": false,
-    "available_chapters": 52
+    "available_chapters": 52,
+    "author": "Er Gen",
+    "category": "Xianxia"
   },
   {
     "id": 10,
@@ -562,7 +581,9 @@
     "cover": "/covers/hidden-marriage.jpg",
     "title": "Hidden Marriage",
     "featured": false,
-    "available_chapters": 10
+    "available_chapters": 10,
+    "author": "Romance Author",
+    "category": "Romance"
   },
   {
     "id": 17,
@@ -596,7 +617,8 @@
     "cover": "/covers/art-of-war.jpg",
     "title": "Art Of War",
     "featured": false,
-    "available_chapters": 13
+    "available_chapters": 13,
+    "category": "Classics"
   },
   {
     "slug": "creation-of-the-gods",
@@ -631,7 +653,9 @@
     "totalChapters": 10,
     "title": "Creation Of The Gods",
     "featured": false,
-    "available_chapters": 10
+    "available_chapters": 10,
+    "author": "Xu Zhonglin",
+    "category": "Classics"
   },
   {
     "id": 11,
@@ -665,7 +689,9 @@
     "cover": "/covers/city-of-sin.jpg",
     "title": "City Of Sin",
     "featured": false,
-    "available_chapters": 10
+    "available_chapters": 10,
+    "author": "Misty Rain of the South",
+    "category": "Fantasy"
   },
   {
     "id": 12,
@@ -699,7 +725,9 @@
     "cover": "/covers/super-gene.jpg",
     "title": "Super Gene",
     "featured": false,
-    "available_chapters": 10
+    "available_chapters": 10,
+    "author": "Twelve-Winged Dark Seraphim",
+    "category": "Sci-Fi"
   },
   {
     "id": 18,
@@ -733,7 +761,8 @@
     "cover": "/covers/tao-te-ching.jpg",
     "title": "Tao Te Ching",
     "featured": false,
-    "available_chapters": 83
+    "available_chapters": 83,
+    "category": "Classics"
   },
   {
     "slug": "monkey-kings-birth",
@@ -769,7 +798,9 @@
     "totalChapters": 9,
     "title": "Monkey Kings Birth",
     "featured": false,
-    "available_chapters": 9
+    "available_chapters": 9,
+    "author": "Wu Cheng'en",
+    "category": "Xianxia"
   },
   {
     "id": 19,
@@ -802,7 +833,8 @@
     "cover": "/covers/analects-of-confucius.jpg",
     "title": "Analects Of Confucius",
     "featured": false,
-    "available_chapters": 21
+    "available_chapters": 21,
+    "category": "Classics"
   },
   {
     "slug": "kai-lung-unrolls-his-mat",
@@ -832,7 +864,9 @@
     "title": "Kai Lung Unrolls His Mat",
     "featured": false,
     "id": 89,
-    "available_chapters": 16
+    "available_chapters": 16,
+    "author": "Ernest Bramah",
+    "category": "Classics"
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -862,7 +896,9 @@
     "title": "Chinese Ghost And Love Stories",
     "featured": false,
     "id": 90,
-    "available_chapters": 18
+    "available_chapters": 18,
+    "author": "Pu Songling",
+    "category": "Classics"
   },
   {
     "slug": "white-snake-legend",
@@ -897,7 +933,9 @@
     "totalChapters": 9,
     "title": "White Snake Legend",
     "featured": false,
-    "available_chapters": 9
+    "available_chapters": 9,
+    "author": "Folk Legend",
+    "category": "Romance"
   },
   {
     "slug": "the-book-of-songs",
@@ -927,7 +965,9 @@
     "title": "The Book Of Songs",
     "featured": false,
     "id": 91,
-    "available_chapters": 16
+    "available_chapters": 16,
+    "author": "Confucius (compiler)",
+    "category": "Classics"
   },
   {
     "slug": "chinese-poetry",
@@ -957,7 +997,9 @@
     "title": "Chinese Poetry",
     "featured": false,
     "id": 92,
-    "available_chapters": 2
+    "available_chapters": 2,
+    "author": "Li Bai, Du Fu & Others",
+    "category": "Classics"
   },
   {
     "slug": "zhuangzi",
@@ -987,7 +1029,9 @@
     "title": "Zhuangzi",
     "featured": false,
     "id": 93,
-    "available_chapters": 16
+    "available_chapters": 16,
+    "author": "Zhuang Zhou",
+    "category": "Classics"
   },
   {
     "slug": "the-flight-of-dragons",
@@ -1017,7 +1061,9 @@
     "title": "The Flight Of Dragons",
     "featured": false,
     "id": 94,
-    "available_chapters": 17
+    "available_chapters": 17,
+    "author": "Peter Dickinson",
+    "category": "Classics"
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -1047,7 +1093,9 @@
     "title": "Personal Narrative Of Heavenly Revelations",
     "featured": false,
     "id": 95,
-    "available_chapters": 16
+    "available_chapters": 16,
+    "author": "Emanuel Swedenborg",
+    "category": "Classics"
   },
   {
     "slug": "the-story-of-the-stone",
@@ -1077,7 +1125,9 @@
     "title": "The Story Of The Stone",
     "featured": false,
     "id": 96,
-    "available_chapters": 19
+    "available_chapters": 19,
+    "author": "Cao Xueqin",
+    "category": "Classics"
   },
   {
     "id": 34,
@@ -1105,7 +1155,8 @@
     "totalChapters": 2,
     "cover": "/covers/analects-xue-er.jpg",
     "featured": false,
-    "available_chapters": 2
+    "available_chapters": 2,
+    "category": "Classics"
   },
   {
     "id": 35,
@@ -1133,7 +1184,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-xu-wen.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 36,
@@ -1161,7 +1213,8 @@
     "totalChapters": 2,
     "cover": "/covers/analects-ba-yi.jpg",
     "featured": false,
-    "available_chapters": 2
+    "available_chapters": 2,
+    "category": "Classics"
   },
   {
     "id": 37,
@@ -1189,7 +1242,8 @@
     "totalChapters": 2,
     "cover": "/covers/analects-li-ren.jpg",
     "featured": false,
-    "available_chapters": 2
+    "available_chapters": 2,
+    "category": "Classics"
   },
   {
     "id": 38,
@@ -1217,7 +1271,8 @@
     "totalChapters": 2,
     "cover": "/covers/analects-gong-ye-chang.jpg",
     "featured": false,
-    "available_chapters": 2
+    "available_chapters": 2,
+    "category": "Classics"
   },
   {
     "id": 39,
@@ -1245,7 +1300,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-yong-ye.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 40,
@@ -1273,7 +1329,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-shu-er.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 41,
@@ -1301,7 +1358,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-tai-bo.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 42,
@@ -1329,7 +1387,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-zi-han.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 43,
@@ -1357,7 +1416,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-xiang-dang.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 44,
@@ -1385,7 +1445,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-xian-jin.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 45,
@@ -1413,7 +1474,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-gu-shan.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 46,
@@ -1441,7 +1503,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-zi-lu.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 47,
@@ -1469,7 +1532,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-wei-zheng.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 48,
@@ -1497,7 +1561,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-ji-shi.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 49,
@@ -1525,7 +1590,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-yang-huo.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 50,
@@ -1553,7 +1619,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-wei-ling-gong.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 51,
@@ -1581,7 +1648,8 @@
     "totalChapters": 1,
     "cover": "/covers/analects-yao-yue.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 52,
@@ -1609,7 +1677,8 @@
     "totalChapters": 1,
     "cover": "/covers/dao-de-jing.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 53,
@@ -1637,7 +1706,8 @@
     "totalChapters": 1,
     "cover": "/covers/three-character-classic.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 54,
@@ -1665,7 +1735,8 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-min-yao.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 55,
@@ -1693,7 +1764,8 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-ya-song.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 56,
@@ -1721,7 +1793,8 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-da-ya-1.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 57,
@@ -1749,7 +1822,8 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-xiao-ya.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 58,
@@ -1777,7 +1851,8 @@
     "totalChapters": 1,
     "cover": "/covers/zhuangzi-xiao-yao-you.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 59,
@@ -1805,7 +1880,8 @@
     "totalChapters": 1,
     "cover": "/covers/zhuangzi-qi-wu-lun.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 60,
@@ -1833,7 +1909,8 @@
     "totalChapters": 1,
     "cover": "/covers/sunzi-the-strategist.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 61,
@@ -1861,7 +1938,8 @@
     "totalChapters": 1,
     "cover": "/covers/sunzi-shiliu-jin.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 62,
@@ -1889,7 +1967,8 @@
     "totalChapters": 1,
     "cover": "/covers/xunzi-qiang-guo.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 63,
@@ -1917,7 +1996,8 @@
     "totalChapters": 1,
     "cover": "/covers/hanfeizi-wu-du.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 64,
@@ -1945,7 +2025,8 @@
     "totalChapters": 1,
     "cover": "/covers/da-xue.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 65,
@@ -1973,7 +2054,8 @@
     "totalChapters": 1,
     "cover": "/covers/zhong-yong.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 66,
@@ -2001,7 +2083,8 @@
     "totalChapters": 1,
     "cover": "/covers/tang-shi-ti-huai-nong.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 67,
@@ -2029,7 +2112,8 @@
     "totalChapters": 1,
     "cover": "/covers/tang-shi-ti-huai-shi.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 68,
@@ -2057,7 +2141,8 @@
     "totalChapters": 1,
     "cover": "/covers/thirty-six-stratagems.jpg",
     "featured": false,
-    "available_chapters": 1
+    "available_chapters": 1,
+    "category": "Classics"
   },
   {
     "id": 69,
@@ -2085,13 +2170,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133988/",
     "cover_url": "/covers/749.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Daoist Master of Mystery",
     "cover": "749.jpg",
     "title": "道士下山之749局",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 12
+    "available_chapters": 12,
+    "category": "Xianxia"
   },
   {
     "id": 70,
@@ -2119,13 +2205,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133515/",
     "cover_url": "/covers/v.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Douluo Dalu Fan Author",
     "cover": "v.jpg",
     "title": "斗罗V：开局绑定朱竹清，创建神级家族",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 10
+    "available_chapters": 10,
+    "category": "Xianxia"
   },
   {
     "id": 71,
@@ -2153,13 +2240,14 @@
     "source_url": "https://www.bxwx9.org/b/134/134081/",
     "cover_url": "/covers/70.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Urban Rebirth Author",
     "cover": "70.jpg",
     "title": "70年代开局，我靠零元购发家",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 11
+    "available_chapters": 11,
+    "category": "Wuxia"
   },
   {
     "id": 72,
@@ -2187,13 +2275,14 @@
     "source_url": "https://www.bxwx9.org/b/134/134033/",
     "cover_url": "/covers/sss.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Apocalypse Survival Author",
     "cover": "sss.jpg",
     "title": "全民饥荒：SSS级天赋酿酒师",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 73,
@@ -2221,13 +2310,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133775/",
     "cover_url": "/covers/cp.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Post-Apocalyptic Builder",
     "cover": "cp.jpg",
     "title": "无CP废土：基建养出全",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 74,
@@ -2255,13 +2345,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133647/",
     "cover_url": "/covers/19.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Doomsday Chronicler",
     "cover": "19.jpg",
     "title": "第19次末日",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 75,
@@ -2289,13 +2380,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133748/",
     "cover_url": "/covers/s.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "System Stream Author",
     "cover": "s.jpg",
     "title": "开局三预言？我直播通关S级末世",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 76,
@@ -2323,13 +2415,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133742/",
     "cover_url": "/covers/n.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Urban Fantasy Author",
     "cover": "n.jpg",
     "title": "城隍是我老祖，原来我是神N代",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 77,
@@ -2357,13 +2450,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133385/",
     "cover_url": "/covers/n-s.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Sentinel Romance Author",
     "cover": "n-s.jpg",
     "title": "同时被N个S级哨兵盯上怎么办",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 78,
@@ -2391,13 +2485,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133473/",
     "cover_url": "/covers/boss.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Villain Protagonist Author",
     "cover": "boss.jpg",
     "title": "反派BOSS有毒",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 79,
@@ -2425,13 +2520,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133209/",
     "cover_url": "/covers/npc.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Dungeon Master Author",
     "cover": "npc.jpg",
     "title": "末世入侵：我在副本里面当NPC",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Sci-Fi"
   },
   {
     "id": 80,
@@ -2459,13 +2555,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133981/",
     "cover_url": "/covers/2000.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Rebirth 2000 Author",
     "cover": "2000.jpg",
     "title": "重生2000：撕了协议我暴富了",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 81,
@@ -2493,13 +2590,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133930/",
     "cover_url": "/covers/2008.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Entertainment Circle Author",
     "cover": "2008.jpg",
     "title": "华娱2008：从分手快乐开始",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 82,
@@ -2527,13 +2625,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133934/",
     "cover_url": "/covers/80.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Rebirth Farming Author",
     "cover": "80.jpg",
     "title": "重生80，分家后带妻女吃香喝辣",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 83,
@@ -2561,13 +2660,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133856/",
     "cover_url": "/covers/60.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Time Travel Survival Author",
     "cover": "60.jpg",
     "title": "穿越60带着空间当保安",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 84,
@@ -2595,13 +2695,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133896/",
     "cover_url": "/covers/007.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "System Delivery Author",
     "cover": "007.jpg",
     "title": "系统送编，从外卖员成007探员",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 85,
@@ -2629,13 +2730,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133941/",
     "cover_url": "/covers/2006.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Film Empress Romance Author",
     "cover": "2006.jpg",
     "title": "穿越2006小手替被影帝追着宠",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 86,
@@ -2663,13 +2765,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133765/",
     "cover_url": "/covers/bug.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "World Bug Discoverer",
     "cover": "bug.jpg",
     "title": "我发现了世界BUG",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 87,
@@ -2697,13 +2800,14 @@
     "source_url": "https://www.bxwx9.org/b/133/133732/",
     "cover_url": "/covers/ai.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "AI CEO Romance Author",
     "cover": "ai.jpg",
     "title": "我养的AI竟是京圈太子爷",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   },
   {
     "id": 88,
@@ -2731,12 +2835,13 @@
     "source_url": "https://www.bxwx9.org/b/133/133651/",
     "cover_url": "/covers/1957.jpg",
     "updated_at": "2026-06-07T05:45:34Z",
-    "author": "",
+    "author": "Mountain Life Author",
     "cover": "1957.jpg",
     "title": "赶山1957：二斤猪肉换个媳妇",
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 9
+    "available_chapters": 9,
+    "category": "Urban"
   }
 ]
