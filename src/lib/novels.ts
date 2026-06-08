@@ -13,6 +13,7 @@ export interface Novel {
   status: string;
   rating: number;
   total_chapters: number;
+  available_chapters?: number;
   readers: number;
   description_en: string;
   cover_url: string;

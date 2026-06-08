@@ -22,7 +22,7 @@
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/mga.webp?ver=f51d4365ab256b97d7d8ee60adf82b99e1815609",
     "abbreviation": "MGA",
-    "totalChapters": 96,
+    "totalChapters": 98,
     "author": "Kindhearted Bee",
     "cover": "/covers/martial-god-asura.jpg",
     "updated_at": "2026-06-07T01:05:31.764007+00:00",
@@ -53,7 +53,7 @@
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/atg.webp?ver=9961e990ab27db1b314db311c7994d04601f2071",
     "abbreviation": "ATG",
-    "totalChapters": 50,
+    "totalChapters": 52,
     "author": "Mars Gravity",
     "cover": "/covers/against-the-gods.jpg",
     "updated_at": "2026-06-07T01:05:31.765721+00:00",
@@ -88,7 +88,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Wu Cheng'en",
-    "totalChapters": 2,
+    "totalChapters": 15,
     "cover": "/covers/journey-to-the-west.jpg",
     "title": "Journey To The West",
     "featured": false,
@@ -117,7 +117,7 @@
     "source": "wuxiaworld",
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/issth.webp?v=1b3d8e01982e64b2238156f83551f22e540fe24a",
     "abbreviation": "ISSTH",
-    "totalChapters": 3,
+    "totalChapters": 5,
     "author": "Er Gen",
     "cover": "/covers/i-shall-seal-the-heavens.jpg",
     "updated_at": "2026-06-07T01:05:31.766282+00:00",
@@ -156,7 +156,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 5,
     "author": "Pu Songling",
-    "totalChapters": 3,
+    "totalChapters": 15,
     "title": "Strange Tales Chinese Studio",
     "featured": false,
     "available_chapters": 15
@@ -191,7 +191,7 @@
     "zone": "vip",
     "cover_ext": "svg",
     "author": "Gu Zhen Ren",
-    "totalChapters": 2,
+    "totalChapters": 27,
     "cover": "/covers/reverend-insanity.jpg",
     "title": "Reverend Insanity",
     "featured": false,
@@ -224,7 +224,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Luo Guanzhong",
-    "totalChapters": 4,
+    "totalChapters": 13,
     "cover": "/covers/romance-of-the-three-kingdoms.jpg",
     "title": "Romance Of The Three Kingdoms",
     "featured": false,
@@ -254,12 +254,12 @@
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/awe.webp?v=0c91b8d904130c510296a6925f31839982040557",
     "abbreviation": "AWE",
     "updated_at": "2026-06-08T02:01:13.016946+00:00",
-    "totalChapters": 50,
+    "totalChapters": 53,
     "author": "Er Gen",
     "cover": "/covers/a-will-eternal.jpg",
     "title": "A Will Eternal",
     "featured": true,
-    "available_chapters": 52
+    "available_chapters": 53
   },
   {
     "slug": "investiture-of-the-gods",
@@ -292,7 +292,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 9,
     "author": "Xu Zhonglin",
-    "totalChapters": 3,
+    "totalChapters": 15,
     "title": "Investiture Of The Gods",
     "featured": false,
     "available_chapters": 15
@@ -326,7 +326,7 @@
     "zone": "vip",
     "cover_ext": "svg",
     "author": "Alpha Tart",
-    "totalChapters": 1,
+    "totalChapters": 10,
     "cover": "/covers/the-remarried-empress.jpg",
     "title": "The Remarried Empress",
     "featured": false,
@@ -360,7 +360,7 @@
     "zone": "free",
     "cover_ext": "svg",
     "author": "Cao Xueqin",
-    "totalChapters": 4,
+    "totalChapters": 11,
     "cover": "/covers/dream-of-the-red-chamber.jpg",
     "title": "Dream Of The Red Chamber",
     "featured": false,
@@ -394,7 +394,7 @@
     "updated_at": "2026-06-08T02:01:13.019614+00:00",
     "zone": "vip",
     "cover_ext": "jpg",
-    "totalChapters": 1,
+    "totalChapters": 10,
     "cover": "/covers/secret-lovers.jpg",
     "title": "Secret Lovers",
     "featured": false,
@@ -424,12 +424,12 @@
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/btth.webp?v=b49ecfeb59e7f8a1e94379b5bfa58828e70883a4",
     "abbreviation": "BTTH",
     "updated_at": "2026-06-08T02:01:13.020219+00:00",
-    "totalChapters": 50,
+    "totalChapters": 53,
     "author": "Heavenly Silkworm Potato",
     "cover": "/covers/battle-through-the-heavens.jpg",
     "title": "Battle Through The Heavens",
     "featured": true,
-    "available_chapters": 52
+    "available_chapters": 53
   },
   {
     "slug": "gullivers-travels",
@@ -461,7 +461,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 14,
     "cover_ext": "jpg",
-    "totalChapters": 3,
+    "totalChapters": 11,
     "title": "Gullivers Travels",
     "featured": false,
     "available_chapters": 11
@@ -493,7 +493,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Shi Nai'an",
-    "totalChapters": 4,
+    "totalChapters": 11,
     "cover": "/covers/water-margin.jpg",
     "title": "Water Margin",
     "featured": false,
@@ -523,7 +523,7 @@
     "cover_url": "https://cdn.wuxiaworld.com/images/covers/rge.webp?v=f264adaaecabc7ba05c33497868dac78e3a37c63",
     "abbreviation": "RGE",
     "updated_at": "2026-06-06T01:06:03.276027+00:00",
-    "totalChapters": 50,
+    "totalChapters": 52,
     "cover": "/covers/renegade-immortal.jpg",
     "title": "Renegade Immortal",
     "featured": false,
@@ -558,7 +558,7 @@
     "updated_at": "2026-06-06T01:06:03.278408+00:00",
     "zone": "vip",
     "cover_ext": "jpg",
-    "totalChapters": 1,
+    "totalChapters": 10,
     "cover": "/covers/hidden-marriage.jpg",
     "title": "Hidden Marriage",
     "featured": false,
@@ -592,7 +592,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Sun Tzu",
-    "totalChapters": 3,
+    "totalChapters": 13,
     "cover": "/covers/art-of-war.jpg",
     "title": "Art Of War",
     "featured": false,
@@ -628,7 +628,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 19,
     "cover_ext": "jpg",
-    "totalChapters": 3,
+    "totalChapters": 10,
     "title": "Creation Of The Gods",
     "featured": false,
     "available_chapters": 10
@@ -661,7 +661,7 @@
     "updated_at": "2026-06-06T01:06:03.279419+00:00",
     "zone": "vip",
     "cover_ext": "svg",
-    "totalChapters": 1,
+    "totalChapters": 10,
     "cover": "/covers/city-of-sin.jpg",
     "title": "City Of Sin",
     "featured": false,
@@ -695,7 +695,7 @@
     "updated_at": "2026-06-06T01:06:03.280402+00:00",
     "zone": "vip",
     "cover_ext": "svg",
-    "totalChapters": 1,
+    "totalChapters": 10,
     "cover": "/covers/super-gene.jpg",
     "title": "Super Gene",
     "featured": false,
@@ -729,7 +729,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Lao Tzu",
-    "totalChapters": 2,
+    "totalChapters": 83,
     "cover": "/covers/tao-te-ching.jpg",
     "title": "Tao Te Ching",
     "featured": false,
@@ -766,7 +766,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 23,
     "cover_ext": "jpg",
-    "totalChapters": 1,
+    "totalChapters": 9,
     "title": "Monkey Kings Birth",
     "featured": false,
     "available_chapters": 9
@@ -798,7 +798,7 @@
     "zone": "free",
     "cover_ext": "jpg",
     "author": "Confucius",
-    "totalChapters": 1,
+    "totalChapters": 21,
     "cover": "/covers/analects-of-confucius.jpg",
     "title": "Analects Of Confucius",
     "featured": false,
@@ -828,7 +828,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "svg",
-    "totalChapters": 1,
+    "totalChapters": 16,
     "title": "Kai Lung Unrolls His Mat",
     "featured": false,
     "id": 89,
@@ -858,7 +858,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 3,
+    "totalChapters": 18,
     "title": "Chinese Ghost And Love Stories",
     "featured": false,
     "id": 90,
@@ -894,7 +894,7 @@
     "updated_at": "2026-05-25T00:00:00Z",
     "id": 27,
     "cover_ext": "jpg",
-    "totalChapters": 1,
+    "totalChapters": 9,
     "title": "White Snake Legend",
     "featured": false,
     "available_chapters": 9
@@ -923,7 +923,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 1,
+    "totalChapters": 16,
     "title": "The Book Of Songs",
     "featured": false,
     "id": 91,
@@ -953,7 +953,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "svg",
-    "totalChapters": 1,
+    "totalChapters": 2,
     "title": "Chinese Poetry",
     "featured": false,
     "id": 92,
@@ -983,7 +983,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 1,
+    "totalChapters": 16,
     "title": "Zhuangzi",
     "featured": false,
     "id": 93,
@@ -1013,7 +1013,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 2,
+    "totalChapters": 17,
     "title": "The Flight Of Dragons",
     "featured": false,
     "id": 94,
@@ -1043,7 +1043,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "svg",
-    "totalChapters": 1,
+    "totalChapters": 16,
     "title": "Personal Narrative Of Heavenly Revelations",
     "featured": false,
     "id": 95,
@@ -1073,7 +1073,7 @@
     "is_adult": false,
     "readers": 1000,
     "cover_ext": "jpg",
-    "totalChapters": 4,
+    "totalChapters": 19,
     "title": "The Story Of The Stone",
     "featured": false,
     "id": 96,
@@ -2076,7 +2076,7 @@
     "status": "ongoing",
     "rating": 4.3,
     "total_chapters": 10,
-    "totalChapters": 10,
+    "totalChapters": 12,
     "readers": 48900,
     "description_en": "道士下山之749局",
     "description": "",
@@ -2125,7 +2125,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 7
+    "available_chapters": 10
   },
   {
     "id": 71,
@@ -2159,7 +2159,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 8
+    "available_chapters": 11
   },
   {
     "id": 72,
@@ -2193,7 +2193,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 73,
@@ -2227,7 +2227,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 74,
@@ -2261,7 +2261,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 75,
@@ -2295,7 +2295,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 76,
@@ -2329,7 +2329,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 77,
@@ -2363,7 +2363,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 78,
@@ -2397,7 +2397,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 79,
@@ -2431,7 +2431,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 80,
@@ -2465,7 +2465,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 81,
@@ -2499,7 +2499,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 82,
@@ -2533,7 +2533,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 83,
@@ -2567,7 +2567,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 84,
@@ -2601,7 +2601,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 85,
@@ -2635,7 +2635,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 86,
@@ -2669,7 +2669,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 87,
@@ -2703,7 +2703,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   },
   {
     "id": 88,
@@ -2737,6 +2737,6 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 6
+    "available_chapters": 9
   }
 ]
