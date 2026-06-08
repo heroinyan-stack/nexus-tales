@@ -190,6 +190,7 @@ export function Footer() {
             <div className="flex flex-col gap-2 text-sm text-moon/60">
               <a href="/terms" className="hover:text-neon-cyan transition-colors">Terms</a>
               <a href="/privacy" className="hover:text-neon-cyan transition-colors">Privacy</a>
+              <a href="/contact" className="hover:text-neon-cyan transition-colors">Contact</a>
             </div>
           </div>
         </div>
