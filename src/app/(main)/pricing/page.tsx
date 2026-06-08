@@ -197,8 +197,8 @@ export default function PricingPage() {
 
       {/* Bottom note */}
       <p className="text-center text-xs text-moon/30 mt-12 max-w-md mx-auto">
-        All prices in USD. Pay with USDT, USDC, BTC, ETH, or credit card via
-        NowPayments. Purchase is for 30-day access — no auto-renewal.
+        All prices in USD. Pay with crypto (USDT, BTC, ETH, and 300+ currencies).
+        Purchase is for 30-day access — no auto-renewal.
       </p>
     </div>
   );

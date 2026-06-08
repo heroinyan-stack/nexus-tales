@@ -16,6 +16,7 @@ interface PaymentInfo {
   network: string;
   valid_until: string;
   order_description: string;
+  invoice_url?: string;
 }
 
 interface CurrencyInfo {
@@ -328,20 +329,17 @@ function CheckoutContent() {
             </span>
           </div>
 
-          {/* Credit Card Payment */}
-          <button
-            onClick={payWithCard}
-            disabled={invoicing}
-            className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+          {/* Crypto Payment — Pay at NowPayments */}
+          <a
+            href={payment?.invoice_url || '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2"
           >
-            {invoicing ? (
-              <Loader2 className="w-4 h-4 animate-spin" />
-            ) : (
-              <CreditCard className="w-4 h-4" />
-            )}
-            {invoicing ? "Creating..." : "Pay with Credit Card"}
+            <CreditCard className="w-4 h-4" />
+            Pay Now (Crypto)
             <ExternalLink className="w-3 h-3 opacity-70" />
-          </button>
+          </a>
 
           {/* Status */}
           <div className="text-center p-4 rounded-xl bg-neon-cyan/10 border border-neon-cyan/20">
