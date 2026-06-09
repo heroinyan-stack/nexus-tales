@@ -96,7 +96,9 @@ export default function HomePage() {
   );
 
   const filteredNovels = useMemo(() => {
-    let result = [...vipBooks];
+    // Search across ALL novels (free + VIP)
+    let allBooks = [...vipBooks, ...freeBooks];
+    let result = searchQuery ? allBooks : [...vipBooks];
 
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
@@ -104,8 +106,16 @@ export default function HomePage() {
         (n) =>
           n.title_en.toLowerCase().includes(q) ||
           n.author_en.toLowerCase().includes(q) ||
-          n.tags.some((t) => t.toLowerCase().includes(q))
+          n.tags?.some((t: string) => t.toLowerCase().includes(q))
       );
+      if (result.length === 0) {
+        // Fallback: fuzzy search on description
+        result = allBooks.filter(
+          (n) =>
+            n.description_en?.toLowerCase().includes(q) ||
+            n.title_en.toLowerCase().includes(q)
+        );
+      }
     }
 
     if (selectedGenre !== "all") {
@@ -317,14 +327,21 @@ export default function HomePage() {
           </div>
 
           {/* Novel Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredNovels.map((novel) => (
-              <NovelCard key={novel.slug} novel={novel} />
-            ))}
-          </div>
+          {filteredNovels.length > 0 ? (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {filteredNovels.map((novel) => (
+                <NovelCard key={novel.slug} novel={novel} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-16">
+              <p className="text-moon/30 text-lg">No novels found for "{searchQuery}"</p>
+              <p className="text-moon/20 text-sm mt-2">Try a different keyword or browse all novels below</p>
+            </div>
+          )}
 
           <div className="text-center mt-10 text-moon/30 text-sm">
-            {filteredNovels.length} novels in VIP Zone &middot; First 20 chapters free, subscribe for full access
+            {filteredNovels.length} novels{searchQuery ? ' found' : ' in VIP Zone'} &middot; First 20 chapters free, subscribe for full access
           </div>
         </section>
       </div>

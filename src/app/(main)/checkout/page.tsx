@@ -172,7 +172,7 @@ function CheckoutContent() {
       if (data.invoiceUrl) {
         window.open(data.invoiceUrl, "_blank");
       } else {
-        alert(data.error || "Failed to create credit card payment");
+        alert(data.error || "Payment creation failed. Please try again.");
       }
     } catch {
       alert("Network error. Please try again.");

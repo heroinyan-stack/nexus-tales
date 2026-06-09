@@ -1,4 +1,4 @@
-// POST /api/payment/invoice — Create NowPayments invoice (supports credit card)
+// POST /api/payment/invoice — Create NowPayments crypto invoice
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
