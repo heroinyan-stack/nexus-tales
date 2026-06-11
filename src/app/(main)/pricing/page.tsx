@@ -2,7 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { Check, Sparkles, Zap, Crown, Loader2 } from "lucide-react";
+import { Check, Sparkles, Zap, Crown, Loader2, CreditCard, Bitcoin } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -70,16 +70,19 @@ export default function PricingPage() {
   const router = useRouter();
   const [loading, setLoading] = useState<string | null>(null);
 
-  async function handleCheckout(tierId: string, plan: string) {
-    setLoading(tierId);
+  async function handleCheckout(tierId: string, plan: string, provider: "lemonsqueezy" | "nowpayments" = "lemonsqueezy") {
+    setLoading(`${tierId}-${provider}`);
     try {
       const res = await fetch("/api/payment/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ plan }),
+        body: JSON.stringify({ plan, provider }),
       });
       const data = await res.json();
-      if (data.paymentId) {
+
+      if (provider === "lemonsqueezy" && data.checkoutUrl) {
+        window.location.href = data.checkoutUrl;
+      } else if (data.paymentId) {
         router.push(`/checkout?pid=${data.paymentId}&plan=${plan}`);
       } else {
         console.error("No checkout URL returned");
@@ -161,27 +164,45 @@ export default function PricingPage() {
                   Current Plan
                 </div>
               ) : (
-                <button
-                  onClick={() =>
-                    "plan" in tier &&
-                    tier.plan &&
-                    handleCheckout(tier.id, tier.plan)
-                  }
-                  disabled={loading === tier.id || !("plan" in tier && tier.plan)}
-                  className={`w-full py-3 rounded-xl font-bold text-sm transition-all ${
-                    tier.highlighted
-                      ? "neon-btn"
-                      : "border border-white/10 bg-white/5 hover:bg-white/10 text-moon"
-                  } disabled:opacity-50 disabled:cursor-not-allowed`}
-                >
-                  {loading === tier.id ? (
-                    <Loader2 className="w-4 h-4 animate-spin mx-auto" />
-                  ) : !("plan" in tier && tier.plan) ? (
-                    tier.cta
-                  ) : (
-                    tier.cta
-                  )}
-                </button>
+                <div className="space-y-2">
+                  {/* Credit Card (primary) */}
+                  <button
+                    onClick={() =>
+                      "plan" in tier && tier.plan &&
+                      handleCheckout(tier.id, tier.plan, "lemonsqueezy")
+                    }
+                    disabled={loading === `${tier.id}-lemonsqueezy` || !("plan" in tier && tier.plan)}
+                    className={`w-full py-3 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 ${
+                      tier.highlighted
+                        ? "neon-btn"
+                        : "border border-white/10 bg-white/5 hover:bg-white/10 text-moon"
+                    } disabled:opacity-50 disabled:cursor-not-allowed`}
+                  >
+                    {loading === `${tier.id}-lemonsqueezy` ? (
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                    ) : (
+                      <CreditCard className="w-4 h-4" />
+                    )}
+                    {tier.cta}
+                  </button>
+
+                  {/* Crypto (secondary) */}
+                  <button
+                    onClick={() =>
+                      "plan" in tier && tier.plan &&
+                      handleCheckout(tier.id, tier.plan, "nowpayments")
+                    }
+                    disabled={loading === `${tier.id}-nowpayments` || !("plan" in tier && tier.plan)}
+                    className="w-full py-2 rounded-xl font-medium text-xs text-moon/40 hover:text-moon/60 transition-all flex items-center justify-center gap-1.5"
+                  >
+                    {loading === `${tier.id}-nowpayments` ? (
+                      <Loader2 className="w-3 h-3 animate-spin" />
+                    ) : (
+                      <Bitcoin className="w-3 h-3" />
+                    )}
+                    Pay with Crypto
+                  </button>
+                </div>
               )
             ) : (
               <Link
@@ -197,8 +218,8 @@ export default function PricingPage() {
 
       {/* Bottom note */}
       <p className="text-center text-xs text-moon/30 mt-12 max-w-md mx-auto">
-        All prices in USD. Pay with crypto (USDT, BTC, ETH, and 300+ currencies).
-        Purchase is for 30-day access — no auto-renewal.
+        All prices in USD. Pay with Visa, Mastercard, or crypto (USDT, BTC, ETH).
+        One-time purchase for 30-day access — no auto-renewal, no hidden fees.
       </p>
     </div>
   );

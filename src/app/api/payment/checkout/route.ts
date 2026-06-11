@@ -1,15 +1,16 @@
-// POST /api/payment/checkout — Create NowPayments crypto payment
+// POST /api/payment/checkout — Create payment (Lemon Squeezy credit card or NowPayments crypto)
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
 import { createPayment } from "@/lib/nowpayments";
+import { createCheckout, getVariantId, isLemonConfigured } from "@/lib/lemonsqueezy";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
-    const { plan, payCurrency } = await req.json();
+    const { plan, provider, payCurrency } = await req.json();
 
     if (!plan || !["premium", "ultimate"].includes(plan)) {
       return NextResponse.json(
@@ -18,29 +19,55 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Premium $19.99, Ultimate $29.99 (above NowPayments min $19.04)
+    const userId = (session?.user as any)?.id || session?.user?.email?.replace(/[^a-zA-Z0-9]/g, "_") || "guest";
+    const userEmail = session?.user?.email || undefined;
+
+    // ── Lemon Squeezy (Credit Card) ──
+    if (provider === "lemonsqueezy") {
+      if (!isLemonConfigured()) {
+        return NextResponse.json(
+          { error: "Credit card payment is not configured yet" },
+          { status: 503 }
+        );
+      }
+
+      const variantId = getVariantId(plan);
+      const result = await createCheckout({
+        variantId,
+        email: userEmail,
+        userId,
+        plan,
+        successUrl: `${req.nextUrl.origin}/profile?checkout=success`,
+        cancelUrl: `${req.nextUrl.origin}/pricing`,
+      });
+
+      return NextResponse.json({
+        provider: "lemonsqueezy",
+        checkoutUrl: result.checkoutUrl,
+      });
+    }
+
+    // ── NowPayments (Crypto) ──
     const priceAmount = plan === "ultimate" ? 29.99 : 19.99;
     const planLabel = plan === "ultimate" ? "Ultimate" : "Premium";
-    const userId = (session?.user as any)?.id || session?.user?.email?.replace(/[^a-zA-Z0-9]/g, "_") || "guest";
     const orderId = `nt_${plan}_u${userId}_${Date.now()}`;
-
-    const origin = req.nextUrl.origin;
 
     const result = await createPayment({
       priceAmount,
       priceCurrency: "usd",
-      payCurrency: payCurrency || undefined, // let user choose, default to USDT ARC20
+      payCurrency: payCurrency || undefined,
       orderId,
-      orderDescription: `Nexus Tales ${planLabel} — 1 Month`,
-      successUrl: `${origin}/profile?checkout=success`,
-      cancelUrl: `${origin}/pricing`,
+      orderDescription: `Nexus Tales ${planLabel} — 30 Days`,
+      successUrl: `${req.nextUrl.origin}/profile?checkout=success`,
+      cancelUrl: `${req.nextUrl.origin}/pricing`,
     });
 
     return NextResponse.json({
+      provider: "nowpayments",
       paymentId: result.payment_id,
     });
   } catch (err: any) {
-    console.error("NowPayments checkout error:", err);
+    console.error("Checkout error:", err);
     return NextResponse.json(
       { error: err.message || "Failed to create payment" },
       { status: 500 }
