@@ -2,8 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import Link from "next/link";
-import { Lock, Unlock, Crown } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Lock, Unlock } from "lucide-react";
 
 interface Chapter {
   num: number;
@@ -14,14 +13,12 @@ interface ChapterListClientProps {
   slug: string;
   zone: string;
   chapters: Chapter[];
-  totalChapters: number;
 }
 
 export default function ChapterListClient({
   slug,
   zone,
   chapters,
-  totalChapters,
 }: ChapterListClientProps) {
   const { data: session } = useSession();
   const isPremium = session && ["premium", "ultimate", "admin"].includes(

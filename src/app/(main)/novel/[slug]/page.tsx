@@ -203,7 +203,6 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
             slug={novel.slug}
             zone={novel.zone}
             chapters={chapters}
-            totalChapters={novel.total_chapters}
           />
         </section>
       </div>
