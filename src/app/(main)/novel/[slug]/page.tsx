@@ -153,7 +153,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
               </div>
               <div className="flex items-center gap-2">
                 <BookOpen className="w-5 h-5 text-neon-purple" />
-                <span className="text-stardust font-bold">{Math.min(novel.total_chapters, novel.available_chapters || novel.total_chapters).toLocaleString()}</span>
+                <span className="text-stardust font-bold">{(novel.available_chapters || novel.total_chapters).toLocaleString()}</span>
                 <span className="text-moon/40 text-sm">chapters</span>
               </div>
               <div className="flex items-center gap-2">
@@ -195,7 +195,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
               <span className="text-gradient">Chapters</span>
             </h2>
             <div className="text-sm text-moon/40">
-              Showing {chapters.length} of {novel.total_chapters.toLocaleString()} chapters
+              Showing {chapters.length} of {(novel.available_chapters || novel.total_chapters).toLocaleString()} chapters
             </div>
           </div>
 
