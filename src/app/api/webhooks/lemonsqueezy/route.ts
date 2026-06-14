@@ -1,4 +1,5 @@
-// POST /api/webhooks/lemonsqueezy — Handle LS payment events
+// GET/POST /api/webhooks/lemonsqueezy — Handle LS webhooks + domain verification
+// Domain verification responds at: /api/webhooks/lemonsqueezy/verify?token=TOKEN
 import { NextRequest, NextResponse } from "next/server";
 import { createHmac, timingSafeEqual } from "crypto";
 import { prisma } from "@/lib/prisma";
