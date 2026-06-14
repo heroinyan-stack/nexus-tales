@@ -2,7 +2,7 @@
 // Docs: https://docs.lemonsqueezy.com/api
 
 const LS_API = "https://api.lemonsqueezy.com/v1";
-const STORE_ID = "94d59cef-dbb8-4ea5-b178-d2540fcd6919";
+const STORE_ID = "403941";
 
 const VARIANT_MAP: Record<string, string> = {
   premium: "1134359",
