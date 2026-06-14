@@ -5,8 +5,8 @@ const LS_API = "https://api.lemonsqueezy.com/v1";
 const STORE_ID = "403941";
 
 const VARIANT_MAP: Record<string, string> = {
-  premium: "1134359",
-  ultimate: "1134381",
+  premium: "1774984",
+  ultimate: "1775011",
 };
 
 function getApiKey(): string {
