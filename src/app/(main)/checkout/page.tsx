@@ -3,7 +3,7 @@
 import { Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState, useCallback } from "react";
-import { Loader2, Copy, Check, Clock, ArrowLeft, ExternalLink, CreditCard, RefreshCw } from "lucide-react";
+import { Loader2, Copy, Check, Clock, ArrowLeft, ExternalLink, RefreshCw, HelpCircle, Wallet, Globe, Shield, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 
 interface PaymentInfo {
@@ -52,8 +52,8 @@ function CheckoutContent() {
   const [copied, setCopied] = useState(false);
   const [timeLeft, setTimeLeft] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState("usdtarc20");
-
-  const [invoicing, setInvoicing] = useState(false);
+  const [showGuide, setShowGuide] = useState(false);
+  const [checkingStatus, setCheckingStatus] = useState(false);
 
   // Create initial payment if no pid
   useEffect(() => {
@@ -96,7 +96,6 @@ function CheckoutContent() {
       const data = await res.json();
       if (data.paymentId) {
         setSelectedCurrency(currency);
-        // Redirect to new pid
         router.replace(`/checkout?pid=${data.paymentId}&plan=${planName}`);
       } else {
         setError(data.error || "Failed to create payment");
@@ -137,6 +136,7 @@ function CheckoutContent() {
   // Poll payment status
   const pollStatus = useCallback(() => {
     if (!pid) return;
+    setCheckingStatus(true);
     fetch(`/api/payment/status?pid=${pid}`)
       .then((r) => r.json())
       .then((data) => {
@@ -144,7 +144,8 @@ function CheckoutContent() {
           router.push("/profile?checkout=success");
         }
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => setCheckingStatus(false));
   }, [pid, router]);
 
   useEffect(() => {
@@ -158,27 +159,6 @@ function CheckoutContent() {
     await navigator.clipboard.writeText(payment.pay_address);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-  }
-
-  async function payWithCard() {
-    setInvoicing(true);
-    try {
-      const res = await fetch("/api/payment/invoice", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ plan }),
-      });
-      const data = await res.json();
-      if (data.invoiceUrl) {
-        window.open(data.invoiceUrl, "_blank");
-      } else {
-        alert(data.error || "Payment creation failed. Please try again.");
-      }
-    } catch {
-      alert("Network error. Please try again.");
-    } finally {
-      setInvoicing(false);
-    }
   }
 
   if (loading) {
@@ -237,26 +217,20 @@ function CheckoutContent() {
             <div className="flex justify-between text-sm">
               <span className="text-moon/40">Amount</span>
               <span className="text-moon font-bold">
-                ${payment.price_amount} {payment.price_currency.toUpperCase()}
+                ${payment.price_amount} USD
               </span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-moon/40">Pay with</span>
+              <span className="text-moon/40">You pay</span>
               <span className="text-neon-cyan font-bold">
                 {payment.pay_amount} {currentCurrency?.label || payment.pay_currency.toUpperCase()}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-moon/40">Network</span>
-              <span className="text-moon font-mono text-xs">
-                {currentCurrency?.network || payment.network || payment.pay_currency}
               </span>
             </div>
           </div>
 
           {/* Currency selector */}
           <div className="space-y-2">
-            <label className="text-sm text-moon/50">Pay with</label>
+            <label className="text-sm text-moon/50">Select cryptocurrency</label>
             <div className="grid grid-cols-5 gap-2">
               {POPULAR_CURRENCIES.map((c) => {
                 const isActive = c.currency === selectedCurrency;
@@ -267,7 +241,7 @@ function CheckoutContent() {
                     disabled={switching}
                     className={`flex flex-col items-center gap-1 p-2 rounded-xl border text-xs transition-all ${
                       isActive
-                        ? "border-neon-cyan bg-neon-cyan/10 text-neon-cyan"
+                        ? "border-neon-cyan bg-neon-cyan/10 text-neon-cyan shadow-[0_0_10px_rgba(0,240,255,0.15)]"
                         : "border-white/5 bg-white/5 text-moon/50 hover:border-white/20 hover:text-moon"
                     } disabled:opacity-50 disabled:cursor-wait`}
                   >
@@ -286,40 +260,66 @@ function CheckoutContent() {
             )}
           </div>
 
-          {/* Address */}
-          <div className="space-y-3">
-            <label className="text-sm text-moon/60">
+          {/* Address — step 1 */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-neon-cyan text-abyss text-xs font-bold">1</span>
+              <span className="text-sm text-moon/80 font-semibold">Send Payment</span>
+            </div>
+            <p className="text-xs text-moon/40 ml-7">
               Send exactly{" "}
               <span className="text-neon-cyan font-bold">
                 {payment.pay_amount} {currentCurrency?.label || payment.pay_currency.toUpperCase()}
-              </span>{" "}
-              to this address:
-            </label>
+              </span>
+              {" "}on the{" "}
+              <span className="text-yellow-400">
+                {currentCurrency?.network || payment.network || payment.pay_currency}
+              </span>
+              {" "}network to:
+            </p>
 
-            <div className="flex items-center gap-2">
-              <code className="flex-1 p-3 rounded-xl bg-abyss border border-white/5 text-xs text-moon/70 break-all font-mono">
+            <div className="flex items-center gap-2 ml-7">
+              <code className="flex-1 p-3 rounded-xl bg-abyss border border-white/10 text-xs text-moon/70 break-all font-mono select-all">
                 {payment.pay_address}
               </code>
               <button
                 onClick={copyAddress}
-                className="p-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors shrink-0"
+                className="p-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-neon-cyan/30 transition-all shrink-0 group"
+                title="Copy address"
               >
                 {copied ? (
                   <Check className="w-4 h-4 text-emerald-400" />
                 ) : (
-                  <Copy className="w-4 h-4 text-moon/40" />
+                  <Copy className="w-4 h-4 text-moon/40 group-hover:text-moon transition-colors" />
                 )}
               </button>
             </div>
+            {copied && (
+              <p className="text-xs text-emerald-400 ml-7">✓ Address copied!</p>
+            )}
+          </div>
+
+          {/* Step 2 */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-neon-cyan/30 text-moon text-xs font-bold">2</span>
+              <span className="text-sm text-moon/80 font-semibold">Wait for Confirmation</span>
+            </div>
+            <p className="text-xs text-moon/40 ml-7">
+              Crypto payments typically confirm within 1–30 minutes. This page auto-detects your payment
+              — once confirmed, you&apos;ll be redirected automatically.
+            </p>
           </div>
 
           {/* Timer */}
-          <div className="flex items-center justify-center gap-2 p-3 rounded-xl bg-white/5">
-            <Clock className="w-4 h-4 text-yellow-400" />
+          <div className={`flex items-center justify-center gap-2 p-3 rounded-xl ml-7 ${
+            timeLeft === "Expired" ? "bg-red-400/10 border border-red-400/20" : "bg-white/5"
+          }`}>
+            <Clock className={`w-4 h-4 ${timeLeft === "Expired" ? "text-red-400" : "text-yellow-400"}`} />
             <span className="text-sm text-moon/60">
               {timeLeft ? (
                 timeLeft === "Expired" ? (
-                  <span className="text-red-400">Payment window expired</span>
+                  <span className="text-red-400 font-medium">Payment window expired — refresh page to try again</span>
                 ) : (
                   <>Expires in <span className="text-moon font-bold">{timeLeft}</span></>
                 )
@@ -329,40 +329,154 @@ function CheckoutContent() {
             </span>
           </div>
 
-          {/* Crypto Payment — Pay at NowPayments */}
-          <a
-            href={payment?.invoice_url || '#'}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2"
-          >
-            <CreditCard className="w-4 h-4" />
-            Pay Now (Crypto)
-            <ExternalLink className="w-3 h-3 opacity-70" />
-          </a>
-
-          {/* Status */}
-          <div className="text-center p-4 rounded-xl bg-neon-cyan/10 border border-neon-cyan/20">
-            <p className="text-sm text-moon/60">
-              Waiting for payment... This page auto-detects when your transaction
-              is confirmed. Do not close this page.
-            </p>
+          {/* Status indicator */}
+          <div className="p-3 rounded-xl bg-neon-cyan/5 border border-neon-cyan/10 flex items-center gap-3">
+            <div className="relative">
+              <div className="w-2.5 h-2.5 rounded-full bg-neon-cyan animate-pulse" />
+              <div className="absolute inset-0 w-2.5 h-2.5 rounded-full bg-neon-cyan animate-ping opacity-30" />
+            </div>
+            <div>
+              <p className="text-xs text-moon/70 font-medium">
+                Awaiting payment — {checkingStatus ? "checking..." : "page auto-refreshes"}
+              </p>
+              <p className="text-xs text-moon/30">
+                Do not close this page. Once your transaction is confirmed, you&apos;ll be redirected.
+              </p>
+            </div>
           </div>
 
-          {/* Open in wallet */}
-          <button
-            onClick={() => {
-              const link = `ethereum:${payment.pay_address}?value=0`;
-              window.open(link, "_blank");
-            }}
-            className="w-full py-3 rounded-xl font-bold text-sm border border-white/10 bg-white/5 hover:bg-white/10 text-moon transition-colors flex items-center justify-center gap-2"
-          >
-            <ExternalLink className="w-4 h-4" />
-            Open in Wallet
-          </button>
+          {/* Open in NowPayments */}
+          {payment.invoice_url && (
+            <a
+              href={payment.invoice_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all flex items-center justify-center gap-2"
+            >
+              <Globe className="w-4 h-4" />
+              Pay on NowPayments
+              <ExternalLink className="w-3 h-3 opacity-70" />
+            </a>
+          )}
+
+          {/* New to crypto? Guide */}
+          <div className="border-t border-white/5 pt-4">
+            <button
+              onClick={() => setShowGuide(!showGuide)}
+              className="w-full flex items-center justify-between text-sm text-moon/40 hover:text-moon transition-colors"
+            >
+              <span className="flex items-center gap-2">
+                <HelpCircle className="w-4 h-4 text-neon-cyan/60" />
+                New to crypto? How to pay
+              </span>
+              {showGuide ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+            </button>
+
+            {showGuide && (
+              <div className="mt-4 space-y-4 text-sm animate-in fade-in slide-in-from-top-2">
+                {/* Step A: Get crypto */}
+                <div className="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Wallet className="w-4 h-4 text-neon-cyan" />
+                    <span className="font-bold text-moon/80">Step 1: Get crypto</span>
+                  </div>
+                  <p className="text-xs text-moon/50 mb-3">
+                    You need cryptocurrency in a wallet. Here are the easiest ways:
+                  </p>
+                  <div className="space-y-2 text-xs">
+                    <div className="flex items-start gap-2 p-2 rounded-lg bg-white/5">
+                      <span className="text-yellow-400 shrink-0 mt-0.5">🏦</span>
+                      <div>
+                        <span className="text-moon/70 font-medium">Buy on an exchange</span>
+                        <p className="text-moon/30 mt-0.5">
+                          Sign up on Binance, Coinbase, or Kraken. Buy USDT with your credit card or bank transfer. Then send it to this page&apos;s address.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2 p-2 rounded-lg bg-white/5">
+                      <span className="text-emerald-400 shrink-0 mt-0.5">🦊</span>
+                      <div>
+                        <span className="text-moon/70 font-medium">Use a wallet app</span>
+                        <p className="text-moon/30 mt-0.5">
+                          MetaMask, Trust Wallet, or Phantom support buying crypto directly with a card inside the app.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2 p-2 rounded-lg bg-white/5">
+                      <span className="text-blue-400 shrink-0 mt-0.5">💳</span>
+                      <div>
+                        <span className="text-moon/70 font-medium">Already have crypto?</span>
+                        <p className="text-moon/30 mt-0.5">
+                          Just send it from your existing wallet or exchange account to the address above.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step B: Send */}
+                <div className="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Shield className="w-4 h-4 text-emerald-400" />
+                    <span className="font-bold text-moon/80">Step 2: Send the exact amount</span>
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-moon/50">
+                    <li>• Copy the address above (click the copy icon)</li>
+                    <li>• Paste it in your wallet or exchange withdrawal form</li>
+                    <li>• Enter EXACTLY <span className="text-neon-cyan font-bold">{payment.pay_amount} {currentCurrency?.label || payment.pay_currency.toUpperCase()}</span></li>
+                    <li>• Make sure you select the <span className="text-yellow-400">{currentCurrency?.network || payment.network}</span> network</li>
+                    <li>• Double-check the address before sending!</li>
+                  </ul>
+                </div>
+
+                {/* Step C: Confirm */}
+                <div className="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Clock className="w-4 h-4 text-purple-400" />
+                    <span className="font-bold text-moon/80">Step 3: Wait for confirmation</span>
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-moon/50">
+                    <li>• Crypto transactions are confirmed on the blockchain</li>
+                    <li>• {currentCurrency?.network === "TRC20" ? "TRC20 is fast — usually confirmed in 1–2 minutes" : currentCurrency?.network === "Arbitrum" ? "Arbitrum is fast — usually confirmed within 1 minute" : "Usually confirmed in 10–30 minutes"}</li>
+                    <li>• This page auto-detects your payment</li>
+                    <li>• You&apos;ll be redirected once confirmed</li>
+                    <li>• If it takes longer, don&apos;t worry — your payment won&apos;t be lost</li>
+                  </ul>
+                </div>
+
+                {/* FAQ */}
+                <div className="space-y-2 text-xs">
+                  <details className="text-moon/40">
+                    <summary className="text-moon/50 hover:text-moon/70 cursor-pointer py-1">
+                      What if I send the wrong amount?
+                    </summary>
+                    <p className="text-moon/30 mt-1 ml-4">
+                      Most wallets will reject underpaid transactions. If you overpay, contact us and we&apos;ll help.
+                    </p>
+                  </details>
+                  <details className="text-moon/40">
+                    <summary className="text-moon/50 hover:text-moon/70 cursor-pointer py-1">
+                      Can I get a refund?
+                    </summary>
+                    <p className="text-moon/30 mt-1 ml-4">
+                      Yes — first-time subscribers get a 7-day refund. Contact us through the Contact page.
+                    </p>
+                  </details>
+                  <details className="text-moon/40">
+                    <summary className="text-moon/50 hover:text-moon/70 cursor-pointer py-1">
+                      Is crypto safe to use?
+                    </summary>
+                    <p className="text-moon/30 mt-1 ml-4">
+                      Yes. USDT is a stablecoin pegged 1:1 to USD. Your payment is processed by NowPayments, a trusted crypto payment gateway used by thousands of businesses worldwide.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            )}
+          </div>
 
           <p className="text-xs text-moon/30 text-center">
-            7-day refund for first-time subscribers. Payment ID: {payment.payment_id}
+            Payment ID: {payment.payment_id} · Powered by NowPayments
           </p>
         </div>
       </div>
