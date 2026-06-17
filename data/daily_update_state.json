@@ -1,6 +1,6 @@
 {
-  "last_index": 8,
-  "last_run": "2026-06-16T01:01:29.991426+00:00",
+  "last_index": 12,
+  "last_run": "2026-06-17T01:01:59.761450+00:00",
   "history": [
     {
       "date": "2026-05-21",
@@ -225,6 +225,15 @@
         "the-remarried-empress",
         "secret-lovers",
         "battle-through-the-heavens"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "updated": [
+        "renegade-immortal",
+        "hidden-marriage",
+        "city-of-sin",
+        "super-gene"
       ]
     }
   ]
