@@ -4,7 +4,7 @@ Multi-site Chinese Novel Crawler
 Sources: quanwenyuedu.io, tmwxw.net, yqxxs.com (mobile)
 """
 
-import json, os, re, time, hashlib
+import json, os, re, time, hashlib, subprocess
 from urllib.request import Request, urlopen
 from urllib.parse import quote, urljoin
 import ssl
@@ -31,6 +31,27 @@ HEADERS_DESKTOP_REFERER = {
     **HEADERS_DESKTOP,
     "Referer": "https://www.google.com/",
 }
+
+def fetch_curl(url, timeout=15):
+    """Fetch using curl (bypasses Python TLS issues)."""
+    try:
+        r = subprocess.run(
+            ['curl', '-sL', '--connect-timeout', str(timeout), '-A',
+             HEADERS_DESKTOP.get('User-Agent',''), '-o', '-', url],
+            capture_output=True, timeout=timeout+5)
+        if r.returncode != 0 or not r.stdout:
+            return None
+        raw = r.stdout
+        # Detect encoding
+        try:
+            test = raw[:2000].decode('gbk', errors='replace')
+            if any('\u4e00' <= c <= '\u9fff' for c in test[:500]):
+                return raw.decode('gbk', errors='replace')
+        except:
+            pass
+        return raw.decode('utf-8', errors='replace')
+    except:
+        return None
 
 def fetch(url, headers=None, timeout=20, encoding=None, retries=2):
     """Fetch URL with retries and auto-decode gb2312."""
@@ -200,7 +221,7 @@ def crawl_quanwenyuedu(limit_novels=30, limit_chapters=10):
     # Category pages
     discovered = []
     for cat_id in range(1, 13, 2):  # 1,3,5,7,9,11
-        html = fetch(f"{DOMAIN}/c/{cat_id}.html")
+        html = fetch_curl(f"{DOMAIN}/c/{cat_id}.html")
         if not html:
             continue
         novel_links = re.findall(r'href="(/n/[^"]+?/)"[^>]*>(.{2,120})</a>', html)
@@ -237,7 +258,7 @@ def crawl_quanwenyuedu(limit_novels=30, limit_chapters=10):
             continue
 
         # Get chapter list
-        ch_html = fetch(f"{DOMAIN}/n/{novel['source_slug']}/xiaoshuo.html")
+        ch_html = fetch_curl(f"{DOMAIN}/n/{novel['source_slug']}/xiaoshuo.html")
         if not ch_html:
             continue
         chapter_links = re.findall(r'href="(\d+\.html)"[^>]*>(.{1,80})</a>', ch_html)
@@ -267,7 +288,7 @@ def crawl_quanwenyuedu(limit_novels=30, limit_chapters=10):
         chapters_scraped = 0
         for ch_url, ch_title_raw in chapter_links[:limit_chapters]:
             ch_title = re.sub(r'<[^>]*>', '', ch_title_raw).strip()
-            ch_html_page = fetch(f"{DOMAIN}{ch_url}")
+            ch_html_page = fetch_curl(f"{DOMAIN}/n/{novel['source_slug']}/{ch_url}")
             if not ch_html_page:
                 continue
             lines = extract_title_desktop(ch_html_page)
