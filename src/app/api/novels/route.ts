@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-
 const NOVELS_FILE = path.join(process.cwd(), "data", "novels.json");
 const COVER_MANIFEST = path.join(process.cwd(), "data", "cover-manifest.json");
+const CHAPTERS_DIR = path.join(process.cwd(), "data", "chapters");
+
+// Minimum chapters to show on homepage (AdSense quality threshold)
+const MIN_HOMEPAGE_CHAPTERS = 3;
 
 export async function GET() {
   try {
@@ -14,6 +17,19 @@ export async function GET() {
     const content = fs.readFileSync(NOVELS_FILE, "utf-8");
     const novels = JSON.parse(content);
 
+    // Count chapters per novel for quality filtering
+    const chapterCounts: Record<string, number> = {};
+    if (fs.existsSync(CHAPTERS_DIR)) {
+      const dirs = fs.readdirSync(CHAPTERS_DIR);
+      for (const dir of dirs) {
+        const dirPath = path.join(CHAPTERS_DIR, dir);
+        if (fs.statSync(dirPath).isDirectory()) {
+          const files = fs.readdirSync(dirPath).filter(f => f.startsWith('ch-') || f.startsWith('chapter-'));
+          chapterCounts[dir] = files.length;
+        }
+      }
+    }
+
     // Attach cover extension (jpg or svg) to each novel
     let extMap: Record<string, string> = {};
     if (fs.existsSync(COVER_MANIFEST)) {
@@ -21,21 +37,25 @@ export async function GET() {
         extMap = JSON.parse(fs.readFileSync(COVER_MANIFEST, "utf-8"));
       } catch {}
     }
-    const novelsWithCover = novels.map((n: any) => ({
-      ...n,
-      cover_ext: extMap[n.slug] || "jpg",
-    }));
 
-    // Build genre list
+    for (const n of novels) {
+      n.cover_ext = extMap[n.slug] || "jpg";
+      n.available_chapters = chapterCounts[n.slug] || 0;
+    }
+
+    const novelsWithCover = novels;
+
+    // Build genre list (only from novels with chapters)
     const genreMap = new Map();
-    novelsWithCover.forEach((n: any) => {
+    for (const n of novelsWithCover) {
+      if ((n.available_chapters || 0) < MIN_HOMEPAGE_CHAPTERS) continue;
       const existing = genreMap.get(n.genre);
       if (existing) {
         existing.count++;
       } else {
         genreMap.set(n.genre, { name: n.genre, count: 1, is_adult: n.is_adult });
       }
-    });
+    }
 
     const genres = Array.from(genreMap.values());
 

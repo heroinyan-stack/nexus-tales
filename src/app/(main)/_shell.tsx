@@ -142,7 +142,9 @@ export function Header() {
           <a href="/novels" className="text-moon hover:text-neon-cyan transition-colors">
             Browse Novels
           </a>
-
+          <a href="/blog" className="text-moon hover:text-neon-cyan transition-colors">
+            Blog
+          </a>
         </nav>
         <div className="flex items-center gap-4">
           <button className="text-moon hover:text-neon-cyan transition-colors text-sm">
@@ -182,6 +184,7 @@ export function Footer() {
               <a href="/novels?genre=cultivation" className="hover:text-neon-cyan transition-colors">Cultivation</a>
               <a href="/novels?genre=fantasy" className="hover:text-neon-cyan transition-colors">Fantasy</a>
               <a href="/novels?genre=sci-fi" className="hover:text-neon-cyan transition-colors">Sci-Fi</a>
+              <a href="/blog" className="hover:text-neon-cyan transition-colors">Blog</a>
             </div>
           </div>
 

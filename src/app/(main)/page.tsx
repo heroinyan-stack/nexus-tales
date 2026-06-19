@@ -30,6 +30,7 @@ interface Novel {
   description_en: string;
   zone: string;
   cover_ext?: string;
+  available_chapters?: number;
 }
 
 interface Genre {
@@ -78,8 +79,10 @@ export default function HomePage() {
     erotica: "Adult 🔞",
   };
 
-  const freeBooks = useMemo(() => novels.filter((n) => n.zone === "free"), [novels]);
-  const vipBooks = useMemo(() => novels.filter((n) => n.zone === "vip"), [novels]);
+  // AdSense quality threshold: hide novels with <3 chapters from homepage
+  const MIN_CHAPTERS = 3;
+  const freeBooks = useMemo(() => novels.filter((n) => n.zone === "free" && (n.available_chapters || 0) >= MIN_CHAPTERS), [novels]);
+  const vipBooks = useMemo(() => novels.filter((n) => n.zone === "vip" && (n.available_chapters || 0) >= MIN_CHAPTERS), [novels]);
 
   // Sort helpers
   const hottestBooks = useMemo(() =>
