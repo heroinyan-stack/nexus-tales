@@ -29,7 +29,8 @@
     "title": "Martial God Asura",
     "featured": true,
     "available_chapters": 98,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 119
   },
   {
     "id": 21,
@@ -61,7 +62,8 @@
     "title": "Against The Gods",
     "featured": true,
     "available_chapters": 52,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 73
   },
   {
     "id": 13,
@@ -95,7 +97,8 @@
     "title": "Journey To The West",
     "featured": false,
     "available_chapters": 15,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 13
   },
   {
     "id": 12,
@@ -127,7 +130,8 @@
     "title": "I Shall Seal The Heavens",
     "featured": false,
     "available_chapters": 5,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 25
   },
   {
     "slug": "strange-tales-chinese-studio",
@@ -164,7 +168,8 @@
     "title": "Strange Tales Chinese Studio",
     "featured": false,
     "available_chapters": 15,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 6
   },
   {
     "id": 4,
@@ -201,7 +206,8 @@
     "title": "Reverend Insanity",
     "featured": false,
     "available_chapters": 27,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 26
   },
   {
     "id": 14,
@@ -235,7 +241,8 @@
     "title": "Romance Of The Three Kingdoms",
     "featured": false,
     "available_chapters": 13,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 9
   },
   {
     "id": 20,
@@ -267,7 +274,8 @@
     "title": "A Will Eternal",
     "featured": true,
     "available_chapters": 53,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 64
   },
   {
     "slug": "investiture-of-the-gods",
@@ -304,7 +312,8 @@
     "title": "Investiture Of The Gods",
     "featured": false,
     "available_chapters": 15,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 6
   },
   {
     "id": 6,
@@ -340,7 +349,8 @@
     "title": "The Remarried Empress",
     "featured": false,
     "available_chapters": 10,
-    "category": "Romance"
+    "category": "Romance",
+    "chapter_count": 7
   },
   {
     "id": 15,
@@ -375,7 +385,8 @@
     "title": "Dream Of The Red Chamber",
     "featured": false,
     "available_chapters": 11,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 7
   },
   {
     "id": 7,
@@ -411,7 +422,8 @@
     "featured": false,
     "available_chapters": 10,
     "author": "Romance Author",
-    "category": "Romance"
+    "category": "Romance",
+    "chapter_count": 7
   },
   {
     "id": 23,
@@ -443,7 +455,8 @@
     "title": "Battle Through The Heavens",
     "featured": true,
     "available_chapters": 53,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 64
   },
   {
     "slug": "gullivers-travels",
@@ -480,7 +493,8 @@
     "featured": false,
     "available_chapters": 11,
     "author": "Jonathan Swift",
-    "category": "Fantasy"
+    "category": "Fantasy",
+    "chapter_count": 5
   },
   {
     "id": 16,
@@ -514,7 +528,8 @@
     "title": "Water Margin",
     "featured": false,
     "available_chapters": 11,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 7
   },
   {
     "id": 40,
@@ -546,7 +561,8 @@
     "featured": false,
     "available_chapters": 52,
     "author": "Er Gen",
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 54
   },
   {
     "id": 10,
@@ -583,7 +599,8 @@
     "featured": false,
     "available_chapters": 10,
     "author": "Romance Author",
-    "category": "Romance"
+    "category": "Romance",
+    "chapter_count": 7
   },
   {
     "id": 17,
@@ -618,7 +635,8 @@
     "title": "Art Of War",
     "featured": false,
     "available_chapters": 13,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 10
   },
   {
     "slug": "creation-of-the-gods",
@@ -655,7 +673,8 @@
     "featured": false,
     "available_chapters": 10,
     "author": "Xu Zhonglin",
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 6
   },
   {
     "id": 11,
@@ -691,7 +710,8 @@
     "featured": false,
     "available_chapters": 10,
     "author": "Misty Rain of the South",
-    "category": "Fantasy"
+    "category": "Fantasy",
+    "chapter_count": 7
   },
   {
     "id": 12,
@@ -727,7 +747,8 @@
     "featured": false,
     "available_chapters": 10,
     "author": "Twelve-Winged Dark Seraphim",
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 7
   },
   {
     "id": 18,
@@ -762,7 +783,8 @@
     "title": "Tao Te Ching",
     "featured": false,
     "available_chapters": 83,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 5
   },
   {
     "slug": "monkey-kings-birth",
@@ -800,7 +822,8 @@
     "featured": false,
     "available_chapters": 9,
     "author": "Wu Cheng'en",
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 3
   },
   {
     "id": 19,
@@ -834,7 +857,8 @@
     "title": "Analects Of Confucius",
     "featured": false,
     "available_chapters": 21,
-    "category": "Classics"
+    "category": "Classics",
+    "chapter_count": 20
   },
   {
     "slug": "kai-lung-unrolls-his-mat",
@@ -867,7 +891,8 @@
     "available_chapters": 16,
     "author": "Ernest Bramah",
     "category": "Classics",
-    "cover_url": "/covers/kai-lung-unrolls-his-mat.svg"
+    "cover_url": "/covers/kai-lung-unrolls-his-mat.svg",
+    "chapter_count": 12
   },
   {
     "slug": "chinese-ghost-and-love-stories",
@@ -900,7 +925,8 @@
     "available_chapters": 18,
     "author": "Pu Songling",
     "category": "Classics",
-    "cover_url": "/covers/chinese-ghost-and-love-stories.svg"
+    "cover_url": "/covers/chinese-ghost-and-love-stories.svg",
+    "chapter_count": 14
   },
   {
     "slug": "white-snake-legend",
@@ -937,7 +963,8 @@
     "featured": false,
     "available_chapters": 9,
     "author": "Folk Legend",
-    "category": "Romance"
+    "category": "Romance",
+    "chapter_count": 5
   },
   {
     "slug": "the-book-of-songs",
@@ -970,7 +997,8 @@
     "available_chapters": 16,
     "author": "Confucius (compiler)",
     "category": "Classics",
-    "cover_url": "/covers/the-book-of-songs.svg"
+    "cover_url": "/covers/the-book-of-songs.svg",
+    "chapter_count": 14
   },
   {
     "slug": "chinese-poetry",
@@ -1036,7 +1064,8 @@
     "available_chapters": 16,
     "author": "Zhuang Zhou",
     "category": "Classics",
-    "cover_url": "/covers/zhuangzi.svg"
+    "cover_url": "/covers/zhuangzi.svg",
+    "chapter_count": 14
   },
   {
     "slug": "the-flight-of-dragons",
@@ -1069,7 +1098,8 @@
     "available_chapters": 17,
     "author": "Peter Dickinson",
     "category": "Classics",
-    "cover_url": "/covers/the-flight-of-dragons.svg"
+    "cover_url": "/covers/the-flight-of-dragons.svg",
+    "chapter_count": 14
   },
   {
     "slug": "personal-narrative-of-heavenly-revelations",
@@ -1102,7 +1132,8 @@
     "available_chapters": 16,
     "author": "Emanuel Swedenborg",
     "category": "Classics",
-    "cover_url": "/covers/personal-narrative-of-heavenly-revelations.svg"
+    "cover_url": "/covers/personal-narrative-of-heavenly-revelations.svg",
+    "chapter_count": 14
   },
   {
     "slug": "the-story-of-the-stone",
@@ -1135,7 +1166,8 @@
     "available_chapters": 19,
     "author": "Cao Xueqin",
     "category": "Classics",
-    "cover_url": "/covers/the-story-of-the-stone.svg"
+    "cover_url": "/covers/the-story-of-the-stone.svg",
+    "chapter_count": 14
   },
   {
     "id": 34,
@@ -2220,7 +2252,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 12,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 2
   },
   {
     "id": 70,
@@ -2255,7 +2288,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Xianxia"
+    "category": "Xianxia",
+    "chapter_count": 2
   },
   {
     "id": 71,
@@ -2290,7 +2324,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Wuxia"
+    "category": "Wuxia",
+    "chapter_count": 2
   },
   {
     "id": 72,
@@ -2325,7 +2360,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 2
   },
   {
     "id": 73,
@@ -2360,7 +2396,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 2
   },
   {
     "id": 74,
@@ -2395,7 +2432,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 2
   },
   {
     "id": 75,
@@ -2430,7 +2468,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 33,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 2
   },
   {
     "id": 76,
@@ -2465,7 +2504,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 15,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 2
   },
   {
     "id": 77,
@@ -2500,7 +2540,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 18,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 1
   },
   {
     "id": 78,
@@ -2535,7 +2576,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 1
   },
   {
     "id": 79,
@@ -2570,7 +2612,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Sci-Fi"
+    "category": "Sci-Fi",
+    "chapter_count": 1
   },
   {
     "id": 80,
@@ -2605,7 +2648,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 81,
@@ -2640,7 +2684,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 18,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 82,
@@ -2675,7 +2720,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 21,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 83,
@@ -2710,7 +2756,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 18,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 84,
@@ -2745,7 +2792,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 18,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 85,
@@ -2780,7 +2828,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 15,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 86,
@@ -2815,7 +2864,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 15,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 87,
@@ -2850,7 +2900,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 15,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "id": 88,
@@ -2885,7 +2936,8 @@
     "cover_ext": "jpg",
     "abbreviation": "",
     "available_chapters": 15,
-    "category": "Urban"
+    "category": "Urban",
+    "chapter_count": 1
   },
   {
     "slug": "开局阴阳宗从反杀师姐开始斩妖除魔",
@@ -3306,7 +3358,8 @@
     "cover_url": "/covers/傲世丹神.svg",
     "totalChapters": 1900,
     "available_chapters": 0,
-    "description": "Discover 傲世丹神 — explore the full collection online."
+    "description": "Discover 傲世丹神 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "异世邪君",
@@ -3319,7 +3372,8 @@
     "cover_url": "/covers/异世邪君.svg",
     "totalChapters": 638,
     "available_chapters": 0,
-    "description": "Discover 异世邪君 — explore the full collection online."
+    "description": "Discover 异世邪君 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "十方天士",
@@ -3332,7 +3386,8 @@
     "cover_url": "/covers/十方天士.svg",
     "totalChapters": 315,
     "available_chapters": 0,
-    "description": "Discover 十方天士 — explore the full collection online."
+    "description": "Discover 十方天士 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "极限武尊",
@@ -3345,7 +3400,8 @@
     "cover_url": "/covers/极限武尊.svg",
     "totalChapters": 770,
     "available_chapters": 0,
-    "description": "Discover 极限武尊 — explore the full collection online."
+    "description": "Discover 极限武尊 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "斗罗大陆",
@@ -3358,7 +3414,8 @@
     "cover_url": "/covers/斗罗大陆.svg",
     "totalChapters": 344,
     "available_chapters": 0,
-    "description": "Discover 斗罗大陆 — explore the full collection online."
+    "description": "Discover 斗罗大陆 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "至尊仙皇",
@@ -3371,7 +3428,8 @@
     "cover_url": "/covers/至尊仙皇.svg",
     "totalChapters": 612,
     "available_chapters": 0,
-    "description": "Discover 至尊仙皇 — explore the full collection online."
+    "description": "Discover 至尊仙皇 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "求魔",
@@ -3384,7 +3442,8 @@
     "cover_url": "/covers/求魔.svg",
     "totalChapters": 739,
     "available_chapters": 0,
-    "description": "Discover 求魔 — explore the full collection online."
+    "description": "Discover 求魔 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "无上神通",
@@ -3397,7 +3456,8 @@
     "cover_url": "/covers/无上神通.svg",
     "totalChapters": 466,
     "available_chapters": 0,
-    "description": "Discover 无上神通 — explore the full collection online."
+    "description": "Discover 无上神通 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "帝道至尊",
@@ -3410,7 +3470,8 @@
     "cover_url": "/covers/帝道至尊.svg",
     "totalChapters": 1214,
     "available_chapters": 0,
-    "description": "Discover 帝道至尊 — explore the full collection online."
+    "description": "Discover 帝道至尊 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "穿越西游之从零开始",
@@ -3423,7 +3484,8 @@
     "cover_url": "/covers/穿越西游之从零开始.svg",
     "totalChapters": 169,
     "available_chapters": 0,
-    "description": "Discover 穿越西游之从零开始 — explore the full collection online."
+    "description": "Discover 穿越西游之从零开始 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "帝玄天",
@@ -3436,7 +3498,8 @@
     "cover_url": "/covers/帝玄天.svg",
     "totalChapters": 1273,
     "available_chapters": 0,
-    "description": "Discover 帝玄天 — explore the full collection online."
+    "description": "Discover 帝玄天 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "绝世武神",
@@ -3449,7 +3512,8 @@
     "cover_url": "/covers/绝世武神.svg",
     "totalChapters": 1250,
     "available_chapters": 0,
-    "description": "Discover 绝世武神 — explore the full collection online."
+    "description": "Discover 绝世武神 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "修真者在异世",
@@ -3462,7 +3526,8 @@
     "cover_url": "/covers/修真者在异世.svg",
     "totalChapters": 574,
     "available_chapters": 0,
-    "description": "Discover 修真者在异世 — explore the full collection online."
+    "description": "Discover 修真者在异世 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "杀神",
@@ -3475,7 +3540,8 @@
     "cover_url": "/covers/杀神.svg",
     "totalChapters": 809,
     "available_chapters": 0,
-    "description": "Discover 杀神 — explore the full collection online."
+    "description": "Discover 杀神 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "七界传说",
@@ -3488,7 +3554,8 @@
     "cover_url": "/covers/七界传说.svg",
     "totalChapters": 2294,
     "available_chapters": 0,
-    "description": "Discover 七界传说 — explore the full collection online."
+    "description": "Discover 七界传说 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "异界魅影逍遥",
@@ -3501,7 +3568,8 @@
     "cover_url": "/covers/异界魅影逍遥.svg",
     "totalChapters": 736,
     "available_chapters": 0,
-    "description": "Discover 异界魅影逍遥 — explore the full collection online."
+    "description": "Discover 异界魅影逍遥 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "吞噬苍穹",
@@ -3514,7 +3582,8 @@
     "cover_url": "/covers/吞噬苍穹.svg",
     "totalChapters": 1090,
     "available_chapters": 0,
-    "description": "Discover 吞噬苍穹 — explore the full collection online."
+    "description": "Discover 吞噬苍穹 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "大道主",
@@ -3527,7 +3596,8 @@
     "cover_url": "/covers/大道主.svg",
     "totalChapters": 1546,
     "available_chapters": 0,
-    "description": "Discover 大道主 — explore the full collection online."
+    "description": "Discover 大道主 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "魔兽剑圣异界纵横",
@@ -3540,7 +3610,8 @@
     "cover_url": "/covers/魔兽剑圣异界纵横.svg",
     "totalChapters": 395,
     "available_chapters": 0,
-    "description": "Discover 魔兽剑圣异界纵横 — explore the full collection online."
+    "description": "Discover 魔兽剑圣异界纵横 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "天珠变",
@@ -3553,7 +3624,8 @@
     "cover_url": "/covers/天珠变.svg",
     "totalChapters": 425,
     "available_chapters": 0,
-    "description": "Discover 天珠变 — explore the full collection online."
+    "description": "Discover 天珠变 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "斗破苍穹",
@@ -3566,7 +3638,8 @@
     "cover_url": "/covers/斗破苍穹.svg",
     "totalChapters": 822,
     "available_chapters": 0,
-    "description": "Discover 斗破苍穹 — explore the full collection online."
+    "description": "Discover 斗破苍穹 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "剑神重生",
@@ -3579,7 +3652,8 @@
     "cover_url": "/covers/剑神重生.svg",
     "totalChapters": 1597,
     "available_chapters": 0,
-    "description": "Discover 剑神重生 — explore the full collection online."
+    "description": "Discover 剑神重生 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "邪虫神",
@@ -3592,7 +3666,8 @@
     "cover_url": "/covers/邪虫神.svg",
     "totalChapters": 890,
     "available_chapters": 0,
-    "description": "Discover 邪虫神 — explore the full collection online."
+    "description": "Discover 邪虫神 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "唐门高手在异世",
@@ -3605,7 +3680,8 @@
     "cover_url": "/covers/唐门高手在异世.svg",
     "totalChapters": 620,
     "available_chapters": 0,
-    "description": "Discover 唐门高手在异世 — explore the full collection online."
+    "description": "Discover 唐门高手在异世 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "我的极品小姨子",
@@ -3618,7 +3694,8 @@
     "cover_url": "/covers/我的极品小姨子.svg",
     "totalChapters": 657,
     "available_chapters": 0,
-    "description": "Discover 我的极品小姨子 — explore the full collection online."
+    "description": "Discover 我的极品小姨子 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "都市超级召唤师",
@@ -3631,7 +3708,8 @@
     "cover_url": "/covers/都市超级召唤师.svg",
     "totalChapters": 505,
     "available_chapters": 0,
-    "description": "Discover 都市超级召唤师 — explore the full collection online."
+    "description": "Discover 都市超级召唤师 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "极品相师",
@@ -3644,7 +3722,8 @@
     "cover_url": "/covers/极品相师.svg",
     "totalChapters": 519,
     "available_chapters": 0,
-    "description": "Discover 极品相师 — explore the full collection online."
+    "description": "Discover 极品相师 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "老兵传奇",
@@ -3657,7 +3736,8 @@
     "cover_url": "/covers/老兵传奇.svg",
     "totalChapters": 1229,
     "available_chapters": 0,
-    "description": "Discover 老兵传奇 — explore the full collection online."
+    "description": "Discover 老兵传奇 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "御宝天师",
@@ -3670,7 +3750,8 @@
     "cover_url": "/covers/御宝天师.svg",
     "totalChapters": 902,
     "available_chapters": 0,
-    "description": "Discover 御宝天师 — explore the full collection online."
+    "description": "Discover 御宝天师 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "极品美女养成系统",
@@ -3683,7 +3764,8 @@
     "cover_url": "/covers/极品美女养成系统.svg",
     "totalChapters": 325,
     "available_chapters": 0,
-    "description": "Discover 极品美女养成系统 — explore the full collection online."
+    "description": "Discover 极品美女养成系统 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "艳福仙医",
@@ -3696,7 +3778,8 @@
     "cover_url": "/covers/艳福仙医.svg",
     "totalChapters": 218,
     "available_chapters": 0,
-    "description": "Discover 艳福仙医 — explore the full collection online."
+    "description": "Discover 艳福仙医 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "现世修真",
@@ -3709,7 +3792,8 @@
     "cover_url": "/covers/现世修真.svg",
     "totalChapters": 312,
     "available_chapters": 0,
-    "description": "Discover 现世修真 — explore the full collection online."
+    "description": "Discover 现世修真 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "校园全能高手",
@@ -3722,7 +3806,8 @@
     "cover_url": "/covers/校园全能高手.svg",
     "totalChapters": 1590,
     "available_chapters": 0,
-    "description": "Discover 校园全能高手 — explore the full collection online."
+    "description": "Discover 校园全能高手 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "透视之眼",
@@ -3735,7 +3820,8 @@
     "cover_url": "/covers/透视之眼.svg",
     "totalChapters": 1268,
     "available_chapters": 0,
-    "description": "Discover 透视之眼 — explore the full collection online."
+    "description": "Discover 透视之眼 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "官途",
@@ -3748,7 +3834,8 @@
     "cover_url": "/covers/官途.svg",
     "totalChapters": 1480,
     "available_chapters": 0,
-    "description": "Discover 官途 — explore the full collection online."
+    "description": "Discover 官途 — explore the full collection online.",
+    "chapter_count": 4
   },
   {
     "slug": "超级修真保镖",
@@ -3761,7 +3848,8 @@
     "cover_url": "/covers/超级修真保镖.svg",
     "totalChapters": 342,
     "available_chapters": 0,
-    "description": "Discover 超级修真保镖 — explore the full collection online."
+    "description": "Discover 超级修真保镖 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "黑道特种兵",
@@ -3774,7 +3862,8 @@
     "cover_url": "/covers/黑道特种兵.svg",
     "totalChapters": 1446,
     "available_chapters": 0,
-    "description": "Discover 黑道特种兵 — explore the full collection online."
+    "description": "Discover 黑道特种兵 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "修仙高手在校园",
@@ -3787,7 +3876,8 @@
     "cover_url": "/covers/修仙高手在校园.svg",
     "totalChapters": 810,
     "available_chapters": 0,
-    "description": "Discover 修仙高手在校园 — explore the full collection online."
+    "description": "Discover 修仙高手在校园 — explore the full collection online.",
+    "chapter_count": 5
   },
   {
     "slug": "嫡女归来权臣掌心娇",
