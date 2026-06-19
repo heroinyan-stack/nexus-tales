@@ -354,7 +354,7 @@ export default function HomePage() {
 
 /* ── Reusable Novel Card ──────────────────────────────── */
 function NovelCard({ novel, isFree = false }: { novel: Novel; isFree?: boolean }) {
-  const ext = novel.cover_ext || "jpg";
+  const coverSrc = (novel as any).cover_url || `/covers/${novel.slug}.${(novel as any).cover_ext || "svg"}`;
   return (
     <Link
       href={`/novel/${novel.slug}`}
@@ -367,7 +367,7 @@ function NovelCard({ novel, isFree = false }: { novel: Novel; isFree?: boolean }
       }`}>
         <div className="relative h-44 overflow-hidden bg-cosmic">
           <img
-            src={`/covers/${novel.slug}.${ext}`}
+            src={coverSrc}
             alt={`Cover: ${novel.title_en}`}
             className="w-full h-full object-cover"
             loading="lazy"

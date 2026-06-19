@@ -1,6 +1,6 @@
 [
   {
-    "id": 35,
+    "id": 1,
     "slug": "martial-god-asura",
     "title_en": "Martial God Asura",
     "title_zh": "Martial God Asura",
@@ -33,7 +33,7 @@
     "chapter_count": 119
   },
   {
-    "id": 21,
+    "id": 2,
     "slug": "against-the-gods",
     "title_en": "Against the Gods",
     "title_zh": "Against the Gods",
@@ -66,7 +66,7 @@
     "chapter_count": 73
   },
   {
-    "id": 13,
+    "id": 3,
     "slug": "journey-to-the-west",
     "title_en": "Journey to the West",
     "author_en": "Wu Cheng'en",
@@ -101,7 +101,7 @@
     "chapter_count": 13
   },
   {
-    "id": 12,
+    "id": 4,
     "slug": "i-shall-seal-the-heavens",
     "title_en": "I Shall Seal the Heavens",
     "title_zh": "I Shall Seal the Heavens",
@@ -172,7 +172,7 @@
     "chapter_count": 6
   },
   {
-    "id": 4,
+    "id": 6,
     "slug": "reverend-insanity",
     "title_zh": "蛊真人",
     "title_en": "Reverend Insanity",
@@ -210,7 +210,7 @@
     "chapter_count": 26
   },
   {
-    "id": 14,
+    "id": 7,
     "slug": "romance-of-the-three-kingdoms",
     "title_en": "Romance of the Three Kingdoms",
     "author_en": "Luo Guanzhong",
@@ -245,7 +245,7 @@
     "chapter_count": 9
   },
   {
-    "id": 20,
+    "id": 8,
     "slug": "a-will-eternal",
     "title_en": "A Will Eternal",
     "title_zh": "A Will Eternal",
@@ -316,7 +316,7 @@
     "chapter_count": 6
   },
   {
-    "id": 6,
+    "id": 10,
     "slug": "the-remarried-empress",
     "title_zh": "再婚皇后",
     "title_en": "The Remarried Empress",
@@ -353,7 +353,7 @@
     "chapter_count": 7
   },
   {
-    "id": 15,
+    "id": 11,
     "slug": "dream-of-the-red-chamber",
     "title_en": "Dream of the Red Chamber",
     "author_en": "Cao Xueqin",
@@ -389,7 +389,7 @@
     "chapter_count": 7
   },
   {
-    "id": 7,
+    "id": 12,
     "slug": "secret-lovers",
     "title_zh": "偷香",
     "title_en": "Secret Lovers",
@@ -426,7 +426,7 @@
     "chapter_count": 7
   },
   {
-    "id": 23,
+    "id": 13,
     "slug": "battle-through-the-heavens",
     "title_en": "Battle Through the Heavens",
     "title_zh": "Battle Through the Heavens",
@@ -497,7 +497,7 @@
     "chapter_count": 5
   },
   {
-    "id": 16,
+    "id": 15,
     "slug": "water-margin",
     "title_en": "Water Margin (Outlaws of the Marsh)",
     "author_en": "Shi Nai'an",
@@ -532,7 +532,7 @@
     "chapter_count": 7
   },
   {
-    "id": 40,
+    "id": 16,
     "slug": "renegade-immortal",
     "title_en": "Renegade Immortal",
     "title_zh": "Renegade Immortal",
@@ -565,7 +565,7 @@
     "chapter_count": 54
   },
   {
-    "id": 10,
+    "id": 17,
     "slug": "hidden-marriage",
     "title_zh": "隐婚总裁",
     "title_en": "Hidden Marriage",
@@ -603,7 +603,7 @@
     "chapter_count": 7
   },
   {
-    "id": 17,
+    "id": 18,
     "slug": "art-of-war",
     "title_en": "The Art of War",
     "author_en": "Sun Tzu",
@@ -677,7 +677,7 @@
     "chapter_count": 6
   },
   {
-    "id": 11,
+    "id": 20,
     "slug": "city-of-sin",
     "title_zh": "罪恶之城",
     "title_en": "City of Sin",
@@ -714,7 +714,7 @@
     "chapter_count": 7
   },
   {
-    "id": 12,
+    "id": 21,
     "slug": "super-gene",
     "title_zh": "超级神基因",
     "title_en": "Super Gene",
@@ -751,7 +751,7 @@
     "chapter_count": 7
   },
   {
-    "id": 18,
+    "id": 22,
     "slug": "tao-te-ching",
     "title_en": "Tao Te Ching",
     "author_en": "Lao Tzu (Laozi)",
@@ -826,7 +826,7 @@
     "chapter_count": 3
   },
   {
-    "id": 19,
+    "id": 24,
     "slug": "analects-of-confucius",
     "title_en": "The Analects of Confucius",
     "author_en": "Confucius (Kongzi)",
@@ -887,7 +887,7 @@
     "totalChapters": 16,
     "title": "Kai Lung Unrolls His Mat",
     "featured": false,
-    "id": 89,
+    "id": 25,
     "available_chapters": 16,
     "author": "Ernest Bramah",
     "category": "Classics",
@@ -921,7 +921,7 @@
     "totalChapters": 18,
     "title": "Chinese Ghost And Love Stories",
     "featured": false,
-    "id": 90,
+    "id": 26,
     "available_chapters": 18,
     "author": "Pu Songling",
     "category": "Classics",
@@ -993,7 +993,7 @@
     "totalChapters": 16,
     "title": "The Book Of Songs",
     "featured": false,
-    "id": 91,
+    "id": 28,
     "available_chapters": 16,
     "author": "Confucius (compiler)",
     "category": "Classics",
@@ -1027,7 +1027,7 @@
     "totalChapters": 2,
     "title": "Chinese Poetry",
     "featured": false,
-    "id": 92,
+    "id": 29,
     "available_chapters": 2,
     "author": "Li Bai, Du Fu & Others",
     "category": "Classics",
@@ -1060,7 +1060,7 @@
     "totalChapters": 16,
     "title": "Zhuangzi",
     "featured": false,
-    "id": 93,
+    "id": 30,
     "available_chapters": 16,
     "author": "Zhuang Zhou",
     "category": "Classics",
@@ -1094,7 +1094,7 @@
     "totalChapters": 17,
     "title": "The Flight Of Dragons",
     "featured": false,
-    "id": 94,
+    "id": 31,
     "available_chapters": 17,
     "author": "Peter Dickinson",
     "category": "Classics",
@@ -1128,7 +1128,7 @@
     "totalChapters": 16,
     "title": "Personal Narrative Of Heavenly Revelations",
     "featured": false,
-    "id": 95,
+    "id": 32,
     "available_chapters": 16,
     "author": "Emanuel Swedenborg",
     "category": "Classics",
@@ -1162,7 +1162,7 @@
     "totalChapters": 19,
     "title": "The Story Of The Stone",
     "featured": false,
-    "id": 96,
+    "id": 33,
     "available_chapters": 19,
     "author": "Cao Xueqin",
     "category": "Classics",
@@ -2224,7 +2224,7 @@
     "slug": "novel-133988",
     "title_en": "道士下山之749局",
     "title_zh": "道士下山之749局",
-    "author_en": "",
+    "author_en": "Daoist Master of Mystery",
     "author_zh": "",
     "genre": "玄幻",
     "tags": [
@@ -2260,7 +2260,7 @@
     "slug": "novel-133515",
     "title_en": "斗罗V：开局绑定朱竹清，创建神级家族",
     "title_zh": "斗罗V：开局绑定朱竹清，创建神级家族",
-    "author_en": "",
+    "author_en": "Douluo Dalu Fan Author",
     "author_zh": "",
     "genre": "玄幻",
     "tags": [
@@ -2296,7 +2296,7 @@
     "slug": "novel-134081",
     "title_en": "70年代开局，我靠零元购发家",
     "title_zh": "70年代开局，我靠零元购发家",
-    "author_en": "",
+    "author_en": "Urban Rebirth Author",
     "author_zh": "",
     "genre": "武侠",
     "tags": [
@@ -2332,7 +2332,7 @@
     "slug": "novel-134033",
     "title_en": "全民饥荒：SSS级天赋酿酒师",
     "title_zh": "全民饥荒：SSS级天赋酿酒师",
-    "author_en": "",
+    "author_en": "Apocalypse Survival Author",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2368,7 +2368,7 @@
     "slug": "novel-133775",
     "title_en": "无CP废土：基建养出全",
     "title_zh": "无CP废土：基建养出全",
-    "author_en": "",
+    "author_en": "Post-Apocalyptic Builder",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2404,7 +2404,7 @@
     "slug": "novel-133647",
     "title_en": "第19次末日",
     "title_zh": "第19次末日",
-    "author_en": "",
+    "author_en": "Doomsday Chronicler",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2440,7 +2440,7 @@
     "slug": "novel-133629",
     "title_en": "开局三预言？我直播通关S级末世",
     "title_zh": "开局三预言？我直播通关S级末世",
-    "author_en": "",
+    "author_en": "System Stream Author",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2476,7 +2476,7 @@
     "slug": "novel-134053",
     "title_en": "城隍是我老祖，原来我是神N代",
     "title_zh": "城隍是我老祖，原来我是神N代",
-    "author_en": "",
+    "author_en": "Urban Fantasy Author",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2512,7 +2512,7 @@
     "slug": "novel-134056",
     "title_en": "同时被N个S级哨兵盯上怎么办",
     "title_zh": "同时被N个S级哨兵盯上怎么办",
-    "author_en": "",
+    "author_en": "Sentinel Romance Author",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2548,7 +2548,7 @@
     "slug": "novel-133975",
     "title_en": "反派BOSS有毒",
     "title_zh": "反派BOSS有毒",
-    "author_en": "",
+    "author_en": "Villain Protagonist Author",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2584,7 +2584,7 @@
     "slug": "novel-133977",
     "title_en": "末世入侵：我在副本里面当NPC",
     "title_zh": "末世入侵：我在副本里面当NPC",
-    "author_en": "",
+    "author_en": "Dungeon Master Author",
     "author_zh": "",
     "genre": "科幻",
     "tags": [
@@ -2620,7 +2620,7 @@
     "slug": "novel-133981",
     "title_en": "重生2000：撕了协议我暴富了",
     "title_zh": "重生2000：撕了协议我暴富了",
-    "author_en": "",
+    "author_en": "Rebirth 2000 Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2656,7 +2656,7 @@
     "slug": "novel-133930",
     "title_en": "华娱2008：从分手快乐开始",
     "title_zh": "华娱2008：从分手快乐开始",
-    "author_en": "",
+    "author_en": "Entertainment Circle Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2692,7 +2692,7 @@
     "slug": "novel-133934",
     "title_en": "重生80，分家后带妻女吃香喝辣",
     "title_zh": "重生80，分家后带妻女吃香喝辣",
-    "author_en": "",
+    "author_en": "Rebirth Farming Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2728,7 +2728,7 @@
     "slug": "novel-133856",
     "title_en": "穿越60带着空间当保安",
     "title_zh": "穿越60带着空间当保安",
-    "author_en": "",
+    "author_en": "Time Travel Survival Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2764,7 +2764,7 @@
     "slug": "novel-133896",
     "title_en": "系统送编，从外卖员成007探员",
     "title_zh": "系统送编，从外卖员成007探员",
-    "author_en": "",
+    "author_en": "System Delivery Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2800,7 +2800,7 @@
     "slug": "novel-133941",
     "title_en": "穿越2006小手替被影帝追着宠",
     "title_zh": "穿越2006小手替被影帝追着宠",
-    "author_en": "",
+    "author_en": "Film Empress Romance Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2836,7 +2836,7 @@
     "slug": "novel-133879",
     "title_en": "我发现了世界BUG",
     "title_zh": "我发现了世界BUG",
-    "author_en": "",
+    "author_en": "World Bug Discoverer",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2872,7 +2872,7 @@
     "slug": "novel-133985",
     "title_en": "我养的AI竟是京圈太子爷",
     "title_zh": "我养的AI竟是京圈太子爷",
-    "author_en": "",
+    "author_en": "AI CEO Romance Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2908,7 +2908,7 @@
     "slug": "novel-133651",
     "title_en": "赶山1957：二斤猪肉换个媳妇",
     "title_zh": "赶山1957：二斤猪肉换个媳妇",
-    "author_en": "",
+    "author_en": "Mountain Life Author",
     "author_zh": "",
     "genre": "都市",
     "tags": [
@@ -2949,7 +2949,21 @@
     "cover_url": "/covers/开局阴阳宗从反杀师姐开始斩妖除魔.svg",
     "totalChapters": 29,
     "available_chapters": 15,
-    "description": "Read 开局阴阳宗，从反杀师姐开始斩妖除魔 online free."
+    "description": "Read 开局阴阳宗，从反杀师姐开始斩妖除魔 online free.",
+    "title_en": "开局阴阳宗，从反杀师姐开始斩妖除魔",
+    "author_en": "豪俊",
+    "description_en": "Read 开局阴阳宗，从反杀师姐开始斩妖除魔 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 29,
+    "id": 89
   },
   {
     "slug": "欠我时间债天道也得跪着还",
@@ -2961,7 +2975,21 @@
     "cover_url": "/covers/欠我时间债天道也得跪着还.svg",
     "totalChapters": 25,
     "available_chapters": 15,
-    "description": "Read 欠我时间债，天道也得跪着还 online free."
+    "description": "Read 欠我时间债，天道也得跪着还 online free.",
+    "title_en": "欠我时间债，天道也得跪着还",
+    "author_en": "毒酒飘香",
+    "description_en": "Read 欠我时间债，天道也得跪着还 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 25,
+    "id": 90
   },
   {
     "slug": "天心帝魂",
@@ -2973,7 +3001,21 @@
     "cover_url": "/covers/天心帝魂.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 天心帝魂 online free."
+    "description": "Read 天心帝魂 online free.",
+    "title_en": "天心帝魂",
+    "author_en": "天心帝魂",
+    "description_en": "Read 天心帝魂 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 91
   },
   {
     "slug": "逆仙成魔传",
@@ -2985,7 +3027,21 @@
     "cover_url": "/covers/逆仙成魔传.svg",
     "totalChapters": 23,
     "available_chapters": 15,
-    "description": "Read 逆仙成魔传 online free."
+    "description": "Read 逆仙成魔传 online free.",
+    "title_en": "逆仙成魔传",
+    "author_en": "废个球",
+    "description_en": "Read 逆仙成魔传 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 23,
+    "id": 92
   },
   {
     "slug": "月光之下",
@@ -2997,7 +3053,21 @@
     "cover_url": "/covers/月光之下.svg",
     "totalChapters": 113,
     "available_chapters": 12,
-    "description": "Read 月光之下 online free."
+    "description": "Read 月光之下 online free.",
+    "title_en": "月光之下",
+    "author_en": "林静",
+    "description_en": "Read 月光之下 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 93
   },
   {
     "slug": "天心战道",
@@ -3009,7 +3079,21 @@
     "cover_url": "/covers/天心战道.svg",
     "totalChapters": 13,
     "available_chapters": 13,
-    "description": "Read 天心战道 online free."
+    "description": "Read 天心战道 online free.",
+    "title_en": "天心战道",
+    "author_en": "乡间草",
+    "description_en": "Read 天心战道 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 13,
+    "id": 94
   },
   {
     "slug": "我能活化技能",
@@ -3021,7 +3105,21 @@
     "cover_url": "/covers/我能活化技能.svg",
     "totalChapters": 39,
     "available_chapters": 15,
-    "description": "Read 我能活化技能 online free."
+    "description": "Read 我能活化技能 online free.",
+    "title_en": "我能活化技能",
+    "author_en": "四诗风雅颂",
+    "description_en": "Read 我能活化技能 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 39,
+    "id": 95
   },
   {
     "slug": "开局自曝系统家族助我娶妻成仙",
@@ -3033,7 +3131,21 @@
     "cover_url": "/covers/开局自曝系统家族助我娶妻成仙.svg",
     "totalChapters": 72,
     "available_chapters": 15,
-    "description": "Read 开局自曝系统，家族助我娶妻成仙！ online free."
+    "description": "Read 开局自曝系统，家族助我娶妻成仙！ online free.",
+    "title_en": "开局自曝系统，家族助我娶妻成仙！",
+    "author_en": "关山难越",
+    "description_en": "Read 开局自曝系统，家族助我娶妻成仙！ online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 72,
+    "id": 96
   },
   {
     "slug": "请诸神赴死",
@@ -3045,7 +3157,21 @@
     "cover_url": "/covers/请诸神赴死.svg",
     "totalChapters": 34,
     "available_chapters": 15,
-    "description": "Read 请诸神赴死！ online free."
+    "description": "Read 请诸神赴死！ online free.",
+    "title_en": "请诸神赴死！",
+    "author_en": "浮生一诺",
+    "description_en": "Read 请诸神赴死！ online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 34,
+    "id": 97
   },
   {
     "slug": "异世琼霄",
@@ -3057,7 +3183,21 @@
     "cover_url": "/covers/异世琼霄.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 异世琼霄 online free."
+    "description": "Read 异世琼霄 online free.",
+    "title_en": "异世琼霄",
+    "author_en": "莫问琼",
+    "description_en": "Read 异世琼霄 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 98
   },
   {
     "slug": "开局一座城",
@@ -3069,7 +3209,21 @@
     "cover_url": "/covers/开局一座城.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 开局一座城 online free."
+    "description": "Read 开局一座城 online free.",
+    "title_en": "开局一座城",
+    "author_en": "张小慕",
+    "description_en": "Read 开局一座城 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 99
   },
   {
     "slug": "乱世武道从山村猎户开始狂肝箭术",
@@ -3081,7 +3235,21 @@
     "cover_url": "/covers/乱世武道从山村猎户开始狂肝箭术.svg",
     "totalChapters": 43,
     "available_chapters": 15,
-    "description": "Read 乱世武道：从山村猎户开始狂肝箭术 online free."
+    "description": "Read 乱世武道：从山村猎户开始狂肝箭术 online free.",
+    "title_en": "乱世武道：从山村猎户开始狂肝箭术",
+    "author_en": "一剑封王",
+    "description_en": "Read 乱世武道：从山村猎户开始狂肝箭术 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 43,
+    "id": 100
   },
   {
     "slug": "我有一个黑暗密武世界",
@@ -3093,7 +3261,21 @@
     "cover_url": "/covers/我有一个黑暗密武世界.svg",
     "totalChapters": 57,
     "available_chapters": 15,
-    "description": "Read 我有一个黑暗密武世界 online free."
+    "description": "Read 我有一个黑暗密武世界 online free.",
+    "title_en": "我有一个黑暗密武世界",
+    "author_en": "一笑新尘",
+    "description_en": "Read 我有一个黑暗密武世界 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 57,
+    "id": 101
   },
   {
     "slug": "穿越源卡大陆我自带融合卡牌",
@@ -3105,7 +3287,21 @@
     "cover_url": "/covers/穿越源卡大陆我自带融合卡牌.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 穿越源卡大陆，我自带融合卡牌 online free."
+    "description": "Read 穿越源卡大陆，我自带融合卡牌 online free.",
+    "title_en": "穿越源卡大陆，我自带融合卡牌",
+    "author_en": "姬东方",
+    "description_en": "Read 穿越源卡大陆，我自带融合卡牌 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 102
   },
   {
     "slug": "天债簿",
@@ -3117,7 +3313,21 @@
     "cover_url": "/covers/天债簿.svg",
     "totalChapters": 13,
     "available_chapters": 13,
-    "description": "Read 天债簿 online free."
+    "description": "Read 天债簿 online free.",
+    "title_en": "天债簿",
+    "author_en": "南风燕",
+    "description_en": "Read 天债簿 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 13,
+    "id": 103
   },
   {
     "slug": "九恶妃每日一问陛下驾崩了吗",
@@ -3129,7 +3339,21 @@
     "cover_url": "/covers/九恶妃每日一问陛下驾崩了吗.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 九恶妃每日一问，陛下驾崩了吗？ online free."
+    "description": "Read 九恶妃每日一问，陛下驾崩了吗？ online free.",
+    "title_en": "九恶妃每日一问，陛下驾崩了吗？",
+    "author_en": "溪九皇",
+    "description_en": "Read 九恶妃每日一问，陛下驾崩了吗？ online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 104
   },
   {
     "slug": "坟头开铺我靠守墓重整阴阳两界",
@@ -3141,7 +3365,21 @@
     "cover_url": "/covers/坟头开铺我靠守墓重整阴阳两界.svg",
     "totalChapters": 57,
     "available_chapters": 15,
-    "description": "Read 坟头开铺，我靠守墓重整阴阳两界 online free."
+    "description": "Read 坟头开铺，我靠守墓重整阴阳两界 online free.",
+    "title_en": "坟头开铺，我靠守墓重整阴阳两界",
+    "author_en": "墨飞流",
+    "description_en": "Read 坟头开铺，我靠守墓重整阴阳两界 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 57,
+    "id": 105
   },
   {
     "slug": "宗门收徒我能看见属性词条",
@@ -3153,7 +3391,21 @@
     "cover_url": "/covers/宗门收徒我能看见属性词条.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 宗门收徒，我能看见属性词条 online free."
+    "description": "Read 宗门收徒，我能看见属性词条 online free.",
+    "title_en": "宗门收徒，我能看见属性词条",
+    "author_en": "长涂山的黄金兽",
+    "description_en": "Read 宗门收徒，我能看见属性词条 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 106
   },
   {
     "slug": "诸天星神",
@@ -3165,7 +3417,21 @@
     "cover_url": "/covers/诸天星神.svg",
     "totalChapters": 113,
     "available_chapters": 13,
-    "description": "Read 诸天星神 online free."
+    "description": "Read 诸天星神 online free.",
+    "title_en": "诸天星神",
+    "author_en": "九幽一梦",
+    "description_en": "Read 诸天星神 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 107
   },
   {
     "slug": "正妻夜逃",
@@ -3177,7 +3443,21 @@
     "cover_url": "/covers/正妻夜逃.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 正妻夜逃 online free."
+    "description": "Read 正妻夜逃 online free.",
+    "title_en": "正妻夜逃",
+    "author_en": "</em>",
+    "description_en": "Read 正妻夜逃 online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 108
   },
   {
     "slug": "大智若愚妻",
@@ -3189,7 +3469,21 @@
     "cover_url": "/covers/大智若愚妻.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 大智若愚妻 online free."
+    "description": "Read 大智若愚妻 online free.",
+    "title_en": "大智若愚妻",
+    "author_en": "</em>",
+    "description_en": "Read 大智若愚妻 online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 109
   },
   {
     "slug": "新婚夜休妻夜",
@@ -3201,7 +3495,21 @@
     "cover_url": "/covers/新婚夜休妻夜.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 新婚夜休妻夜 online free."
+    "description": "Read 新婚夜休妻夜 online free.",
+    "title_en": "新婚夜休妻夜",
+    "author_en": "</em>",
+    "description_en": "Read 新婚夜休妻夜 online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 110
   },
   {
     "slug": "仇人逼我嫁-芳妮-孟佳梨没想到当年老被她保护的小胖子竟变成眼前的帅哥总裁-他曾发誓以后换他保护她可现在欺负她最狠的就是他",
@@ -3213,7 +3521,21 @@
     "cover_url": "/covers/仇人逼我嫁-芳妮-孟佳梨没想到当年老被她保护的小胖子竟变成眼前的帅哥总裁-他曾发誓以后换他保护她可现在欺负她最狠的就是他.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 仇人逼我嫁 [芳妮]\r\n\t\t\t　　孟佳梨没想到当年老被她保护的小胖子竟变成眼前的帅哥总裁，\r\n　　他曾发誓以后换他保护她，可现在欺负她最狠的就是他，\r\n　　唉，谁叫她爸骗了他全家，耿柏恩找她报仇也是应该！\r\n　　所以就算他对她又凶 online free."
+    "description": "Read 仇人逼我嫁 [芳妮]\r\n\t\t\t　　孟佳梨没想到当年老被她保护的小胖子竟变成眼前的帅哥总裁，\r\n　　他曾发誓以后换他保护她，可现在欺负她最狠的就是他，\r\n　　唉，谁叫她爸骗了他全家，耿柏恩找她报仇也是应该！\r\n　　所以就算他对她又凶 online free.",
+    "title_en": "仇人逼我嫁 [芳妮]\r\n\t\t\t　　孟佳梨没想到当年老被她保护的小胖子竟变成眼前的帅哥总裁，\r\n　　他曾发誓以后换他保护她，可现在欺负她最狠的就是他，\r\n　　唉，谁叫她爸骗了他全家，耿柏恩找她报仇也是应该！\r\n　　所以就算他对她又凶",
+    "author_en": "</em>",
+    "description_en": "Read 仇人逼我嫁 [芳妮]\r\n\t\t\t　　孟佳梨没想到当年老被她保护的小胖子竟变成眼前的帅哥总裁，\r\n　　他曾发誓以后换他保护她，可现在欺负她最狠的就是他，\r\n　　唉，谁叫她爸骗了他全家，耿柏恩找她报仇也是应该！\r\n　　所以就算他对她又凶 online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 111
   },
   {
     "slug": "假妻算计-花袭",
@@ -3225,7 +3547,21 @@
     "cover_url": "/covers/假妻算计-花袭.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 假妻算计 [花袭] online free."
+    "description": "Read 假妻算计 [花袭] online free.",
+    "title_en": "假妻算计 [花袭]",
+    "author_en": "</em>",
+    "description_en": "Read 假妻算计 [花袭] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 112
   },
   {
     "slug": "福妻反扑-黎孅",
@@ -3237,7 +3573,21 @@
     "cover_url": "/covers/福妻反扑-黎孅.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 福妻反扑 [黎孅] online free."
+    "description": "Read 福妻反扑 [黎孅] online free.",
+    "title_en": "福妻反扑 [黎孅]",
+    "author_en": "</em>",
+    "description_en": "Read 福妻反扑 [黎孅] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 113
   },
   {
     "slug": "镇店女朝奉-春野樱",
@@ -3249,7 +3599,21 @@
     "cover_url": "/covers/镇店女朝奉-春野樱.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 镇店女朝奉 [春野樱] online free."
+    "description": "Read 镇店女朝奉 [春野樱] online free.",
+    "title_en": "镇店女朝奉 [春野樱]",
+    "author_en": "</em>",
+    "description_en": "Read 镇店女朝奉 [春野樱] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 114
   },
   {
     "slug": "村花有财气-香弥",
@@ -3261,7 +3625,21 @@
     "cover_url": "/covers/村花有财气-香弥.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 村花有财气 [香弥] online free."
+    "description": "Read 村花有财气 [香弥] online free.",
+    "title_en": "村花有财气 [香弥]",
+    "author_en": "</em>",
+    "description_en": "Read 村花有财气 [香弥] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 115
   },
   {
     "slug": "密探有点忙-裘梦",
@@ -3273,7 +3651,21 @@
     "cover_url": "/covers/密探有点忙-裘梦.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 密探有点忙 [裘梦] online free."
+    "description": "Read 密探有点忙 [裘梦] online free.",
+    "title_en": "密探有点忙 [裘梦]",
+    "author_en": "</em>",
+    "description_en": "Read 密探有点忙 [裘梦] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 116
   },
   {
     "slug": "谋夫攻略之凤命为后下-宋语桐",
@@ -3285,7 +3677,21 @@
     "cover_url": "/covers/谋夫攻略之凤命为后下-宋语桐.svg",
     "totalChapters": 1,
     "available_chapters": 1,
-    "description": "Read 谋夫攻略之凤命为后（下） [宋语桐] online free."
+    "description": "Read 谋夫攻略之凤命为后（下） [宋语桐] online free.",
+    "title_en": "谋夫攻略之凤命为后（下） [宋语桐]",
+    "author_en": "</em>",
+    "description_en": "Read 谋夫攻略之凤命为后（下） [宋语桐] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1,
+    "id": 117
   },
   {
     "slug": "谋夫攻略之凤命为后上-宋语桐",
@@ -3297,7 +3703,21 @@
     "cover_url": "/covers/谋夫攻略之凤命为后上-宋语桐.svg",
     "totalChapters": 1,
     "available_chapters": 1,
-    "description": "Read 谋夫攻略之凤命为后（上） [宋语桐] online free."
+    "description": "Read 谋夫攻略之凤命为后（上） [宋语桐] online free.",
+    "title_en": "谋夫攻略之凤命为后（上） [宋语桐]",
+    "author_en": "</em>",
+    "description_en": "Read 谋夫攻略之凤命为后（上） [宋语桐] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1,
+    "id": 118
   },
   {
     "slug": "太子妃-乐颜",
@@ -3309,7 +3729,21 @@
     "cover_url": "/covers/太子妃-乐颜.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 太子妃 [乐颜] online free."
+    "description": "Read 太子妃 [乐颜] online free.",
+    "title_en": "太子妃 [乐颜]",
+    "author_en": "</em>",
+    "description_en": "Read 太子妃 [乐颜] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 119
   },
   {
     "slug": "纨裤-乐颜",
@@ -3321,7 +3755,21 @@
     "cover_url": "/covers/纨裤-乐颜.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 纨裤 [乐颜] online free."
+    "description": "Read 纨裤 [乐颜] online free.",
+    "title_en": "纨裤 [乐颜]",
+    "author_en": "</em>",
+    "description_en": "Read 纨裤 [乐颜] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 120
   },
   {
     "slug": "续弦-乐颜",
@@ -3333,7 +3781,21 @@
     "cover_url": "/covers/续弦-乐颜.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 续弦 [乐颜] online free."
+    "description": "Read 续弦 [乐颜] online free.",
+    "title_en": "续弦 [乐颜]",
+    "author_en": "</em>",
+    "description_en": "Read 续弦 [乐颜] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 121
   },
   {
     "slug": "庶子-乐颜",
@@ -3345,7 +3807,21 @@
     "cover_url": "/covers/庶子-乐颜.svg",
     "totalChapters": 11,
     "available_chapters": 10,
-    "description": "Read 庶子 [乐颜] online free."
+    "description": "Read 庶子 [乐颜] online free.",
+    "title_en": "庶子 [乐颜]",
+    "author_en": "</em>",
+    "description_en": "Read 庶子 [乐颜] online free.",
+    "genre": "romance",
+    "zone": "vip",
+    "tags": [
+      "romance"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 122
   },
   {
     "slug": "傲世丹神",
@@ -3359,7 +3835,21 @@
     "totalChapters": 1900,
     "available_chapters": 0,
     "description": "Discover 傲世丹神 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "傲世丹神",
+    "author_en": "Unknown",
+    "description_en": "Discover 傲世丹神 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1900,
+    "id": 123
   },
   {
     "slug": "异世邪君",
@@ -3373,7 +3863,21 @@
     "totalChapters": 638,
     "available_chapters": 0,
     "description": "Discover 异世邪君 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "异世邪君",
+    "author_en": "Unknown",
+    "description_en": "Discover 异世邪君 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 638,
+    "id": 124
   },
   {
     "slug": "十方天士",
@@ -3387,7 +3891,21 @@
     "totalChapters": 315,
     "available_chapters": 0,
     "description": "Discover 十方天士 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "十方天士",
+    "author_en": "Unknown",
+    "description_en": "Discover 十方天士 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 315,
+    "id": 125
   },
   {
     "slug": "极限武尊",
@@ -3401,7 +3919,21 @@
     "totalChapters": 770,
     "available_chapters": 0,
     "description": "Discover 极限武尊 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "极限武尊",
+    "author_en": "Unknown",
+    "description_en": "Discover 极限武尊 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 770,
+    "id": 126
   },
   {
     "slug": "斗罗大陆",
@@ -3415,7 +3947,21 @@
     "totalChapters": 344,
     "available_chapters": 0,
     "description": "Discover 斗罗大陆 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "斗罗大陆",
+    "author_en": "Unknown",
+    "description_en": "Discover 斗罗大陆 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 344,
+    "id": 127
   },
   {
     "slug": "至尊仙皇",
@@ -3429,7 +3975,21 @@
     "totalChapters": 612,
     "available_chapters": 0,
     "description": "Discover 至尊仙皇 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "至尊仙皇",
+    "author_en": "Unknown",
+    "description_en": "Discover 至尊仙皇 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 612,
+    "id": 128
   },
   {
     "slug": "求魔",
@@ -3443,7 +4003,21 @@
     "totalChapters": 739,
     "available_chapters": 0,
     "description": "Discover 求魔 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "求魔",
+    "author_en": "Unknown",
+    "description_en": "Discover 求魔 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 739,
+    "id": 129
   },
   {
     "slug": "无上神通",
@@ -3457,7 +4031,21 @@
     "totalChapters": 466,
     "available_chapters": 0,
     "description": "Discover 无上神通 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "无上神通",
+    "author_en": "Unknown",
+    "description_en": "Discover 无上神通 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 466,
+    "id": 130
   },
   {
     "slug": "帝道至尊",
@@ -3471,7 +4059,21 @@
     "totalChapters": 1214,
     "available_chapters": 0,
     "description": "Discover 帝道至尊 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "帝道至尊",
+    "author_en": "Unknown",
+    "description_en": "Discover 帝道至尊 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1214,
+    "id": 131
   },
   {
     "slug": "穿越西游之从零开始",
@@ -3485,7 +4087,21 @@
     "totalChapters": 169,
     "available_chapters": 0,
     "description": "Discover 穿越西游之从零开始 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "穿越西游之从零开始",
+    "author_en": "Unknown",
+    "description_en": "Discover 穿越西游之从零开始 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 169,
+    "id": 132
   },
   {
     "slug": "帝玄天",
@@ -3499,7 +4115,21 @@
     "totalChapters": 1273,
     "available_chapters": 0,
     "description": "Discover 帝玄天 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "帝玄天",
+    "author_en": "Unknown",
+    "description_en": "Discover 帝玄天 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1273,
+    "id": 133
   },
   {
     "slug": "绝世武神",
@@ -3513,7 +4143,21 @@
     "totalChapters": 1250,
     "available_chapters": 0,
     "description": "Discover 绝世武神 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "绝世武神",
+    "author_en": "Unknown",
+    "description_en": "Discover 绝世武神 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1250,
+    "id": 134
   },
   {
     "slug": "修真者在异世",
@@ -3527,7 +4171,21 @@
     "totalChapters": 574,
     "available_chapters": 0,
     "description": "Discover 修真者在异世 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "修真者在异世",
+    "author_en": "Unknown",
+    "description_en": "Discover 修真者在异世 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 574,
+    "id": 135
   },
   {
     "slug": "杀神",
@@ -3541,7 +4199,21 @@
     "totalChapters": 809,
     "available_chapters": 0,
     "description": "Discover 杀神 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "杀神",
+    "author_en": "Unknown",
+    "description_en": "Discover 杀神 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 809,
+    "id": 136
   },
   {
     "slug": "七界传说",
@@ -3555,7 +4227,21 @@
     "totalChapters": 2294,
     "available_chapters": 0,
     "description": "Discover 七界传说 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "七界传说",
+    "author_en": "Unknown",
+    "description_en": "Discover 七界传说 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 2294,
+    "id": 137
   },
   {
     "slug": "异界魅影逍遥",
@@ -3569,7 +4255,21 @@
     "totalChapters": 736,
     "available_chapters": 0,
     "description": "Discover 异界魅影逍遥 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "异界魅影逍遥",
+    "author_en": "Unknown",
+    "description_en": "Discover 异界魅影逍遥 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 736,
+    "id": 138
   },
   {
     "slug": "吞噬苍穹",
@@ -3583,7 +4283,21 @@
     "totalChapters": 1090,
     "available_chapters": 0,
     "description": "Discover 吞噬苍穹 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "吞噬苍穹",
+    "author_en": "Unknown",
+    "description_en": "Discover 吞噬苍穹 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1090,
+    "id": 139
   },
   {
     "slug": "大道主",
@@ -3597,7 +4311,21 @@
     "totalChapters": 1546,
     "available_chapters": 0,
     "description": "Discover 大道主 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "大道主",
+    "author_en": "Unknown",
+    "description_en": "Discover 大道主 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1546,
+    "id": 140
   },
   {
     "slug": "魔兽剑圣异界纵横",
@@ -3611,7 +4339,21 @@
     "totalChapters": 395,
     "available_chapters": 0,
     "description": "Discover 魔兽剑圣异界纵横 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "魔兽剑圣异界纵横",
+    "author_en": "Unknown",
+    "description_en": "Discover 魔兽剑圣异界纵横 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 395,
+    "id": 141
   },
   {
     "slug": "天珠变",
@@ -3625,7 +4367,21 @@
     "totalChapters": 425,
     "available_chapters": 0,
     "description": "Discover 天珠变 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "天珠变",
+    "author_en": "Unknown",
+    "description_en": "Discover 天珠变 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 425,
+    "id": 142
   },
   {
     "slug": "斗破苍穹",
@@ -3639,7 +4395,21 @@
     "totalChapters": 822,
     "available_chapters": 0,
     "description": "Discover 斗破苍穹 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "斗破苍穹",
+    "author_en": "Unknown",
+    "description_en": "Discover 斗破苍穹 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 822,
+    "id": 143
   },
   {
     "slug": "剑神重生",
@@ -3653,7 +4423,21 @@
     "totalChapters": 1597,
     "available_chapters": 0,
     "description": "Discover 剑神重生 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "剑神重生",
+    "author_en": "Unknown",
+    "description_en": "Discover 剑神重生 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1597,
+    "id": 144
   },
   {
     "slug": "邪虫神",
@@ -3667,7 +4451,21 @@
     "totalChapters": 890,
     "available_chapters": 0,
     "description": "Discover 邪虫神 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "邪虫神",
+    "author_en": "Unknown",
+    "description_en": "Discover 邪虫神 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 890,
+    "id": 145
   },
   {
     "slug": "唐门高手在异世",
@@ -3681,7 +4479,21 @@
     "totalChapters": 620,
     "available_chapters": 0,
     "description": "Discover 唐门高手在异世 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "唐门高手在异世",
+    "author_en": "Unknown",
+    "description_en": "Discover 唐门高手在异世 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 620,
+    "id": 146
   },
   {
     "slug": "我的极品小姨子",
@@ -3695,7 +4507,21 @@
     "totalChapters": 657,
     "available_chapters": 0,
     "description": "Discover 我的极品小姨子 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "我的极品小姨子",
+    "author_en": "Unknown",
+    "description_en": "Discover 我的极品小姨子 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 657,
+    "id": 147
   },
   {
     "slug": "都市超级召唤师",
@@ -3709,7 +4535,21 @@
     "totalChapters": 505,
     "available_chapters": 0,
     "description": "Discover 都市超级召唤师 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "都市超级召唤师",
+    "author_en": "Unknown",
+    "description_en": "Discover 都市超级召唤师 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 505,
+    "id": 148
   },
   {
     "slug": "极品相师",
@@ -3723,7 +4563,21 @@
     "totalChapters": 519,
     "available_chapters": 0,
     "description": "Discover 极品相师 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "极品相师",
+    "author_en": "Unknown",
+    "description_en": "Discover 极品相师 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 519,
+    "id": 149
   },
   {
     "slug": "老兵传奇",
@@ -3737,7 +4591,21 @@
     "totalChapters": 1229,
     "available_chapters": 0,
     "description": "Discover 老兵传奇 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "老兵传奇",
+    "author_en": "Unknown",
+    "description_en": "Discover 老兵传奇 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1229,
+    "id": 150
   },
   {
     "slug": "御宝天师",
@@ -3751,7 +4619,21 @@
     "totalChapters": 902,
     "available_chapters": 0,
     "description": "Discover 御宝天师 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "御宝天师",
+    "author_en": "Unknown",
+    "description_en": "Discover 御宝天师 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 902,
+    "id": 151
   },
   {
     "slug": "极品美女养成系统",
@@ -3765,7 +4647,21 @@
     "totalChapters": 325,
     "available_chapters": 0,
     "description": "Discover 极品美女养成系统 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "极品美女养成系统",
+    "author_en": "Unknown",
+    "description_en": "Discover 极品美女养成系统 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 325,
+    "id": 152
   },
   {
     "slug": "艳福仙医",
@@ -3779,7 +4675,21 @@
     "totalChapters": 218,
     "available_chapters": 0,
     "description": "Discover 艳福仙医 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "艳福仙医",
+    "author_en": "Unknown",
+    "description_en": "Discover 艳福仙医 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 218,
+    "id": 153
   },
   {
     "slug": "现世修真",
@@ -3793,7 +4703,21 @@
     "totalChapters": 312,
     "available_chapters": 0,
     "description": "Discover 现世修真 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "现世修真",
+    "author_en": "Unknown",
+    "description_en": "Discover 现世修真 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 312,
+    "id": 154
   },
   {
     "slug": "校园全能高手",
@@ -3807,7 +4731,21 @@
     "totalChapters": 1590,
     "available_chapters": 0,
     "description": "Discover 校园全能高手 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "校园全能高手",
+    "author_en": "Unknown",
+    "description_en": "Discover 校园全能高手 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1590,
+    "id": 155
   },
   {
     "slug": "透视之眼",
@@ -3821,7 +4759,21 @@
     "totalChapters": 1268,
     "available_chapters": 0,
     "description": "Discover 透视之眼 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "透视之眼",
+    "author_en": "Unknown",
+    "description_en": "Discover 透视之眼 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1268,
+    "id": 156
   },
   {
     "slug": "官途",
@@ -3835,7 +4787,21 @@
     "totalChapters": 1480,
     "available_chapters": 0,
     "description": "Discover 官途 — explore the full collection online.",
-    "chapter_count": 4
+    "chapter_count": 4,
+    "title_en": "官途",
+    "author_en": "Unknown",
+    "description_en": "Discover 官途 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1480,
+    "id": 157
   },
   {
     "slug": "超级修真保镖",
@@ -3849,7 +4815,21 @@
     "totalChapters": 342,
     "available_chapters": 0,
     "description": "Discover 超级修真保镖 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "超级修真保镖",
+    "author_en": "Unknown",
+    "description_en": "Discover 超级修真保镖 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 342,
+    "id": 158
   },
   {
     "slug": "黑道特种兵",
@@ -3863,7 +4843,21 @@
     "totalChapters": 1446,
     "available_chapters": 0,
     "description": "Discover 黑道特种兵 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "黑道特种兵",
+    "author_en": "Unknown",
+    "description_en": "Discover 黑道特种兵 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 1446,
+    "id": 159
   },
   {
     "slug": "修仙高手在校园",
@@ -3877,7 +4871,21 @@
     "totalChapters": 810,
     "available_chapters": 0,
     "description": "Discover 修仙高手在校园 — explore the full collection online.",
-    "chapter_count": 5
+    "chapter_count": 5,
+    "title_en": "修仙高手在校园",
+    "author_en": "Unknown",
+    "description_en": "Discover 修仙高手在校园 — explore the full collection online.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 810,
+    "id": 160
   },
   {
     "slug": "嫡女归来权臣掌心娇",
@@ -3889,7 +4897,21 @@
     "cover_url": "/covers/嫡女归来权臣掌心娇.svg",
     "totalChapters": 51,
     "available_chapters": 15,
-    "description": "Read 嫡女归来：权臣掌心娇 online free."
+    "description": "Read 嫡女归来：权臣掌心娇 online free.",
+    "title_en": "嫡女归来：权臣掌心娇",
+    "author_en": "小李暴富暴富再暴",
+    "description_en": "Read 嫡女归来：权臣掌心娇 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 51,
+    "id": 161
   },
   {
     "slug": "神医小傻驴的乡村女人",
@@ -3901,7 +4923,21 @@
     "cover_url": "/covers/神医小傻驴的乡村女人.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 神医小傻驴的乡村女人 online free."
+    "description": "Read 神医小傻驴的乡村女人 online free.",
+    "title_en": "神医小傻驴的乡村女人",
+    "author_en": "甜桃儿",
+    "description_en": "Read 神医小傻驴的乡村女人 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 162
   },
   {
     "slug": "江湖夜雨十年情",
@@ -3913,7 +4949,21 @@
     "cover_url": "/covers/江湖夜雨十年情.svg",
     "totalChapters": 11,
     "available_chapters": 11,
-    "description": "Read 江湖夜雨十年情 online free."
+    "description": "Read 江湖夜雨十年情 online free.",
+    "title_en": "江湖夜雨十年情",
+    "author_en": "三無偽海歸",
+    "description_en": "Read 江湖夜雨十年情 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 11,
+    "id": 163
   },
   {
     "slug": "纨绔女修四处撩绿茶狼崽黑化了",
@@ -3925,7 +4975,21 @@
     "cover_url": "/covers/纨绔女修四处撩绿茶狼崽黑化了.svg",
     "totalChapters": 33,
     "available_chapters": 15,
-    "description": "Read 纨绔女修四处撩，绿茶狼崽黑化了 online free."
+    "description": "Read 纨绔女修四处撩，绿茶狼崽黑化了 online free.",
+    "title_en": "纨绔女修四处撩，绿茶狼崽黑化了",
+    "author_en": "南麓向暖",
+    "description_en": "Read 纨绔女修四处撩，绿茶狼崽黑化了 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 33,
+    "id": 164
   },
   {
     "slug": "凡人修仙谁说修仙必须灵力",
@@ -3937,7 +5001,21 @@
     "cover_url": "/covers/凡人修仙谁说修仙必须灵力.svg",
     "totalChapters": 54,
     "available_chapters": 15,
-    "description": "Read 凡人修仙：谁说修仙必须灵力 online free."
+    "description": "Read 凡人修仙：谁说修仙必须灵力 online free.",
+    "title_en": "凡人修仙：谁说修仙必须灵力",
+    "author_en": "鱼何难",
+    "description_en": "Read 凡人修仙：谁说修仙必须灵力 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 54,
+    "id": 165
   },
   {
     "slug": "蔡文姬的修仙长生路",
@@ -3949,7 +5027,21 @@
     "cover_url": "/covers/蔡文姬的修仙长生路.svg",
     "totalChapters": 35,
     "available_chapters": 15,
-    "description": "Read 蔡文姬的修仙长生路 online free."
+    "description": "Read 蔡文姬的修仙长生路 online free.",
+    "title_en": "蔡文姬的修仙长生路",
+    "author_en": "苏貫貫",
+    "description_en": "Read 蔡文姬的修仙长生路 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 35,
+    "id": 166
   },
   {
     "slug": "昆仑山修仙下山后我无敌了",
@@ -3961,7 +5053,21 @@
     "cover_url": "/covers/昆仑山修仙下山后我无敌了.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 昆仑山修仙，下山后我无敌了 online free."
+    "description": "Read 昆仑山修仙，下山后我无敌了 online free.",
+    "title_en": "昆仑山修仙，下山后我无敌了",
+    "author_en": "紫色狂玫",
+    "description_en": "Read 昆仑山修仙，下山后我无敌了 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 167
   },
   {
     "slug": "穿书被杀妻证道魔尊追妻夜夜哄",
@@ -3973,7 +5079,21 @@
     "cover_url": "/covers/穿书被杀妻证道魔尊追妻夜夜哄.svg",
     "totalChapters": 27,
     "available_chapters": 15,
-    "description": "Read 穿书被杀妻证道？魔尊追妻夜夜哄 online free."
+    "description": "Read 穿书被杀妻证道？魔尊追妻夜夜哄 online free.",
+    "title_en": "穿书被杀妻证道？魔尊追妻夜夜哄",
+    "author_en": "绾霜系月",
+    "description_en": "Read 穿书被杀妻证道？魔尊追妻夜夜哄 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 27,
+    "id": 168
   },
   {
     "slug": "老丑逆袭仙子泪",
@@ -3985,7 +5105,21 @@
     "cover_url": "/covers/老丑逆袭仙子泪.svg",
     "totalChapters": 13,
     "available_chapters": 13,
-    "description": "Read 老丑逆袭，仙子泪 online free."
+    "description": "Read 老丑逆袭，仙子泪 online free.",
+    "title_en": "老丑逆袭，仙子泪",
+    "author_en": "0缘分",
+    "description_en": "Read 老丑逆袭，仙子泪 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 13,
+    "id": 169
   },
   {
     "slug": "苟道剑尊从反夺舍老祖开始长生",
@@ -3997,7 +5131,21 @@
     "cover_url": "/covers/苟道剑尊从反夺舍老祖开始长生.svg",
     "totalChapters": 49,
     "available_chapters": 15,
-    "description": "Read 苟道剑尊：从反夺舍老祖开始长生 online free."
+    "description": "Read 苟道剑尊：从反夺舍老祖开始长生 online free.",
+    "title_en": "苟道剑尊：从反夺舍老祖开始长生",
+    "author_en": "小坝田",
+    "description_en": "Read 苟道剑尊：从反夺舍老祖开始长生 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 49,
+    "id": 170
   },
   {
     "slug": "鸦仙人",
@@ -4009,7 +5157,21 @@
     "cover_url": "/covers/鸦仙人.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 鸦仙人 online free."
+    "description": "Read 鸦仙人 online free.",
+    "title_en": "鸦仙人",
+    "author_en": "封一卷",
+    "description_en": "Read 鸦仙人 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 171
   },
   {
     "slug": "凡骨镇天",
@@ -4021,7 +5183,21 @@
     "cover_url": "/covers/凡骨镇天.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 凡骨镇天 online free."
+    "description": "Read 凡骨镇天 online free.",
+    "title_en": "凡骨镇天",
+    "author_en": "老水湾的一笑",
+    "description_en": "Read 凡骨镇天 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 172
   },
   {
     "slug": "仙眼",
@@ -4033,7 +5209,21 @@
     "cover_url": "/covers/仙眼.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 仙眼 online free."
+    "description": "Read 仙眼 online free.",
+    "title_en": "仙眼",
+    "author_en": "箫不语",
+    "description_en": "Read 仙眼 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 173
   },
   {
     "slug": "先秦炼气两千年世人误闯天家",
@@ -4045,7 +5235,21 @@
     "cover_url": "/covers/先秦炼气两千年世人误闯天家.svg",
     "totalChapters": 113,
     "available_chapters": 11,
-    "description": "Read 先秦炼气两千年，世人误闯天家 online free."
+    "description": "Read 先秦炼气两千年，世人误闯天家 online free.",
+    "title_en": "先秦炼气两千年，世人误闯天家",
+    "author_en": "恐龙吃萝卜",
+    "description_en": "Read 先秦炼气两千年，世人误闯天家 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 174
   },
   {
     "slug": "仙醮",
@@ -4057,7 +5261,21 @@
     "cover_url": "/covers/仙醮.svg",
     "totalChapters": 59,
     "available_chapters": 15,
-    "description": "Read 仙醮 online free."
+    "description": "Read 仙醮 online free.",
+    "title_en": "仙醮",
+    "author_en": "火药很沉",
+    "description_en": "Read 仙醮 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 59,
+    "id": 175
   },
   {
     "slug": "傻大壮乡野好快活",
@@ -4069,7 +5287,21 @@
     "cover_url": "/covers/傻大壮乡野好快活.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 傻大壮，乡野好快活 online free."
+    "description": "Read 傻大壮，乡野好快活 online free.",
+    "title_en": "傻大壮，乡野好快活",
+    "author_en": "凌韩",
+    "description_en": "Read 傻大壮，乡野好快活 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 176
   },
   {
     "slug": "少侠奇遇记",
@@ -4081,7 +5313,21 @@
     "cover_url": "/covers/少侠奇遇记.svg",
     "totalChapters": 113,
     "available_chapters": 13,
-    "description": "Read 少侠奇遇记 online free."
+    "description": "Read 少侠奇遇记 online free.",
+    "title_en": "少侠奇遇记",
+    "author_en": "三無偽海歸",
+    "description_en": "Read 少侠奇遇记 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 177
   },
   {
     "slug": "魔门玩家不讲道义",
@@ -4093,7 +5339,21 @@
     "cover_url": "/covers/魔门玩家不讲道义.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 魔门玩家，不讲道义 online free."
+    "description": "Read 魔门玩家，不讲道义 online free.",
+    "title_en": "魔门玩家，不讲道义",
+    "author_en": "不锈钢馒头",
+    "description_en": "Read 魔门玩家，不讲道义 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 178
   },
   {
     "slug": "绑定惹祸系统我被六个男主追杀",
@@ -4105,7 +5365,21 @@
     "cover_url": "/covers/绑定惹祸系统我被六个男主追杀.svg",
     "totalChapters": 38,
     "available_chapters": 14,
-    "description": "Read 绑定惹祸系统，我被六个男主追杀 online free."
+    "description": "Read 绑定惹祸系统，我被六个男主追杀 online free.",
+    "title_en": "绑定惹祸系统，我被六个男主追杀",
+    "author_en": "南月西",
+    "description_en": "Read 绑定惹祸系统，我被六个男主追杀 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 38,
+    "id": 179
   },
   {
     "slug": "封神从诸侯世子开始",
@@ -4117,7 +5391,21 @@
     "cover_url": "/covers/封神从诸侯世子开始.svg",
     "totalChapters": 63,
     "available_chapters": 15,
-    "description": "Read 封神：从诸侯世子开始 online free."
+    "description": "Read 封神：从诸侯世子开始 online free.",
+    "title_en": "封神：从诸侯世子开始",
+    "author_en": "烤林蛋",
+    "description_en": "Read 封神：从诸侯世子开始 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 63,
+    "id": 180
   },
   {
     "slug": "恶毒女配又装纯禁欲大佬皆沦陷",
@@ -4129,7 +5417,21 @@
     "cover_url": "/covers/恶毒女配又装纯禁欲大佬皆沦陷.svg",
     "totalChapters": 24,
     "available_chapters": 15,
-    "description": "Read 恶毒女配又装纯，禁欲大佬皆沦陷 online free."
+    "description": "Read 恶毒女配又装纯，禁欲大佬皆沦陷 online free.",
+    "title_en": "恶毒女配又装纯，禁欲大佬皆沦陷",
+    "author_en": "赠我梨花",
+    "description_en": "Read 恶毒女配又装纯，禁欲大佬皆沦陷 online free.",
+    "genre": "xianxia",
+    "zone": "vip",
+    "tags": [
+      "xianxia"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 24,
+    "id": 181
   },
   {
     "slug": "前任渣我五年闪婚他哥被宠成宝",
@@ -4141,7 +5443,21 @@
     "cover_url": "/covers/前任渣我五年闪婚他哥被宠成宝.svg",
     "totalChapters": 29,
     "available_chapters": 15,
-    "description": "Read 前任渣我五年，闪婚他哥被宠成宝 online free."
+    "description": "Read 前任渣我五年，闪婚他哥被宠成宝 online free.",
+    "title_en": "前任渣我五年，闪婚他哥被宠成宝",
+    "author_en": "一碗水饺",
+    "description_en": "Read 前任渣我五年，闪婚他哥被宠成宝 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 29,
+    "id": 182
   },
   {
     "slug": "狗哥你再舔女主我就和黄毛私奔",
@@ -4153,7 +5469,21 @@
     "cover_url": "/covers/狗哥你再舔女主我就和黄毛私奔.svg",
     "totalChapters": 15,
     "available_chapters": 15,
-    "description": "Read 狗哥，你再舔女主我就和黄毛私奔 online free."
+    "description": "Read 狗哥，你再舔女主我就和黄毛私奔 online free.",
+    "title_en": "狗哥，你再舔女主我就和黄毛私奔",
+    "author_en": "乔十二",
+    "description_en": "Read 狗哥，你再舔女主我就和黄毛私奔 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 15,
+    "id": 183
   },
   {
     "slug": "带着爸妈穿年代离婚被大佬娇宠",
@@ -4165,7 +5495,21 @@
     "cover_url": "/covers/带着爸妈穿年代离婚被大佬娇宠.svg",
     "totalChapters": 30,
     "available_chapters": 15,
-    "description": "Read 带着爸妈穿年代，离婚被大佬娇宠 online free."
+    "description": "Read 带着爸妈穿年代，离婚被大佬娇宠 online free.",
+    "title_en": "带着爸妈穿年代，离婚被大佬娇宠",
+    "author_en": "袁猴没人要",
+    "description_en": "Read 带着爸妈穿年代，离婚被大佬娇宠 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 30,
+    "id": 184
   },
   {
     "slug": "德黑兰杂货铺我的情报明码标价",
@@ -4177,7 +5521,21 @@
     "cover_url": "/covers/德黑兰杂货铺我的情报明码标价.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 德黑兰杂货铺：我的情报明码标价 online free."
+    "description": "Read 德黑兰杂货铺：我的情报明码标价 online free.",
+    "title_en": "德黑兰杂货铺：我的情报明码标价",
+    "author_en": "道门前的石狮子",
+    "description_en": "Read 德黑兰杂货铺：我的情报明码标价 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 185
   },
   {
     "slug": "山野小神农",
@@ -4189,7 +5547,21 @@
     "cover_url": "/covers/山野小神农.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 山野小神农 online free."
+    "description": "Read 山野小神农 online free.",
+    "title_en": "山野小神农",
+    "author_en": "东海贝壳",
+    "description_en": "Read 山野小神农 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 186
   },
   {
     "slug": "年少情深被辜负他跪了我不要了",
@@ -4201,7 +5573,21 @@
     "cover_url": "/covers/年少情深被辜负他跪了我不要了.svg",
     "totalChapters": 33,
     "available_chapters": 15,
-    "description": "Read 年少情深被辜负，他跪了我不要了 online free."
+    "description": "Read 年少情深被辜负，他跪了我不要了 online free.",
+    "title_en": "年少情深被辜负，他跪了我不要了",
+    "author_en": "雪诏宸",
+    "description_en": "Read 年少情深被辜负，他跪了我不要了 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 33,
+    "id": 187
   },
   {
     "slug": "全网黑上恋综后我爆红了",
@@ -4213,7 +5599,21 @@
     "cover_url": "/covers/全网黑上恋综后我爆红了.svg",
     "totalChapters": 53,
     "available_chapters": 15,
-    "description": "Read 全网黑上恋综后，我爆红了 online free."
+    "description": "Read 全网黑上恋综后，我爆红了 online free.",
+    "title_en": "全网黑上恋综后，我爆红了",
+    "author_en": "青史上",
+    "description_en": "Read 全网黑上恋综后，我爆红了 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 53,
+    "id": 188
   },
   {
     "slug": "我一值夜班全院主任都睡不着",
@@ -4225,7 +5625,21 @@
     "cover_url": "/covers/我一值夜班全院主任都睡不着.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 我一值夜班，全院主任都睡不着 online free."
+    "description": "Read 我一值夜班，全院主任都睡不着 online free.",
+    "title_en": "我一值夜班，全院主任都睡不着",
+    "author_en": "六六不留刘",
+    "description_en": "Read 我一值夜班，全院主任都睡不着 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 189
   },
   {
     "slug": "综艺大导演从齐聚初代跑男开始",
@@ -4237,7 +5651,21 @@
     "cover_url": "/covers/综艺大导演从齐聚初代跑男开始.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 综艺大导演，从齐聚初代跑男开始 online free."
+    "description": "Read 综艺大导演，从齐聚初代跑男开始 online free.",
+    "title_en": "综艺大导演，从齐聚初代跑男开始",
+    "author_en": "九月寒风",
+    "description_en": "Read 综艺大导演，从齐聚初代跑男开始 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 190
   },
   {
     "slug": "醉酒亲错人年下弟弟失控发疯",
@@ -4249,7 +5677,21 @@
     "cover_url": "/covers/醉酒亲错人年下弟弟失控发疯.svg",
     "totalChapters": 41,
     "available_chapters": 15,
-    "description": "Read 醉酒亲错人，年下弟弟失控发疯 online free."
+    "description": "Read 醉酒亲错人，年下弟弟失控发疯 online free.",
+    "title_en": "醉酒亲错人，年下弟弟失控发疯",
+    "author_en": "桃苏",
+    "description_en": "Read 醉酒亲错人，年下弟弟失控发疯 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 41,
+    "id": 191
   },
   {
     "slug": "神豪从收留精神小妹开始日进斗金",
@@ -4261,7 +5703,21 @@
     "cover_url": "/covers/神豪从收留精神小妹开始日进斗金.svg",
     "totalChapters": 32,
     "available_chapters": 15,
-    "description": "Read 神豪：从收留精神小妹开始日进斗金！ online free."
+    "description": "Read 神豪：从收留精神小妹开始日进斗金！ online free.",
+    "title_en": "神豪：从收留精神小妹开始日进斗金！",
+    "author_en": "龙凌凡域",
+    "description_en": "Read 神豪：从收留精神小妹开始日进斗金！ online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 32,
+    "id": 192
   },
   {
     "slug": "让我开早餐店我下午才营业",
@@ -4273,7 +5729,21 @@
     "cover_url": "/covers/让我开早餐店我下午才营业.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 让我开早餐店？我下午才营业 online free."
+    "description": "Read 让我开早餐店？我下午才营业 online free.",
+    "title_en": "让我开早餐店？我下午才营业",
+    "author_en": "我是幕后煮屎人",
+    "description_en": "Read 让我开早餐店？我下午才营业 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 193
   },
   {
     "slug": "华娱从继承视频网站开始",
@@ -4285,7 +5755,21 @@
     "cover_url": "/covers/华娱从继承视频网站开始.svg",
     "totalChapters": 79,
     "available_chapters": 15,
-    "description": "Read 华娱从继承视频网站开始 online free."
+    "description": "Read 华娱从继承视频网站开始 online free.",
+    "title_en": "华娱从继承视频网站开始",
+    "author_en": "阿文从小就很可爱",
+    "description_en": "Read 华娱从继承视频网站开始 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 79,
+    "id": 194
   },
   {
     "slug": "黄牛中介没想到你请得动真神啊",
@@ -4297,7 +5781,21 @@
     "cover_url": "/covers/黄牛中介没想到你请得动真神啊.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 黄牛中介，没想到你请得动真神啊 online free."
+    "description": "Read 黄牛中介，没想到你请得动真神啊 online free.",
+    "title_en": "黄牛中介，没想到你请得动真神啊",
+    "author_en": "刀舞终结技",
+    "description_en": "Read 黄牛中介，没想到你请得动真神啊 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 195
   },
   {
     "slug": "废土法典",
@@ -4309,7 +5807,21 @@
     "cover_url": "/covers/废土法典.svg",
     "totalChapters": 44,
     "available_chapters": 15,
-    "description": "Read 废土法典 online free."
+    "description": "Read 废土法典 online free.",
+    "title_en": "废土法典",
+    "author_en": "竹叶糕",
+    "description_en": "Read 废土法典 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 44,
+    "id": 196
   },
   {
     "slug": "渔猎溪山1988傻媳妇旺家",
@@ -4321,7 +5833,21 @@
     "cover_url": "/covers/渔猎溪山1988傻媳妇旺家.svg",
     "totalChapters": 70,
     "available_chapters": 15,
-    "description": "Read 渔猎溪山1988，傻媳妇旺家！ online free."
+    "description": "Read 渔猎溪山1988，傻媳妇旺家！ online free.",
+    "title_en": "渔猎溪山1988，傻媳妇旺家！",
+    "author_en": "言龙",
+    "description_en": "Read 渔猎溪山1988，傻媳妇旺家！ online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 70,
+    "id": 197
   },
   {
     "slug": "什么网恋的清冷校花竟是双胞胎",
@@ -4333,7 +5859,21 @@
     "cover_url": "/covers/什么网恋的清冷校花竟是双胞胎.svg",
     "totalChapters": 31,
     "available_chapters": 15,
-    "description": "Read 什么，网恋的清冷校花竟是双胞胎 online free."
+    "description": "Read 什么，网恋的清冷校花竟是双胞胎 online free.",
+    "title_en": "什么，网恋的清冷校花竟是双胞胎",
+    "author_en": "江边泛渔舟",
+    "description_en": "Read 什么，网恋的清冷校花竟是双胞胎 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 31,
+    "id": 198
   },
   {
     "slug": "心神摇荡",
@@ -4345,7 +5885,21 @@
     "cover_url": "/covers/心神摇荡.svg",
     "totalChapters": 5,
     "available_chapters": 5,
-    "description": "Read 心神摇荡 online free."
+    "description": "Read 心神摇荡 online free.",
+    "title_en": "心神摇荡",
+    "author_en": "唐颖小",
+    "description_en": "Read 心神摇荡 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 5,
+    "id": 199
   },
   {
     "slug": "临时加彩礼转头另娶绝美女知青",
@@ -4357,7 +5911,21 @@
     "cover_url": "/covers/临时加彩礼转头另娶绝美女知青.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 临时加彩礼？转头另娶绝美女知青 online free."
+    "description": "Read 临时加彩礼？转头另娶绝美女知青 online free.",
+    "title_en": "临时加彩礼？转头另娶绝美女知青",
+    "author_en": "漓沫沫",
+    "description_en": "Read 临时加彩礼？转头另娶绝美女知青 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 200
   },
   {
     "slug": "酒店亲错人京圈大佬他白天嫌弃晚上疯",
@@ -4369,7 +5937,21 @@
     "cover_url": "/covers/酒店亲错人京圈大佬他白天嫌弃晚上疯.svg",
     "totalChapters": 43,
     "available_chapters": 15,
-    "description": "Read 酒店亲错人！京圈大佬他白天嫌弃晚上疯 online free."
+    "description": "Read 酒店亲错人！京圈大佬他白天嫌弃晚上疯 online free.",
+    "title_en": "酒店亲错人！京圈大佬他白天嫌弃晚上疯",
+    "author_en": "墨绾",
+    "description_en": "Read 酒店亲错人！京圈大佬他白天嫌弃晚上疯 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 43,
+    "id": 201
   },
   {
     "slug": "纨绔世子爷公主退婚我造反",
@@ -4381,7 +5963,21 @@
     "cover_url": "/covers/纨绔世子爷公主退婚我造反.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 纨绔世子爷：公主退婚，我造反！ online free."
+    "description": "Read 纨绔世子爷：公主退婚，我造反！ online free.",
+    "title_en": "纨绔世子爷：公主退婚，我造反！",
+    "author_en": "已根",
+    "description_en": "Read 纨绔世子爷：公主退婚，我造反！ online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 202
   },
   {
     "slug": "叶公公有种",
@@ -4393,7 +5989,21 @@
     "cover_url": "/covers/叶公公有种.svg",
     "totalChapters": 97,
     "available_chapters": 11,
-    "description": "Read 叶公公，有种！ online free."
+    "description": "Read 叶公公，有种！ online free.",
+    "title_en": "叶公公，有种！",
+    "author_en": "牛磺酸",
+    "description_en": "Read 叶公公，有种！ online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 97,
+    "id": 203
   },
   {
     "slug": "快活小御医恭喜皇后有喜了",
@@ -4405,7 +6015,21 @@
     "cover_url": "/covers/快活小御医恭喜皇后有喜了.svg",
     "totalChapters": 70,
     "available_chapters": 12,
-    "description": "Read 快活小御医：恭喜皇后有喜了 online free."
+    "description": "Read 快活小御医：恭喜皇后有喜了 online free.",
+    "title_en": "快活小御医：恭喜皇后有喜了",
+    "author_en": "山野村夫",
+    "description_en": "Read 快活小御医：恭喜皇后有喜了 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 70,
+    "id": 204
   },
   {
     "slug": "皇家县令我每日躺着收税",
@@ -4417,7 +6041,21 @@
     "cover_url": "/covers/皇家县令我每日躺着收税.svg",
     "totalChapters": 92,
     "available_chapters": 15,
-    "description": "Read 皇家县令，我每日躺着收税 online free."
+    "description": "Read 皇家县令，我每日躺着收税 online free.",
+    "title_en": "皇家县令，我每日躺着收税",
+    "author_en": "南山无疆",
+    "description_en": "Read 皇家县令，我每日躺着收税 online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 92,
+    "id": 205
   },
   {
     "slug": "被长姐换亲之后",
@@ -4429,7 +6067,21 @@
     "cover_url": "/covers/被长姐换亲之后.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 被长姐换亲之后 online free."
+    "description": "Read 被长姐换亲之后 online free.",
+    "title_en": "被长姐换亲之后",
+    "author_en": "墨笔生金",
+    "description_en": "Read 被长姐换亲之后 online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 206
   },
   {
     "slug": "边军从领取罪女开始一统天下",
@@ -4441,7 +6093,21 @@
     "cover_url": "/covers/边军从领取罪女开始一统天下.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 边军：从领取罪女开始，一统天下 online free."
+    "description": "Read 边军：从领取罪女开始，一统天下 online free.",
+    "title_en": "边军：从领取罪女开始，一统天下",
+    "author_en": "一宁会发光ogsun",
+    "description_en": "Read 边军：从领取罪女开始，一统天下 online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 207
   },
   {
     "slug": "边疆悍匪",
@@ -4453,7 +6119,21 @@
     "cover_url": "/covers/边疆悍匪.svg",
     "totalChapters": 55,
     "available_chapters": 15,
-    "description": "Read 边疆悍匪 online free."
+    "description": "Read 边疆悍匪 online free.",
+    "title_en": "边疆悍匪",
+    "author_en": "生产队的牛",
+    "description_en": "Read 边疆悍匪 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 55,
+    "id": 208
   },
   {
     "slug": "宋末枭雄",
@@ -4465,7 +6145,21 @@
     "cover_url": "/covers/宋末枭雄.svg",
     "totalChapters": 77,
     "available_chapters": 15,
-    "description": "Read 宋末枭雄 online free."
+    "description": "Read 宋末枭雄 online free.",
+    "title_en": "宋末枭雄",
+    "author_en": "七号棋牌室",
+    "description_en": "Read 宋末枭雄 online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 77,
+    "id": 209
   },
   {
     "slug": "民国我包国维黄埔一期",
@@ -4477,7 +6171,21 @@
     "cover_url": "/covers/民国我包国维黄埔一期.svg",
     "totalChapters": 79,
     "available_chapters": 15,
-    "description": "Read 民国，我包国维黄埔一期 online free."
+    "description": "Read 民国，我包国维黄埔一期 online free.",
+    "title_en": "民国，我包国维黄埔一期",
+    "author_en": "v谭歌",
+    "description_en": "Read 民国，我包国维黄埔一期 online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 79,
+    "id": 210
   },
   {
     "slug": "史上最强汉天子",
@@ -4489,7 +6197,21 @@
     "cover_url": "/covers/史上最强汉天子.svg",
     "totalChapters": 113,
     "available_chapters": 15,
-    "description": "Read 史上最强汉天子 online free."
+    "description": "Read 史上最强汉天子 online free.",
+    "title_en": "史上最强汉天子",
+    "author_en": "零七度",
+    "description_en": "Read 史上最强汉天子 online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 113,
+    "id": 211
   },
   {
     "slug": "穿越戍边我从炮灰辅卒一路封王",
@@ -4501,7 +6223,21 @@
     "cover_url": "/covers/穿越戍边我从炮灰辅卒一路封王.svg",
     "totalChapters": 33,
     "available_chapters": 15,
-    "description": "Read 穿越戍边：我从炮灰辅卒一路封王 online free."
+    "description": "Read 穿越戍边：我从炮灰辅卒一路封王 online free.",
+    "title_en": "穿越戍边：我从炮灰辅卒一路封王",
+    "author_en": "萨尔南斯",
+    "description_en": "Read 穿越戍边：我从炮灰辅卒一路封王 online free.",
+    "genre": "urban",
+    "zone": "vip",
+    "tags": [
+      "urban"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 33,
+    "id": 212
   },
   {
     "slug": "典鉴录楚汉篇",
@@ -4513,6 +6249,770 @@
     "cover_url": "/covers/典鉴录楚汉篇.svg",
     "totalChapters": 38,
     "available_chapters": 15,
-    "description": "Read 典鉴录（楚汉篇） online free."
+    "description": "Read 典鉴录（楚汉篇） online free.",
+    "title_en": "典鉴录（楚汉篇）",
+    "author_en": "三無偽海歸",
+    "description_en": "Read 典鉴录（楚汉篇） online free.",
+    "genre": "fantasy",
+    "zone": "vip",
+    "tags": [
+      "fantasy"
+    ],
+    "rating": 4.0,
+    "status": "ongoing",
+    "readers": 0,
+    "is_adult": false,
+    "total_chapters": 38,
+    "id": 213
+  },
+  {
+    "id": 214,
+    "slug": "1960_九个妹妹把我宠上天",
+    "title_en": "1960：九个妹妹把我宠上天(天下第九)",
+    "title_zh": "1960：九个妹妹把我宠上天(天下第九)",
+    "title": "1960：九个妹妹把我宠上天(天下第九)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 1960：九个妹妹把我宠上天(天下第九) online free.",
+    "description": "Read 1960：九个妹妹把我宠上天(天下第九) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 23,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770035/26448208.html"
+  },
+  {
+    "id": 215,
+    "slug": "wu-ling-da-lu-zhi-guang-ying-cheng-shen",
+    "title_en": "wu-ling-da-lu-zhi-guang-ying-cheng-shen",
+    "title_zh": "wu-ling-da-lu-zhi-guang-ying-cheng-shen",
+    "title": "wu-ling-da-lu-zhi-guang-ying-cheng-shen",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read wu-ling-da-lu-zhi-guang-ying-cheng-shen online free.",
+    "description": "Read wu-ling-da-lu-zhi-guang-ying-cheng-shen online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 16,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 216,
+    "slug": "丰腴小村妇_大佬们跪求嫁给他",
+    "title_en": "丰腴小村妇，大佬们跪求嫁给他(锦绣钱澄)",
+    "title_zh": "丰腴小村妇，大佬们跪求嫁给他(锦绣钱澄)",
+    "title": "丰腴小村妇，大佬们跪求嫁给他(锦绣钱澄)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 丰腴小村妇，大佬们跪求嫁给他(锦绣钱澄) online free.",
+    "description": "Read 丰腴小村妇，大佬们跪求嫁给他(锦绣钱澄) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 37,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1768727/26399376.html"
+  },
+  {
+    "id": 217,
+    "slug": "六零_冲喜_退伍糙汉夜夜疯",
+    "title_en": "六零：冲喜？退伍糙汉夜夜疯！(豌豆饼干)",
+    "title_zh": "六零：冲喜？退伍糙汉夜夜疯！(豌豆饼干)",
+    "title": "六零：冲喜？退伍糙汉夜夜疯！(豌豆饼干)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 六零：冲喜？退伍糙汉夜夜疯！(豌豆饼干) online free.",
+    "description": "Read 六零：冲喜？退伍糙汉夜夜疯！(豌豆饼干) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 2,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770051/26455676.html"
+  },
+  {
+    "id": 218,
+    "slug": "布衣江山",
+    "title_en": "布衣江山",
+    "title_zh": "布衣江山",
+    "title": "布衣江山",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 布衣江山 online free.",
+    "description": "Read 布衣江山 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 5,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 219,
+    "slug": "我都天庭临时工了_才神话复苏",
+    "title_en": "我都天庭临时工了，才神话复苏？(鬼懿)",
+    "title_zh": "我都天庭临时工了，才神话复苏？(鬼懿)",
+    "title": "我都天庭临时工了，才神话复苏？(鬼懿)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 我都天庭临时工了，才神话复苏？(鬼懿) online free.",
+    "description": "Read 我都天庭临时工了，才神话复苏？(鬼懿) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 17,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770028/26444923.html"
+  },
+  {
+    "id": 220,
+    "slug": "手握旧日权柄_弹幕硬说我是主角",
+    "title_en": "手握旧日权柄，弹幕硬说我是主角(灰烬暗燃)",
+    "title_zh": "手握旧日权柄，弹幕硬说我是主角(灰烬暗燃)",
+    "title": "手握旧日权柄，弹幕硬说我是主角(灰烬暗燃)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 手握旧日权柄，弹幕硬说我是主角(灰烬暗燃) online free.",
+    "description": "Read 手握旧日权柄，弹幕硬说我是主角(灰烬暗燃) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770176/26466789.html"
+  },
+  {
+    "id": 221,
+    "slug": "搴跺コ璋嬪珌鏋佸搧鐜嬪",
+    "title_en": "搴跺コ璋嬪珌鏋佸搧鐜嬪",
+    "title_zh": "搴跺コ璋嬪珌鏋佸搧鐜嬪",
+    "title": "搴跺コ璋嬪珌鏋佸搧鐜嬪",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 搴跺コ璋嬪珌鏋佸搧鐜嬪 online free.",
+    "description": "Read 搴跺コ璋嬪珌鏋佸搧鐜嬪 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 222,
+    "slug": "栽赃陷害我_我请你们吃正义铁拳",
+    "title_en": "栽赃陷害我？我请你们吃正义铁拳(猫饵)",
+    "title_zh": "栽赃陷害我？我请你们吃正义铁拳(猫饵)",
+    "title": "栽赃陷害我？我请你们吃正义铁拳(猫饵)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 栽赃陷害我？我请你们吃正义铁拳(猫饵) online free.",
+    "description": "Read 栽赃陷害我？我请你们吃正义铁拳(猫饵) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 3,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770050/26455322.html"
+  },
+  {
+    "id": 223,
+    "slug": "椋庢祦鍖诲湥",
+    "title_en": "椋庢祦鍖诲湥",
+    "title_zh": "椋庢祦鍖诲湥",
+    "title": "椋庢祦鍖诲湥",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 椋庢祦鍖诲湥 online free.",
+    "description": "Read 椋庢祦鍖诲湥 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 224,
+    "slug": "榛戝",
+    "title_en": "榛戝",
+    "title_zh": "榛戝",
+    "title": "榛戝",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 榛戝 online free.",
+    "description": "Read 榛戝 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 225,
+    "slug": "渚闂ㄥ尰濂",
+    "title_en": "渚闂ㄥ尰濂",
+    "title_zh": "渚闂ㄥ尰濂",
+    "title": "渚闂ㄥ尰濂",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 渚闂ㄥ尰濂 online free.",
+    "description": "Read 渚闂ㄥ尰濂 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 226,
+    "slug": "澶墠鍎垮瓙鍤ｅ紶濡堝挭",
+    "title_en": "澶墠鍎垮瓙鍤ｅ紶濡堝挭",
+    "title_zh": "澶墠鍎垮瓙鍤ｅ紶濡堝挭",
+    "title": "澶墠鍎垮瓙鍤ｅ紶濡堝挭",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 澶墠鍎垮瓙鍤ｅ紶濡堝挭 online free.",
+    "description": "Read 澶墠鍎垮瓙鍤ｅ紶濡堝挭 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 227,
+    "slug": "澶墠鍖荤敓",
+    "title_en": "澶墠鍖荤敓",
+    "title_zh": "澶墠鍖荤敓",
+    "title": "澶墠鍖荤敓",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 澶墠鍖荤敓 online free.",
+    "description": "Read 澶墠鍖荤敓 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 228,
+    "slug": "濂虫昏佺殑绁炵骇淇濋晼",
+    "title_en": "濂虫昏佺殑绁炵骇淇濋晼",
+    "title_zh": "濂虫昏佺殑绁炵骇淇濋晼",
+    "title": "濂虫昏佺殑绁炵骇淇濋晼",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 濂虫昏佺殑绁炵骇淇濋晼 online free.",
+    "description": "Read 濂虫昏佺殑绁炵骇淇濋晼 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 229,
+    "slug": "财神爷加好友_我被神仙团宠暴富",
+    "title_en": "财神爷加好友！我被神仙团宠暴富(舒起起)",
+    "title_zh": "财神爷加好友！我被神仙团宠暴富(舒起起)",
+    "title": "财神爷加好友！我被神仙团宠暴富(舒起起)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 财神爷加好友！我被神仙团宠暴富(舒起起) online free.",
+    "description": "Read 财神爷加好友！我被神仙团宠暴富(舒起起) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 17,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770027/26444711.html"
+  },
+  {
+    "id": 230,
+    "slug": "都重生了谁还复读_去当兵吧",
+    "title_en": "都重生了谁还复读？去当兵吧(酸辣榔头)",
+    "title_zh": "都重生了谁还复读？去当兵吧(酸辣榔头)",
+    "title": "都重生了谁还复读？去当兵吧(酸辣榔头)",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 都重生了谁还复读？去当兵吧(酸辣榔头) online free.",
+    "description": "Read 都重生了谁还复读？去当兵吧(酸辣榔头) online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 48,
+    "zone": "vip",
+    "source": "0515red",
+    "source_url": "http://www.0515red.com/rd/1770059/26458890.html"
+  },
+  {
+    "id": 231,
+    "slug": "鍏堝氬悗鐖澶у彅鎴戞墠鎴愬勾",
+    "title_en": "鍏堝氬悗鐖澶у彅鎴戞墠鎴愬勾",
+    "title_zh": "鍏堝氬悗鐖澶у彅鎴戞墠鎴愬勾",
+    "title": "鍏堝氬悗鐖澶у彅鎴戞墠鎴愬勾",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鍏堝氬悗鐖澶у彅鎴戞墠鎴愬勾 online free.",
+    "description": "Read 鍏堝氬悗鐖澶у彅鎴戞墠鎴愬勾 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 232,
+    "slug": "鍑ら嗗ぉ鏉鎵嬬媯濡",
+    "title_en": "鍑ら嗗ぉ鏉鎵嬬媯濡",
+    "title_zh": "鍑ら嗗ぉ鏉鎵嬬媯濡",
+    "title": "鍑ら嗗ぉ鏉鎵嬬媯濡",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鍑ら嗗ぉ鏉鎵嬬媯濡 online free.",
+    "description": "Read 鍑ら嗗ぉ鏉鎵嬬媯濡 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 233,
+    "slug": "鍖婚亾鐢熼",
+    "title_en": "鍖婚亾鐢熼",
+    "title_zh": "鍖婚亾鐢熼",
+    "title": "鍖婚亾鐢熼",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鍖婚亾鐢熼 online free.",
+    "description": "Read 鍖婚亾鐢熼 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 234,
+    "slug": "鍗挎湰榛戣悓涔嬪栧冩潵琚",
+    "title_en": "鍗挎湰榛戣悓涔嬪栧冩潵琚",
+    "title_zh": "鍗挎湰榛戣悓涔嬪栧冩潵琚",
+    "title": "鍗挎湰榛戣悓涔嬪栧冩潵琚",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鍗挎湰榛戣悓涔嬪栧冩潵琚 online free.",
+    "description": "Read 鍗挎湰榛戣悓涔嬪栧冩潵琚 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 235,
+    "slug": "鍚嶅尰璐靛コ",
+    "title_en": "鍚嶅尰璐靛コ",
+    "title_zh": "鍚嶅尰璐靛コ",
+    "title": "鍚嶅尰璐靛コ",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鍚嶅尰璐靛コ online free.",
+    "description": "Read 鍚嶅尰璐靛コ online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 236,
+    "slug": "鍥涘か浜夊疇钀屼箹澶鍚涘吇鎴愯",
+    "title_en": "鍥涘か浜夊疇钀屼箹澶鍚涘吇鎴愯",
+    "title_zh": "鍥涘か浜夊疇钀屼箹澶鍚涘吇鎴愯",
+    "title": "鍥涘か浜夊疇钀屼箹澶鍚涘吇鎴愯",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鍥涘か浜夊疇钀屼箹澶鍚涘吇鎴愯 online free.",
+    "description": "Read 鍥涘か浜夊疇钀屼箹澶鍚涘吇鎴愯 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 237,
+    "slug": "鎴愮",
+    "title_en": "鎴愮",
+    "title_zh": "鎴愮",
+    "title": "鎴愮",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鎴愮 online free.",
+    "description": "Read 鎴愮 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 238,
+    "slug": "鎶よ姳鐙傞緳",
+    "title_en": "鎶よ姳鐙傞緳",
+    "title_zh": "鎶よ姳鐙傞緳",
+    "title": "鎶よ姳鐙傞緳",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鎶よ姳鐙傞緳 online free.",
+    "description": "Read 鎶よ姳鐙傞緳 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 239,
+    "slug": "鏉鎵嬫埧涓滀繌鎴垮",
+    "title_en": "鏉鎵嬫埧涓滀繌鎴垮",
+    "title_zh": "鏉鎵嬫埧涓滀繌鎴垮",
+    "title": "鏉鎵嬫埧涓滀繌鎴垮",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鏉鎵嬫埧涓滀繌鎴垮 online free.",
+    "description": "Read 鏉鎵嬫埧涓滀繌鎴垮 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 240,
+    "slug": "鐗圭嶅啗鍖",
+    "title_en": "鐗圭嶅啗鍖",
+    "title_zh": "鐗圭嶅啗鍖",
+    "title": "鐗圭嶅啗鍖",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鐗圭嶅啗鍖 online free.",
+    "description": "Read 鐗圭嶅啗鍖 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 241,
+    "slug": "鑵归粦鐙傚コ鍊惧煄鍙鍞ゅ笀",
+    "title_en": "鑵归粦鐙傚コ鍊惧煄鍙鍞ゅ笀",
+    "title_zh": "鑵归粦鐙傚コ鍊惧煄鍙鍞ゅ笀",
+    "title": "鑵归粦鐙傚コ鍊惧煄鍙鍞ゅ笀",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鑵归粦鐙傚コ鍊惧煄鍙鍞ゅ笀 online free.",
+    "description": "Read 鑵归粦鐙傚コ鍊惧煄鍙鍞ゅ笀 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 242,
+    "slug": "鑷冲皧鐙傚",
+    "title_en": "鑷冲皧鐙傚",
+    "title_zh": "鑷冲皧鐙傚",
+    "title": "鑷冲皧鐙傚",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 鑷冲皧鐙傚 online free.",
+    "description": "Read 鑷冲皧鐙傚 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
+  },
+  {
+    "id": 243,
+    "slug": "閮藉競鍏ㄨ兘绯荤粺",
+    "title_en": "閮藉競鍏ㄨ兘绯荤粺",
+    "title_zh": "閮藉競鍏ㄨ兘绯荤粺",
+    "title": "閮藉競鍏ㄨ兘绯荤粺",
+    "author_en": "Unknown",
+    "author": "Unknown",
+    "author_zh": "Unknown",
+    "description_en": "Read 閮藉競鍏ㄨ兘绯荤粺 online free.",
+    "description": "Read 閮藉競鍏ㄨ兘绯荤粺 online free.",
+    "genre": "fantasy",
+    "category": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "is_adult": false,
+    "status": "ongoing",
+    "rating": 4.0,
+    "readers": 0,
+    "total_chapters": 10,
+    "zone": "vip",
+    "source": "",
+    "source_url": ""
   }
 ]

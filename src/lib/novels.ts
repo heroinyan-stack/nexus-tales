@@ -41,9 +41,14 @@ const PUBLIC_DIR = path.join(process.cwd(), 'public');
 export function getCoverUrl(slug: string): string {
   const jpgPath = path.join(PUBLIC_DIR, 'covers', `${slug}.jpg`);
   const svgPath = path.join(PUBLIC_DIR, 'covers', `${slug}.svg`);
+  const pngPath = path.join(PUBLIC_DIR, 'covers', `${slug}.png`);
   if (fs.existsSync(jpgPath)) return `/covers/${slug}.jpg`;
   if (fs.existsSync(svgPath)) return `/covers/${slug}.svg`;
-  return `/covers/${slug}.jpg`; // fallback
+  if (fs.existsSync(pngPath)) return `/covers/${slug}.png`;
+  // generated SVG fallback
+  const genSvg = path.join(PUBLIC_DIR, 'covers', `${slug}-gen.svg`);
+  if (fs.existsSync(genSvg)) return `/covers/${slug}-gen.svg`;
+  return `/covers/default.svg`; // absolute fallback
 }
 
 // ========== 工具函数 ==========
@@ -159,7 +164,7 @@ function readChapterSafe(filePath: string): Chapter | null {
     return {
       num: raw.num || 0,
       title_en: raw.title_en || raw.title || '',
-      content_en: raw.content_en || raw.content || '',
+      content_en: raw.content_en || raw.content_zh || raw.content || '',
       translated: raw.translated ?? true,
     };
   } catch {
