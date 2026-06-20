@@ -2,7 +2,8 @@
   "num": 10,
   "title": "Part 10",
   "slug": "dao-de-jing",
-  "lines": [
-    "The five colors blind the eye. The five tones deafen the ear. The five flavors dull the palate. Racing and hunting drive the mind mad. Therefore the sage is for the belly, not for the eye. He rejects the one and chooses the other."
-  ]
+  "content_zh": "The five colors blind the eye. The five tones deafen the ear. The five flavors dull the palate. Racing and hunting drive the mind mad. Therefore the sage is for the belly, not for the eye. He rejects the one and chooses the other.",
+  "content_en": "The five colors blind the eye. The five tones deafen the ear. The five flavors dull the palate. Racing and hunting drive the mind mad. Therefore the sage is for the belly, not for the eye. He rejects the one and chooses the other.",
+  "title_en": "Part 10",
+  "translated": true
 }

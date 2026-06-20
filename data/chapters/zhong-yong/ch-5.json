@@ -2,7 +2,8 @@
   "num": 5,
   "title": "Part 5",
   "slug": "zhong-yong",
-  "lines": [
-    "Sincerity is the way of Heaven. The attainment of sincerity is the way of man. He who possesses sincerity hits the mark without effort, apprehends without thinking, and naturally finds himself in harmony with the Way."
-  ]
+  "content_zh": "Sincerity is the way of Heaven. The attainment of sincerity is the way of man. He who possesses sincerity hits the mark without effort, apprehends without thinking, and naturally finds himself in harmony with the Way.",
+  "content_en": "Sincerity is the way of Heaven. The attainment of sincerity is the way of man. He who possesses sincerity hits the mark without effort, appreciates without thinking, and naturally finds himself in harmony with the Way.",
+  "title_en": "Part 5",
+  "translated": true
 }

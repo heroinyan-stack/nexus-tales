@@ -2,7 +2,8 @@
   "num": 9,
   "title": "Part 9",
   "slug": "da-xue",
-  "lines": [
-    "The investigation of things lies at the foundation of the Great Learning. When things are investigated, knowledge is extended. When knowledge is extended, the will becomes sincere."
-  ]
+  "content_zh": "The investigation of things lies at the foundation of the Great Learning. When things are investigated, knowledge is extended. When knowledge is extended, the will becomes sincere.",
+  "content_en": "The investigation of things lies at the foundation of the Great Learning. When things are investigated, knowledge is extended. When knowledge is extended, the will becomes sincere.",
+  "title_en": "Part 9",
+  "translated": true
 }

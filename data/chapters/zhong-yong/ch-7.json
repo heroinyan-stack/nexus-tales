@@ -2,7 +2,8 @@
   "num": 7,
   "title": "Part 7",
   "slug": "zhong-yong",
-  "lines": [
-    "The way of the gentleman may be compared to traveling to a distant place: one must start from the nearest point. It is like ascending a height: one must begin from the lowest ground."
-  ]
+  "content_zh": "The way of the gentleman may be compared to traveling to a distant place: one must start from the nearest point. It is like ascending a height: one must begin from the lowest ground.",
+  "content_en": "The way of the gentleman may be compared to traveling to a distant place: one must start from the nearest point. It is like ascending a height: one must begin from the lowest ground.",
+  "title_en": "Part 7",
+  "translated": true
 }

@@ -2,7 +2,8 @@
   "num": 12,
   "title": "Chapter 12",
   "slug": "romance-of-the-three-kingdoms",
-  "lines": [
-    "The rivalry between Zhuge Liang and Sima Yi defined the late Three Kingdoms era. Two geniuses, each understanding the other's mind better than anyone else alive. Their campaigns across the Qishan Mountains were less battles than chess matches played with armies, each move a lifetime in the making."
-  ]
+  "content_zh": "The rivalry between Zhuge Liang and Sima Yi defined the late Three Kingdoms era. Two geniuses, each understanding the other's mind better than anyone else alive. Their campaigns across the Qishan Mountains were less battles than chess matches played with armies, each move a lifetime in the making.",
+  "content_en": "The rivalry between Zhuge Liang and Sima Yi defined the late Three Kingdoms era. Two geniuses, each understanding the other's mind better than anyone else alive. Their campaigns across the Qishan Mountains were less battles than chess matches played with armies, each move a lifetime in the making.",
+  "title_en": "Chapter 12",
+  "translated": true
 }

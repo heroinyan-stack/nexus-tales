@@ -2,7 +2,8 @@
   "num": 7,
   "title": "Part 7",
   "slug": "chinese-poetry",
-  "lines": [
-    "Wang Wei painted with words. 'Empty mountain, no one in sight — only the echo of voices.' His poems were landscapes in verse, each character a brushstroke, each line a mountain path leading deeper into the wilderness."
-  ]
+  "content_zh": "Wang Wei painted with words. 'Empty mountain, no one in sight — only the echo of voices.' His poems were landscapes in verse, each character a brushstroke, each line a mountain path leading deeper into the wilderness.",
+  "content_en": "Wang Wei painted with words. 'Empty mountain, no one in sight — only the echo of voices.' His poems were landscapes in verse, each character a brushstroke, each line a mountain path leading deeper into the wilderness.",
+  "title_en": "Part 7",
+  "translated": true
 }

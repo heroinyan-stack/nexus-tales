@@ -2,7 +2,8 @@
   "num": 9,
   "title": "Part 9",
   "slug": "sunzi-shiliu-jin",
-  "lines": [
-    "The general must be serene and inscrutable, upright and impartial. He must keep his own counsel and not allow rumors and doubts to confuse his officers. If his plans are revealed, his enemies will prepare against him."
-  ]
+  "content_zh": "The general must be serene and inscrutable, upright and impartial. He must keep his own counsel and not allow rumors and doubts to confuse his officers. If his plans are revealed, his enemies will prepare against him.",
+  "content_en": "The general must be serene and inscrutable, upright and impartial. He must keep his own counsel and not allow rumors and doubts to confuse his officers. If his plans are revealed, his enemies will prepare against him.",
+  "title_en": "Part 9",
+  "translated": true
 }

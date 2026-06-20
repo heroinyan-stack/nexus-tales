@@ -2,7 +2,8 @@
   "num": 8,
   "title": "Part 8",
   "slug": "sunzi-shiliu-jin",
-  "lines": [
-    "He who knows these things, and in fighting puts his knowledge into practice, will win his battles. He who knows them not, nor practices them, will surely be defeated."
-  ]
+  "content_zh": "He who knows these things, and in fighting puts his knowledge into practice, will win his battles. He who knows them not, nor practices them, will surely be defeated.",
+  "content_en": "He who knows these things, and in fighting puts his knowledge into practice, will win his battles. He who knows them not, nor practices them, will surely be defeated.",
+  "title_en": "Part 8",
+  "translated": true
 }

@@ -2,7 +2,8 @@
   "num": 5,
   "title": "Part 5",
   "slug": "three-character-classic",
-  "lines": [
-    "The Three Character Classic was once the first text every Chinese child would learn. For eight centuries, from the Song dynasty to the Republic, it was the gateway to literacy, morality, and Chinese civilization itself."
-  ]
+  "content_zh": "The Three Character Classic was once the first text every Chinese child would learn. For eight centuries, from the Song dynasty to the Republic, it was the gateway to literacy, morality, and Chinese civilization itself.",
+  "content_en": "The Three Character Classic was once the first text every Chinese child would learn. For eight centuries, from the Song dynasty to the Republic, it was the gateway to literacy, morality, and Chinese civilization itself.",
+  "title_en": "Part 5",
+  "translated": true
 }

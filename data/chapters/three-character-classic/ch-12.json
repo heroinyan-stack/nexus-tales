@@ -2,7 +2,8 @@
   "num": 12,
   "title": "Part 12",
   "slug": "three-character-classic",
-  "lines": [
-    "Beyond philosophy, the Classic serves as a compressed encyclopedia: it names dynasties in order, recounts the stories of filial children, and urges diligence — all in verses a child can memorize before they can read them."
-  ]
+  "content_zh": "Beyond philosophy, the Classic serves as a compressed encyclopedia: it names dynasties in order, recounts the stories of filial children, and urges diligence — all in verses a child can memorize before they can read them.",
+  "content_en": "Beyond philosophy, the Classic serves as a compressed encyclopedia: it names dynasties in order, recounts the stories of filial children, and urges diligence — all in verses a child can memorize before they can read them.",
+  "title_en": "Part 12",
+  "translated": true
 }

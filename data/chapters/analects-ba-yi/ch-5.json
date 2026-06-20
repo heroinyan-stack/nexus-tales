@@ -2,10 +2,8 @@
   "num": 5,
   "title": "Book Reflections 5",
   "slug": "analects-ba-yi",
-  "lines": [
-    "Zigong asked about the gentleman. The Master said: 'He puts his words into action before allowing his words to follow.'",
-    "Confucius said: 'The gentleman is broad-minded and not partisan. The small-minded man is partisan and not broad-minded.'",
-    "Confucius said: 'If a man can recite the three hundred Odes but is incapable of performing an entrusted duty, what use is all his learning?'",
-    "Confucius said: 'Do not worry about being unrecognized. Worry about being worthy of recognition.'"
-  ]
+  "content_zh": "Zigong asked about the gentleman. The Master said: 'He puts his words into action before allowing his words to follow.'\n\nConfucius said: 'The gentleman is broad-minded and not partisan. The small-minded man is partisan and not broad-minded.'\n\nConfucius said: 'If a man can recite the three hundred Odes but is incapable of performing an entrusted duty, what use is all his learning?'\n\nConfucius said: 'Do not worry about being unrecognized. Worry about being worthy of recognition.'",
+  "content_en": "Zigong asked about the gentleman. The Master said: 'He puts his words into action before allowing his words to follow.'\n\nConfucius said: 'The gentleman is broad-minded and not partisan. The small-minded man is partisan and not broad-minded.'\n\nConfucius said: 'If a man can recite the three hundred Odes but is incapable of performing an entrusted duty, what use is all his learning?'\n\nConfucius said: 'Do not worry about being unrecognized. Worry about being worthy of recognition.'",
+  "title_en": "Book Reflections 5",
+  "translated": true
 }
