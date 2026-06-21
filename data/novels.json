@@ -28,7 +28,7 @@
     "updated_at": "2026-06-15T01:04:33.328633+00:00",
     "title": "Martial God Asura",
     "featured": true,
-    "available_chapters": 98,
+    "available_chapters": 119,
     "category": "Xianxia",
     "chapter_count": 119
   },
@@ -61,7 +61,7 @@
     "updated_at": "2026-06-15T01:04:33.331902+00:00",
     "title": "Against The Gods",
     "featured": true,
-    "available_chapters": 52,
+    "available_chapters": 73,
     "category": "Xianxia",
     "chapter_count": 73
   },
@@ -96,7 +96,7 @@
     "cover": "/covers/journey-to-the-west.jpg",
     "title": "Journey To The West",
     "featured": false,
-    "available_chapters": 15,
+    "available_chapters": 20,
     "category": "Classics",
     "chapter_count": 13
   },
@@ -129,7 +129,7 @@
     "updated_at": "2026-06-15T01:04:33.334441+00:00",
     "title": "I Shall Seal The Heavens",
     "featured": false,
-    "available_chapters": 5,
+    "available_chapters": 25,
     "category": "Xianxia",
     "chapter_count": 25
   },
@@ -205,7 +205,7 @@
     "cover": "/covers/reverend-insanity.jpg",
     "title": "Reverend Insanity",
     "featured": false,
-    "available_chapters": 27,
+    "available_chapters": 28,
     "category": "Xianxia",
     "chapter_count": 26
   },
@@ -240,7 +240,7 @@
     "cover": "/covers/romance-of-the-three-kingdoms.jpg",
     "title": "Romance Of The Three Kingdoms",
     "featured": false,
-    "available_chapters": 13,
+    "available_chapters": 20,
     "category": "Classics",
     "chapter_count": 9
   },
@@ -273,7 +273,7 @@
     "cover": "/covers/a-will-eternal.jpg",
     "title": "A Will Eternal",
     "featured": true,
-    "available_chapters": 53,
+    "available_chapters": 64,
     "category": "Xianxia",
     "chapter_count": 64
   },
@@ -311,7 +311,7 @@
     "totalChapters": 15,
     "title": "Investiture Of The Gods",
     "featured": false,
-    "available_chapters": 15,
+    "available_chapters": 21,
     "category": "Xianxia",
     "chapter_count": 6
   },
@@ -348,7 +348,7 @@
     "cover": "/covers/the-remarried-empress.jpg",
     "title": "The Remarried Empress",
     "featured": false,
-    "available_chapters": 10,
+    "available_chapters": 21,
     "category": "Romance",
     "chapter_count": 7
   },
@@ -384,7 +384,7 @@
     "cover": "/covers/dream-of-the-red-chamber.jpg",
     "title": "Dream Of The Red Chamber",
     "featured": false,
-    "available_chapters": 11,
+    "available_chapters": 22,
     "category": "Classics",
     "chapter_count": 7
   },
@@ -420,7 +420,7 @@
     "cover": "/covers/secret-lovers.jpg",
     "title": "Secret Lovers",
     "featured": false,
-    "available_chapters": 10,
+    "available_chapters": 21,
     "author": "Romance Author",
     "category": "Romance",
     "chapter_count": 7
@@ -454,7 +454,7 @@
     "cover": "/covers/battle-through-the-heavens.jpg",
     "title": "Battle Through The Heavens",
     "featured": true,
-    "available_chapters": 53,
+    "available_chapters": 64,
     "category": "Xianxia",
     "chapter_count": 64
   },
@@ -527,7 +527,7 @@
     "cover": "/covers/water-margin.jpg",
     "title": "Water Margin",
     "featured": false,
-    "available_chapters": 11,
+    "available_chapters": 22,
     "category": "Classics",
     "chapter_count": 7
   },
@@ -559,7 +559,7 @@
     "cover": "/covers/renegade-immortal.jpg",
     "title": "Renegade Immortal",
     "featured": false,
-    "available_chapters": 52,
+    "available_chapters": 64,
     "author": "Er Gen",
     "category": "Xianxia",
     "chapter_count": 54
@@ -597,7 +597,7 @@
     "cover": "/covers/hidden-marriage.jpg",
     "title": "Hidden Marriage",
     "featured": false,
-    "available_chapters": 10,
+    "available_chapters": 21,
     "author": "Romance Author",
     "category": "Romance",
     "chapter_count": 7
@@ -671,7 +671,7 @@
     "totalChapters": 10,
     "title": "Creation Of The Gods",
     "featured": false,
-    "available_chapters": 10,
+    "available_chapters": 19,
     "author": "Xu Zhonglin",
     "category": "Classics",
     "chapter_count": 6
@@ -708,7 +708,7 @@
     "cover": "/covers/city-of-sin.jpg",
     "title": "City Of Sin",
     "featured": false,
-    "available_chapters": 10,
+    "available_chapters": 21,
     "author": "Misty Rain of the South",
     "category": "Fantasy",
     "chapter_count": 7
@@ -745,7 +745,7 @@
     "cover": "/covers/super-gene.jpg",
     "title": "Super Gene",
     "featured": false,
-    "available_chapters": 10,
+    "available_chapters": 21,
     "author": "Twelve-Winged Dark Seraphim",
     "category": "Sci-Fi",
     "chapter_count": 7
@@ -820,7 +820,7 @@
     "totalChapters": 9,
     "title": "Monkey Kings Birth",
     "featured": false,
-    "available_chapters": 9,
+    "available_chapters": 16,
     "author": "Wu Cheng'en",
     "category": "Xianxia",
     "chapter_count": 3
@@ -961,7 +961,7 @@
     "totalChapters": 9,
     "title": "White Snake Legend",
     "featured": false,
-    "available_chapters": 9,
+    "available_chapters": 16,
     "author": "Folk Legend",
     "category": "Romance",
     "chapter_count": 5
@@ -1028,7 +1028,7 @@
     "title": "Chinese Poetry",
     "featured": false,
     "id": 29,
-    "available_chapters": 2,
+    "available_chapters": 13,
     "author": "Li Bai, Du Fu & Others",
     "category": "Classics",
     "cover_url": "/covers/chinese-poetry.svg"
@@ -1195,7 +1195,7 @@
     "totalChapters": 2,
     "cover": "/covers/analects-xue-er.jpg",
     "featured": false,
-    "available_chapters": 2,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-xue-er.svg"
   },
@@ -1225,7 +1225,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-xu-wen.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-xu-wen.svg"
   },
@@ -1255,7 +1255,7 @@
     "totalChapters": 2,
     "cover": "/covers/analects-ba-yi.jpg",
     "featured": false,
-    "available_chapters": 2,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-ba-yi.svg"
   },
@@ -1285,7 +1285,7 @@
     "totalChapters": 2,
     "cover": "/covers/analects-li-ren.jpg",
     "featured": false,
-    "available_chapters": 2,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-li-ren.svg"
   },
@@ -1315,7 +1315,7 @@
     "totalChapters": 2,
     "cover": "/covers/analects-gong-ye-chang.jpg",
     "featured": false,
-    "available_chapters": 2,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-gong-ye-chang.svg"
   },
@@ -1345,7 +1345,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-yong-ye.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-yong-ye.svg"
   },
@@ -1375,7 +1375,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-shu-er.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-shu-er.svg"
   },
@@ -1405,7 +1405,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-tai-bo.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-tai-bo.svg"
   },
@@ -1435,7 +1435,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-zi-han.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-zi-han.svg"
   },
@@ -1465,7 +1465,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-xiang-dang.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-xiang-dang.svg"
   },
@@ -1495,7 +1495,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-xian-jin.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-xian-jin.svg"
   },
@@ -1525,7 +1525,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-gu-shan.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-gu-shan.svg"
   },
@@ -1555,7 +1555,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-zi-lu.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-zi-lu.svg"
   },
@@ -1585,7 +1585,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-wei-zheng.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-wei-zheng.svg"
   },
@@ -1615,7 +1615,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-ji-shi.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-ji-shi.svg"
   },
@@ -1645,7 +1645,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-yang-huo.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-yang-huo.svg"
   },
@@ -1675,7 +1675,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-wei-ling-gong.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-wei-ling-gong.svg"
   },
@@ -1705,7 +1705,7 @@
     "totalChapters": 1,
     "cover": "/covers/analects-yao-yue.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 7,
     "category": "Classics",
     "cover_url": "/covers/analects-yao-yue.svg"
   },
@@ -1735,7 +1735,7 @@
     "totalChapters": 1,
     "cover": "/covers/dao-de-jing.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 16,
     "category": "Classics",
     "cover_url": "/covers/dao-de-jing.svg"
   },
@@ -1765,7 +1765,7 @@
     "totalChapters": 1,
     "cover": "/covers/three-character-classic.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 14,
     "category": "Classics",
     "cover_url": "/covers/three-character-classic.svg"
   },
@@ -1795,7 +1795,7 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-min-yao.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 10,
     "category": "Classics",
     "cover_url": "/covers/book-of-songs-shijing-min-yao.svg"
   },
@@ -1825,7 +1825,7 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-ya-song.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 10,
     "category": "Classics",
     "cover_url": "/covers/book-of-songs-shijing-ya-song.svg"
   },
@@ -1855,7 +1855,7 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-da-ya-1.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 10,
     "category": "Classics",
     "cover_url": "/covers/book-of-songs-shijing-da-ya-1.svg"
   },
@@ -1885,7 +1885,7 @@
     "totalChapters": 1,
     "cover": "/covers/book-of-songs-shijing-xiao-ya.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 10,
     "category": "Classics",
     "cover_url": "/covers/book-of-songs-shijing-xiao-ya.svg"
   },
@@ -1915,7 +1915,7 @@
     "totalChapters": 1,
     "cover": "/covers/zhuangzi-xiao-yao-you.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 15,
     "category": "Classics",
     "cover_url": "/covers/zhuangzi-xiao-yao-you.svg"
   },
@@ -1945,7 +1945,7 @@
     "totalChapters": 1,
     "cover": "/covers/zhuangzi-qi-wu-lun.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 15,
     "category": "Classics",
     "cover_url": "/covers/zhuangzi-qi-wu-lun.svg"
   },
@@ -1975,7 +1975,7 @@
     "totalChapters": 1,
     "cover": "/covers/sunzi-the-strategist.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 15,
     "category": "Classics",
     "cover_url": "/covers/sunzi-the-strategist.svg"
   },
@@ -2005,7 +2005,7 @@
     "totalChapters": 1,
     "cover": "/covers/sunzi-shiliu-jin.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 15,
     "category": "Classics",
     "cover_url": "/covers/sunzi-shiliu-jin.svg"
   },
@@ -2035,7 +2035,7 @@
     "totalChapters": 1,
     "cover": "/covers/xunzi-qiang-guo.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 10,
     "category": "Classics",
     "cover_url": "/covers/xunzi-qiang-guo.svg"
   },
@@ -2065,7 +2065,7 @@
     "totalChapters": 1,
     "cover": "/covers/hanfeizi-wu-du.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 10,
     "category": "Classics",
     "cover_url": "/covers/hanfeizi-wu-du.svg"
   },
@@ -2095,7 +2095,7 @@
     "totalChapters": 1,
     "cover": "/covers/da-xue.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 15,
     "category": "Classics",
     "cover_url": "/covers/da-xue.svg"
   },
@@ -2125,7 +2125,7 @@
     "totalChapters": 1,
     "cover": "/covers/zhong-yong.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 15,
     "category": "Classics",
     "cover_url": "/covers/zhong-yong.svg"
   },
@@ -2155,7 +2155,7 @@
     "totalChapters": 1,
     "cover": "/covers/tang-shi-ti-huai-nong.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 18,
     "category": "Classics",
     "cover_url": "/covers/tang-shi-ti-huai-nong.svg"
   },
@@ -2185,7 +2185,7 @@
     "totalChapters": 1,
     "cover": "/covers/tang-shi-ti-huai-shi.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 17,
     "category": "Classics",
     "cover_url": "/covers/tang-shi-ti-huai-shi.svg"
   },
@@ -2215,7 +2215,7 @@
     "totalChapters": 1,
     "cover": "/covers/thirty-six-stratagems.jpg",
     "featured": false,
-    "available_chapters": 1,
+    "available_chapters": 17,
     "category": "Classics",
     "cover_url": "/covers/thirty-six-stratagems.svg"
   },
@@ -2251,7 +2251,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 12,
+    "available_chapters": 115,
     "category": "Xianxia",
     "chapter_count": 2
   },
@@ -2287,7 +2287,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 31,
     "category": "Xianxia",
     "chapter_count": 2
   },
@@ -2323,7 +2323,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 115,
     "category": "Wuxia",
     "chapter_count": 2
   },
@@ -2359,7 +2359,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 103,
     "category": "Sci-Fi",
     "chapter_count": 2
   },
@@ -2395,7 +2395,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 25,
     "category": "Sci-Fi",
     "chapter_count": 2
   },
@@ -2431,7 +2431,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 43,
     "category": "Sci-Fi",
     "chapter_count": 2
   },
@@ -2467,7 +2467,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 33,
+    "available_chapters": 39,
     "category": "Sci-Fi",
     "chapter_count": 2
   },
@@ -2503,7 +2503,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 15,
+    "available_chapters": 115,
     "category": "Sci-Fi",
     "chapter_count": 2
   },
@@ -2539,7 +2539,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 18,
+    "available_chapters": 29,
     "category": "Sci-Fi",
     "chapter_count": 1
   },
@@ -2575,7 +2575,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 115,
     "category": "Sci-Fi",
     "chapter_count": 1
   },
@@ -2611,7 +2611,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 45,
     "category": "Sci-Fi",
     "chapter_count": 1
   },
@@ -2647,7 +2647,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 115,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2683,7 +2683,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 18,
+    "available_chapters": 115,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2719,7 +2719,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 21,
+    "available_chapters": 115,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2755,7 +2755,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 18,
+    "available_chapters": 115,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2791,7 +2791,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 18,
+    "available_chapters": 115,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2827,7 +2827,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 15,
+    "available_chapters": 67,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2863,7 +2863,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 15,
+    "available_chapters": 116,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2899,7 +2899,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 15,
+    "available_chapters": 45,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2935,7 +2935,7 @@
     "featured": false,
     "cover_ext": "jpg",
     "abbreviation": "",
-    "available_chapters": 15,
+    "available_chapters": 116,
     "category": "Urban",
     "chapter_count": 1
   },
@@ -2974,7 +2974,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/欠我时间债天道也得跪着还.svg",
     "totalChapters": 25,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 欠我时间债，天道也得跪着还 online free.",
     "title_en": "If you owe me a debt of time, God will have to kneel down to repay it.",
     "author_en": "毒酒飘香",
@@ -3000,7 +3000,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/天心帝魂.svg",
     "totalChapters": 113,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 天心帝魂 online free.",
     "title_en": "Tianxin Emperor Soul",
     "author_en": "天心帝魂",
@@ -3027,7 +3027,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/逆仙成魔传.svg",
     "totalChapters": 23,
-    "available_chapters": 15,
+    "available_chapters": 22,
     "description": "Read 逆仙成魔传 online free.",
     "title_en": "The Legend of Reverse Immortal and Become Demon",
     "author_en": "废个球",
@@ -3054,7 +3054,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/月光之下.svg",
     "totalChapters": 113,
-    "available_chapters": 12,
+    "available_chapters": 29,
     "description": "Read 月光之下 online free.",
     "title_en": "under the moonlight",
     "author_en": "林静",
@@ -3108,7 +3108,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/我能活化技能.svg",
     "totalChapters": 39,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 我能活化技能 online free.",
     "title_en": "I can activate skills",
     "author_en": "四诗风雅颂",
@@ -3135,7 +3135,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/开局自曝系统家族助我娶妻成仙.svg",
     "totalChapters": 72,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 开局自曝系统，家族助我娶妻成仙！ online free.",
     "title_en": "I exposed the system at the beginning, and my family helped me marry a wife and become a fairy!",
     "author_en": "关山难越",
@@ -3161,7 +3161,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/请诸神赴死.svg",
     "totalChapters": 34,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 请诸神赴死！ online free.",
     "title_en": "Invite the gods to die!",
     "author_en": "浮生一诺",
@@ -3188,7 +3188,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/异世琼霄.svg",
     "totalChapters": 113,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 异世琼霄 online free.",
     "title_en": "Qiongxiao from another world",
     "author_en": "莫问琼",
@@ -3215,7 +3215,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/开局一座城.svg",
     "totalChapters": 113,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 开局一座城 online free.",
     "title_en": "Start a city",
     "author_en": "张小慕",
@@ -3242,7 +3242,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/乱世武道从山村猎户开始狂肝箭术.svg",
     "totalChapters": 43,
-    "available_chapters": 15,
+    "available_chapters": 20,
     "description": "Read 乱世武道：从山村猎户开始狂肝箭术 online free.",
     "title_en": "Martial Arts in Troubled Times: The Art of Wild Archery Begins from the Orion in the Mountain Village",
     "author_en": "一剑封王",
@@ -3268,7 +3268,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/我有一个黑暗密武世界.svg",
     "totalChapters": 57,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 我有一个黑暗密武世界 online free.",
     "title_en": "I have a dark secret martial world",
     "author_en": "一笑新尘",
@@ -3400,7 +3400,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/宗门收徒我能看见属性词条.svg",
     "totalChapters": 113,
-    "available_chapters": 15,
+    "available_chapters": 20,
     "description": "Read 宗门收徒，我能看见属性词条 online free.",
     "title_en": "The sect accepts disciples, I can see the attribute entries",
     "author_en": "长涂山的黄金兽",
@@ -3856,7 +3856,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/傲世丹神.svg",
     "totalChapters": 1900,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 傲世丹神 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "The Proud Alchemy God",
@@ -3885,7 +3885,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/异世邪君.svg",
     "totalChapters": 638,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 异世邪君 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "The evil king from another world",
@@ -3914,7 +3914,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/十方天士.svg",
     "totalChapters": 315,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 十方天士 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Ten Directions Celestial Beings",
@@ -3943,7 +3943,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/极限武尊.svg",
     "totalChapters": 770,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 极限武尊 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Extreme Martial Lord",
@@ -3972,7 +3972,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/斗罗大陆.svg",
     "totalChapters": 344,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 斗罗大陆 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Douluo Dalu",
@@ -4001,7 +4001,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/至尊仙皇.svg",
     "totalChapters": 612,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 至尊仙皇 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Supreme Immortal Emperor",
@@ -4030,7 +4030,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/求魔.svg",
     "totalChapters": 739,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 求魔 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "seek magic",
@@ -4059,7 +4059,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/无上神通.svg",
     "totalChapters": 466,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 无上神通 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "supreme supernatural power",
@@ -4088,7 +4088,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/帝道至尊.svg",
     "totalChapters": 1214,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 帝道至尊 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Supreme Emperor",
@@ -4117,7 +4117,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/穿越西游之从零开始.svg",
     "totalChapters": 169,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 穿越西游之从零开始 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Journey to the West from scratch",
@@ -4146,7 +4146,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/帝玄天.svg",
     "totalChapters": 1273,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 帝玄天 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Emperor Xuantian",
@@ -4175,7 +4175,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/绝世武神.svg",
     "totalChapters": 1250,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 绝世武神 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Peerless Martial God",
@@ -4204,7 +4204,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/修真者在异世.svg",
     "totalChapters": 574,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 修真者在异世 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Cultivators in another world",
@@ -4233,7 +4233,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/杀神.svg",
     "totalChapters": 809,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 杀神 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "god of death",
@@ -4262,7 +4262,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/七界传说.svg",
     "totalChapters": 2294,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 七界传说 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Legend of the Seven Realms",
@@ -4291,7 +4291,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/异界魅影逍遥.svg",
     "totalChapters": 736,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 异界魅影逍遥 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Phantom of another world",
@@ -4320,7 +4320,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/吞噬苍穹.svg",
     "totalChapters": 1090,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 吞噬苍穹 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Swallow the sky",
@@ -4349,7 +4349,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/大道主.svg",
     "totalChapters": 1546,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 大道主 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Avenue Lord",
@@ -4378,7 +4378,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/魔兽剑圣异界纵横.svg",
     "totalChapters": 395,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 魔兽剑圣异界纵横 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "World of Warcraft Sword Saint: Another World",
@@ -4407,7 +4407,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/天珠变.svg",
     "totalChapters": 425,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 天珠变 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Dzi bead transformation",
@@ -4436,7 +4436,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/斗破苍穹.svg",
     "totalChapters": 822,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 斗破苍穹 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Fight to break the sky",
@@ -4465,7 +4465,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/剑神重生.svg",
     "totalChapters": 1597,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 剑神重生 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Sword God Reborn",
@@ -4494,7 +4494,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/邪虫神.svg",
     "totalChapters": 890,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 邪虫神 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Evil Insect God",
@@ -4523,7 +4523,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/唐门高手在异世.svg",
     "totalChapters": 620,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 唐门高手在异世 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Tang Sect masters in another world",
@@ -4552,7 +4552,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/我的极品小姨子.svg",
     "totalChapters": 657,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 我的极品小姨子 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "My best sister-in-law",
@@ -4581,7 +4581,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/都市超级召唤师.svg",
     "totalChapters": 505,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 都市超级召唤师 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Urban Super Summoner",
@@ -4610,7 +4610,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/极品相师.svg",
     "totalChapters": 519,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 极品相师 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "The best physiognomist",
@@ -4639,7 +4639,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/老兵传奇.svg",
     "totalChapters": 1229,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 老兵传奇 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Veteran Legend",
@@ -4668,7 +4668,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/御宝天师.svg",
     "totalChapters": 902,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 御宝天师 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Imperial Treasure Celestial Master",
@@ -4697,7 +4697,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/极品美女养成系统.svg",
     "totalChapters": 325,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 极品美女养成系统 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "The best beauty training system",
@@ -4726,7 +4726,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/艳福仙医.svg",
     "totalChapters": 218,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 艳福仙医 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Yanfu fairy doctor",
@@ -4755,7 +4755,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/现世修真.svg",
     "totalChapters": 312,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 现世修真 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Cultivation in this world",
@@ -4784,7 +4784,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/校园全能高手.svg",
     "totalChapters": 1590,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 校园全能高手 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Campus all-round master",
@@ -4813,7 +4813,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/透视之眼.svg",
     "totalChapters": 1268,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 透视之眼 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "clairvoyant eye",
@@ -4842,7 +4842,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/官途.svg",
     "totalChapters": 1480,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 官途 — explore the full collection online.",
     "chapter_count": 4,
     "title_en": "official career",
@@ -4871,7 +4871,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/超级修真保镖.svg",
     "totalChapters": 342,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 超级修真保镖 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Super self-cultivation bodyguard",
@@ -4900,7 +4900,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/黑道特种兵.svg",
     "totalChapters": 1446,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 黑道特种兵 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Gangster Special Forces",
@@ -4929,7 +4929,7 @@
     "source_domain": "quanwenyuedu.io",
     "cover_url": "/covers/修仙高手在校园.svg",
     "totalChapters": 810,
-    "available_chapters": 0,
+    "available_chapters": 5,
     "description": "Discover 修仙高手在校园 — explore the full collection online.",
     "chapter_count": 5,
     "title_en": "Masters of cultivating immortals on campus",
@@ -4957,7 +4957,7 @@
     "source_domain": "tmwxw.net",
     "cover_url": "/covers/嫡女归来权臣掌心娇.svg",
     "totalChapters": 51,
-    "available_chapters": 15,
+    "available_chapters": 30,
     "description": "Read 嫡女归来：权臣掌心娇 online free.",
     "title_en": "The return of the legitimate daughter: The powerful minister’s hand is charming",
     "author_en": "小李暴富暴富再暴",
@@ -6373,7 +6373,8 @@
     "total_chapters": 23,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770035/26448208.html"
+    "source_url": "http://www.0515red.com/rd/1770035/26448208.html",
+    "available_chapters": 23
   },
   {
     "id": 215,
@@ -6398,7 +6399,8 @@
     "total_chapters": 16,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 15
   },
   {
     "id": 216,
@@ -6423,7 +6425,8 @@
     "total_chapters": 37,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1768727/26399376.html"
+    "source_url": "http://www.0515red.com/rd/1768727/26399376.html",
+    "available_chapters": 37
   },
   {
     "id": 217,
@@ -6448,7 +6451,8 @@
     "total_chapters": 2,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770051/26455676.html"
+    "source_url": "http://www.0515red.com/rd/1770051/26455676.html",
+    "available_chapters": 2
   },
   {
     "id": 218,
@@ -6473,7 +6477,8 @@
     "total_chapters": 5,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 5
   },
   {
     "id": 219,
@@ -6498,7 +6503,8 @@
     "total_chapters": 17,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770028/26444923.html"
+    "source_url": "http://www.0515red.com/rd/1770028/26444923.html",
+    "available_chapters": 17
   },
   {
     "id": 220,
@@ -6523,7 +6529,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770176/26466789.html"
+    "source_url": "http://www.0515red.com/rd/1770176/26466789.html",
+    "available_chapters": 10
   },
   {
     "id": 221,
@@ -6548,7 +6555,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 222,
@@ -6573,7 +6581,8 @@
     "total_chapters": 3,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770050/26455322.html"
+    "source_url": "http://www.0515red.com/rd/1770050/26455322.html",
+    "available_chapters": 3
   },
   {
     "id": 223,
@@ -6598,7 +6607,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 224,
@@ -6623,7 +6633,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 225,
@@ -6648,7 +6659,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 226,
@@ -6673,7 +6685,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 227,
@@ -6698,7 +6711,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 228,
@@ -6723,7 +6737,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 229,
@@ -6748,7 +6763,8 @@
     "total_chapters": 17,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770027/26444711.html"
+    "source_url": "http://www.0515red.com/rd/1770027/26444711.html",
+    "available_chapters": 17
   },
   {
     "id": 230,
@@ -6773,7 +6789,8 @@
     "total_chapters": 48,
     "zone": "vip",
     "source": "0515red",
-    "source_url": "http://www.0515red.com/rd/1770059/26458890.html"
+    "source_url": "http://www.0515red.com/rd/1770059/26458890.html",
+    "available_chapters": 48
   },
   {
     "id": 231,
@@ -6798,7 +6815,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 232,
@@ -6823,7 +6841,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 233,
@@ -6848,7 +6867,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 234,
@@ -6873,7 +6893,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 235,
@@ -6898,7 +6919,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 236,
@@ -6923,7 +6945,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 237,
@@ -6948,7 +6971,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 238,
@@ -6973,7 +6997,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 239,
@@ -6998,7 +7023,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 240,
@@ -7023,7 +7049,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 241,
@@ -7048,7 +7075,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 242,
@@ -7073,7 +7101,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "id": 243,
@@ -7098,7 +7127,8 @@
     "total_chapters": 10,
     "zone": "vip",
     "source": "",
-    "source_url": ""
+    "source_url": "",
+    "available_chapters": 10
   },
   {
     "slug": "大明死谏一百次老朱破防了",
@@ -7646,7 +7676,8 @@
     "title_en": "第1章 月妃，夜弦月",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "乱世武道_从山村猎户开始狂肝箭术",
@@ -7654,7 +7685,8 @@
     "title_en": "第1章 嫂子，让我来",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "坟头开铺_我靠守墓重整阴阳两界",
@@ -7662,7 +7694,8 @@
     "title_en": "第一章 坟里敲了三下门",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "嫡女归来_权臣掌心娇",
@@ -7670,7 +7703,8 @@
     "title_en": "第一章 烈火重生，重回及笄前",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "宗门收徒_我能看见属性词条",
@@ -7678,7 +7712,8 @@
     "title_en": "第一章：谁家的顶尖仙法叫水心经？",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "开局自曝系统_家族助我娶妻成仙",
@@ -7686,7 +7721,8 @@
     "title_en": "第一卷 第1章 系统绑定，多子多福！",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "开局阴阳宗_从反杀师姐开始斩妖除魔",
@@ -7694,7 +7730,8 @@
     "title_en": "第一章阴阳门",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "我在诡异入侵世界当农场主",
@@ -7702,7 +7739,8 @@
     "title_en": "第四十三章 场主我们下次再来",
     "source": "unknown",
     "chapters": 4,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 4
   },
   {
     "slug": "欠我时间债_天道也得跪着还",
@@ -7710,7 +7748,8 @@
     "title_en": "第1章 沙漏觉醒，矿洞斩敌",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "穿越源卡大陆_我自带融合卡牌",
@@ -7718,7 +7757,8 @@
     "title_en": "第1章 源卡大陆",
     "source": "bxwx9",
     "chapters": 30,
-    "updated": "auto"
+    "updated": "auto",
+    "available_chapters": 30
   },
   {
     "slug": "重生末日最强生存系统",
