@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 import { ChevronLeft, ChevronRight, ChevronDown, Settings, List, X, Minus, Plus, ArrowLeft, Home } from "lucide-react";
 
 type Theme = "dark" | "light" | "sepia";
@@ -55,6 +56,7 @@ export default function ChapterReaderClient({
   novelTitle?: string;
   zone?: string;
 }) {
+  const { data: session } = useSession();
   const [theme, setTheme] = useState<Theme>("dark");
   const [fontFamily, setFontFamily] = useState<FontFamily>("serif");
   const [fontSize, setFontSize] = useState(18);
@@ -64,10 +66,47 @@ export default function ChapterReaderClient({
   const [progress, setProgress] = useState(0);
   const [isImmersive, setIsImmersive] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
+  const lastSavedRef = useRef({ chapterNum, scrollPercent: 0 });
+  const saveTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Calculate reading time
   const wordCount = content.split(/\s+/).length;
-  const readingTime = Math.ceil(wordCount / 200); // 200 words/min average
+  const readingTime = Math.ceil(wordCount / 200);
+
+  // Save reading progress — always localStorage, +API when logged in (debounced)
+  const saveProgress = useCallback((chNum: number, scrollPct: number) => {
+    if (chNum === lastSavedRef.current.chapterNum && 
+        Math.abs(scrollPct - lastSavedRef.current.scrollPercent) < 5) return;
+
+    lastSavedRef.current = { chapterNum: chNum, scrollPercent: scrollPct };
+
+    // Always save to localStorage (guest + logged-in)
+    try {
+      localStorage.setItem(`reading_progress_${novelSlug}`, JSON.stringify({
+        chapterNum: chNum,
+        scrollPercent: Math.round(scrollPct),
+        finished: scrollPct > 90,
+        updatedAt: Date.now(),
+      }));
+    } catch {} // quota exceeded or private browsing
+
+    // Also POST to API for logged-in users
+    if (!(session?.user as any)?.id) return;
+
+    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(() => {
+      fetch("/api/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          novelSlug,
+          chapterNum: chNum,
+          scrollPercent: Math.round(scrollPct),
+          finished: scrollPct > 90,
+        }),
+      }).catch(() => {});
+    }, 2000);
+  }, [session, novelSlug]);
 
   // Track reading progress
   useEffect(() => {
@@ -76,12 +115,47 @@ export default function ChapterReaderClient({
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      setProgress(Math.min(100, Math.max(0, scrollPercent)));
+      const pct = Math.min(100, Math.max(0, scrollPercent));
+      setProgress(pct);
+      saveProgress(chapterNum, pct);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [chapterNum, saveProgress]);
+
+  // Save progress on chapter change
+  useEffect(() => {
+    saveProgress(chapterNum, 0);
+    window.scrollTo(0, 0);
+  }, [chapterNum]);
+
+  // Save on leaving (localStorage sync + API beacon)
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      // Always flush to localStorage
+      try {
+        localStorage.setItem(`reading_progress_${novelSlug}`, JSON.stringify({
+          chapterNum,
+          scrollPercent: Math.round(progress),
+          finished: progress > 90,
+          updatedAt: Date.now(),
+        }));
+      } catch {}
+      // API beacon for logged-in users
+      if ((session?.user as any)?.id) {
+        if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
+        navigator.sendBeacon("/api/progress", JSON.stringify({
+          novelSlug,
+          chapterNum,
+          scrollPercent: Math.round(progress),
+          finished: progress > 90,
+        }));
+      }
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [chapterNum, progress, novelSlug]);
 
   // Keyboard navigation
   useEffect(() => {

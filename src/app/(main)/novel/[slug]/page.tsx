@@ -4,6 +4,7 @@ import { BookOpen, Star, TrendingUp, Search, ChevronLeft, Lock } from "lucide-re
 import { getNovelBySlug, getChapterList, getAllNovels, getCoverUrl } from "@/lib/novels";
 import { notFound } from "next/navigation";
 import ChapterListClient from "@/components/ChapterListClient";
+import ReadButton from "@/components/ReadButton";
 
 const BASE_URL = "https://novelhub.beauty";
 
@@ -103,12 +104,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
               </div>
             )}
             <div className="mt-4">
-              <Link
-                href={`/novel/${novel.slug}/chapter/1`}
-                className="block w-full neon-btn py-3 rounded-xl text-sm font-bold text-center"
-              >
-                ▶ {novel.zone === "vip" ? "Read Free Chapters" : "Start Reading"}
-              </Link>
+              <ReadButton slug={novel.slug} zone={novel.zone} />
             </div>
           </div>
 

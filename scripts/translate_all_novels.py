@@ -37,19 +37,33 @@ def get_cn_text(ch):
         return '\n\n'.join([l.strip() for l in ch['lines'] if l.strip()])
     return None
 
-def translate_text(translator, text):
+def is_chinese(text, threshold=0.3):
+    if not text: return False
+    sample = text[:500]
+    if len(sample) == 0: return False
+    cn_chars = sum(1 for c in sample if '\u4e00' <= c <= '\u9fff')
+    return cn_chars / len(sample) > threshold
+
+def translate_text(translator, text, max_retries=3):
+    """Translate with retry + verification. Returns None on failure."""
     if not text:
         return text
-    if len(text) <= 4000:
-        return translator.translate(text, src='zh-cn', dest='en').text
-    parts = []
-    for i in range(0, len(text), 4000):
+    if not is_chinese(text):
+        return text
+    
+    for attempt in range(max_retries):
         try:
-            parts.append(translator.translate(text[i:i+4000], src='zh-cn', dest='en').text)
-            time.sleep(0.3)
-        except:
-            parts.append(text[i:i+4000])
-    return ''.join(parts)
+            result = translator.translate(text, src='zh-cn', dest='en')
+            if result.text and len(result.text) > 10 and not is_chinese(result.text, 0.2):
+                return result.text
+            log(f"  ⚠️ API returned Chinese, retry {attempt+1}/{max_retries}")
+            time.sleep(5 * (attempt + 1))
+        except Exception as e:
+            log(f"  ⚠️ API error (attempt {attempt+1}): {e}")
+            time.sleep(5 * (attempt + 1))
+    
+    log("  ❌ Translation failed after all retries")
+    return None
 
 def main():
     # Find ALL novel directories
@@ -62,7 +76,48 @@ def main():
     
     translator = Translator()
     total_saved = state.get('total_translated', 0)
+    retranslate_done = state.get('retranslate_done', 0)
     log(f'🚀 Starting translation: {len(all_slugs)} novels, {total_saved} in state')
+    
+    # Also check for fake translations (content_en is still Chinese)
+    fake_chapters = []
+    for slug in all_slugs:
+        ch_dir = os.path.join(CHAPTERS_DIR, slug)
+        if not os.path.isdir(ch_dir): continue
+        for fn in sorted(os.listdir(ch_dir)):
+            if not fn.startswith('ch-') or not fn.endswith('.json'): continue
+            fp = os.path.join(ch_dir, fn)
+            with open(fp) as f:
+                ch = json.load(f)
+            ce = ch.get('content_en', '')
+            cn = get_cn_text(ch)
+            if ce and cn and is_chinese(ce) and cn != '[No content]':
+                fake_chapters.append((slug, fn, fp, cn, ch.get('title', '')))
+    if fake_chapters and retranslate_done < len(fake_chapters):
+        log(f'🔍 Found {len(fake_chapters)} fake translations to fix (already done: {retranslate_done})')
+        for idx, (slug, fn, fp, cn_text, cn_title) in enumerate(fake_chapters):
+            if idx < retranslate_done: continue
+            if stop: break
+            num = int(re.search(r'ch-(\d+)', fn).group(1))
+            content_en = translate_text(translator, cn_text)
+            if content_en is None:
+                log(f"  ⚠️ {slug}/ch-{num}: retranslation failed")
+                continue
+            title_en = translate_text(translator, cn_title) if is_chinese(cn_title) else cn_title
+            with open(fp) as f:
+                ch = json.load(f)
+            ch['content_en'] = content_en
+            if title_en: ch['title_en'] = title_en
+            ch['translated'] = True
+            with open(fp, 'w') as f:
+                json.dump(ch, f, ensure_ascii=False, indent=2)
+            retranslate_done += 1
+            state['retranslate_done'] = retranslate_done
+            with open(STATE_FILE, 'w') as f:
+                json.dump(state, f, ensure_ascii=False, indent=2)
+            log(f"  ✅ [{idx+1}/{len(fake_chapters)}] {slug}/ch-{num} retranslated")
+            time.sleep(2)
+        if stop: return
     
     max_rounds = 1000  # safety limit
     for round_num in range(max_rounds):
@@ -103,11 +158,16 @@ def main():
                 try:
                     # Translate title
                     title_en = cn_title
-                    if cn_title and any('\u4e00' <= c <= '\u9fff' for c in cn_title):
-                        title_en = translator.translate(cn_title[:500], src='zh-cn', dest='en').text
+                    if cn_title and is_chinese(cn_title):
+                        title_translated = translate_text(translator, cn_title[:500])
+                        if title_translated:
+                            title_en = title_translated
                     
                     # Translate content
                     content_en = translate_text(translator, cn_text)
+                    if content_en is None:
+                        log(f"  ⚠️ {slug}/ch-{num}: translation failed, skipping")
+                        break  # skip this novel this round, try later
                     
                     # Normalize and save
                     if ch.get('lines') and not ch.get('content_zh'):
