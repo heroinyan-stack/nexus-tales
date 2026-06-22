@@ -236,38 +236,53 @@ export function getChapterListFallback(novelSlug: string, max = 50): { num: numb
   }));
 }
 
+// Detect mojibake (garbled CJK from wrong encoding).
+// Real Chinese: 的是一了不在有人 → hits 15-30 / top-20 common chars
+// Mojibake (like 浠栦滑閮芥槸): hits 0-3, but all chars are valid CJK code points
+function isGarbledCJK(text: string): boolean {
+  if (!text || text.length < 30) return false;
+  const sample = text.slice(0, 500);
+  const total = sample.length;
+  let cjk = 0;
+  for (let i = 0; i < total; i++) {
+    const c = sample.charCodeAt(i);
+    if ((c >= 0x4E00 && c <= 0x9FFF) || (c >= 0x3400 && c <= 0x4DBF)) cjk++;
+  }
+  if (cjk / total < 0.2) return false; // Not CJK-heavy at all
+  // Check top-20 common Chinese chars: real Chinese hits 15+, mojibake hits <5
+  const common = '的一是了不在有人上这大我国来们和个他中说到地为子小就时全可下要十生会也出年得你主用那道学工多去发作自好过对行里能二天三同成活太事面民日家方后都之分经';
+  let hits = 0;
+  for (let i = 0; i < common.length; i++) {
+    if (sample.includes(common[i])) hits++;
+  }
+  return hits < 5;
+}
+
 export function getChapterContent(novelSlug: string, chapterNum: number): string {
   const novelDir = path.join(CHAPTERS_DIR, novelSlug);
   const fileName = findChapterFile(novelDir, chapterNum);
   
   if (!fileName) {
-    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!
-
-<!-- DEBUG: file not found for slug=${novelSlug} num=${chapterNum} -->`;
+    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
   }
   
   const raw = readChapterRaw(path.join(novelDir, fileName));
   if (!raw) return 'Content not available.';
   
-  const contentEn: string = raw.content_en || '';
-  const contentZh: string = raw.content_zh || '';
-  
-  // Detect if content_en is genuine English vs garbled CJK text.
-  // Garbled content_en has massive CJK characters (mojibake).
-  if (contentEn) {
-    const total = contentEn.length;
-    // Count CJK characters (U+4E00–U+9FFF, U+3400–U+4DBF)
-    let cjk = 0;
-    for (let i = 0; i < total; i++) {
-      const c = contentEn.charCodeAt(i);
-      if ((c >= 0x4E00 && c <= 0x9FFF) || (c >= 0x3400 && c <= 0x4DBF)) cjk++;
-    }
-    // >15% CJK = garbled Chinese, not English translation
-    if (cjk / total < 0.15) {
-      return contentEn;
+  // 1. Try content_en — must be valid English (not garbled CJK)
+  if (raw.content_en && typeof raw.content_en === 'string' && raw.content_en.length > 50) {
+    if (!isGarbledCJK(raw.content_en)) {
+      return raw.content_en;
     }
   }
   
-  // content_en is garbled — show Chinese content_zh
-  return contentZh || contentEn || 'Content not available.';
+  // 2. Fallback: content_zh — must be valid Chinese (not mojibake)
+  if (raw.content_zh && typeof raw.content_zh === 'string' && raw.content_zh.length > 50) {
+    if (!isGarbledCJK(raw.content_zh)) {
+      return raw.content_zh;
+    }
+  }
+  
+  // 3. Both garbled → show being-translated message
+  return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
 }
