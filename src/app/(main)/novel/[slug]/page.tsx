@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
   const isFree = novel.zone === "free";
   const title = `${novel.title_en} ${isFree ? "— Read Free" : "— Read Online"} | Nexus Tales`;
-  const desc = novel.description_en.slice(0, 160);
+  const desc = (novel.description_en || novel.title_en || "").slice(0, 160);
 
   return {
     title: novel.title_en,
@@ -56,7 +56,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
     "@type": "Book",
     name: novel.title_en,
     author: { "@type": "Person", name: novel.author_en },
-    description: novel.description_en.slice(0, 200),
+    description: (novel.description_en || novel.title_en || "").slice(0, 200),
     genre: novel.genre,
     keywords: novel.tags.join(", "),
     inLanguage: "en",
