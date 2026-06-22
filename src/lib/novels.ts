@@ -241,7 +241,9 @@ export function getChapterContent(novelSlug: string, chapterNum: number): string
   const fileName = findChapterFile(novelDir, chapterNum);
   
   if (!fileName) {
-    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
+    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!
+
+<!-- DEBUG: file not found for slug=${novelSlug} num=${chapterNum} -->`;
   }
   
   const raw = readChapterRaw(path.join(novelDir, fileName));
