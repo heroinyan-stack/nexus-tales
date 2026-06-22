@@ -1,0 +1,392 @@
+📊 Resuming: 62 done, 195 failed
+🔍 Found 360 chapters with fake translations
+
+  ⏭️ [63/360] SKIPPED (known failed): novel-177-adventures-of-a-young-hero/ch-0030.json
+
+📖 [64/360] novel-221-concubine-seeks-to-marry-the-best/ch-0001.json
+   Title: 涓�搴跺嚭鐨勫憾鍑�浜屼笁鏍规�夎姱鎶�鏈�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [65/360] novel-221-concubine-seeks-to-marry-the-best/ch-0002.json
+   Title: 涓夋棤蹇冩彃鏌�鍥涗竴鍒囬兘浼氭湁鐨�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [66/360] novel-221-concubine-seeks-to-marry-the-best/ch-0003.json
+   Title: 浜斿�″�规枃鍗佸��鍏�鍥涗袱鎷ㄥ崈鏂�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [67/360] novel-221-concubine-seeks-to-marry-the-best/ch-0004.json
+   Title: 涓冭�峰畨鐧炬�佺浉涓�鍏�璇峰畨鐧炬�佺浉浜�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [68/360] novel-221-concubine-seeks-to-marry-the-best/ch-0005.json
+   Title: 涔濊繕鍑�鍗佸皬濂充汉椋庢尝
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [69/360] novel-221-concubine-seeks-to-marry-the-best/ch-0006.json
+   Title: 鍗佷竴琛ㄥ摜閫佺殑鍗佷簩娓婃簮
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [70/360] novel-221-concubine-seeks-to-marry-the-best/ch-0007.json
+   Title: 鍗佷笁鏅哄彇涓�鍗佸洓鏅哄彇浜�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [71/360] novel-221-concubine-seeks-to-marry-the-best/ch-0008.json
+   Title: 鍗佷簲鏈ㄧ��浜庢灄椋庡繀鎽т箣鍗佸叚宸т负涓�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [72/360] novel-221-concubine-seeks-to-marry-the-best/ch-0009.json
+   Title: 鍗佷竷宸т负浜�鍗佸叓浣滈毦
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [73/360] novel-221-concubine-seeks-to-marry-the-best/ch-0010.json
+   Title: 鍗佷節鍋氳湣绗�浜屽崄瀹冨北涔嬬煶鍙�浠ユ敾鐜�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [74/360] novel-223-romantic-medical-sage/ch-0001.json
+   Title: 绗�1绔� 濡╁獨鐨勫�栫簿绗�2绔� 鑰佸瓙寮勬�讳綘
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [75/360] novel-223-romantic-medical-sage/ch-0002.json
+   Title: 绗�3绔� 鍖讳箣濮嬬��绗�4绔� 灏忚瘯鐗涘垁
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [76/360] novel-223-romantic-medical-sage/ch-0003.json
+   Title: 绗�5绔� 琚�寮�闄や簡绗�6绔� 绁告按绾х編濂�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [77/360] novel-223-romantic-medical-sage/ch-0004.json
+   Title: 绗�7绔� 閫嗚��锛佸己鍚�绗�8绔� 鍚村崥鏂囩殑鏈轰細
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [78/360] novel-223-romantic-medical-sage/ch-0005.json
+   Title: 绗�9绔� 淇�鐐兼湁椋庨櫓绗�10绔� 甯堝厔锛屼綘娴佹皳
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [79/360] novel-223-romantic-medical-sage/ch-0006.json
+   Title: 绗�11绔� 鏃犲姛鑰岃繑绗�12绔� 鑲捐櫄鐨勭梾浜�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [80/360] novel-223-romantic-medical-sage/ch-0008.json
+   Title: 绗�15绔� 璇婇噾涓�鐧句竾绗�16绔� 鍐嶉亣瀹嬫枃涓�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [81/360] novel-223-romantic-medical-sage/ch-0009.json
+   Title: 绗�17绔� 钀у競闀跨殑鎬掔伀绗�18绔� 鍙跺ぇ澶勯暱鐨勬姤搴�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [82/360] novel-223-romantic-medical-sage/ch-0010.json
+   Title: 绗�19绔� 绁栧畻锛屼綘鍥炴潵鍚�绗�20绔� 鍚愯��鐨勫惔鍗氭枃
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [83/360] novel-224-black-card/ch-0001.json
+   Title: hk001閲嶇敓鍏�骞村墠hk002涓婂ぉ缁欎簡涓�涓�鍋氬ソ浜虹殑鏈轰細
+   Title EN: hk001 Read the story
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [84/360] novel-224-black-card/ch-0002.json
+   Title: hk003鍏ヤ镜瀛︽牎鏈嶅姟鍣�hk004浼�閫犵梾鍘�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [85/360] novel-224-black-card/ch-0003.json
+   Title: hk005鎴戠湡鏈夌梾hk006鏉庣寽鐚滀綘濡�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [86/360] novel-224-black-card/ch-0004.json
+   Title: hk007鐭冲ご鍝ュ緢鐢熸皵hk008濂规槸鐭冲ご鍝ユ垜鐨�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [87/360] novel-224-black-card/ch-0005.json
+   Title: hk009鐣滅敓浣忔墜hk010鍓嶄笘閬楁喚浠婄敓寮ヨˉ
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [88/360] novel-224-black-card/ch-0006.json
+   Title: hk011涓洪�栭暱鏈嶅姟hk012灏忚禋涓�绗�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [89/360] novel-224-black-card/ch-0007.json
+   Title: hk013鏁扮爜鍥惧儚鎭㈠��hk014鑰佹睙閰歌彍楦�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [90/360] novel-224-black-card/ch-0008.json
+   Title: hk015浜叉垜鍙戣储浜嗗摕hk016鏍″洯杞�浠跺ぇ璧�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [91/360] novel-224-black-card/ch-0009.json
+   Title: hk017涓�搴撲笌闆呰牄铦�hk018鐭崇�婅��鍏ヤ镜
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [92/360] novel-224-black-card/ch-0010.json
+   Title: hk019涓�vs涓夊崄浜�hk020瓒呰繃浜旂櫨涓囩粡娴庢崯澶�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [93/360] novel-225-sect-medical-girl/ch-0001.json
+   Title: 绗�1绔� 姹傝嵂绗�2绔� 姣嶄翰
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ Chunk 1/2 failed, aborting chapter
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [94/360] novel-225-sect-medical-girl/ch-0002.json
+   Title: 绗�3绔� 鍋忓績绗�4绔� 涓�瀹舵瀬鍝�
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3
+  ❌ Failed after all retries
+  ⚠️ API returned Chinese, retry 1/3
+  ⚠️ API returned Chinese, retry 2/3
+  ⚠️ API returned Chinese, retry 3/3

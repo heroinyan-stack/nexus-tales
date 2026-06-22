@@ -47,8 +47,7 @@ def is_garbled(text):
     return len(latin_unique) >= 3
 
 def translate_text(translator, text):
-    """Translate Chinese text to English using deep-translator (Google), with retry."""
-    from deep_translator import GoogleTranslator
+    """Translate Chinese text to English using googletrans (Google Translate non-official), with retry."""
     if not text:
         return text
     if not is_chinese(text):
@@ -57,14 +56,17 @@ def translate_text(translator, text):
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            result = GoogleTranslator(source='zh-CN', target='en').translate(text)
+            # Use googletrans (non-official Google Translate API)
+            from googletrans import Translator
+            t = Translator()
+            result = t.translate(text, src='zh-CN', dest='en').text
             if result and len(result) > 10 and not is_chinese(result, 0.2):
                 return result
             print(f"  ⚠️ API returned Chinese, retry {attempt+1}/{max_retries}")
-            time.sleep(8 * (attempt + 1))
+            time.sleep(3 * (attempt + 1))
         except Exception as e:
             print(f"  ⚠️ API error (attempt {attempt+1}): {e}")
-            time.sleep(8 * (attempt + 1))
+            time.sleep(3 * (attempt + 1))
     
     print("  ❌ Failed after all retries")
     return None

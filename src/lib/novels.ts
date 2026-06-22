@@ -142,10 +142,32 @@ export function getGenres(): { name: string; count: number; is_adult: boolean }[
 // ========== Chapter 数据访问 ==========
 // ── Chapter helpers (supports both old ch-N.json and new chapter-N.json) ──
 function findChapterFile(novelDir: string, chapterNum: number): string | null {
-  const patterns = [`ch-${chapterNum}.json`, `chapter-${chapterNum}.json`];
-  for (const name of patterns) {
-    const p = path.join(novelDir, name);
-    if (fs.existsSync(p)) return name;
+  // Try: ch-1.json, ch-0001.json, chapter-1.json, chapter-0001.json
+  const variants = [
+    `${chapterNum}`,                        // 1
+    `${String(chapterNum).padStart(3, '0')}`,  // 001
+    `${String(chapterNum).padStart(4, '0')}`,  // 0001
+    `${String(chapterNum).padStart(5, '0')}`,  // 00001
+  ];
+  const prefixes = ['ch-', 'chapter-'];
+  for (const prefix of prefixes) {
+    for (const variant of variants) {
+      const name = `${prefix}${variant}.json`;
+      const p = path.join(novelDir, name);
+      if (fs.existsSync(p)) return name;
+    }
+  }
+  // Fallback: scan directory for any matching file
+  if (fs.existsSync(novelDir)) {
+    const files = fs.readdirSync(novelDir)
+      .filter(f => f.endsWith('.json') && (f.startsWith('ch-') || f.startsWith('chapter-')));
+    for (const f of files) {
+      try {
+        const raw = JSON.parse(fs.readFileSync(path.join(novelDir, f), 'utf-8'));
+        const num = raw.num || raw.chapter_number;
+        if (num === chapterNum) return f;
+      } catch { /* skip malformed */ }
+    }
   }
   return null;
 }
@@ -158,18 +180,23 @@ function listChapterFiles(novelDir: string): string[] {
 }
 
 // Reads JSON that may have 'title' (crawler) or 'title_en' (legacy)
-function readChapterSafe(filePath: string): Chapter | null {
+function readChapterRaw(filePath: string): Record<string, any> | null {
   try {
-    const raw = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    return {
-      num: raw.num || 0,
-      title_en: raw.title_en || raw.title || '',
-      content_en: raw.content_en || raw.content_zh || raw.content || '',
-      translated: raw.translated ?? true,
-    };
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   } catch {
     return null;
   }
+}
+
+function readChapterSafe(filePath: string): Chapter | null {
+  const raw = readChapterRaw(filePath);
+  if (!raw) return null;
+  return {
+    num: raw.num || 0,
+    title_en: raw.title_en || raw.title || '',
+    content_en: raw.content_en || raw.content_zh || raw.content || '',
+    translated: raw.translated ?? true,
+  };
 }
 
 export function getChapter(novelSlug: string, chapterNum: number): Chapter | null {
@@ -210,11 +237,35 @@ export function getChapterListFallback(novelSlug: string, max = 50): { num: numb
 }
 
 export function getChapterContent(novelSlug: string, chapterNum: number): string {
-  const chapter = getChapter(novelSlug, chapterNum);
+  const novelDir = path.join(CHAPTERS_DIR, novelSlug);
+  const fileName = findChapterFile(novelDir, chapterNum);
   
-  if (!chapter) {
+  if (!fileName) {
     return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
   }
   
-  return chapter.content_en || 'Content not available.';
+  const raw = readChapterRaw(path.join(novelDir, fileName));
+  if (!raw) return 'Content not available.';
+  
+  const contentEn: string = raw.content_en || '';
+  const contentZh: string = raw.content_zh || '';
+  
+  // Detect if content_en is genuine English vs garbled CJK text.
+  // Garbled content_en has massive CJK characters (mojibake).
+  if (contentEn) {
+    const total = contentEn.length;
+    // Count CJK characters (U+4E00–U+9FFF, U+3400–U+4DBF)
+    let cjk = 0;
+    for (let i = 0; i < total; i++) {
+      const c = contentEn.charCodeAt(i);
+      if ((c >= 0x4E00 && c <= 0x9FFF) || (c >= 0x3400 && c <= 0x4DBF)) cjk++;
+    }
+    // >15% CJK = garbled Chinese, not English translation
+    if (cjk / total < 0.15) {
+      return contentEn;
+    }
+  }
+  
+  // content_en is garbled — show Chinese content_zh
+  return contentZh || contentEn || 'Content not available.';
 }
