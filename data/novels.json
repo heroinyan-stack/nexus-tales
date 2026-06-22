@@ -2962,8 +2962,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 29,
-    "id": 89
+    "total_chapters": 30,
+    "id": 89,
+    "updated_at": "2026-06-22T01:05:41.388221+00:00"
   },
   {
     "slug": "欠我时间债天道也得跪着还",
@@ -2988,8 +2989,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 25,
-    "id": 90
+    "total_chapters": 26,
+    "id": 90,
+    "updated_at": "2026-06-22T01:05:41.389099+00:00"
   },
   {
     "slug": "天心帝魂",
@@ -3014,9 +3016,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 91,
-    "title_zh": "天心帝魂"
+    "title_zh": "天心帝魂",
+    "updated_at": "2026-06-22T01:05:41.390588+00:00"
   },
   {
     "slug": "逆仙成魔传",
@@ -3041,9 +3044,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 23,
+    "total_chapters": 24,
     "id": 92,
-    "title_zh": "逆仙成魔传"
+    "title_zh": "逆仙成魔传",
+    "updated_at": "2026-06-22T01:05:41.392000+00:00"
   },
   {
     "slug": "月光之下",
