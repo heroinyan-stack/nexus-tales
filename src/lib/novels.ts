@@ -215,11 +215,34 @@ export function getChapterList(novelSlug: string): { num: number; title_en: stri
   for (const file of files) {
     const chapter = readChapterSafe(path.join(novelDir, file));
     if (chapter && chapter.num > 0) {
-      result.push({ num: chapter.num, title_en: chapter.title_en || `Chapter ${chapter.num}` });
+      // Only include chapters with valid English content
+      if (isValidEnglish(chapter.content_en)) {
+        result.push({ num: chapter.num, title_en: chapter.title_en || `Chapter ${chapter.num}` });
+      }
     }
   }
   
   return result.sort((a, b) => a.num - b.num);
+}
+
+/** Check if a novel has valid English translations for ALL its chapters */
+export function isNovelFullyTranslated(slug: string): boolean {
+  const novelDir = path.join(CHAPTERS_DIR, slug);
+  if (!fs.existsSync(novelDir)) return false;
+  
+  const files = fs.readdirSync(novelDir).filter(
+    (f) => (f.startsWith('ch-') || f.startsWith('chapter-')) && f.endsWith('.json')
+  );
+  
+  if (files.length === 0) return false;
+  
+  for (const file of files) {
+    const raw = readChapterRaw(path.join(novelDir, file));
+    if (!raw) return false;
+    if (!isValidEnglish(raw.content_en)) return false;
+  }
+  
+  return true;
 }
 
 /** Returns only placeholder chapters for novels with no actual files */
@@ -236,26 +259,24 @@ export function getChapterListFallback(novelSlug: string, max = 50): { num: numb
   }));
 }
 
-// Detect mojibake (garbled CJK from wrong encoding).
-// Real Chinese: 的是一了不在有人 → hits 15-30 / top-20 common chars
-// Mojibake (like 浠栦滑閮芥槸): hits 0-3, but all chars are valid CJK code points
-function isGarbledCJK(text: string): boolean {
+// Check if text is mostly CJK (Chinese/Japanese/Korean) characters
+function isMostlyCJK(text: string): boolean {
   if (!text || text.length < 30) return false;
-  const sample = text.slice(0, 500);
+  const sample = text.slice(0, 1000);
   const total = sample.length;
   let cjk = 0;
   for (let i = 0; i < total; i++) {
     const c = sample.charCodeAt(i);
+    // CJK Unified Ideographs + CJK Extension A
     if ((c >= 0x4E00 && c <= 0x9FFF) || (c >= 0x3400 && c <= 0x4DBF)) cjk++;
   }
-  if (cjk / total < 0.2) return false; // Not CJK-heavy at all
-  // Check top-20 common Chinese chars: real Chinese hits 15+, mojibake hits <5
-  const common = '的一是了不在有人上这大我国来们和个他中说到地为子小就时全可下要十生会也出年得你主用那道学工多去发作自好过对行里能二天三同成活太事面民日家方后都之分经';
-  let hits = 0;
-  for (let i = 0; i < common.length; i++) {
-    if (sample.includes(common[i])) hits++;
-  }
-  return hits < 5;
+  return cjk / total > 0.15; // >15% CJK = Chinese content
+}
+
+// Check if content looks like valid English (not Chinese, not garbled)
+function isValidEnglish(text: string): boolean {
+  if (!text || typeof text !== 'string' || text.length < 50) return false;
+  return !isMostlyCJK(text);
 }
 
 export function getChapterContent(novelSlug: string, chapterNum: number): string {
@@ -269,20 +290,16 @@ export function getChapterContent(novelSlug: string, chapterNum: number): string
   const raw = readChapterRaw(path.join(novelDir, fileName));
   if (!raw) return 'Content not available.';
   
-  // 1. Try content_en — must be valid English (not garbled CJK)
-  if (raw.content_en && typeof raw.content_en === 'string' && raw.content_en.length > 50) {
-    if (!isGarbledCJK(raw.content_en)) {
-      return raw.content_en;
-    }
+  // 1. Try content_en — must be actual English (not Chinese)
+  if (raw.content_en && typeof raw.content_en === 'string' && isValidEnglish(raw.content_en)) {
+    return raw.content_en;
   }
   
-  // 2. Fallback: content_zh — must be valid Chinese (not mojibake)
-  if (raw.content_zh && typeof raw.content_zh === 'string' && raw.content_zh.length > 50) {
-    if (!isGarbledCJK(raw.content_zh)) {
-      return raw.content_zh;
-    }
+  // 2. content_en exists but is Chinese → this chapter was never translated
+  if (raw.content_en && typeof raw.content_en === 'string' && isMostlyCJK(raw.content_en)) {
+    return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
   }
   
-  // 3. Both garbled → show being-translated message
+  // 3. No content_en → show being-translated message
   return `Chapter ${chapterNum}\n\nThis chapter is being translated. Please check back soon!`;
 }

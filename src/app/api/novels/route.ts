@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { isNovelFullyTranslated } from "@/lib/novels";
 import fs from "fs";
 import path from "path";
 const NOVELS_FILE = path.join(process.cwd(), "data", "novels.json");
@@ -46,12 +47,19 @@ export async function GET() {
       n.available_chapters = chapterCounts[n.slug] || 0;
     }
 
-    const novelsWithCover = novels;
+    // Filter: only show novels with >= MIN_HOMEPAGE_CHAPTERS AND fully translated
+    const novelsWithCover = novels.filter((n: any) => {
+      const slug = n.slug;
+      if (!slug) return false;
+      const chCount = n.available_chapters || 0;
+      if (chCount < MIN_HOMEPAGE_CHAPTERS) return false;
+      // Check all chapters have valid English translation
+      return isNovelFullyTranslated(slug);
+    });
 
     // Build genre list (only from novels with chapters)
     const genreMap = new Map();
     for (const n of novelsWithCover) {
-      if ((n.available_chapters || 0) < MIN_HOMEPAGE_CHAPTERS) continue;
       const existing = genreMap.get(n.genre);
       if (existing) {
         existing.count++;
