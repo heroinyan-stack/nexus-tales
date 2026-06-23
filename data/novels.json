@@ -3072,9 +3072,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 93,
-    "title_zh": "月光之下"
+    "title_zh": "月光之下",
+    "updated_at": "2026-06-23T01:05:14.553172+00:00"
   },
   {
     "slug": "novel-94-tianxin-battle-path",
@@ -3099,9 +3100,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 13,
+    "total_chapters": 14,
     "id": 94,
-    "title_zh": "天心战道"
+    "title_zh": "天心战道",
+    "updated_at": "2026-06-23T01:05:14.554164+00:00"
   },
   {
     "slug": "novel-95-i-can-activate-skills",
@@ -3126,9 +3128,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 39,
+    "total_chapters": 40,
     "id": 95,
-    "title_zh": "我能活化技能"
+    "title_zh": "我能活化技能",
+    "updated_at": "2026-06-23T01:05:14.555349+00:00"
   },
   {
     "slug": "novel-96-i-exposed-the-system-at-the",
@@ -3153,8 +3156,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 72,
-    "id": 96
+    "total_chapters": 73,
+    "id": 96,
+    "updated_at": "2026-06-23T01:05:14.556581+00:00"
   },
   {
     "slug": "novel-97-invite-the-gods-to-die",
