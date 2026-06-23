@@ -46,20 +46,17 @@ def is_garbled(text):
     # (Normal Chinese at most has U+00A0 no-break space)
     return len(latin_unique) >= 3
 
-def translate_text(translator, text):
+def translate_text(translator, text, max_retries=3):
     """Translate Chinese text to English using googletrans (Google Translate non-official), with retry."""
     if not text:
         return text
     if not is_chinese(text):
         return text  # already English
     
-    max_retries = 3
     for attempt in range(max_retries):
         try:
-            # Use googletrans (non-official Google Translate API)
-            from googletrans import Translator
-            t = Translator()
-            result = t.translate(text, src='zh-CN', dest='en').text
+            # Reuse the passed translator instance (created once in main)
+            result = translator.translate(text, src='zh-CN', dest='en').text
             if result and len(result) > 10 and not is_chinese(result, 0.2):
                 return result
             print(f"  ⚠️ API returned Chinese, retry {attempt+1}/{max_retries}")
@@ -72,8 +69,14 @@ def translate_text(translator, text):
     return None
 
 def main():
-    # No translator instance needed - deep-translator creates its own
-    translator = None
+    # Create a single translator instance to reuse (googletrans makes 1 init request)
+    try:
+        from googletrans import Translator
+        translator = Translator()
+        print("✅ Google Translate client ready")
+    except Exception as e:
+        print(f"❌ Failed to init translator: {e}")
+        return
     
     # Load progress
     progress = {}
@@ -81,8 +84,9 @@ def main():
         with open(PROGRESS_FILE) as f:
             progress = json.load(f)
     
-    done_count = progress.get('done', 0)
+    done_count = progress.get('done', 0)  # successful count (for reporting)
     failed_list = progress.get('failed', [])
+    done_list = progress.get('done_list', [])  # paths of successfully translated chapters
     
     if done_count > 0:
         print(f"📊 Resuming: {done_count} done, {len(failed_list)} failed")
@@ -119,22 +123,31 @@ def main():
     
     print(f"🔍 Found {len(fake_chapters)} chapters with fake translations")
     
-    if done_count >= len(fake_chapters):
-        print("✅ All chapters already processed!")
-        return
+    # Build set of already-done chapter paths (from progress) to skip
+    # We skip by path, not by index, so failed chapters don't get permanently skipped
+    # and we don't re-translate already-done chapters
+    done_set = set()
+    # Also check: if a chapter's content_en is now English (was previously translated), skip it
+    # Actually, fake_chapters only contains chapters where content_en is Chinese,
+    # so we just need to skip the ones in failed_list that we don't want to retry
     
     failed_set = set(failed_list)
+    done_set = set(done_list)
     
-    # Process
-    batch_size = 5  # Small batch to avoid rate limits
+    # Process — iterate ALL fake chapters, skip only those in done_set (already translated)
+    # and failed_set (known failures we don't want to retry)
+    processed_count = 0  # counts successfully processed this run
     for i, ch in enumerate(fake_chapters):
-        if i < done_count:
-            continue
         if stopping:
             break
         
-        # Skip known-failed chapters (garbled dirs, etc.) — path-based
+        # Skip already-done chapters
         ch_path = f"data/chapters/{ch['novel']}/{ch['file']}"
+        if ch_path in done_set:
+            print(f"\n  ⏭️ [{i+1}/{len(fake_chapters)}] SKIPPED (already done): {ch['novel']}/{ch['file']}")
+            continue
+        
+        # Skip known-failed chapters (garbled dirs, etc.) — path-based
         if ch_path in failed_set:
             print(f"\n  ⏭️ [{i+1}/{len(fake_chapters)}] SKIPPED (known failed): {ch['novel']}/{ch['file']}")
             continue
@@ -154,7 +167,7 @@ def main():
         # Translate content
         content_en = None
         if cn_text:
-            max_chunk = 4000
+            max_chunk = 3000  # smaller chunks to reduce SSL timeout risk
             if len(cn_text) <= max_chunk:
                 content_en = translate_text(translator, cn_text)
             else:
@@ -186,6 +199,10 @@ def main():
                 chapter_data['translated'] = True
                 json.dump(chapter_data, open(ch['path'], 'w'), ensure_ascii=False, indent=2)
                 done_count += 1
+                # Also track done paths so we can skip them on resume
+                done_path = f"data/chapters/{ch['novel']}/{ch['file']}"
+                if done_path not in done_list:
+                    done_list.append(done_path)
                 print(f"   ✅ Translated and saved")
             except Exception as e:
                 print(f"   ❌ Save error: {e}")
@@ -196,6 +213,7 @@ def main():
         
         # Save progress
         progress['done'] = done_count
+        progress['done_list'] = done_list
         progress['failed'] = failed_list
         progress['total'] = len(fake_chapters)
         progress['last_update'] = time.strftime('%Y-%m-%d %H:%M:%S')
@@ -203,7 +221,7 @@ def main():
             json.dump(progress, f, ensure_ascii=False, indent=2)
         
         # Rate limiting - longer delay to avoid API blocks
-        time.sleep(4)
+        time.sleep(2)
     
     print(f"\n🏁 Done: {done_count}/{len(fake_chapters)} translated")
     if failed_list:
@@ -212,6 +230,7 @@ def main():
     if stopping:
         # Save progress for resume
         progress['done'] = done_count
+        progress['done_list'] = done_list
         progress['failed'] = failed_list
         progress['total'] = len(fake_chapters)
         progress['last_update'] = time.strftime('%Y-%m-%d %H:%M:%S')

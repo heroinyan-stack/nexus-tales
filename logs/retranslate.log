@@ -1,0 +1,9 @@
+✅ Google Translate client ready
+📊 Resuming: 62 done, 0 failed
+🔍 Found 805 chapters with fake translations
+
+📖 [1/805] novel-133651/ch-3.json
+   Title: 第3章 买院子-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): _ssl.c:1091: The handshake operation timed out
+  ⚠️ API error (attempt 2): _ssl.c:1091: The handshake operation timed out
+  ⚠️ API error (attempt 3): _ssl.c:1091: The handshake operation timed out

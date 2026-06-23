@@ -58,7 +58,7 @@ def main():
     with open(NOVELS_FILE) as f:
         novels = json.load(f)
     novels = novels if isinstance(novels, list) else novels.get('novels', [])
-    bxwx9_slugs = [n['slug'] for n in novels if n.get('source_url', '') and 'bxwx9' in n.get('source_url', '')]
+    all_slugs = [n['slug'] for n in novels]
     
     state = {}
     if os.path.exists(STATE_FILE):
@@ -77,7 +77,7 @@ def main():
         
         saved_this_round = False
         
-        for slug in bxwx9_slugs:
+        for slug in all_slugs:
             if stop:
                 break
             
@@ -144,7 +144,7 @@ def main():
         if saved_this_round and total_saved % 20 == 0:
             # Count remaining
             remaining = 0
-            for s in bxwx9_slugs:
+            for s in all_slugs:
                 d = os.path.join(CHAPTERS_DIR, s)
                 if not os.path.isdir(d): continue
                 for f in os.listdir(d):
@@ -167,7 +167,7 @@ def main():
     
     # Final count
     remaining = 0
-    for s in bxwx9_slugs:
+    for s in all_slugs:
         d = os.path.join(CHAPTERS_DIR, s)
         if not os.path.isdir(d): continue
         for f in os.listdir(d):

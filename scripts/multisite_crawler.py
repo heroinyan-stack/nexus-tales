@@ -42,10 +42,27 @@ def fetch_curl(url, timeout=15):
         if r.returncode != 0 or not r.stdout:
             return None
         raw = r.stdout
-        # Detect encoding
+        # Detect encoding: check charset meta first, then try gbk decode
+        # Some sites have charset in a meta tag near the top
+        head = raw[:4000]
+        # Try to find charset meta
         try:
-            test = raw[:2000].decode('gbk', errors='replace')
-            if any('\u4e00' <= c <= '\u9fff' for c in test[:500]):
+            # Decode head as latin-1 to search for charset
+            head_text = head.decode('latin-1', errors='replace')
+            m = re.search(r'charset=["\']?([^"\'>\s;]+)', head_text, re.I)
+            if m:
+                charset = m.group(1).lower()
+                if charset in ('gbk', 'gb2312', 'gb18030'):
+                    return raw.decode('gbk', errors='replace')
+                if charset == 'utf-8':
+                    return raw.decode('utf-8', errors='replace')
+        except:
+            pass
+        # Try GBK with wider check
+        try:
+            test = raw[:3000].decode('gbk', errors='replace')
+            cn_count = sum(1 for c in test if '\u4e00' <= c <= '\u9fff')
+            if cn_count > 0:
                 return raw.decode('gbk', errors='replace')
         except:
             pass
@@ -327,7 +344,7 @@ def crawl_tmwxw(limit_novels=30, limit_chapters=15):
                      f"{DOMAIN}/list7/", DOMAIN]
 
     for cat_url in urls_to_check:
-        html = fetch(cat_url)
+        html = fetch_curl(cat_url)
         if not html:
             continue
         # tmwxw format: /id_title/
@@ -368,7 +385,7 @@ def crawl_tmwxw(limit_novels=30, limit_chapters=15):
             continue
 
         # Get detail page for chapters
-        html = fetch(novel['source_url'])
+        html = fetch_curl(novel['source_url'])
         if not html:
             continue
 
@@ -424,7 +441,7 @@ def crawl_tmwxw(limit_novels=30, limit_chapters=15):
         chapters_scraped = 0
         for ch_url, ch_title_raw in chapter_links[:limit_chapters]:
             ch_title = re.sub(r'<[^>]*>', '', ch_title_raw).strip()
-            ch_html_page = fetch(ch_url, headers=HEADERS_DESKTOP_REFERER)
+            ch_html_page = fetch_curl(ch_url)
             if not ch_html_page:
                 continue
             lines = extract_title_desktop(ch_html_page)
@@ -459,7 +476,7 @@ def crawl_yqxxs(limit_novels=20, limit_chapters=10):
     discovered = []
     for page in ["", "list.html", "top.html"]:
         url = f"{DOMAIN}/{page}" if page else DOMAIN
-        html = fetch(url, headers=HEADERS_MOBILE, encoding='gbk')
+        html = fetch_curl(url)
         if not html:
             continue
         # yqxxs format: book_ID.html (may be absolute or relative)
@@ -506,7 +523,7 @@ def crawl_yqxxs(limit_novels=20, limit_chapters=10):
         if slug in existing_slugs:
             continue
 
-        html = fetch(novel['source_url'], headers=HEADERS_MOBILE, encoding='gbk')
+        html = fetch_curl(novel['source_url'])
         if not html:
             continue
 
@@ -542,7 +559,7 @@ def crawl_yqxxs(limit_novels=20, limit_chapters=10):
         chapters_scraped = 0
         for ch_url in chapter_links[:limit_chapters]:
             ch_url_full = ch_url if 'http' in ch_url else f"{DOMAIN}/{ch_url}"
-            ch_html_page = fetch(ch_url_full, headers=HEADERS_MOBILE, encoding='gbk')
+            ch_html_page = fetch_curl(ch_url_full)
             if not ch_html_page:
                 continue
             lines = extract_title_mobile(ch_html_page)
@@ -563,11 +580,263 @@ def crawl_yqxxs(limit_novels=20, limit_chapters=10):
 
 
 # ─────────────────────────────────────────────────
+# CRAWLER 4: 23wx.io (热点小说网) - base64-encoded content
+# ─────────────────────────────────────────────────
+
+import base64
+
+def _decode_23wx_content(html):
+    """Extract and decode base64-encoded chapter content from 23wx.io pages.
+    Content is embedded as: document.writeln(qsbs.bb('BASE64'))
+    Also supports variant: lfcygrg.kbzpfny('BASE64') on some mirrors."""
+    ad_patterns = [
+        r'记住.*?(?:小说|网址|本站)', r'一秒记住', r'愛♂去÷小?說→網',
+        r'天才壹秒', r'手机用户', r'浏览阅读', r'本书来自',
+    ]
+    for pattern in [r"qsbs\.bb\('([^']+)'\)", r"lfcygrg\.kbzpfny\('([^']+)'\)"]:
+        calls = re.findall(pattern, html)
+        if calls:
+            lines = []
+            for b64 in calls:
+                try:
+                    decoded = base64.b64decode(b64).decode('utf-8')
+                    text = re.sub(r'<[^>]+>', '', decoded)
+                    text = text.strip()
+                    if not text or len(text) < 2:
+                        continue
+                    # Filter ads
+                    if any(re.search(p, text) for p in ad_patterns):
+                        continue
+                    lines.append(text)
+                except:
+                    pass
+            if lines:
+                return lines
+    return []
+
+
+def crawl_23wx(limit_novels=40, limit_chapters=20):
+    """Discover novels from 23wx.io and scrape chapters.
+    23wx.io is a biquge-type site with:
+    - Category pages: /fenlei{1-8}/1.html
+    - Book page: /book/{id}/ shows info + chapter list (100 per page)
+    - Chapter list pagination: /book/{id}/ml_2.html, ml_3.html, ...
+    - Chapter content: /book/{id}/{cid}.html (base64 via qsbs.bb())"""
+    DOMAIN = "https://www.23wx.io"
+    novels_db = load_novels()
+    existing_sources = {n.get('source_url', '') for n in novels_db}
+    existing_slugs = {n['slug'] for n in novels_db}
+    new_count = 0
+    total_chapters = 0
+
+    # Category mapping
+    category_map = {
+        1: 'Xianxia',       # 玄幻
+        2: 'Fantasy',        # 修真/武侠
+        3: 'Urban',          # 都市
+        4: 'Historical',     # 历史
+        5: 'Science Fiction',# 网游/科幻
+        6: 'Fantasy',        # 女生/言情
+        7: 'Fantasy',        # 其他
+        8: 'Fantasy',        # 综合
+    }
+
+    # Phase 1: Discover novels from category pages
+    discovered = []
+    for cat_id in range(1, 9):
+        for page in range(1, 4):  # 3 pages per category
+            url = f"{DOMAIN}/fenlei{cat_id}/{page}.html"
+            html = fetch_curl(url, timeout=10)
+            if not html:
+                continue
+            # Pattern: <a href="/book/XXXX/">Title</a>
+            book_links = re.findall(
+                r'<a[^>]*?href=["\'](/book/\d+/)["\'][^>]*>(.{2,80})</a>',
+                html
+            )
+            for href, raw_title in book_links:
+                # Filter out image tags, descriptions, dots
+                if '<img' in raw_title or 'style=' in raw_title:
+                    continue
+                title = re.sub(r'<[^>]*>', '', raw_title).strip()
+                # Skip dots-only entries (descriptions), too short/long
+                if len(title) < 2 or len(title) > 80:
+                    continue
+                if re.match(r'^[.…·]{2,}$', title):
+                    continue
+                if not any('\u4e00' <= c <= '\u9fff' for c in title):
+                    continue  # Must have Chinese chars
+                source_url = f"{DOMAIN}{href}"
+                if source_url in existing_sources:
+                    continue
+                # Extract book ID
+                m = re.search(r'/book/(\d+)/', href)
+                book_id = m.group(1) if m else ""
+                discovered.append({
+                    "title": title,
+                    "book_id": book_id,
+                    "source_url": source_url,
+                    "category_id": cat_id,
+                    "domain": "23wx.io",
+                })
+            time.sleep(0.3)
+
+    # Deduplicate by book_id
+    seen = set()
+    unique = []
+    for d in discovered:
+        bid = d['book_id']
+        if bid and bid not in seen:
+            seen.add(bid)
+            unique.append(d)
+    discovered = unique
+
+    print(f"23wx.io: discovered {len(discovered)} new novels (from {len(seen)} unique IDs)")
+    discovered = discovered[:limit_novels]
+
+    # Phase 2: Get book details and chapters
+    for novel in discovered:
+        if new_count >= limit_novels:
+            break
+
+        slug = slugify(novel['title'])
+        if slug in existing_slugs:
+            print(f"  Skip {slug} (exists)")
+            continue
+
+        # Fetch book page
+        book_html = fetch_curl(novel['source_url'], timeout=10)
+        if not book_html:
+            continue
+
+        # Extract author
+        author = "Unknown"
+        author_m = re.search(r'作[\s&;]*者[：:]\s*(.{2,40})(?:<|\n)', book_html)
+        if author_m:
+            author = author_m.group(1).strip()
+
+        # Extract description
+        desc = ""
+        desc_m = re.search(
+            r'<div[^>]*?class="[^"]*desc[^"]*"[^>]*>(.*?)</div>',
+            book_html, re.S
+        )
+        if desc_m:
+            desc = re.sub(r'<[^>]*>', '', desc_m.group(1)).strip()[:500]
+
+        # Extract category for slug
+        cat_m = re.search(r'类[\s&;]*别[：:]\s*(.{2,20})', book_html)
+        category = category_map.get(novel['category_id'], 'Fantasy')
+        if cat_m:
+            cat_name = cat_m.group(1).strip()
+            if '玄幻' in cat_name:
+                category = 'Xianxia'
+            elif '都市' in cat_name or '现代' in cat_name:
+                category = 'Urban'
+            elif '言情' in cat_name or '女生' in cat_name:
+                category = 'Romance'
+            elif '科幻' in cat_name or '网游' in cat_name:
+                category = 'Science Fiction'
+            elif '历史' in cat_name:
+                category = 'Historical'
+            elif '武侠' in cat_name:
+                category = 'Fantasy'
+
+        # Phase 3: Collect ALL chapter links (handle pagination)
+        all_chapter_links = []
+        # First, get chapters from book page (usually 100 chapters)
+        ch_links_on_book = re.findall(
+            r'<a[^>]*?href=["\'](/book/\d+/\d+\.html)["\'][^>]*>(.{2,120})</a>',
+            book_html
+        )
+        for href, raw_title in ch_links_on_book:
+            title = re.sub(r'<[^>]*>', '', raw_title).strip()
+            if title and title not in ('开始阅读', '章节列表'):
+                all_chapter_links.append((f"{DOMAIN}{href}", title))
+
+        # Paginated chapter list (ml_1.html, ml_2.html, ...)
+        # Book page shows ~100 ch; each ml page adds ~59 more.
+        # Cap at 5 ml pages (~400 chapters total) for listing.
+        book_id = novel['book_id']
+        for ml_page in range(1, 6):
+            url = f"{DOMAIN}/book/{book_id}/ml_{ml_page}.html"
+            ml_html = fetch_curl(url, timeout=8)
+            if not ml_html:
+                break
+            page_links = re.findall(
+                r'<a[^>]*?href=["\'](/book/\d+/\d+\.html)["\'][^>]*>(.{2,120})</a>',
+                ml_html
+            )
+            added = 0
+            for href, raw_title in page_links:
+                title = re.sub(r'<[^>]*>', '', raw_title).strip()
+                if title and title not in ('开始阅读', '章节列表'):
+                    all_chapter_links.append((f"{DOMAIN}{href}", title))
+                    added += 1
+            if added == 0:
+                break
+            time.sleep(0.15)
+
+        # Calculate correct total chapters
+        chapter_count = len(all_chapter_links)
+        if chapter_count == 0:
+            print(f"  {novel['title']}: no chapters found, skip")
+            continue
+
+        print(f"  {novel['title']} by {author}: {chapter_count} chapters → {slug}")
+
+        # Add novel to DB
+        new_novel = {
+            "slug": slug,
+            "title": novel['title'],
+            "author": author,
+            "category": category,
+            "source_url": novel['source_url'],
+            "source_domain": novel['domain'],
+            "cover_url": f"/covers/{slug}.svg",
+            "totalChapters": chapter_count,
+            "available_chapters": 0,
+            "description": desc or f"Read {novel['title']} online free at 23wx.io.",
+        }
+        novels_db.append(new_novel)
+
+        # Phase 4: Scrape chapters (限limit_chapters章)
+        chapters_scraped = 0
+        for ch_url, ch_title in all_chapter_links[:limit_chapters]:
+            ch_html_page = fetch_curl(ch_url, timeout=10)
+            if not ch_html_page:
+                continue
+
+            # Try base64 decoding first
+            lines = _decode_23wx_content(ch_html_page)
+
+            # Fallback to standard extraction
+            if not lines or len(lines) < 3:
+                lines = extract_title_desktop(ch_html_page)
+
+            if not lines or len(lines) < 3:
+                continue
+
+            chapters_scraped += 1
+            save_chapter(slug, chapters_scraped, ch_title, lines)
+            time.sleep(0.3)
+
+        new_novel['available_chapters'] = chapters_scraped
+        print(f"    scraped {chapters_scraped}/{min(limit_chapters, chapter_count)} chapters")
+        new_count += 1
+        total_chapters += chapters_scraped
+        save_novels(novels_db)
+        time.sleep(0.5)
+
+    return new_count, total_chapters
+
+
+# ─────────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────────
 if __name__ == "__main__":
     import sys
-    sites = sys.argv[1:] if len(sys.argv) > 1 else ['quanwenyuedu', 'tmwxw', 'yqxxs']
+    sites = sys.argv[1:] if len(sys.argv) > 1 else ['quanwenyuedu', 'tmwxw', 'yqxxs', '23wx']
     
     print("=" * 60)
     print("Multi-site Novel Crawler")
@@ -593,6 +862,13 @@ if __name__ == "__main__":
     if 'yqxxs' in sites:
         print("\n📚 Crawling yqxxs.com...")
         n, c = crawl_yqxxs(limit_novels=15, limit_chapters=10)
+        total_novels += n
+        total_chapters += c
+        print(f"  → {n} novels, {c} chapters")
+    
+    if '23wx' in sites:
+        print("\n📚 Crawling 23wx.io...")
+        n, c = crawl_23wx(limit_novels=40, limit_chapters=20)
         total_novels += n
         total_chapters += c
         print(f"  → {n} novels, {c} chapters")
