@@ -3183,9 +3183,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 34,
+    "total_chapters": 35,
     "id": 97,
-    "title_zh": "请诸神赴死！"
+    "title_zh": "请诸神赴死！",
+    "updated_at": "2026-06-24T01:04:56.149107+00:00"
   },
   {
     "slug": "novel-98-qiongxiao-from-another-world",
@@ -3210,9 +3211,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 98,
-    "title_zh": "异世琼霄"
+    "title_zh": "异世琼霄",
+    "updated_at": "2026-06-24T01:04:56.150116+00:00"
   },
   {
     "slug": "novel-99-start-a-city",
@@ -3237,9 +3239,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 99,
-    "title_zh": "开局一座城"
+    "title_zh": "开局一座城",
+    "updated_at": "2026-06-24T01:04:56.151073+00:00"
   },
   {
     "slug": "novel-100-martial-arts-in-troubled-times-the",
@@ -3264,8 +3267,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 43,
-    "id": 100
+    "total_chapters": 44,
+    "id": 100,
+    "updated_at": "2026-06-24T01:04:56.151910+00:00"
   },
   {
     "slug": "novel-101-i-have-a-dark-secret-martial",
