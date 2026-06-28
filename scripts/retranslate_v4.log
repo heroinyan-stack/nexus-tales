@@ -1,0 +1,1298 @@
+📊 Resuming: 62 done, 1179 failed
+🔍 Found 1372 chapters with fake translations
+
+  ⏭️ [1/1372] SKIPPED (known failed): novel-133651/ch-3.json
+
+  ⏭️ [2/1372] SKIPPED (known failed): novel-133651/ch-4.json
+
+  ⏭️ [3/1372]  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第3章 买院子-《赶山1957：二斤猪肉换个媳妇》', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第3章 买院子-《赶山1957：二斤猪肉换个媳妇》', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n第(1/3)页\n\n\xa0\xa0\xa0\xa0儿媳妇改嫁？\r\n\n\xa0\xa0\xa0\xa0一笔勾销？\r\n\n\xa0\xa0\xa0\xa0“当真？”\r\n\n\xa0\xa0\xa0\xa0李虎话音落下，便见赵贵眼前一亮，开口道。\r\n\n\xa0\xa0\xa0\xa0长子死了。\r\n\n\xa0\xa0\xa0\xa0儿媳还有何用处？\r\n\n\xa0\xa0\xa0\xa0若是拿出去抵债，最好不过啊！\r\n\n\xa0\xa0\xa0\xa0“我不改嫁，我不嫁给李虎。”满身湿润，楚楚可怜的王乃香急忙拒绝道。\r\n\n\xa0\xa0\xa0\xa0村子里人说。\r\n\n\xa0\xa0\xa0\xa0李虎有脏病，若是嫁给了他，岂不是要传染给自己？\r\n\n\xa0\xa0\xa0\xa0下半辈子还不得毁了。\r\n\n\xa0\xa0\xa0\xa0更何况，这李虎长相丑陋，而且凶得很，半夜都得被吓醒。\r\n\n\xa0\xa0\xa0\xa0“你说不嫁就不嫁？”\r\n\n\xa0\xa0\xa0\xa0“我们老赵家把你娶来，可是没少花彩礼，今日我们老赵家遇到事了，你不上谁上？”\r\n\n\xa0\xa0\xa0\xa0“你嫁到我们家了，就得听婆家的话，我大儿子走了，那你就得听我这个老公爹的，让你嫁，你就得嫁。”\r\n\n\xa0\xa0\xa0\xa0赵贵怒声训斥道。\r\n\n\xa0\xa0\xa0\xa0与自己儿子的手相比，儿媳王乃香就算个屁！\r\n\n\xa0\xa0\xa0\xa0“今日你不嫁过去，我家强子的手可就要被砍断了。”\r\n\n\xa0\xa0\xa0\xa0“他一个男人，若是成了残疾。”\r\n\n\xa0\xa0\xa0\xa0“下半辈子可怎么办？”\r\n\n\xa0\xa0\xa0\xa0“你可不能这么自私啊！”赵贵家的婆娘焦急道。\r\n\n\xa0\xa0\xa0\xa0李虎见这老两口如此态度，心中顿时一乐。\r\n\n\xa0\xa0\xa0\xa0嘿。\r\n\n\xa0\xa0\xa0\xa0自己可是馋王乃香身子许久了，那真是日所思，夜所想啊……！\r\n\n\xa0\xa0\xa0\xa0想着晚上搂着这小寡妇香喷喷的身子入睡。\r\n\n\xa0\xa0\xa0\xa0这辈子就没白活。\r\n\n\xa0\xa0\xa0\xa0王乃香一个姑娘，哪里经历过这些，顿时有些慌乱起来。\r\n\n\xa0\xa0\xa0\xa0不知所措，那一双水灵灵，楚楚可怜的眼神，求助势的朝着李青山望了过去。\r\n\n\xa0\xa0\xa0\xa0“现在是新社会，婚姻自由，就算是父母之命媒妁之言，那也是王乃香娘家说了算，和你们婆家有什么关系？”\r\n\n\xa0\xa0\xa0\xa0李青山见赵贵一家子竟然用道德压人，哼一声站了出来道。\r\n\n\xa0\xa0\xa0\xa0“她是我们赵家花了彩礼娶回来的。”\r\n\n\xa0\xa0\xa0\xa0“自然是我们婆家说了算。”\r\n\n\xa0\xa0\xa0\xa0赵贵开口争辩道。\r\n\n\xa0\xa0\xa0\xa0“你给的谁彩礼问谁要去，再说了，乃香嫂子嫁过来是当老婆的，不是当寡妇的，你那短命的儿子死了，白白让人家一个黄花闺女守了三年寡。”\r\n\n\xa0\xa0\xa0\xa0“这是你们老赵家欠乃香嫂子的。”\r\n\n\xa0\xa0\xa0\xa0“话说回来。”\r\n\n\xa0\xa0\xa0\xa0“宣传的干事天天喊婚姻自由，你们这是要当落后分子，要被立典型的。”\r\n\n\xa0\xa0\xa0\xa0李青山怒声训斥之下，赵贵老两口和李虎顿时沉默了。\r\n\n\xa0\xa0\xa0\xa0他们不怕李青山。\r\n\n\xa0\xa0\xa0\xa0但是，怕政府的矫正啊！\r\n\n\xa0\xa0\xa0\xa0“你们若是逼我嫁给李虎，我就死。”\r\n\n\xa0\xa0\xa0\xa0就在这时。\r\n\n\xa0\xa0\xa0\xa0王乃香不知道从哪里翻出了剪刀，抵在自己白皙的脖颈之上，因为太过于锋利，脖颈处甚至渗出了丝丝鲜血。\r\n\n\xa0\xa0\xa0\xa0这是气急之下，动了真格了。\r\n\xa0\xa0\xa0\xa0第(1/3)页', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n第(1/3)页\n\n\xa0\xa0\xa0\xa0儿媳妇改嫁？\r\n\n\xa0\xa0\xa0\xa0一笔勾销？\r\n\n\xa0\xa0\xa0\xa0“当真？”\r\n\n\xa0\xa0\xa0\xa0李虎话音落下，便见赵贵眼前一亮，开口道。\r\n\n\xa0\xa0\xa0\xa0长子死了。\r\n\n\xa0\xa0\xa0\xa0儿媳还有何用处？\r\n\n\xa0\xa0\xa0\xa0若是拿出去抵债，最好不过啊！\r\n\n\xa0\xa0\xa0\xa0“我不改嫁，我不嫁给李虎。”满身湿润，楚楚可怜的王乃香急忙拒绝道。\r\n\n\xa0\xa0\xa0\xa0村子里人说。\r\n\n\xa0\xa0\xa0\xa0李虎有脏病，若是嫁给了他，岂不是要传染给自己？\r\n\n\xa0\xa0\xa0\xa0下半辈子还不得毁了。\r\n\n\xa0\xa0\xa0\xa0更何况，这李虎长相丑陋，而且凶得很，半夜都得被吓醒。\r\n\n\xa0\xa0\xa0\xa0“你说不嫁就不嫁？”\r\n\n\xa0\xa0\xa0\xa0“我们老赵家把你娶来，可是没少花彩礼，今日我们老赵家遇到事了，你不上谁上？”\r\n\n\xa0\xa0\xa0\xa0“你嫁到我们家了，就得听婆家的话，我大儿子走了，那你就得听我这个老公爹的，让你嫁，你就得嫁。”\r\n\n\xa0\xa0\xa0\xa0赵贵怒声训斥道。\r\n\n\xa0\xa0\xa0\xa0与自己儿子的手相比，儿媳王乃香就算个屁！\r\n\n\xa0\xa0\xa0\xa0“今日你不嫁过去，我家强子的手可就要被砍断了。”\r\n\n\xa0\xa0\xa0\xa0“他一个男人，若是成了残疾。”\r\n\n\xa0\xa0\xa0\xa0“下半辈子可怎么办？”\r\n\n\xa0\xa0\xa0\xa0“你可不能这么自私啊！”赵贵家的婆娘焦急道。\r\n\n\xa0\xa0\xa0\xa0李虎见这老两口如此态度，心中顿时一乐。\r\n\n\xa0\xa0\xa0\xa0嘿。\r\n\n\xa0\xa0\xa0\xa0自己可是馋王乃香身子许久了，那真是日所思，夜所想啊……！\r\n\n\xa0\xa0\xa0\xa0想着晚上搂着这小寡妇香喷喷的身子入睡。\r\n\n\xa0\xa0\xa0\xa0这辈子就没白活。\r\n\n\xa0\xa0\xa0\xa0王乃香一个姑娘，哪里经历过这些，顿时有些慌乱起来。\r\n\n\xa0\xa0\xa0\xa0不知所措，那一双水灵灵，楚楚可怜的眼神，求助势的朝着李青山望了过去。\r\n\n\xa0\xa0\xa0\xa0“现在是新社会，婚姻自由，就算是父母之命媒妁之言，那也是王乃香娘家说了算，和你们婆家有什么关系？”\r\n\n\xa0\xa0\xa0\xa0李青山见赵贵一家子竟然用道德压人，哼一声站了出来道。\r\n\n\xa0\xa0\xa0\xa0“她是我们赵家花了彩礼娶回来的。”\r\n\n\xa0\xa0\xa0\xa0“自然是我们婆家说了算。”\r\n\n\xa0\xa0\xa0\xa0赵贵开口争辩道。\r\n\n\xa0\xa0\xa0\xa0“你给的谁彩礼问谁要去，再说了，乃香嫂子嫁过来是当老婆的，不是当寡妇的，你那短命的儿子死了，白白让人家一个黄花闺女守了三年寡。”\r\n\n\xa0\xa0\xa0\xa0“这是你们老赵家欠乃香嫂子的。”\r\n\n\xa0\xa0\xa0\xa0“话说回来。”\r\n\n\xa0\xa0\xa0\xa0“宣传的干事天天喊婚姻自由，你们这是要当落后分子，要被立典型的。”\r\n\n\xa0\xa0\xa0\xa0李青山怒声训斥之下，赵贵老两口和李虎顿时沉默了。\r\n\n\xa0\xa0\xa0\xa0他们不怕李青山。\r\n\n\xa0\xa0\xa0\xa0但是，怕政府的矫正啊！\r\n\n\xa0\xa0\xa0\xa0“你们若是逼我嫁给李虎，我就死。”\r\n\n\xa0\xa0\xa0\xa0就在这时。\r\n\n\xa0\xa0\xa0\xa0王乃香不知道从哪里翻出了剪刀，抵在自己白皙的脖颈之上，因为太过于锋利，脖颈处甚至渗出了丝丝鲜血。\r\n\n\xa0\xa0\xa0\xa0这是气急之下，动了真格了。\r\n\xa0\xa0\xa0\xa0第(1/3)页', '--json']' timed out after 120 seconds
+   ⚠️ Translation failed or still Chinese, skipped
+
+🏁 Done: 62/1372 translated
+⚠️ 1180 failures saved to progress file
+💾 Progress saved, resume later
+-0010.json
+
+  ⏭️ [103/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0001.json
+
+  ⏭️ [104/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0002.json
+
+  ⏭️ [105/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0003.json
+
+  ⏭️ [106/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0004.json
+
+  ⏭️ [107/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0005.json
+
+  ⏭️ [108/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0006.json
+
+  ⏭️ [109/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0007.json
+
+  ⏭️ [110/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0008.json
+
+  ⏭️ [111/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0009.json
+
+  ⏭️ [112/1372] SKIPPED (known failed): novel-226-arrogant-mommy-with-genius-son/ch-0010.json
+
+  ⏭️ [113/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0001.json
+
+  ⏭️ [114/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0002.json
+
+  ⏭️ [115/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0003.json
+
+  ⏭️ [116/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0004.json
+
+  ⏭️ [117/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0005.json
+
+  ⏭️ [118/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0007.json
+
+  ⏭️ [119/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0008.json
+
+  ⏭️ [120/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0009.json
+
+  ⏭️ [121/1372] SKIPPED (known failed): novel-227-genius-doctor/ch-0010.json
+
+  ⏭️ [122/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0001.json
+
+  ⏭️ [123/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0002.json
+
+  ⏭️ [124/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0003.json
+
+  ⏭️ [125/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0004.json
+
+  ⏭️ [126/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0005.json
+
+  ⏭️ [127/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0006.json
+
+  ⏭️ [128/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0007.json
+
+  ⏭️ [129/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0008.json
+
+  ⏭️ [130/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0009.json
+
+  ⏭️ [131/1372] SKIPPED (known failed): novel-228-the-goddesss-super-bodyguard/ch-0010.json
+
+  ⏭️ [132/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0001.json
+
+  ⏭️ [133/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0002.json
+
+  ⏭️ [134/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0003.json
+
+  ⏭️ [135/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0004.json
+
+  ⏭️ [136/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0005.json
+
+  ⏭️ [137/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0006.json
+
+  ⏭️ [138/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0007.json
+
+  ⏭️ [139/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0008.json
+
+  ⏭️ [140/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0009.json
+
+  ⏭️ [141/1372] SKIPPED (known failed): novel-231-marry-first-love-uncle-later-i/ch-0010.json
+
+  ⏭️ [142/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0001.json
+
+  ⏭️ [143/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0002.json
+
+  ⏭️ [144/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0003.json
+
+  ⏭️ [145/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0004.json
+
+  ⏭️ [146/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0005.json
+
+  ⏭️ [147/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0006.json
+
+  ⏭️ [148/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0007.json
+
+  ⏭️ [149/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0008.json
+
+  ⏭️ [150/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0009.json
+
+  ⏭️ [151/1372] SKIPPED (known failed): novel-232-feng-batian-killers-crazy-wife/ch-0010.json
+
+  ⏭️ [152/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0001.json
+
+  ⏭️ [153/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0002.json
+
+  ⏭️ [154/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0003.json
+
+  ⏭️ [155/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0004.json
+
+  ⏭️ [156/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0005.json
+
+  ⏭️ [157/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0006.json
+
+  ⏭️ [158/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0007.json
+
+  ⏭️ [159/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0008.json
+
+  ⏭️ [160/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0009.json
+
+  ⏭️ [161/1372] SKIPPED (known failed): novel-233-marriage-and-death/ch-0010.json
+
+  ⏭️ [162/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0001.json
+
+  ⏭️ [163/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0002.json
+
+  ⏭️ [164/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0003.json
+
+  ⏭️ [165/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0005.json
+
+  ⏭️ [166/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0006.json
+
+  ⏭️ [167/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0007.json
+
+  ⏭️ [168/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0008.json
+
+  ⏭️ [169/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0009.json
+
+  ⏭️ [170/1372] SKIPPED (known failed): novel-234-qing-ben-heimeng-is-a-guest/ch-0010.json
+
+  ⏭️ [171/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0002.json
+
+  ⏭️ [172/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0003.json
+
+  ⏭️ [173/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0004.json
+
+  ⏭️ [174/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0005.json
+
+  ⏭️ [175/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0006.json
+
+  ⏭️ [176/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0007.json
+
+  ⏭️ [177/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0008.json
+
+  ⏭️ [178/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0009.json
+
+  ⏭️ [179/1372] SKIPPED (known failed): novel-235-famous-doctor-and-noble-lady/ch-0010.json
+
+  ⏭️ [180/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0001.json
+
+  ⏭️ [181/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0002.json
+
+  ⏭️ [182/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0003.json
+
+  ⏭️ [183/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0004.json
+
+  ⏭️ [184/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0005.json
+
+  ⏭️ [185/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0006.json
+
+  ⏭️ [186/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0007.json
+
+  ⏭️ [187/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0008.json
+
+  ⏭️ [188/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0009.json
+
+  ⏭️ [189/1372] SKIPPED (known failed): novel-236-four-husbands-fight-for-love-of/ch-0010.json
+
+  ⏭️ [190/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0001.json
+
+  ⏭️ [191/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0002.json
+
+  ⏭️ [192/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0003.json
+
+  ⏭️ [193/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0004.json
+
+  ⏭️ [194/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0005.json
+
+  ⏭️ [195/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0006.json
+
+  ⏭️ [196/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0007.json
+
+  ⏭️ [197/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0008.json
+
+  ⏭️ [198/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0009.json
+
+  ⏭️ [199/1372] SKIPPED (known failed): novel-237-become-immortal/ch-0010.json
+
+  ⏭️ [200/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0001.json
+
+  ⏭️ [201/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0002.json
+
+  ⏭️ [202/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0003.json
+
+  ⏭️ [203/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0004.json
+
+  ⏭️ [204/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0005.json
+
+  ⏭️ [205/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0006.json
+
+  ⏭️ [206/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0007.json
+
+  ⏭️ [207/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0008.json
+
+  ⏭️ [208/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0009.json
+
+  ⏭️ [209/1372] SKIPPED (known failed): novel-238-flower-guarding-dragon/ch-0010.json
+
+  ⏭️ [210/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0001.json
+
+  ⏭️ [211/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0002.json
+
+  ⏭️ [212/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0003.json
+
+  ⏭️ [213/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0004.json
+
+  ⏭️ [214/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0005.json
+
+  ⏭️ [215/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0006.json
+
+  ⏭️ [216/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0007.json
+
+  ⏭️ [217/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0008.json
+
+  ⏭️ [218/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0009.json
+
+  ⏭️ [219/1372] SKIPPED (known failed): novel-239-killer-landlord-and-pretty-tenant/ch-0010.json
+
+  ⏭️ [220/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0001.json
+
+  ⏭️ [221/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0002.json
+
+  ⏭️ [222/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0003.json
+
+  ⏭️ [223/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0004.json
+
+  ⏭️ [224/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0005.json
+
+  ⏭️ [225/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0006.json
+
+  ⏭️ [226/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0007.json
+
+  ⏭️ [227/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0008.json
+
+  ⏭️ [228/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0009.json
+
+  ⏭️ [229/1372] SKIPPED (known failed): novel-240-special-military-doctor/ch-0010.json
+
+  ⏭️ [230/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0001.json
+
+  ⏭️ [231/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0002.json
+
+  ⏭️ [232/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0003.json
+
+  ⏭️ [233/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0004.json
+
+  ⏭️ [234/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0005.json
+
+  ⏭️ [235/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0006.json
+
+  ⏭️ [236/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0007.json
+
+  ⏭️ [237/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0008.json
+
+  ⏭️ [238/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0009.json
+
+  ⏭️ [239/1372] SKIPPED (known failed): novel-241-the-pot-is-returned-to-the/ch-0010.json
+
+  ⏭️ [240/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0001.json
+
+  ⏭️ [241/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0002.json
+
+  ⏭️ [242/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0003.json
+
+  ⏭️ [243/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0004.json
+
+  ⏭️ [244/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0005.json
+
+  ⏭️ [245/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0006.json
+
+  ⏭️ [246/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0007.json
+
+  ⏭️ [247/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0008.json
+
+  ⏭️ [248/1372] SKIPPED (known failed): novel-242-tweezers-and-stirrups/ch-0009.json
+
+  ⏭️ [249/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0001.json
+
+  ⏭️ [250/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0002.json
+
+  ⏭️ [251/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0003.json
+
+  ⏭️ [252/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0004.json
+
+  ⏭️ [253/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0005.json
+
+  ⏭️ [254/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0006.json
+
+  ⏭️ [255/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0007.json
+
+  ⏭️ [256/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0008.json
+
+  ⏭️ [257/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0009.json
+
+  ⏭️ [258/1372] SKIPPED (known failed): novel-243-urban-all-round-system/ch-0010.json
+
+  ⏭️ [259/1372] SKIPPED (known failed): novel-76fe332b/ch-0001.json
+
+  ⏭️ [260/1372] SKIPPED (known failed): novel-76fe332b/ch-0002.json
+
+  ⏭️ [261/1372] SKIPPED (known failed): novel-76fe332b/ch-0003.json
+
+  ⏭️ [262/1372] SKIPPED (known failed): novel-76fe332b/ch-0004.json
+
+  ⏭️ [263/1372] SKIPPED (known failed): novel-76fe332b/ch-0005.json
+
+  ⏭️ [264/1372] SKIPPED (known failed): novel-76fe332b/ch-0006.json
+
+  ⏭️ [265/1372] SKIPPED (known failed): novel-76fe332b/ch-0007.json
+
+  ⏭️ [266/1372] SKIPPED (known failed): novel-76fe332b/ch-0008.json
+
+  ⏭️ [267/1372] SKIPPED (known failed): novel-76fe332b/ch-0009.json
+
+  ⏭️ [268/1372] SKIPPED (known failed): novel-76fe332b/ch-0010.json
+
+  ⏭️ [269/1372] SKIPPED (known failed): novel-76fe332b/ch-0011.json
+
+  ⏭️ [270/1372] SKIPPED (known failed): novel-76fe332b/ch-0012.json
+
+  ⏭️ [271/1372] SKIPPED (known failed): novel-76fe332b/ch-0013.json
+
+  ⏭️ [272/1372] SKIPPED (known failed): novel-76fe332b/ch-0014.json
+
+  ⏭️ [273/1372] SKIPPED (known failed): novel-76fe332b/ch-0015.json
+
+  ⏭️ [274/1372] SKIPPED (known failed): novel-76fe332b/ch-0016.json
+
+  ⏭️ [275/1372] SKIPPED (known failed): novel-76fe332b/ch-0017.json
+
+  ⏭️ [276/1372] SKIPPED (known failed): novel-76fe332b/ch-0018.json
+
+  ⏭️ [277/1372] SKIPPED (known failed): novel-76fe332b/ch-0019.json
+
+  ⏭️ [278/1372] SKIPPED (known failed): novel-76fe332b/ch-0020.json
+
+  ⏭️ [279/1372] SKIPPED (known failed): novel-76fe332b/ch-0021.json
+
+  ⏭️ [280/1372] SKIPPED (known failed): novel-76fe332b/ch-0022.json
+
+  ⏭️ [281/1372] SKIPPED (known failed): novel-76fe332b/ch-0023.json
+
+  ⏭️ [282/1372] SKIPPED (known failed): novel-76fe332b/ch-0024.json
+
+  ⏭️ [283/1372] SKIPPED (known failed): novel-76fe332b/ch-0025.json
+
+  ⏭️ [284/1372] SKIPPED (known failed): novel-76fe332b/ch-0026.json
+
+  ⏭️ [285/1372] SKIPPED (known failed): novel-76fe332b/ch-0027.json
+
+  ⏭️ [286/1372] SKIPPED (known failed): novel-76fe332b/ch-0028.json
+
+  ⏭️ [287/1372] SKIPPED (known failed): novel-76fe332b/ch-0029.json
+
+  ⏭️ [288/1372] SKIPPED (known failed): novel-76fe332b/ch-0030.json
+
+  ⏭️ [289/1372] SKIPPED (known failed): novel-76fe332b/ch-0031.json
+
+  ⏭️ [290/1372] SKIPPED (known failed): novel-76fe332b/ch-0032.json
+
+  ⏭️ [291/1372] SKIPPED (known failed): novel-76fe332b/ch-0033.json
+
+  ⏭️ [292/1372] SKIPPED (known failed): novel-76fe332b/ch-0034.json
+
+  ⏭️ [293/1372] SKIPPED (known failed): novel-76fe332b/ch-0035.json
+
+  ⏭️ [294/1372] SKIPPED (known failed): novel-76fe332b/ch-0036.json
+
+  ⏭️ [295/1372] SKIPPED (known failed): novel-76fe332b/ch-0037.json
+
+  ⏭️ [296/1372] SKIPPED (known failed): novel-76fe332b/ch-0038.json
+
+  ⏭️ [297/1372] SKIPPED (known failed): novel-76fe332b/ch-0039.json
+
+  ⏭️ [298/1372] SKIPPED (known failed): novel-76fe332b/ch-0040.json
+
+  ⏭️ [299/1372] SKIPPED (known failed): novel-76fe332b/ch-0041.json
+
+  ⏭️ [300/1372] SKIPPED (known failed): novel-76fe332b/ch-0042.json
+
+  ⏭️ [301/1372] SKIPPED (known failed): novel-76fe332b/ch-0043.json
+
+  ⏭️ [302/1372] SKIPPED (known failed): novel-76fe332b/ch-0044.json
+
+  ⏭️ [303/1372] SKIPPED (known failed): novel-76fe332b/ch-0045.json
+
+  ⏭️ [304/1372] SKIPPED (known failed): novel-76fe332b/ch-0046.json
+
+  ⏭️ [305/1372] SKIPPED (known failed): novel-76fe332b/ch-0047.json
+
+  ⏭️ [306/1372] SKIPPED (known failed): novel-76fe332b/ch-0048.json
+
+  ⏭️ [307/1372] SKIPPED (known failed): novel-76fe332b/ch-0049.json
+
+  ⏭️ [308/1372] SKIPPED (known failed): novel-76fe332b/ch-0050.json
+
+  ⏭️ [309/1372] SKIPPED (known failed): novel-76fe332b/ch-0051.json
+
+  ⏭️ [310/1372] SKIPPED (known failed): novel-76fe332b/ch-0052.json
+
+  ⏭️ [311/1372] SKIPPED (known failed): novel-76fe332b/ch-0053.json
+
+  ⏭️ [312/1372] SKIPPED (known failed): novel-76fe332b/ch-0054.json
+
+  ⏭️ [313/1372] SKIPPED (known failed): novel-76fe332b/ch-0055.json
+
+  ⏭️ [314/1372] SKIPPED (known failed): novel-76fe332b/ch-0056.json
+
+  ⏭️ [315/1372] SKIPPED (known failed): novel-76fe332b/ch-0057.json
+
+  ⏭️ [316/1372] SKIPPED (known failed): novel-76fe332b/ch-0058.json
+
+  ⏭️ [317/1372] SKIPPED (known failed): novel-76fe332b/ch-0059.json
+
+  ⏭️ [318/1372] SKIPPED (known failed): novel-76fe332b/ch-0060.json
+
+  ⏭️ [319/1372] SKIPPED (known failed): novel-76fe332b/ch-0061.json
+
+  ⏭️ [320/1372] SKIPPED (known failed): novel-76fe332b/ch-0062.json
+
+  ⏭️ [321/1372] SKIPPED (known failed): novel-76fe332b/ch-0063.json
+
+  ⏭️ [322/1372] SKIPPED (known failed): novel-76fe332b/ch-0064.json
+
+  ⏭️ [323/1372] SKIPPED (known failed): novel-76fe332b/ch-0065.json
+
+  ⏭️ [324/1372] SKIPPED (known failed): novel-76fe332b/ch-0066.json
+
+  ⏭️ [325/1372] SKIPPED (known failed): novel-76fe332b/ch-0067.json
+
+  ⏭️ [326/1372] SKIPPED (known failed): novel-76fe332b/ch-0068.json
+
+  ⏭️ [327/1372] SKIPPED (known failed): novel-76fe332b/ch-0069.json
+
+  ⏭️ [328/1372] SKIPPED (known failed): novel-76fe332b/ch-0070.json
+
+  ⏭️ [329/1372] SKIPPED (known failed): novel-76fe332b/ch-0071.json
+
+  ⏭️ [330/1372] SKIPPED (known failed): novel-76fe332b/ch-0072.json
+
+  ⏭️ [331/1372] SKIPPED (known failed): novel-76fe332b/ch-0073.json
+
+  ⏭️ [332/1372] SKIPPED (known failed): novel-76fe332b/ch-0074.json
+
+  ⏭️ [333/1372] SKIPPED (known failed): novel-76fe332b/ch-0075.json
+
+  ⏭️ [334/1372] SKIPPED (known failed): novel-76fe332b/ch-0076.json
+
+  ⏭️ [335/1372] SKIPPED (known failed): novel-76fe332b/ch-0077.json
+
+  ⏭️ [336/1372] SKIPPED (known failed): novel-76fe332b/ch-0078.json
+
+  ⏭️ [337/1372] SKIPPED (known failed): novel-76fe332b/ch-0079.json
+
+  ⏭️ [338/1372] SKIPPED (known failed): novel-76fe332b/ch-0080.json
+
+  ⏭️ [339/1372] SKIPPED (known failed): novel-76fe332b/ch-0081.json
+
+  ⏭️ [340/1372] SKIPPED (known failed): novel-76fe332b/ch-0082.json
+
+  ⏭️ [341/1372] SKIPPED (known failed): novel-76fe332b/ch-0083.json
+
+  ⏭️ [342/1372] SKIPPED (known failed): novel-76fe332b/ch-0084.json
+
+  ⏭️ [343/1372] SKIPPED (known failed): novel-76fe332b/ch-0085.json
+
+  ⏭️ [344/1372] SKIPPED (known failed): novel-76fe332b/ch-0086.json
+
+  ⏭️ [345/1372] SKIPPED (known failed): novel-76fe332b/ch-0087.json
+
+  ⏭️ [346/1372] SKIPPED (known failed): novel-76fe332b/ch-0088.json
+
+  ⏭️ [347/1372] SKIPPED (known failed): novel-76fe332b/ch-0089.json
+
+  ⏭️ [348/1372] SKIPPED (known failed): novel-76fe332b/ch-0090.json
+
+  ⏭️ [349/1372] SKIPPED (known failed): novel-76fe332b/ch-0091.json
+
+  ⏭️ [350/1372] SKIPPED (known failed): novel-76fe332b/ch-0092.json
+
+  ⏭️ [351/1372] SKIPPED (known failed): novel-76fe332b/ch-0093.json
+
+  ⏭️ [352/1372] SKIPPED (known failed): novel-76fe332b/ch-0094.json
+
+  ⏭️ [353/1372] SKIPPED (known failed): novel-76fe332b/ch-0095.json
+
+  ⏭️ [354/1372] SKIPPED (known failed): novel-76fe332b/ch-0096.json
+
+  ⏭️ [355/1372] SKIPPED (known failed): novel-76fe332b/ch-0097.json
+
+  ⏭️ [356/1372] SKIPPED (known failed): novel-76fe332b/ch-0098.json
+
+  ⏭️ [357/1372] SKIPPED (known failed): novel-76fe332b/ch-0099.json
+
+  ⏭️ [358/1372] SKIPPED (known failed): novel-76fe332b/ch-0100.json
+
+  ⏭️ [359/1372] SKIPPED (known failed): novel-76fe332b/ch-0101.json
+
+  ⏭️ [360/1372] SKIPPED (known failed): novel-76fe332b/ch-0102.json
+
+  ⏭️ [361/1372] SKIPPED (known failed): novel-76fe332b/ch-0103.json
+
+  ⏭️ [362/1372] SKIPPED (known failed): novel-76fe332b/ch-0104.json
+
+  ⏭️ [363/1372] SKIPPED (known failed): novel-76fe332b/ch-0105.json
+
+  ⏭️ [364/1372] SKIPPED (known failed): novel-76fe332b/ch-0106.json
+
+  ⏭️ [365/1372] SKIPPED (known failed): novel-76fe332b/ch-0107.json
+
+  ⏭️ [366/1372] SKIPPED (known failed): novel-76fe332b/ch-0108.json
+
+  ⏭️ [367/1372] SKIPPED (known failed): novel-76fe332b/ch-0109.json
+
+  ⏭️ [368/1372] SKIPPED (known failed): novel-76fe332b/ch-0110.json
+
+  ⏭️ [369/1372] SKIPPED (known failed): novel-76fe332b/ch-0111.json
+
+  ⏭️ [370/1372] SKIPPED (known failed): novel-76fe332b/ch-0112.json
+
+  ⏭️ [371/1372] SKIPPED (known failed): novel-76fe332b/ch-0113.json
+
+  ⏭️ [372/1372] SKIPPED (known failed): novel-76fe332b/ch-0114.json
+
+  ⏭️ [373/1372] SKIPPED (known failed): novel-76fe332b/ch-0115.json
+
+  ⏭️ [374/1372] SKIPPED (known failed): novel-76fe332b/ch-0116.json
+
+  ⏭️ [375/1372] SKIPPED (known failed): novel-76fe332b/ch-0117.json
+
+  ⏭️ [376/1372] SKIPPED (known failed): novel-76fe332b/ch-0118.json
+
+  ⏭️ [377/1372] SKIPPED (known failed): novel-76fe332b/ch-0119.json
+
+  ⏭️ [378/1372] SKIPPED (known failed): novel-76fe332b/ch-0120.json
+
+  ⏭️ [379/1372] SKIPPED (known failed): novel-76fe332b/ch-0121.json
+
+  ⏭️ [380/1372] SKIPPED (known failed): novel-76fe332b/ch-0122.json
+
+  ⏭️ [381/1372] SKIPPED (known failed): novel-76fe332b/ch-0123.json
+
+  ⏭️ [382/1372] SKIPPED (known failed): novel-76fe332b/ch-0124.json
+
+  ⏭️ [383/1372] SKIPPED (known failed): novel-76fe332b/ch-0125.json
+
+  ⏭️ [384/1372] SKIPPED (known failed): novel-76fe332b/ch-0126.json
+
+  ⏭️ [385/1372] SKIPPED (known failed): novel-76fe332b/ch-0127.json
+
+  ⏭️ [386/1372] SKIPPED (known failed): novel-76fe332b/ch-0128.json
+
+  ⏭️ [387/1372] SKIPPED (known failed): novel-76fe332b/ch-0129.json
+
+  ⏭️ [388/1372] SKIPPED (known failed): novel-76fe332b/ch-0130.json
+
+  ⏭️ [389/1372] SKIPPED (known failed): novel-76fe332b/ch-0131.json
+
+  ⏭️ [390/1372] SKIPPED (known failed): novel-76fe332b/ch-0132.json
+
+  ⏭️ [391/1372] SKIPPED (known failed): novel-76fe332b/ch-0133.json
+
+  ⏭️ [392/1372] SKIPPED (known failed): novel-76fe332b/ch-0134.json
+
+  ⏭️ [393/1372] SKIPPED (known failed): novel-76fe332b/ch-0135.json
+
+  ⏭️ [394/1372] SKIPPED (known failed): novel-76fe332b/ch-0136.json
+
+  ⏭️ [395/1372] SKIPPED (known failed): novel-76fe332b/ch-0137.json
+
+  ⏭️ [396/1372] SKIPPED (known failed): novel-76fe332b/ch-0138.json
+
+  ⏭️ [397/1372] SKIPPED (known failed): novel-76fe332b/ch-0139.json
+
+  ⏭️ [398/1372] SKIPPED (known failed): novel-76fe332b/ch-0140.json
+
+  ⏭️ [399/1372] SKIPPED (known failed): novel-76fe332b/ch-0141.json
+
+  ⏭️ [400/1372] SKIPPED (known failed): novel-76fe332b/ch-0142.json
+
+  ⏭️ [401/1372] SKIPPED (known failed): novel-76fe332b/ch-0143.json
+
+  ⏭️ [402/1372] SKIPPED (known failed): novel-76fe332b/ch-0144.json
+
+  ⏭️ [403/1372] SKIPPED (known failed): novel-76fe332b/ch-0145.json
+
+  ⏭️ [404/1372] SKIPPED (known failed): novel-76fe332b/ch-0146.json
+
+  ⏭️ [405/1372] SKIPPED (known failed): novel-76fe332b/ch-0147.json
+
+  ⏭️ [406/1372] SKIPPED (known failed): novel-76fe332b/ch-0148.json
+
+  ⏭️ [407/1372] SKIPPED (known failed): novel-76fe332b/ch-0149.json
+
+  ⏭️ [408/1372] SKIPPED (known failed): novel-76fe332b/ch-0150.json
+
+  ⏭️ [409/1372] SKIPPED (known failed): novel-76fe332b/ch-0151.json
+
+  ⏭️ [410/1372] SKIPPED (known failed): novel-76fe332b/ch-0152.json
+
+  ⏭️ [411/1372] SKIPPED (known failed): novel-76fe332b/ch-0153.json
+
+  ⏭️ [412/1372] SKIPPED (known failed): novel-76fe332b/ch-0154.json
+
+  ⏭️ [413/1372] SKIPPED (known failed): novel-76fe332b/ch-0155.json
+
+  ⏭️ [414/1372] SKIPPED (known failed): novel-76fe332b/ch-0156.json
+
+  ⏭️ [415/1372] SKIPPED (known failed): novel-76fe332b/ch-0157.json
+
+  ⏭️ [416/1372] SKIPPED (known failed): novel-76fe332b/ch-0158.json
+
+  ⏭️ [417/1372] SKIPPED (known failed): novel-76fe332b/ch-0159.json
+
+  ⏭️ [418/1372] SKIPPED (known failed): novel-76fe332b/ch-0160.json
+
+  ⏭️ [419/1372] SKIPPED (known failed): novel-76fe332b/ch-0161.json
+
+  ⏭️ [420/1372] SKIPPED (known failed): novel-76fe332b/ch-0162.json
+
+  ⏭️ [421/1372] SKIPPED (known failed): novel-76fe332b/ch-0163.json
+
+  ⏭️ [422/1372] SKIPPED (known failed): novel-76fe332b/ch-0164.json
+
+  ⏭️ [423/1372] SKIPPED (known failed): novel-76fe332b/ch-0165.json
+
+  ⏭️ [424/1372] SKIPPED (known failed): novel-76fe332b/ch-0166.json
+
+  ⏭️ [425/1372] SKIPPED (known failed): novel-76fe332b/ch-0167.json
+
+  ⏭️ [426/1372] SKIPPED (known failed): novel-76fe332b/ch-0168.json
+
+  ⏭️ [427/1372] SKIPPED (known failed): novel-76fe332b/ch-0169.json
+
+  ⏭️ [428/1372] SKIPPED (known failed): novel-76fe332b/ch-0170.json
+
+  ⏭️ [429/1372] SKIPPED (known failed): novel-76fe332b/ch-0171.json
+
+  ⏭️ [430/1372] SKIPPED (known failed): novel-76fe332b/ch-0172.json
+
+  ⏭️ [431/1372] SKIPPED (known failed): novel-76fe332b/ch-0173.json
+
+  ⏭️ [432/1372] SKIPPED (known failed): novel-76fe332b/ch-0174.json
+
+  ⏭️ [433/1372] SKIPPED (known failed): novel-76fe332b/ch-0175.json
+
+  ⏭️ [434/1372] SKIPPED (known failed): novel-76fe332b/ch-0176.json
+
+  ⏭️ [435/1372] SKIPPED (known failed): novel-76fe332b/ch-0177.json
+
+  ⏭️ [436/1372] SKIPPED (known failed): novel-76fe332b/ch-0178.json
+
+  ⏭️ [437/1372] SKIPPED (known failed): novel-76fe332b/ch-0179.json
+
+  ⏭️ [438/1372] SKIPPED (known failed): novel-76fe332b/ch-0180.json
+
+  ⏭️ [439/1372] SKIPPED (known failed): novel-76fe332b/ch-0181.json
+
+  ⏭️ [440/1372] SKIPPED (known failed): novel-76fe332b/ch-0182.json
+
+  ⏭️ [441/1372] SKIPPED (known failed): novel-76fe332b/ch-0183.json
+
+  ⏭️ [442/1372] SKIPPED (known failed): novel-76fe332b/ch-0184.json
+
+  ⏭️ [443/1372] SKIPPED (known failed): novel-76fe332b/ch-0185.json
+
+  ⏭️ [444/1372] SKIPPED (known failed): novel-76fe332b/ch-0186.json
+
+  ⏭️ [445/1372] SKIPPED (known failed): novel-76fe332b/ch-0187.json
+
+  ⏭️ [446/1372] SKIPPED (known failed): novel-76fe332b/ch-0188.json
+
+  ⏭️ [447/1372] SKIPPED (known failed): novel-76fe332b/ch-0189.json
+
+  ⏭️ [448/1372] SKIPPED (known failed): novel-76fe332b/ch-0190.json
+
+  ⏭️ [449/1372] SKIPPED (known failed): novel-76fe332b/ch-0191.json
+
+  ⏭️ [450/1372] SKIPPED (known failed): novel-76fe332b/ch-0192.json
+
+  ⏭️ [451/1372] SKIPPED (known failed): novel-76fe332b/ch-0193.json
+
+  ⏭️ [452/1372] SKIPPED (known failed): novel-76fe332b/ch-0194.json
+
+  ⏭️ [453/1372] SKIPPED (known failed): novel-76fe332b/ch-0195.json
+
+  ⏭️ [454/1372] SKIPPED (known failed): novel-76fe332b/ch-0196.json
+
+  ⏭️ [455/1372] SKIPPED (known failed): novel-76fe332b/ch-0197.json
+
+  ⏭️ [456/1372] SKIPPED (known failed): novel-76fe332b/ch-0198.json
+
+  ⏭️ [457/1372] SKIPPED (known failed): novel-76fe332b/ch-0199.json
+
+  ⏭️ [458/1372] SKIPPED (known failed): novel-76fe332b/ch-0200.json
+
+  ⏭️ [459/1372] SKIPPED (known failed): novel-80da83ee/ch-0001.json
+
+  ⏭️ [460/1372] SKIPPED (known failed): novel-80da83ee/ch-0002.json
+
+  ⏭️ [461/1372] SKIPPED (known failed): novel-80da83ee/ch-0003.json
+
+  ⏭️ [462/1372] SKIPPED (known failed): novel-80da83ee/ch-0004.json
+
+  ⏭️ [463/1372] SKIPPED (known failed): novel-80da83ee/ch-0005.json
+
+  ⏭️ [464/1372] SKIPPED (known failed): novel-80da83ee/ch-0006.json
+
+  ⏭️ [465/1372] SKIPPED (known failed): novel-80da83ee/ch-0007.json
+
+  ⏭️ [466/1372] SKIPPED (known failed): novel-80da83ee/ch-0008.json
+
+  ⏭️ [467/1372] SKIPPED (known failed): novel-80da83ee/ch-0009.json
+
+  ⏭️ [468/1372] SKIPPED (known failed): novel-80da83ee/ch-0010.json
+
+  ⏭️ [469/1372] SKIPPED (known failed): novel-80da83ee/ch-0011.json
+
+  ⏭️ [470/1372] SKIPPED (known failed): novel-80da83ee/ch-0012.json
+
+  ⏭️ [471/1372] SKIPPED (known failed): novel-80da83ee/ch-0013.json
+
+  ⏭️ [472/1372] SKIPPED (known failed): novel-80da83ee/ch-0014.json
+
+  ⏭️ [473/1372] SKIPPED (known failed): novel-80da83ee/ch-0015.json
+
+  ⏭️ [474/1372] SKIPPED (known failed): novel-80da83ee/ch-0016.json
+
+  ⏭️ [475/1372] SKIPPED (known failed): novel-80da83ee/ch-0017.json
+
+  ⏭️ [476/1372] SKIPPED (known failed): novel-80da83ee/ch-0018.json
+
+  ⏭️ [477/1372] SKIPPED (known failed): novel-80da83ee/ch-0019.json
+
+  ⏭️ [478/1372] SKIPPED (known failed): novel-80da83ee/ch-0020.json
+
+  ⏭️ [479/1372] SKIPPED (known failed): novel-80da83ee/ch-0021.json
+
+  ⏭️ [480/1372] SKIPPED (known failed): novel-80da83ee/ch-0022.json
+
+  ⏭️ [481/1372] SKIPPED (known failed): novel-80da83ee/ch-0023.json
+
+  ⏭️ [482/1372] SKIPPED (known failed): novel-80da83ee/ch-0024.json
+
+  ⏭️ [483/1372] SKIPPED (known failed): novel-80da83ee/ch-0025.json
+
+  ⏭️ [484/1372] SKIPPED (known failed): novel-80da83ee/ch-0026.json
+
+  ⏭️ [485/1372] SKIPPED (known failed): novel-80da83ee/ch-0027.json
+
+  ⏭️ [486/1372] SKIPPED (known failed): novel-80da83ee/ch-0028.json
+
+  ⏭️ [487/1372] SKIPPED (known failed): novel-80da83ee/ch-0029.json
+
+  ⏭️ [488/1372] SKIPPED (known failed): novel-80da83ee/ch-0030.json
+
+  ⏭️ [489/1372] SKIPPED (known failed): novel-80da83ee/ch-0031.json
+
+  ⏭️ [490/1372] SKIPPED (known failed): novel-80da83ee/ch-0032.json
+
+  ⏭️ [491/1372] SKIPPED (known failed): novel-80da83ee/ch-0033.json
+
+  ⏭️ [492/1372] SKIPPED (known failed): novel-80da83ee/ch-0034.json
+
+  ⏭️ [493/1372] SKIPPED (known failed): novel-80da83ee/ch-0035.json
+
+  ⏭️ [494/1372] SKIPPED (known failed): novel-80da83ee/ch-0036.json
+
+  ⏭️ [495/1372] SKIPPED (known failed): novel-80da83ee/ch-0037.json
+
+  ⏭️ [496/1372] SKIPPED (known failed): novel-80da83ee/ch-0038.json
+
+  ⏭️ [497/1372] SKIPPED (known failed): novel-80da83ee/ch-0039.json
+
+  ⏭️ [498/1372] SKIPPED (known failed): novel-80da83ee/ch-0040.json
+
+  ⏭️ [499/1372] SKIPPED (known failed): novel-80da83ee/ch-0041.json
+
+  ⏭️ [500/1372] SKIPPED (known failed): novel-80da83ee/ch-0042.json
+
+  ⏭️ [501/1372] SKIPPED (known failed): novel-80da83ee/ch-0043.json
+
+  ⏭️ [502/1372] SKIPPED (known failed): novel-80da83ee/ch-0044.json
+
+  ⏭️ [503/1372] SKIPPED (known failed): novel-80da83ee/ch-0045.json
+
+  ⏭️ [504/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0013.json
+
+  ⏭️ [505/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0014.json
+
+  ⏭️ [506/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0015.json
+
+  ⏭️ [507/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0016.json
+
+  ⏭️ [508/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0017.json
+
+  ⏭️ [509/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0018.json
+
+  ⏭️ [510/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0019.json
+
+  ⏭️ [511/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0020.json
+
+  ⏭️ [512/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0021.json
+
+  ⏭️ [513/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0022.json
+
+  ⏭️ [514/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0023.json
+
+  ⏭️ [515/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0024.json
+
+  ⏭️ [516/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0025.json
+
+  ⏭️ [517/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0026.json
+
+  ⏭️ [518/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0027.json
+
+  ⏭️ [519/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0028.json
+
+  ⏭️ [520/1372] SKIPPED (known failed): novel-93-under-the-moonlight/ch-0029.json
+
+  ⏭️ [521/1372] SKIPPED (known failed): novel-f94807af/ch-0001.json
+
+  ⏭️ [522/1372] SKIPPED (known failed): novel-f94807af/ch-0002.json
+
+  ⏭️ [523/1372] SKIPPED (known failed): novel-f94807af/ch-0003.json
+
+  ⏭️ [524/1372] SKIPPED (known failed): novel-f94807af/ch-0004.json
+
+  ⏭️ [525/1372] SKIPPED (known failed): novel-f94807af/ch-0005.json
+
+  ⏭️ [526/1372] SKIPPED (known failed): novel-f94807af/ch-0006.json
+
+  ⏭️ [527/1372] SKIPPED (known failed): novel-f94807af/ch-0007.json
+
+  ⏭️ [528/1372] SKIPPED (known failed): novel-f94807af/ch-0008.json
+
+  ⏭️ [529/1372] SKIPPED (known failed): novel-f94807af/ch-0009.json
+
+  ⏭️ [530/1372] SKIPPED (known failed): novel-f94807af/ch-0010.json
+
+  ⏭️ [531/1372] SKIPPED (known failed): novel-f94807af/ch-0011.json
+
+  ⏭️ [532/1372] SKIPPED (known failed): novel-f94807af/ch-0012.json
+
+  ⏭️ [533/1372] SKIPPED (known failed): novel-f94807af/ch-0013.json
+
+  ⏭️ [534/1372] SKIPPED (known failed): novel-f94807af/ch-0014.json
+
+  ⏭️ [535/1372] SKIPPED (known failed): novel-f94807af/ch-0015.json
+
+  ⏭️ [536/1372] SKIPPED (known failed): novel-f94807af/ch-0016.json
+
+  ⏭️ [537/1372] SKIPPED (known failed): novel-f94807af/ch-0017.json
+
+  ⏭️ [538/1372] SKIPPED (known failed): novel-f94807af/ch-0018.json
+
+  ⏭️ [539/1372] SKIPPED (known failed): novel-f94807af/ch-0019.json
+
+  ⏭️ [540/1372] SKIPPED (known failed): novel-f94807af/ch-0020.json
+
+  ⏭️ [541/1372] SKIPPED (known failed): novel-f94807af/ch-0021.json
+
+  ⏭️ [542/1372] SKIPPED (known failed): novel-f94807af/ch-0022.json
+
+  ⏭️ [543/1372] SKIPPED (known failed): novel-f94807af/ch-0023.json
+
+  ⏭️ [544/1372] SKIPPED (known failed): novel-f94807af/ch-0024.json
+
+  ⏭️ [545/1372] SKIPPED (known failed): novel-f94807af/ch-0025.json
+
+  ⏭️ [546/1372] SKIPPED (known failed): novel-f94807af/ch-0026.json
+
+  ⏭️ [547/1372] SKIPPED (known failed): novel-f94807af/ch-0027.json
+
+  ⏭️ [548/1372] SKIPPED (known failed): novel-f94807af/ch-0028.json
+
+  ⏭️ [549/1372] SKIPPED (known failed): novel-f94807af/ch-0029.json
+
+  ⏭️ [550/1372] SKIPPED (known failed): novel-f94807af/ch-0030.json
+
+  ⏭️ [551/1372] SKIPPED (known failed): novel-f94807af/ch-0031.json
+
+  ⏭️ [552/1372] SKIPPED (known failed): novel-f94807af/ch-0032.json
+
+  ⏭️ [553/1372] SKIPPED (known failed): novel-f94807af/ch-0033.json
+
+  ⏭️ [554/1372] SKIPPED (known failed): novel-f94807af/ch-0034.json
+
+  ⏭️ [555/1372] SKIPPED (known failed): novel-f94807af/ch-0035.json
+
+  ⏭️ [556/1372] SKIPPED (known failed): novel-f94807af/ch-0036.json
+
+  ⏭️ [557/1372] SKIPPED (known failed): novel-f94807af/ch-0037.json
+
+  ⏭️ [558/1372] SKIPPED (known failed): novel-f94807af/ch-0038.json
+
+  ⏭️ [559/1372] SKIPPED (known failed): novel-f94807af/ch-0039.json
+
+  ⏭️ [560/1372] SKIPPED (known failed): novel-f94807af/ch-0040.json
+
+  ⏭️ [561/1372] SKIPPED (known failed): novel-f94807af/ch-0041.json
+
+  ⏭️ [562/1372] SKIPPED (known failed): novel-f94807af/ch-0042.json
+
+  ⏭️ [563/1372] SKIPPED (known failed): novel-f94807af/ch-0043.json
+
+  ⏭️ [564/1372] SKIPPED (known failed): novel-f94807af/ch-0044.json
+
+  ⏭️ [565/1372] SKIPPED (known failed): novel-f94807af/ch-0045.json
+
+  ⏭️ [566/1372] SKIPPED (known failed): novel-f94807af/ch-0046.json
+
+  ⏭️ [567/1372] SKIPPED (known failed): novel-f94807af/ch-0047.json
+
+  ⏭️ [568/1372] SKIPPED (known failed): novel-f94807af/ch-0048.json
+
+  ⏭️ [569/1372] SKIPPED (known failed): novel-f94807af/ch-0049.json
+
+  ⏭️ [570/1372] SKIPPED (known failed): novel-f94807af/ch-0050.json
+
+  ⏭️ [571/1372] SKIPPED (known failed): novel-f94807af/ch-0051.json
+
+  ⏭️ [572/1372] SKIPPED (known failed): novel-f94807af/ch-0052.json
+
+  ⏭️ [573/1372] SKIPPED (known failed): novel-f94807af/ch-0053.json
+
+  ⏭️ [574/1372] SKIPPED (known failed): novel-f94807af/ch-0054.json
+
+  ⏭️ [575/1372] SKIPPED (known failed): novel-f94807af/ch-0055.json
+
+  ⏭️ [576/1372] SKIPPED (known failed): novel-f94807af/ch-0056.json
+
+  ⏭️ [577/1372] SKIPPED (known failed): novel-f94807af/ch-0057.json
+
+  ⏭️ [578/1372] SKIPPED (known failed): novel-f94807af/ch-0058.json
+
+  ⏭️ [579/1372] SKIPPED (known failed): novel-f94807af/ch-0059.json
+
+  ⏭️ [580/1372] SKIPPED (known failed): novel-f94807af/ch-0060.json
+
+  ⏭️ [581/1372] SKIPPED (known failed): novel-f94807af/ch-0061.json
+
+  ⏭️ [582/1372] SKIPPED (known failed): novel-f94807af/ch-0062.json
+
+  ⏭️ [583/1372] SKIPPED (known failed): novel-f94807af/ch-0063.json
+
+  ⏭️ [584/1372] SKIPPED (known failed): novel-f94807af/ch-0064.json
+
+  ⏭️ [585/1372] SKIPPED (known failed): novel-f94807af/ch-0065.json
+
+  ⏭️ [586/1372] SKIPPED (known failed): novel-f94807af/ch-0066.json
+
+  ⏭️ [587/1372] SKIPPED (known failed): novel-f94807af/ch-0067.json
+
+  ⏭️ [588/1372] SKIPPED (known failed): novel-f94807af/ch-0068.json
+
+  ⏭️ [589/1372] SKIPPED (known failed): novel-f94807af/ch-0069.json
+
+  ⏭️ [590/1372] SKIPPED (known failed): novel-f94807af/ch-0070.json
+
+  ⏭️ [591/1372] SKIPPED (known failed): novel-f94807af/ch-0071.json
+
+  ⏭️ [592/1372] SKIPPED (known failed): novel-f94807af/ch-0072.json
+
+  ⏭️ [593/1372] SKIPPED (known failed): novel-f94807af/ch-0073.json
+
+  ⏭️ [594/1372] SKIPPED (known failed): novel-f94807af/ch-0074.json
+
+  ⏭️ [595/1372] SKIPPED (known failed): novel-f94807af/ch-0075.json
+
+  ⏭️ [596/1372] SKIPPED (known failed): novel-f94807af/ch-0076.json
+
+  ⏭️ [597/1372] SKIPPED (known failed): novel-f94807af/ch-0077.json
+
+  ⏭️ [598/1372] SKIPPED (known failed): novel-f94807af/ch-0078.json
+
+  ⏭️ [599/1372] SKIPPED (known failed): novel-f94807af/ch-0079.json
+
+  ⏭️ [600/1372] SKIPPED (known failed): novel-f94807af/ch-0080.json
+
+  ⏭️ [601/1372] SKIPPED (known failed): novel-f94807af/ch-0081.json
+
+  ⏭️ [602/1372] SKIPPED (known failed): novel-f94807af/ch-0082.json
+
+  ⏭️ [603/1372] SKIPPED (known failed): novel-f94807af/ch-0083.json
+
+  ⏭️ [604/1372] SKIPPED (known failed): novel-f94807af/ch-0084.json
+
+  ⏭️ [605/1372] SKIPPED (known failed): novel-f94807af/ch-0085.json
+
+  ⏭️ [606/1372] SKIPPED (known failed): novel-f94807af/ch-0086.json
+
+  ⏭️ [607/1372] SKIPPED (known failed): novel-f94807af/ch-0087.json
+
+  ⏭️ [608/1372] SKIPPED (known failed): novel-f94807af/ch-0088.json
+
+  ⏭️ [609/1372] SKIPPED (known failed): novel-f94807af/ch-0089.json
+
+  ⏭️ [610/1372] SKIPPED (known failed): novel-f94807af/ch-0090.json
+
+  ⏭️ [611/1372] SKIPPED (known failed): novel-f94807af/ch-0091.json
+
+  ⏭️ [612/1372] SKIPPED (known failed): novel-f94807af/ch-0092.json
+
+  ⏭️ [613/1372] SKIPPED (known failed): novel-f94807af/ch-0093.json
+
+  ⏭️ [614/1372] SKIPPED (known failed): novel-f94807af/ch-0094.json
+
+  ⏭️ [615/1372] SKIPPED (known failed): novel-f94807af/ch-0095.json
+
+  ⏭️ [616/1372] SKIPPED (known failed): novel-f94807af/ch-0096.json
+
+  ⏭️ [617/1372] SKIPPED (known failed): novel-f94807af/ch-0097.json
+
+  ⏭️ [618/1372] SKIPPED (known failed): novel-f94807af/ch-0098.json
+
+  ⏭️ [619/1372] SKIPPED (known failed): novel-f94807af/ch-0099.json
+
+  ⏭️ [620/1372] SKIPPED (known failed): novel-f94807af/ch-0100.json
+
+  ⏭️ [621/1372] SKIPPED (known failed): novel-f94807af/ch-0101.json
+
+  ⏭️ [622/1372] SKIPPED (known failed): novel-f94807af/ch-0102.json
+
+  ⏭️ [623/1372] SKIPPED (known failed): novel-f94807af/ch-0103.json
+
+  ⏭️ [624/1372] SKIPPED (known failed): novel-f94807af/ch-0104.json
+
+  ⏭️ [625/1372] SKIPPED (known failed): novel-f94807af/ch-0105.json
+
+  ⏭️ [626/1372] SKIPPED (known failed): novel-f94807af/ch-0106.json
+
+  ⏭️ [627/1372] SKIPPED (known failed): novel-f94807af/ch-0107.json
+
+  ⏭️ [628/1372] SKIPPED (known failed): novel-f94807af/ch-0108.json
+
+  ⏭️ [629/1372] SKIPPED (known failed): novel-f94807af/ch-0109.json
+
+  ⏭️ [630/1372] SKIPPED (known failed): novel-f94807af/ch-0110.json
+
+  ⏭️ [631/1372] SKIPPED (known failed): novel-f94807af/ch-0111.json
+
+  ⏭️ [632/1372] SKIPPED (known failed): novel-f94807af/ch-0112.json
+
+  ⏭️ [633/1372] SKIPPED (known failed): novel-f94807af/ch-0113.json
+
+  ⏭️ [634/1372] SKIPPED (known failed): novel-f94807af/ch-0114.json
+
+  ⏭️ [635/1372] SKIPPED (known failed): novel-f94807af/ch-0115.json
+
+  ⏭️ [636/1372] SKIPPED (known failed): novel-f94807af/ch-0116.json
+
+  ⏭️ [637/1372] SKIPPED (known failed): novel-f94807af/ch-0117.json
+
+  ⏭️ [638/1372] SKIPPED (known failed): novel-f94807af/ch-0118.json
+
+  ⏭️ [639/1372] SKIPPED (known failed): novel-f94807af/ch-0119.json
+
+  ⏭️ [640/1372] SKIPPED (known failed): novel-f94807af/ch-0120.json
+
+  ⏭️ [641/1372] SKIPPED (known failed): novel-f94807af/ch-0121.json
+
+  ⏭️ [642/1372] SKIPPED (known failed): novel-f94807af/ch-0122.json
+
+  ⏭️ [643/1372] SKIPPED (known failed): novel-f94807af/ch-0123.json
+
+  ⏭️ [644/1372] SKIPPED (known failed): novel-f94807af/ch-0124.json
+
+  ⏭️ [645/1372] SKIPPED (known failed): novel-f94807af/ch-0125.json
+
+  ⏭️ [646/1372] SKIPPED (known failed): novel-f94807af/ch-0126.json
+
+  ⏭️ [647/1372] SKIPPED (known failed): novel-f94807af/ch-0127.json
+
+  ⏭️ [648/1372] SKIPPED (known failed): novel-f94807af/ch-0128.json
+
+  ⏭️ [649/1372] SKIPPED (known failed): novel-f94807af/ch-0129.json
+
+  ⏭️ [650/1372] SKIPPED (known failed): novel-f94807af/ch-0130.json
+
+  ⏭️ [651/1372] SKIPPED (known failed): novel-f94807af/ch-0131.json
+
+  ⏭️ [652/1372] SKIPPED (known failed): novel-f94807af/ch-0132.json
+
+  ⏭️ [653/1372] SKIPPED (known failed): novel-f94807af/ch-0133.json
+
+  ⏭️ [654/1372] SKIPPED (known failed): novel-f94807af/ch-0134.json
+
+  ⏭️ [655/1372] SKIPPED (known failed): novel-f94807af/ch-0135.json
+
+  ⏭️ [656/1372] SKIPPED (known failed): novel-f94807af/ch-0136.json
+
+  ⏭️ [657/1372] SKIPPED (known failed): novel-f94807af/ch-0137.json
+
+  ⏭️ [658/1372] SKIPPED (known failed): novel-f94807af/ch-0138.json
+
+  ⏭️ [659/1372] SKIPPED (known failed): novel-f94807af/ch-0139.json
+
+  ⏭️ [660/1372] SKIPPED (known failed): novel-f94807af/ch-0140.json
+
+  ⏭️ [661/1372] SKIPPED (known failed): novel-f94807af/ch-0141.json
+
+  ⏭️ [662/1372] SKIPPED (known failed): novel-f94807af/ch-0142.json
+
+  ⏭️ [663/1372] SKIPPED (known failed): novel-f94807af/ch-0143.json
+
+  ⏭️ [664/1372] SKIPPED (known failed): novel-f94807af/ch-0144.json
+
+  ⏭️ [665/1372] SKIPPED (known failed): novel-f94807af/ch-0145.json
+
+  ⏭️ [666/1372] SKIPPED (known failed): novel-f94807af/ch-0146.json
+
+  ⏭️ [667/1372] SKIPPED (known failed): novel-f94807af/ch-0147.json
+
+  ⏭️ [668/1372] SKIPPED (known failed): novel-f94807af/ch-0148.json
+
+  ⏭️ [669/1372] SKIPPED (known failed): novel-f94807af/ch-0149.json
+
+  ⏭️ [670/1372] SKIPPED (known failed): novel-f94807af/ch-0150.json
+
+  ⏭️ [671/1372] SKIPPED (known failed): novel-f94807af/ch-0151.json
+
+  ⏭️ [672/1372] SKIPPED (known failed): novel-f94807af/ch-0152.json
+
+  ⏭️ [673/1372] SKIPPED (known failed): novel-f94807af/ch-0153.json
+
+  ⏭️ [674/1372] SKIPPED (known failed): novel-f94807af/ch-0154.json
+
+  ⏭️ [675/1372] SKIPPED (known failed): novel-f94807af/ch-0155.json
+
+  ⏭️ [676/1372] SKIPPED (known failed): novel-f94807af/ch-0156.json
+
+  ⏭️ [677/1372] SKIPPED (known failed): novel-f94807af/ch-0157.json
+
+  ⏭️ [678/1372] SKIPPED (known failed): novel-f94807af/ch-0158.json
+
+  ⏭️ [679/1372] SKIPPED (known failed): novel-f94807af/ch-0159.json
+
+  ⏭️ [680/1372] SKIPPED (known failed): novel-f94807af/ch-0160.json
+
+  ⏭️ [681/1372] SKIPPED (known failed): novel-f94807af/ch-0161.json
+
+  ⏭️ [682/1372] SKIPPED (known failed): novel-f94807af/ch-0162.json
+
+  ⏭️ [683/1372] SKIPPED (known failed): novel-f94807af/ch-0163.json
+
+  ⏭️ [684/1372] SKIPPED (known failed): novel-f94807af/ch-0164.json
+
+  ⏭️ [685/1372] SKIPPED (known failed): novel-f94807af/ch-0165.json
+
+  ⏭️ [686/1372] SKIPPED (known failed): novel-f94807af/ch-0166.json
+
+  ⏭️ [687/1372] SKIPPED (known failed): novel-f94807af/ch-0167.json
+
+  ⏭️ [688/1372] SKIPPED (known failed): novel-f94807af/ch-0168.json
+
+  ⏭️ [689/1372] SKIPPED (known failed): novel-f94807af/ch-0169.json
+
+  ⏭️ [690/1372] SKIPPED (known failed): novel-f94807af/ch-0170.json
+
+  ⏭️ [691/1372] SKIPPED (known failed): novel-f94807af/ch-0171.json
+
+  ⏭️ [692/1372] SKIPPED (known failed): novel-f94807af/ch-0172.json
+
+  ⏭️ [693/1372] SKIPPED (known failed): novel-f94807af/ch-0173.json
+
+  ⏭️ [694/1372] SKIPPED (known failed): novel-f94807af/ch-0174.json
+
+  ⏭️ [695/1372] SKIPPED (known failed): novel-f94807af/ch-0175.json
+
+  ⏭️ [696/1372] SKIPPED (known failed): novel-f94807af/ch-0176.json
+
+  ⏭️ [697/1372] SKIPPED (known failed): novel-f94807af/ch-0177.json
+
+  ⏭️ [698/1372] SKIPPED (known failed): novel-f94807af/ch-0178.json
+
+  ⏭️ [699/1372] SKIPPED (known failed): novel-f94807af/ch-0179.json
+
+  ⏭️ [700/1372] SKIPPED (known failed): novel-f94807af/ch-0180.json
+
+  ⏭️ [701/1372] SKIPPED (known failed): novel-f94807af/ch-0181.json
+
+  ⏭️ [702/1372] SKIPPED (known failed): novel-f94807af/ch-0182.json
+
+  ⏭️ [703/1372] SKIPPED (known failed): novel-f94807af/ch-0183.json
+
+  ⏭️ [704/1372] SKIPPED (known failed): novel-f94807af/ch-0184.json
+
+  ⏭️ [705/1372] SKIPPED (known failed): novel-f94807af/ch-0185.json
+
+  ⏭️ [706/1372] SKIPPED (known failed): novel-f94807af/ch-0186.json
+
+  ⏭️ [707/1372] SKIPPED (known failed): novel-f94807af/ch-0187.json
+
+  ⏭️ [708/1372] SKIPPED (known failed): novel-f94807af/ch-0188.json
+
+  ⏭️ [709/1372] SKIPPED (known failed): novel-f94807af/ch-0189.json
+
+  ⏭️ [710/1372] SKIPPED (known failed): novel-f94807af/ch-0190.json
+
+  ⏭️ [711/1372] SKIPPED (known failed): novel-f94807af/ch-0191.json
+
+  ⏭️ [712/1372] SKIPPED (known failed): novel-f94807af/ch-0192.json
+
+  ⏭️ [713/1372] SKIPPED (known failed): novel-f94807af/ch-0193.json
+
+  ⏭️ [714/1372] SKIPPED (known failed): novel-f94807af/ch-0194.json
+
+  ⏭️ [715/1372] SKIPPED (known failed): novel-f94807af/ch-0195.json
+
+  ⏭️ [716/1372] SKIPPED (known failed): novel-f94807af/ch-0196.json
+
+  ⏭️ [717/1372] SKIPPED (known failed): novel-f94807af/ch-0197.json
+
+  ⏭️ [718/1372] SKIPPED (known failed): novel-f94807af/ch-0198.json
+
+  ⏭️ [719/1372] SKIPPED (known failed): novel-f94807af/ch-0199.json
+
+  ⏭️ [720/1372] SKIPPED (known failed): novel-f94807af/ch-0200.json
+
+📖 [721/1372] 九恶妃每日一问_陛下驾崩了吗/ch-0001.json
+   Title: 第1章 月妃，夜弦月
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第1章 月妃，夜弦月', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第1章 月妃，夜弦月', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n大夏帝宫。\r\n\n    紫金龙榻上。\r\n\n    一个满头虚汗的青年“蹭”的坐了起来。\r\n\n    青年二十左右的样子，五官容貌俊美不羁，但整个人虚弱的厉害，华贵的镶金白龙袍也遮盖不住纵欲过度后的病态苍白。\r\n\n    “我这是在哪！”\r\n\n    秦然一脸懵的扫视着周围环境。\r\n\n    遍地的云雾升腾、宛如云上天宫般的大殿、堪比两个停车位大小的紫金龙榻，还有那一件件绘着精致云纹、充斥神秘气息的古朴装饰物……\r\n\n    国家博物馆？\r\n\n    还是…仙侠剧拍摄现场？\r\n\n    【叮咚！】\r\n\n    【欢迎来到玄黄大世界！】\r\n\n    【本世界依据小说《假太监手段高，后宫妃子不经撩》打造而成！】\r\n\n    【现在起，你将开启后宫生存挑战！】\r\n\n    【在这里每存活一天，都将获得高额奖励！】\r\n\n    【每日凌晨将进行完成度评估，根据难度及完成度下发奖励！】\r\n\n    【今日生存难度：D级】\r\n\n    【你的身份是——云江仙！】\r\n\n    秦然瞪圆了眼睛。\r\n\n    “卧槽！”\r\n\n    “穿书了？？”\r\n\n    “云江仙…这名字怎么有点熟。”\r\n\n    他努力回忆了一下，没一会儿，整个人惊的差点跳起来。\r\n\n    “帝族云家最后血脉…沉迷酒色的昏庸帝王…前期的炮灰配角…那个被妃子们各种设计祸害的倒霉蛋儿——云江仙？？”\r\n\n    “陛下！时辰已到，您该翻牌子了~~”一个尖锐声音在大殿中回荡，透着一股子阴森劲儿。\r\n\n    秦然浑身一激灵，“谁TM说话呢！”\r\n\n    龙榻外，近百位太监宫女跪了一地。\r\n\n    一个断眉瘦高老太监站在人群前方，手中恭敬举着托盘，上面摆放着九个玉色牌子。\r\n\n    见此一幕，秦然眼皮直跳。\r\n\n    他写的小说叫《假太监手段高，后宫妃子不经撩》。\r\n\n    顾名思义，书中原本主角是大帝重生的小太监林安以及后宫的九位妃子。\r\n\n    而云江仙，只是个五十章就噶的小小配角，这也是为什么秦然一下子没想到“云江仙”这个名字的原因。\r\n\n    帝族云家为守国门，全族战死，只剩下云江仙这个纨绔。\r\n\n    作为帝族云家最后血统，云江仙体内拥有大夏神朝积累万年的龙运。\r\n\n    龙运是成就大帝境界的必需品之一！\r\n\n    他在书中存在的意义，便是给主角团做嫁衣的。', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n大夏帝宫。\r\n\n    紫金龙榻上。\r\n\n    一个满头虚汗的青年“蹭”的坐了起来。\r\n\n    青年二十左右的样子，五官容貌俊美不羁，但整个人虚弱的厉害，华贵的镶金白龙袍也遮盖不住纵欲过度后的病态苍白。\r\n\n    “我这是在哪！”\r\n\n    秦然一脸懵的扫视着周围环境。\r\n\n    遍地的云雾升腾、宛如云上天宫般的大殿、堪比两个停车位大小的紫金龙榻，还有那一件件绘着精致云纹、充斥神秘气息的古朴装饰物……\r\n\n    国家博物馆？\r\n\n    还是…仙侠剧拍摄现场？\r\n\n    【叮咚！】\r\n\n    【欢迎来到玄黄大世界！】\r\n\n    【本世界依据小说《假太监手段高，后宫妃子不经撩》打造而成！】\r\n\n    【现在起，你将开启后宫生存挑战！】\r\n\n    【在这里每存活一天，都将获得高额奖励！】\r\n\n    【每日凌晨将进行完成度评估，根据难度及完成度下发奖励！】\r\n\n    【今日生存难度：D级】\r\n\n    【你的身份是——云江仙！】\r\n\n    秦然瞪圆了眼睛。\r\n\n    “卧槽！”\r\n\n    “穿书了？？”\r\n\n    “云江仙…这名字怎么有点熟。”\r\n\n    他努力回忆了一下，没一会儿，整个人惊的差点跳起来。\r\n\n    “帝族云家最后血脉…沉迷酒色的昏庸帝王…前期的炮灰配角…那个被妃子们各种设计祸害的倒霉蛋儿——云江仙？？”\r\n\n    “陛下！时辰已到，您该翻牌子了~~”一个尖锐声音在大殿中回荡，透着一股子阴森劲儿。\r\n\n    秦然浑身一激灵，“谁TM说话呢！”\r\n\n    龙榻外，近百位太监宫女跪了一地。\r\n\n    一个断眉瘦高老太监站在人群前方，手中恭敬举着托盘，上面摆放着九个玉色牌子。\r\n\n    见此一幕，秦然眼皮直跳。\r\n\n    他写的小说叫《假太监手段高，后宫妃子不经撩》。\r\n\n    顾名思义，书中原本主角是大帝重生的小太监林安以及后宫的九位妃子。\r\n\n    而云江仙，只是个五十章就噶的小小配角，这也是为什么秦然一下子没想到“云江仙”这个名字的原因。\r\n\n    帝族云家为守国门，全族战死，只剩下云江仙这个纨绔。\r\n\n    作为帝族云家最后血统，云江仙体内拥有大夏神朝积累万年的龙运。\r\n\n    龙运是成就大帝境界的必需品之一！\r\n\n    他在书中存在的意义，便是给主角团做嫁衣的。', '--json']' timed out after 120 seconds
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [722/1372] 九恶妃每日一问_陛下驾崩了吗/ch-0002.json
+   Title: 第2章 你是真心爱朕吗？
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第2章 你是真心爱朕吗？', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第2章 你是真心爱朕吗？', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n喝还是不喝？\r\n\n    这是秦然现在面对的问题。\r\n\n    鲛人泪这种奇毒，虽然不能一次直接毁掉他根基，但也会造成损伤。\r\n\n    如今穿越而来，后续肯定免不了修炼，此刻若是把毒喝下去，那势必会给未来造成不小的麻烦。\r\n\n    可在夜弦月的火热目光下，怎么才能不喝呢？\r\n\n    秦然绞尽脑汁。\r\n\n    “爱妃，你刚说这杯酒叫什么名字？”\r\n\n    “美人血~”\r\n\n    “唉！可惜了，这名字朕很不喜欢！美人是用来宠的，怎么能用这个名字来为酒命名呢？”\r\n\n    秦然慵懒地一挥手。\r\n\n    “青符，去把朕珍藏的酒拿来，朕要和月妃喝到天明！”\r\n\n    “是，陛下。”老太监恭敬退去。\r\n\n    夜弦月笑容如常。\r\n\n    但笑容深处，藏着一抹不易察觉的冰冷之色。\r\n\n    “陛下，这酒是臣妾亲自为您酿的，您若不喜欢它的名字，那换个名字就好了，您觉得叫美人醉怎么样？”\r\n\n    不等秦然回答。\r\n\n    夜弦月已抬起酒杯，将杯中红色液体慢慢朝他口中倒去。\r\n\n    “等等！”\r\n\n    眼看着杯中酒就要进嘴里了，秦然赶忙开口。\r\n\n    “怎么了？陛下。”\r\n\n    夜弦月娇笑着。\r\n\n    秦然强压心中忐忑，脸上露出了一抹色眯眯的笑。\r\n\n    “既然美人恩推脱不掉，那这酒朕喝就是了，不过却不能用杯子喝。”\r\n\n    “那陛下想怎么喝呢~~”\r\n\n    “爱妃，你猜？”\r\n\n    “别闹了陛下，您是天子，臣妾哪能揣测到您的心思～”\r\n\n    “呵呵。”\r\n\n    秦然搂着女人的纤腰，抬起两根手指，在她红唇间轻轻摸过。\r\n\n    “爱妃喂朕！用嘴！”\r\n\n    夜弦月一愣，但随即笑靥如花，眼底有着不易察觉的讥讽。\r\n\n    “既然陛下开口了，那臣妾遵命就是。”\r\n\n    酒杯调转方向，凑到红唇边上。\r\n\n    女人红唇微张，杯中深红色液体朝口中慢慢倒去……\r\n\n    秦然忽然笑了。\r\n\n    “爱妃，今早发生了一件有趣的事，你帮朕解解惑？”\r\n\n    夜弦月口中含酒，没法开口，但眼神没有拒绝的意思。', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n喝还是不喝？\r\n\n    这是秦然现在面对的问题。\r\n\n    鲛人泪这种奇毒，虽然不能一次直接毁掉他根基，但也会造成损伤。\r\n\n    如今穿越而来，后续肯定免不了修炼，此刻若是把毒喝下去，那势必会给未来造成不小的麻烦。\r\n\n    可在夜弦月的火热目光下，怎么才能不喝呢？\r\n\n    秦然绞尽脑汁。\r\n\n    “爱妃，你刚说这杯酒叫什么名字？”\r\n\n    “美人血~”\r\n\n    “唉！可惜了，这名字朕很不喜欢！美人是用来宠的，怎么能用这个名字来为酒命名呢？”\r\n\n    秦然慵懒地一挥手。\r\n\n    “青符，去把朕珍藏的酒拿来，朕要和月妃喝到天明！”\r\n\n    “是，陛下。”老太监恭敬退去。\r\n\n    夜弦月笑容如常。\r\n\n    但笑容深处，藏着一抹不易察觉的冰冷之色。\r\n\n    “陛下，这酒是臣妾亲自为您酿的，您若不喜欢它的名字，那换个名字就好了，您觉得叫美人醉怎么样？”\r\n\n    不等秦然回答。\r\n\n    夜弦月已抬起酒杯，将杯中红色液体慢慢朝他口中倒去。\r\n\n    “等等！”\r\n\n    眼看着杯中酒就要进嘴里了，秦然赶忙开口。\r\n\n    “怎么了？陛下。”\r\n\n    夜弦月娇笑着。\r\n\n    秦然强压心中忐忑，脸上露出了一抹色眯眯的笑。\r\n\n    “既然美人恩推脱不掉，那这酒朕喝就是了，不过却不能用杯子喝。”\r\n\n    “那陛下想怎么喝呢~~”\r\n\n    “爱妃，你猜？”\r\n\n    “别闹了陛下，您是天子，臣妾哪能揣测到您的心思～”\r\n\n    “呵呵。”\r\n\n    秦然搂着女人的纤腰，抬起两根手指，在她红唇间轻轻摸过。\r\n\n    “爱妃喂朕！用嘴！”\r\n\n    夜弦月一愣，但随即笑靥如花，眼底有着不易察觉的讥讽。\r\n\n    “既然陛下开口了，那臣妾遵命就是。”\r\n\n    酒杯调转方向，凑到红唇边上。\r\n\n    女人红唇微张，杯中深红色液体朝口中慢慢倒去……\r\n\n    秦然忽然笑了。\r\n\n    “爱妃，今早发生了一件有趣的事，你帮朕解解惑？”\r\n\n    夜弦月口中含酒，没法开口，但眼神没有拒绝的意思。', '--json']' timed out after 120 seconds
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [723/1372] 九恶妃每日一问_陛下驾崩了吗/ch-0003.json
+   Title: 第3章 演到你哭！
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第3章 演到你哭！', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第3章 演到你哭！', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n此言一出。\r\n\n    怀中的夜弦月猛然抬起了头。\r\n\n    一对妖异的紫眸，紧紧锁定着秦然的双眼。\r\n\n    “陛下，您什么意思。”\r\n\n    秦然搂着女人，深情地笑着。\r\n\n    “在多年前的一个夜晚，朕与几位宫中供奉外出游历，在途经五子天魔宗之时，恰巧遇到了第五宗内斗。”\r\n\n    夜弦月彻底愣住了。\r\n\n    秦然自顾自地继续道：“朕本不想插手宗门内斗，但奈何在人群中，一眼便看中了一位与众不同的女子。”\r\n\n    “她一人独挡第五宗的围攻，身上血痕累累，只剩一口气吊着，但却不屈服、不放弃……”\r\n\n    话说到这儿，夜弦月眼中已露出不可思议之色。\r\n\n    “所以那次…救臣妾的人是陛下？”\r\n\n    秦然笑而不语。\r\n\n    夜弦月猛地反抓住秦然的手。\r\n\n    “回答我！”\r\n\n    秦然深情一笑，“没错，朕当时心生恻隐，所以便让供奉出了手。”\r\n\n    夜弦月呆住了。\r\n\n    藏在心底最深处的某根弦疯狂触动。\r\n\n    但她并没就此失去理智。\r\n\n    “既然陛下当时救臣妾…那为何不把臣妾直接带回宫？”\r\n\n    秦然轻轻摇头。\r\n\n    “那时候父皇管得严，不允许后宫出现魔宗之人，朕哪敢忤逆。”\r\n\n    “所以…朕登位首日，便收你入宫中。”\r\n\n    夜弦月怔怔的，眼神复杂无比。\r\n\n    第五宗救援之事早已烙印在了她的记忆里，刻骨铭心，甚至已经成为了她的执念。\r\n\n    这些年，她花费无数时间精力，一直想要找到当初救援之人，可却没有丝毫线索。\r\n\n    却万万没想到，当初出手之人，竟是眼前这个沉迷酒色的昏庸帝王……\r\n\n    此事透着古怪和蹊跷。\r\n\n    真相出现的时机也过于巧合。\r\n\n    夜弦月不动声色地扣住了秦然手腕。\r\n\n    一缕灵气自指尖掠出，在秦然体内游走了一圈。\r\n\n    片刻后收回。\r\n\n    夜弦月眼神更复杂了。\r\n\n    眼前这个人，居然还是那个厌恶修炼的昏庸帝王，没有问题！\r\n\n    难不成…当初救自己的真是他？\r\n\n    此时此刻。\r\n\n    这一桩心事萦绕在心头，夜弦月急需冷静，早已没了侍寝的心情。\r\n\n    “陛下，臣妾今日身体不适，想回去休息了～”', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n此言一出。\r\n\n    怀中的夜弦月猛然抬起了头。\r\n\n    一对妖异的紫眸，紧紧锁定着秦然的双眼。\r\n\n    “陛下，您什么意思。”\r\n\n    秦然搂着女人，深情地笑着。\r\n\n    “在多年前的一个夜晚，朕与几位宫中供奉外出游历，在途经五子天魔宗之时，恰巧遇到了第五宗内斗。”\r\n\n    夜弦月彻底愣住了。\r\n\n    秦然自顾自地继续道：“朕本不想插手宗门内斗，但奈何在人群中，一眼便看中了一位与众不同的女子。”\r\n\n    “她一人独挡第五宗的围攻，身上血痕累累，只剩一口气吊着，但却不屈服、不放弃……”\r\n\n    话说到这儿，夜弦月眼中已露出不可思议之色。\r\n\n    “所以那次…救臣妾的人是陛下？”\r\n\n    秦然笑而不语。\r\n\n    夜弦月猛地反抓住秦然的手。\r\n\n    “回答我！”\r\n\n    秦然深情一笑，“没错，朕当时心生恻隐，所以便让供奉出了手。”\r\n\n    夜弦月呆住了。\r\n\n    藏在心底最深处的某根弦疯狂触动。\r\n\n    但她并没就此失去理智。\r\n\n    “既然陛下当时救臣妾…那为何不把臣妾直接带回宫？”\r\n\n    秦然轻轻摇头。\r\n\n    “那时候父皇管得严，不允许后宫出现魔宗之人，朕哪敢忤逆。”\r\n\n    “所以…朕登位首日，便收你入宫中。”\r\n\n    夜弦月怔怔的，眼神复杂无比。\r\n\n    第五宗救援之事早已烙印在了她的记忆里，刻骨铭心，甚至已经成为了她的执念。\r\n\n    这些年，她花费无数时间精力，一直想要找到当初救援之人，可却没有丝毫线索。\r\n\n    却万万没想到，当初出手之人，竟是眼前这个沉迷酒色的昏庸帝王……\r\n\n    此事透着古怪和蹊跷。\r\n\n    真相出现的时机也过于巧合。\r\n\n    夜弦月不动声色地扣住了秦然手腕。\r\n\n    一缕灵气自指尖掠出，在秦然体内游走了一圈。\r\n\n    片刻后收回。\r\n\n    夜弦月眼神更复杂了。\r\n\n    眼前这个人，居然还是那个厌恶修炼的昏庸帝王，没有问题！\r\n\n    难不成…当初救自己的真是他？\r\n\n    此时此刻。\r\n\n    这一桩心事萦绕在心头，夜弦月急需冷静，早已没了侍寝的心情。\r\n\n    “陛下，臣妾今日身体不适，想回去休息了～”', '--json']' timed out after 120 seconds
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [724/1372] 九恶妃每日一问_陛下驾崩了吗/ch-0004.json
+   Title: 第4章 云宫掠天术
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第4章 云宫掠天术', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第4章 云宫掠天术', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n夜弦月连番试探后离开了。\r\n\n    秦然躺在床上闭着眼睛装晕，心中却是长长的松了口气。\r\n\n    他还没死，说明赌对了！\r\n\n    夜弦月生性多疑，多次试探倒也符合她的人设，毕竟此事牵扯到了她心中最敏感、最脆弱的那个点。\r\n\n    有了今日之事，夜弦月那边的敌意就算不能全消，起码也会大大降低。\r\n\n    “这个开局还算不错，接下来得趁热打铁，继续刺激夜弦月最敏感的点，争取早点打消她的敌意，或许有机会给她争取过来。”\r\n\n    “每日奖励凌晨结算，算算时间，应该差不多了……”\r\n\n    【叮咚！】\r\n\n    【今日生存挑战结束！】\r\n\n    【完成度评估中……】\r\n\n    【您成功避开毒酒危机、您成功避免龙运剥夺、您成功躲过夜弦月两次试探……您额外获得夜弦月高额好感度。】\r\n\n    【您超额完成挑战任务！】\r\n\n    【最终评估，首次任务完成度200%】\r\n\n    【触发超级奖励！】\r\n\n    【叮咚！已为您量身匹配超级新手礼包×2！】\r\n\n    秦然兴奋的睁开眼睛。\r\n\n    手中凭空出现了两件物品。\r\n\n    一本绘制着云纹的精美书籍，以及一个被土黄色气流包裹的瓷瓶。\r\n\n    《云宫掠天术（完整篇）》\r\n\n    品阶：帝阶法决\r\n\n    介绍：在灵魂中铸造一座无上魂宫\r\n\n    1.魂宫可随心意屏蔽自身气息，隔绝一切精神类攻击及探查\r\n\n    2.被攻击命中后，可将敌人术法掠夺至魂宫中步步拆解，最终化为原始篇为己用。\r\n\n    说明：帝族云家的镇族绝学，位列玄黄大陆三十六帝诀之一\r\n\n    “卧槽！新手礼包开出王炸？？”\r\n\n    秦然目瞪口呆。\r\n\n    在《假太监》的设定中，功法武技以及神兵利器可分为黄阶、玄阶、地阶、天阶，以及至高的帝阶。\r\n\n    所有帝诀皆出自诞生过大帝的无上家族，云家便是传承万载的帝族之一。\r\n\n    曾经的云家，一度被强者们看作是最无赖的对手，与云家强者对战都得收敛着来。\r\n\n    原因便是帝诀《云宫掠天术》。\r\n\n    毕竟，没有哪个人想打打架，自家绝学被偷了去。\r\n\n    遗憾的是，从数千年前开始，完整的《云宫掠天术》便失传了。', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n夜弦月连番试探后离开了。\r\n\n    秦然躺在床上闭着眼睛装晕，心中却是长长的松了口气。\r\n\n    他还没死，说明赌对了！\r\n\n    夜弦月生性多疑，多次试探倒也符合她的人设，毕竟此事牵扯到了她心中最敏感、最脆弱的那个点。\r\n\n    有了今日之事，夜弦月那边的敌意就算不能全消，起码也会大大降低。\r\n\n    “这个开局还算不错，接下来得趁热打铁，继续刺激夜弦月最敏感的点，争取早点打消她的敌意，或许有机会给她争取过来。”\r\n\n    “每日奖励凌晨结算，算算时间，应该差不多了……”\r\n\n    【叮咚！】\r\n\n    【今日生存挑战结束！】\r\n\n    【完成度评估中……】\r\n\n    【您成功避开毒酒危机、您成功避免龙运剥夺、您成功躲过夜弦月两次试探……您额外获得夜弦月高额好感度。】\r\n\n    【您超额完成挑战任务！】\r\n\n    【最终评估，首次任务完成度200%】\r\n\n    【触发超级奖励！】\r\n\n    【叮咚！已为您量身匹配超级新手礼包×2！】\r\n\n    秦然兴奋的睁开眼睛。\r\n\n    手中凭空出现了两件物品。\r\n\n    一本绘制着云纹的精美书籍，以及一个被土黄色气流包裹的瓷瓶。\r\n\n    《云宫掠天术（完整篇）》\r\n\n    品阶：帝阶法决\r\n\n    介绍：在灵魂中铸造一座无上魂宫\r\n\n    1.魂宫可随心意屏蔽自身气息，隔绝一切精神类攻击及探查\r\n\n    2.被攻击命中后，可将敌人术法掠夺至魂宫中步步拆解，最终化为原始篇为己用。\r\n\n    说明：帝族云家的镇族绝学，位列玄黄大陆三十六帝诀之一\r\n\n    “卧槽！新手礼包开出王炸？？”\r\n\n    秦然目瞪口呆。\r\n\n    在《假太监》的设定中，功法武技以及神兵利器可分为黄阶、玄阶、地阶、天阶，以及至高的帝阶。\r\n\n    所有帝诀皆出自诞生过大帝的无上家族，云家便是传承万载的帝族之一。\r\n\n    曾经的云家，一度被强者们看作是最无赖的对手，与云家强者对战都得收敛着来。\r\n\n    原因便是帝诀《云宫掠天术》。\r\n\n    毕竟，没有哪个人想打打架，自家绝学被偷了去。\r\n\n    遗憾的是，从数千年前开始，完整的《云宫掠天术》便失传了。', '--json']' timed out after 120 seconds
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [725/1372] 九恶妃每日一问_陛下驾崩了吗/ch-0005.json
+   Title: 第5章 云江仙的白月光！
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第5章 云江仙的白月光！', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第5章 云江仙的白月光！', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n寝殿内。\r\n\n    老太监青符忽然眯起眼眸，断眉上挑，目光疑惑的在寝殿周围扫视了一圈。\r\n\n    无果后，他的视线下意识落在了龙榻方向，但很快便面露讥讽地摇了摇头。\r\n\n    如此大片区域的灵气消失，怎么可能与一个废物纨绔有关。\r\n\n    估计，又是哪位贵妃精进了……\r\n\n    秦然悠然坐在床上，将青符的表情尽收眼底。\r\n\n    在寝宫周围，有很多强者监视着一举一动，有各大势力安插的探子，有贵妃娘娘们的走狗，也有一些大夏神朝的遗臣。\r\n\n    青符明面上只是个唯唯诺诺的老太监，但秦然却清楚这老家伙的真正底细。\r\n\n    能跟在先帝身边贴身侍奉，作为大夏太监副总管，青符又岂会是平庸之辈？\r\n\n    先帝早年曾荡平过一座魔宗，其宗门势力极度强盛，放眼整个大夏境内，也能排到前十之列。\r\n\n    其中最强者，乃是一个成名许久的老魔头。\r\n\n    这魔头凶名赫赫，手段高绝，先帝也是费了不少手段才将其拿下。\r\n\n    那人正是眼前这生有断眉的瘦高太监——青符！\r\n\n    先帝拿捏到了青符的家人作为软肋，并许以五百年之期归还其自由，所以青符才老老实实的在宫里当太监。\r\n\n    青符如今蛰伏着当中立派，但日后在小太监的协助下软肋解除后，成为了小太监身边的最强走狗之一。\r\n\n    真正的大杀器！\r\n\n    秦然笑了。\r\n\n    在先帝陨落后，宫中便没人知道这老太监的家人在哪里。\r\n\n    很不巧，他知道。\r\n\n    不过软肋暂时不在身边，想要利用起来，还需要一些其他因素的帮助……\r\n\n    秦然内视着自身如今的状态。\r\n\n    【姓名：云江仙】\r\n\n    【修为：飞天境九重天】\r\n\n    【体质：种玉仙身】\r\n\n    【功法：云宫掠天术（帝阶）】\r\n\n    在耗光了玄黄之血，以及所有启灵石后，他成功获得了特殊体质。\r\n\n    现今大陆上共有千种特殊体质，种玉仙身刚好排到第五百名。\r\n\n    【种玉仙身】\r\n\n    【介绍】：可通过一滴神魔精血，在体内培育出一尊妖兽或神魔，拥有者可随时进行神魔变，化为神魔之躯，拥有神魔全部能力。\r\n\n    一般来说，特殊体质都是直接改造人体强度，无限增强气血或某一方面能力。\r\n\n    而种玉仙身则是在体内豢养一尊神魔！\r\n\n    因为神魔妖兽有亿万种，强弱亦有高下之分，所以种玉仙身是一种强度难以评估的体质。\r\n\n    它可以为至强之一！\r\n\n    也可以是最弱体质！\r\n\n    所以最终评定为排名五百！', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate the following Chinese novel chapter content to English. Return ONLY the translation, no explanation, no notes, no Chinese text:\n\n寝殿内。\r\n\n    老太监青符忽然眯起眼眸，断眉上挑，目光疑惑的在寝殿周围扫视了一圈。\r\n\n    无果后，他的视线下意识落在了龙榻方向，但很快便面露讥讽地摇了摇头。\r\n\n    如此大片区域的灵气消失，怎么可能与一个废物纨绔有关。\r\n\n    估计，又是哪位贵妃精进了……\r\n\n    秦然悠然坐在床上，将青符的表情尽收眼底。\r\n\n    在寝宫周围，有很多强者监视着一举一动，有各大势力安插的探子，有贵妃娘娘们的走狗，也有一些大夏神朝的遗臣。\r\n\n    青符明面上只是个唯唯诺诺的老太监，但秦然却清楚这老家伙的真正底细。\r\n\n    能跟在先帝身边贴身侍奉，作为大夏太监副总管，青符又岂会是平庸之辈？\r\n\n    先帝早年曾荡平过一座魔宗，其宗门势力极度强盛，放眼整个大夏境内，也能排到前十之列。\r\n\n    其中最强者，乃是一个成名许久的老魔头。\r\n\n    这魔头凶名赫赫，手段高绝，先帝也是费了不少手段才将其拿下。\r\n\n    那人正是眼前这生有断眉的瘦高太监——青符！\r\n\n    先帝拿捏到了青符的家人作为软肋，并许以五百年之期归还其自由，所以青符才老老实实的在宫里当太监。\r\n\n    青符如今蛰伏着当中立派，但日后在小太监的协助下软肋解除后，成为了小太监身边的最强走狗之一。\r\n\n    真正的大杀器！\r\n\n    秦然笑了。\r\n\n    在先帝陨落后，宫中便没人知道这老太监的家人在哪里。\r\n\n    很不巧，他知道。\r\n\n    不过软肋暂时不在身边，想要利用起来，还需要一些其他因素的帮助……\r\n\n    秦然内视着自身如今的状态。\r\n\n    【姓名：云江仙】\r\n\n    【修为：飞天境九重天】\r\n\n    【体质：种玉仙身】\r\n\n    【功法：云宫掠天术（帝阶）】\r\n\n    在耗光了玄黄之血，以及所有启灵石后，他成功获得了特殊体质。\r\n\n    现今大陆上共有千种特殊体质，种玉仙身刚好排到第五百名。\r\n\n    【种玉仙身】\r\n\n    【介绍】：可通过一滴神魔精血，在体内培育出一尊妖兽或神魔，拥有者可随时进行神魔变，化为神魔之躯，拥有神魔全部能力。\r\n\n    一般来说，特殊体质都是直接改造人体强度，无限增强气血或某一方面能力。\r\n\n    而种玉仙身则是在体内豢养一尊神魔！\r\n\n    因为神魔妖兽有亿万种，强弱亦有高下之分，所以种玉仙身是一种强度难以评估的体质。\r\n\n    它可以为至强之一！\r\n\n    也可以是最弱体质！\r\n\n    所以最终评定为排名五百！', '--json']' timed out after 120 seconds
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [726/1372] 九恶妃每日一问_陛下驾崩了吗/ch-0006.json
+   Title: 第6章 你是朕的小宝贝儿
+  ⚠️ API error (attempt 1): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第6章 你是朕的小宝贝儿', '--json']' timed out after 120 seconds
+  ⚠️ API error (attempt 2): Command '['openclaw', 'infer', 'model', 'run', '--model', 'qclaw/pool-deepseek-v4-pro', '--prompt', 'Translate this Chinese chapter title to English. Return ONLY the English title, no quotes, no explanation, no other text:\n\n第6章 你是朕的小宝贝儿', '--json']' timed out after 120 seconds

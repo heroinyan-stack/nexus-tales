@@ -1,0 +1,56 @@
+📊 Resuming: 62 done, 1173 failed
+🔍 Found 1372 chapters with fake translations
+
+📖 [1/1372] novel-133651/ch-3.json
+   Title: 第3章 买院子-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [2/1372] novel-133651/ch-4.json
+   Title: 第4章 乃香嫂子的担忧-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [3/1372] novel-133651/ch-5.json
+   Title: 第5章 老李家，审判李青山-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [4/1372] novel-133651/ch-6.json
+   Title: 第6章 嫂子深夜送弓-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [5/1372] novel-133651/ch-7.json
+   Title: 第7章 赵占山传授经验-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+   ⚠️ Translation failed or still Chinese, skipped
+
+📖 [6/1372] novel-133651/ch-8.json
+   Title: 第8章 陪睡一个月-《赶山1957：二斤猪肉换个媳妇》
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+  ⚠️ API error (attempt 1): HTTP Error 400: Bad Request
+
+🛑 Stopping after current chapter...
+  ⚠️ API error (attempt 2): HTTP Error 400: Bad Request
+   ⚠️ Translation failed or still Chinese, skipped
+
+🏁 Done: 62/1372 translated
+⚠️ 1179 failures saved to progress file
+💾 Progress saved, resume later
