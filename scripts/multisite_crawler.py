@@ -709,9 +709,11 @@ def crawl_23wx(limit_novels=40, limit_chapters=20):
         if not book_html:
             continue
 
-        # Extract author
+        # Extract author - prefer detail-box format with &nbsp; (not meta description)
         author = "Unknown"
-        author_m = re.search(r'作[\s&;]*者[：:]\s*(.{2,40})(?:<|\n)', book_html)
+        author_m = re.search(r'作(?:&nbsp;)+者[：:]\s*([^<\n]{2,30})', book_html)
+        if not author_m:
+            author_m = re.search(r'作者[：:]\s*([^<&\n]{2,30})', book_html)
         if author_m:
             author = author_m.group(1).strip()
 
