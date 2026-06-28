@@ -3294,9 +3294,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 57,
+    "total_chapters": 58,
     "id": 101,
-    "title_zh": "我有一个黑暗密武世界"
+    "title_zh": "我有一个黑暗密武世界",
+    "updated_at": "2026-06-28T06:14:32.478686+00:00"
   },
   {
     "slug": "novel-102-traveling-across-the-source-card-continent",
@@ -3321,8 +3322,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
-    "id": 102
+    "total_chapters": 114,
+    "id": 102,
+    "updated_at": "2026-06-28T06:14:32.480014+00:00"
   },
   {
     "slug": "novel-103-debt-book",
@@ -3347,9 +3349,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 13,
+    "total_chapters": 14,
     "id": 103,
-    "title_zh": "天债簿"
+    "title_zh": "天债簿",
+    "updated_at": "2026-06-28T06:14:32.486785+00:00"
   },
   {
     "slug": "novel-104-the-nine-evil-concubines-ask-every",
@@ -3374,8 +3377,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
-    "id": 104
+    "total_chapters": 114,
+    "id": 104,
+    "updated_at": "2026-06-28T06:14:32.489117+00:00"
   },
   {
     "slug": "novel-105-the-tomb-is-opened-and-i",
@@ -11104,5 +11108,29 @@
     "totalChapters": 289,
     "available_chapters": 3,
     "description": "我有一个黑暗密武世界是由作者：一笑新尘所著，热点小说网免费提供我有一个黑暗密武世界全文在线阅读。三秒记住本站：热点小说网&nbsp;&nbsp;网址：www.23wx.tv  我有一个黑暗密武世界漫画 我有一个黑暗密武世界免费阅读 我有一支黑暗军团 我有一座黑暗牢笼 一笑新尘"
+  },
+  {
+    "slug": "唐枭",
+    "title": "唐枭",
+    "author": "Unknown",
+    "category": "Xianxia",
+    "source_url": "https://www.23wx.io/book/52225/",
+    "source_domain": "23wx.io",
+    "cover_url": "/covers/唐枭.svg",
+    "totalChapters": 315,
+    "available_chapters": 20,
+    "description": "枭者，勇而强也！枭者，首领也！武唐年间，天下大乱，酷吏当道，律法崩散，牝鸡司晨！主角岳峰，生而为枭，家国天下，我大唐男儿当自强……  唐枭小说 唐枭邦 唐枭寂寞读南华 唐枭个人简历 寂寞读南华"
+  },
+  {
+    "slug": "神兵奶爸",
+    "title": "神兵奶爸",
+    "author": "Unknown",
+    "category": "Xianxia",
+    "source_url": "https://www.23wx.io/book/42763/",
+    "source_domain": "23wx.io",
+    "cover_url": "/covers/神兵奶爸.svg",
+    "totalChapters": 359,
+    "available_chapters": 20,
+    "description": "啥，老子堂堂的漠北兵王，居然要当奶爸？好吧，看在孩子他妈貌若天仙的份儿上，老子勉强答应了……  神兵奶爸林昆最新章节免费阅读 神兵奶爸林昆最新章节 神兵奶爸林昆楚静瑶最新章节 神兵奶爸小说 二斗"
   }
 ]
