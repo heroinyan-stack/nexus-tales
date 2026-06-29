@@ -1,16 +1,7 @@
 {
-  "last_index": 48,
-  "last_run": "2026-06-28T06:14:32.565667+00:00",
+  "last_index": 52,
+  "last_run": "2026-06-29T01:10:59.620108+00:00",
   "history": [
-    {
-      "date": "2026-05-28",
-      "updated": [
-        "renegade-immortal",
-        "hidden-marriage",
-        "city-of-sin",
-        "super-gene"
-      ]
-    },
     {
       "date": "2026-05-29",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-102-traveling-across-the-source-card-continent",
         "novel-103-debt-book",
         "novel-104-the-nine-evil-concubines-ask-every"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "updated": [
+        "novel-105-the-tomb-is-opened-and-i",
+        "novel-106-the-sect-accepts-disciples-i-can",
+        "novel-107-star-gods",
+        "novel-108-first-wife-escapes-at-night"
       ]
     }
   ]

@@ -3400,8 +3400,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 57,
-    "id": 105
+    "total_chapters": 58,
+    "id": 105,
+    "updated_at": "2026-06-29T01:10:59.466256+00:00"
   },
   {
     "slug": "novel-106-the-sect-accepts-disciples-i-can",
@@ -3426,8 +3427,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
-    "id": 106
+    "total_chapters": 114,
+    "id": 106,
+    "updated_at": "2026-06-29T01:10:59.467707+00:00"
   },
   {
     "slug": "novel-107-star-gods",
@@ -3452,9 +3454,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 107,
-    "title_zh": "诸天星神"
+    "title_zh": "诸天星神",
+    "updated_at": "2026-06-29T01:10:59.469366+00:00"
   },
   {
     "slug": "novel-108-first-wife-escapes-at-night",
@@ -3479,9 +3482,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 108,
-    "title_zh": "正妻夜逃"
+    "title_zh": "正妻夜逃",
+    "updated_at": "2026-06-29T01:10:59.472927+00:00"
   },
   {
     "slug": "novel-109-great-wisdom-is-like-a-foolish",
