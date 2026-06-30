@@ -1,0 +1,78 @@
+
+> novel-site@0.1.0 build
+> prisma generate && next build
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 158ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Curious about the SQL queries Prisma ORM generates? Optimize helps you enhance your visibility: https://pris.ly/tip-2-optimize
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/497) ...
+   Generating static pages (124/497) 
+   Generating static pages (248/497) 
+   Generating static pages (372/497) 
+ ✓ Generating static pages (497/497)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                Size     First Load JS
+┌ ○ /                                      4.24 kB         100 kB
+├ ○ /_not-found                            153 B          87.5 kB
+├ ƒ /api/auth/[...nextauth]                0 B                0 B
+├ ƒ /api/debug                             0 B                0 B
+├ ○ /api/novels                            0 B                0 B
+├ ƒ /api/payment/billing-portal            0 B                0 B
+├ ƒ /api/payment/checkout                  0 B                0 B
+├ ƒ /api/payment/invoice                   0 B                0 B
+├ ƒ /api/payment/status                    0 B                0 B
+├ ƒ /api/progress                          0 B                0 B
+├ ƒ /api/register                          0 B                0 B
+├ ƒ /api/webhooks/creem                    0 B                0 B
+├ ƒ /api/webhooks/lemonsqueezy             0 B                0 B
+├ ƒ /api/webhooks/nowpayments              0 B                0 B
+├ ○ /blog                                  181 B          96.2 kB
+├ ● /blog/[slug]                           181 B          96.2 kB
+├   ├ /blog/what-is-xianxia-guide
+├   ├ /blog/why-chinese-web-novels-global
+├   ├ /blog/top-5-cultivation-novels-2026
+├   └ [+2 more paths]
+├ ○ /checkout                              5.74 kB         102 kB
+├ ○ /contact                               153 B          87.5 kB
+├ ○ /login                                 2.79 kB         108 kB
+├ ● /novel/[slug]                          2.2 kB          108 kB
+├   ├ /novel/martial-god-asura
+├   ├ /novel/against-the-gods
+├   ├ /novel/journey-to-the-west
+├   └ [+471 more paths]
+├ ƒ /novel/[slug]/chapter/[num]            4.89 kB         111 kB
+├ ○ /novels                                153 B          87.5 kB
+├ ○ /pricing                               3.57 kB         109 kB
+├ ○ /privacy                               153 B          87.5 kB
+├ ○ /profile                               4.49 kB         110 kB
+├ ○ /robots.txt                            0 B                0 B
+├ ○ /signup                                3.35 kB         109 kB
+├ ○ /sitemap.xml                           0 B                0 B
+└ ○ /terms                                 153 B          87.5 kB
++ First Load JS shared by all              87.3 kB
+  ├ chunks/117-df66b62dc5c90d89.js         31.7 kB
+  ├ chunks/fd9d1056-d0f277ea6c17fc29.js    53.6 kB
+  └ other shared chunks (total)            1.95 kB
+
+
+ƒ Middleware                               49.6 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand
+
