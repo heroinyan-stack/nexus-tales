@@ -1,16 +1,7 @@
 {
-  "last_index": 52,
-  "last_run": "2026-06-29T01:10:59.620108+00:00",
+  "last_index": 56,
+  "last_run": "2026-07-01T01:10:40.634369+00:00",
   "history": [
-    {
-      "date": "2026-05-29",
-      "updated": [
-        "martial-god-asura",
-        "against-the-gods",
-        "i-shall-seal-the-heavens",
-        "reverend-insanity"
-      ]
-    },
     {
       "date": "2026-05-30",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-106-the-sect-accepts-disciples-i-can",
         "novel-107-star-gods",
         "novel-108-first-wife-escapes-at-night"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "updated": [
+        "novel-109-great-wisdom-is-like-a-foolish",
+        "novel-110-wedding-night-divorce-night",
+        "novel-111-my-enemy-forced-me-to-marry",
+        "novel-112-fake-wifes-plot-flower-attack"
       ]
     }
   ]

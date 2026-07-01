@@ -3510,9 +3510,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 109,
-    "title_zh": "大智若愚妻"
+    "title_zh": "大智若愚妻",
+    "updated_at": "2026-07-01T01:10:40.286708+00:00"
   },
   {
     "slug": "novel-110-wedding-night-divorce-night",
@@ -3537,9 +3538,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 110,
-    "title_zh": "新婚夜休妻夜"
+    "title_zh": "新婚夜休妻夜",
+    "updated_at": "2026-07-01T01:10:40.287616+00:00"
   },
   {
     "slug": "novel-111-my-enemy-forced-me-to-marry",
@@ -3564,8 +3566,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
-    "id": 111
+    "total_chapters": 12,
+    "id": 111,
+    "updated_at": "2026-07-01T01:10:40.288491+00:00"
   },
   {
     "slug": "novel-112-fake-wifes-plot-flower-attack",
@@ -3590,9 +3593,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 112,
-    "title_zh": "假妻算计 [花袭]"
+    "title_zh": "假妻算计 [花袭]",
+    "updated_at": "2026-07-01T01:10:40.531650+00:00"
   },
   {
     "slug": "novel-113-the-blessed-wife-strikes-back-li",
