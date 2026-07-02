@@ -51,6 +51,16 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
   const chapters = getChapterList(novel.slug);
   const coverUrl = getCoverUrl(novel.slug);
 
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Browse Novels", item: `${BASE_URL}/novels` },
+      { "@type": "ListItem", position: 3, name: novel.title_en },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Book",
@@ -62,13 +72,16 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
     inLanguage: "en",
     isAccessibleForFree: novel.zone === "free",
     url: `${BASE_URL}/novel/${novel.slug}`,
-    publisher: { "@type": "Organization", name: "Nexus Tales" },
+    publisher: { "@type": "Organization", name: "Nexus Tales", url: BASE_URL },
     numberOfPages: chapters.length,
   };
 
   return (
     <div className="pt-24 pb-24">
       {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(jsonLdBreadcrumb),
+      }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(jsonLd),
       }} />

@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 
 const BASE_URL = "https://novelhub.beauty";
+const CHAPTERS_DIR = path.join(process.cwd(), "data", "chapters");
 
 function safeDate(val?: string): Date {
   if (!val) return new Date();
@@ -14,6 +15,30 @@ function safeDate(val?: string): Date {
   } catch {
     return new Date();
   }
+}
+
+/** Get last-modified date for a chapter file (returns novel updated_at as fallback) */
+function chapterLastMod(novelSlug: string, chapterNum: number, fallback: Date): Date {
+  const dir = path.join(CHAPTERS_DIR, novelSlug);
+  if (!fs.existsSync(dir)) return fallback;
+  // Try ch-XXXX.json format
+  const padded = String(chapterNum).padStart(4, '0');
+  const candidates = [
+    `ch-${padded}.json`,
+    `ch-${chapterNum}.json`,
+  ];
+  for (const fn of candidates) {
+    const fp = path.join(dir, fn);
+    if (fs.existsSync(fp)) {
+      try {
+        const stat = fs.statSync(fp);
+        return stat.mtime;
+      } catch {
+        // fall through
+      }
+    }
+  }
+  return fallback;
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -79,22 +104,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const novel of novels) {
-    const lastMod = safeDate(novel.updated_at);
+    const novelDate = safeDate(novel.updated_at);
 
+    // Novel page with per-novel freshness
     routes.push({
       url: `${BASE_URL}/novel/${novel.slug}`,
-      lastModified: lastMod,
+      lastModified: novelDate,
       changeFrequency: "weekly",
       priority: novel.zone === "free" ? 0.9 : 0.8,
     });
 
+    // Only include chapters with valid English translations
     const chapters = getChapterList(novel.slug);
     for (const ch of chapters) {
+      const chDate = chapterLastMod(novel.slug, ch.num, novelDate);
       routes.push({
         url: `${BASE_URL}/novel/${novel.slug}/chapter/${ch.num}`,
-        lastModified: lastMod,
-        changeFrequency: "monthly",
-        priority: 0.6,
+        lastModified: chDate,
+        // First 5 chapters: higher priority (onboarding), rest: standard
+        changeFrequency: ch.num <= 5 ? "weekly" : "monthly",
+        priority: ch.num <= 5 ? 0.7 : 0.6,
       });
     }
   }
