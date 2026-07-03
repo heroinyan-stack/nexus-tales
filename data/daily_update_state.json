@@ -1,16 +1,7 @@
 {
-  "last_index": 60,
-  "last_run": "2026-07-02T01:10:48.434850+00:00",
+  "last_index": 64,
+  "last_run": "2026-07-03T01:09:17.777550+00:00",
   "history": [
-    {
-      "date": "2026-05-31",
-      "updated": [
-        "renegade-immortal",
-        "hidden-marriage",
-        "city-of-sin",
-        "super-gene"
-      ]
-    },
     {
       "date": "2026-06-01",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-114-the-female-court-attendant-of-zhendian",
         "novel-115-the-village-flower-has-wealth-xiang",
         "novel-116-the-secret-agent-is-a-bit"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "updated": [
+        "novel-117-strategy-for-finding-a-husband-phoenix",
+        "novel-118-strategy-for-finding-a-husband-phoenix",
+        "novel-119-crown-princess-leyan",
+        "novel-120-dandy-pants-leyan"
       ]
     }
   ]

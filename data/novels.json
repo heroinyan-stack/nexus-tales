@@ -3733,8 +3733,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1,
-    "id": 117
+    "total_chapters": 2,
+    "id": 117,
+    "updated_at": "2026-07-03T01:09:17.751915+00:00"
   },
   {
     "slug": "novel-118-strategy-for-finding-a-husband-phoenix",
@@ -3759,8 +3760,9 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1,
-    "id": 118
+    "total_chapters": 2,
+    "id": 118,
+    "updated_at": "2026-07-03T01:09:17.752641+00:00"
   },
   {
     "slug": "novel-119-crown-princess-leyan",
@@ -3785,9 +3787,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 119,
-    "title_zh": "太子妃 [乐颜]"
+    "title_zh": "太子妃 [乐颜]",
+    "updated_at": "2026-07-03T01:09:17.753045+00:00"
   },
   {
     "slug": "novel-120-dandy-pants-leyan",
@@ -3812,9 +3815,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 120,
-    "title_zh": "纨裤 [乐颜]"
+    "title_zh": "纨裤 [乐颜]",
+    "updated_at": "2026-07-03T01:09:17.753793+00:00"
   },
   {
     "slug": "novel-121-continued-string-leyan",
