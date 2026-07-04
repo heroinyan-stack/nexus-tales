@@ -3843,9 +3843,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 121,
-    "title_zh": "续弦 [乐颜]"
+    "title_zh": "续弦 [乐颜]",
+    "updated_at": "2026-07-04T15:11:38.773653+00:00"
   },
   {
     "slug": "novel-122-concubine-leyan",
@@ -3870,9 +3871,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 122,
-    "title_zh": "庶子 [乐颜]"
+    "title_zh": "庶子 [乐颜]",
+    "updated_at": "2026-07-04T15:11:38.774398+00:00"
   },
   {
     "slug": "novel-123-the-proud-alchemy-god",
@@ -3899,9 +3901,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1900,
+    "total_chapters": 1901,
     "id": 123,
-    "title_zh": "傲世丹神"
+    "title_zh": "傲世丹神",
+    "updated_at": "2026-07-04T15:11:38.775186+00:00"
   },
   {
     "slug": "novel-124-the-evil-king-from-another-world",
@@ -3928,9 +3931,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 638,
+    "total_chapters": 639,
     "id": 124,
-    "title_zh": "异世邪君"
+    "title_zh": "异世邪君",
+    "updated_at": "2026-07-04T15:11:38.775969+00:00"
   },
   {
     "slug": "novel-125-ten-directions-celestial-beings",
