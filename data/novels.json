@@ -3961,9 +3961,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 315,
+    "total_chapters": 316,
     "id": 125,
-    "title_zh": "十方天士"
+    "title_zh": "十方天士",
+    "updated_at": "2026-07-05T01:05:41.295339+00:00"
   },
   {
     "slug": "novel-126-extreme-martial-lord",
@@ -3990,9 +3991,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 770,
+    "total_chapters": 771,
     "id": 126,
-    "title_zh": "极限武尊"
+    "title_zh": "极限武尊",
+    "updated_at": "2026-07-05T01:05:41.296508+00:00"
   },
   {
     "slug": "novel-127-douluo-dalu",
@@ -4019,9 +4021,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 344,
+    "total_chapters": 345,
     "id": 127,
-    "title_zh": "斗罗大陆"
+    "title_zh": "斗罗大陆",
+    "updated_at": "2026-07-05T01:05:41.297330+00:00"
   },
   {
     "slug": "novel-128-supreme-immortal-emperor",
@@ -4048,9 +4051,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 612,
+    "total_chapters": 613,
     "id": 128,
-    "title_zh": "至尊仙皇"
+    "title_zh": "至尊仙皇",
+    "updated_at": "2026-07-05T01:05:41.298410+00:00"
   },
   {
     "slug": "novel-129-seek-magic",
