@@ -5,7 +5,7 @@ import { isNovelFullyTranslated } from "@/lib/novels";
 import NovelsClient from "./NovelsClient";
 
 export const metadata: Metadata = {
-  title: "Browse All Novels | Nexus Tales",
+  title: "Browse All Novels",
   description:
     "Browse all translated cultivation, xianxia, wuxia, and classic Chinese novels. Free chapters available daily.",
   alternates: { canonical: "https://novelhub.beauty/novels" },
