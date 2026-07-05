@@ -13,6 +13,37 @@ ssl_ctx.verify_mode = ssl.CERT_NONE
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data/chapters')
 os.makedirs(DATA_DIR, exist_ok=True)
 
+def detect_encoding_from_bytes(raw):
+    """Detect encoding from HTML meta tags in raw bytes"""
+    # Try to find charset in the first 4096 bytes
+    head = raw[:4096]
+    for enc in ['utf-8', 'gbk', 'gb2312', 'latin-1']:
+        try:
+            head.decode(enc)
+        except:
+            continue
+    # Try utf-8 first, then gbk
+    try:
+        head.decode('utf-8')
+        # Check if there's a meta charset tag
+        h = head.decode('utf-8', errors='replace')
+        m = re.search(r'<meta[^>]*charset[="\s]+([^"\s>]+)', h, re.I)
+        if m and 'gb' in m.group(1).lower():
+            return m.group(1)
+        if m:
+            return m.group(1)
+        return 'utf-8'
+    except:
+        pass
+    # Fallback: try gbk for Chinese sites
+    try:
+        h = head.decode('gbk')
+        if re.search(r'[\u4e00-\u9fff]{4,}', h):
+            return 'gbk'
+    except:
+        pass
+    return 'utf-8'
+
 def fetch(url, headers=None, timeout=20, use_curl=False):
     """Fetch URL, using curl for servers that block Python's urllib"""
     if use_curl:
@@ -25,7 +56,8 @@ def fetch(url, headers=None, timeout=20, use_curl=False):
             cmd += ['-H', f'Referer: {ref}']
         cmd.append(url)
         r = subprocess.run(cmd, capture_output=True, timeout=timeout+5)
-        return r.stdout.decode('utf-8', errors='replace')
+        encoding = detect_encoding_from_bytes(r.stdout)
+        return r.stdout.decode(encoding, errors='replace')
     
     h = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
