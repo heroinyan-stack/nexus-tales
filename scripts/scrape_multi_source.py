@@ -216,7 +216,7 @@ def scrape_bxwx9(page=1):
             urls.append('https://www.bxwx9.org/')
         for url in urls:
             try:
-                html = fetch(url)
+                html = fetch(url, use_curl=True)
                 for m in re.finditer(r'href="(/b/(\d+)/(\d+)/)"', html):
                     href, group_id, nid = m.group(1), m.group(2), m.group(3)
                     # Title is in the text after the href, inside <a> tag
@@ -244,7 +244,7 @@ def scrape_bxwx9_chapters(novel_id, group_id=None):
             url = f'https://www.bxwx9.org/b/{group_id}/{novel_id}/'
         else:
             url = f'https://www.bxwx9.org/b/{novel_id}/'
-        html = fetch(url)
+        html = fetch(url, use_curl=True)
         title = re.search(r'<title>(.*?)(?:目录|最新章节|全文|_笔下文学)', html)
         novel_title = title.group(1).strip() if title else novel_id
 
@@ -265,7 +265,7 @@ def scrape_bxwx9_chapters(novel_id, group_id=None):
 def scrape_bxwx9_content(url):
     """Extract chapter content from bxwx9 (<article> tag)"""
     try:
-        html = fetch(url)
+        html = fetch(url, use_curl=True)
         content = re.search(r'<article[^>]*>(.*?)</article>', html, re.S)
         if not content:
             return None
