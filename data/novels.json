@@ -4081,9 +4081,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 739,
+    "total_chapters": 740,
     "id": 129,
-    "title_zh": "求魔"
+    "title_zh": "求魔",
+    "updated_at": "2026-07-06T01:09:04.546499+00:00"
   },
   {
     "slug": "novel-130-supreme-supernatural-power",
@@ -4110,9 +4111,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 466,
+    "total_chapters": 467,
     "id": 130,
-    "title_zh": "无上神通"
+    "title_zh": "无上神通",
+    "updated_at": "2026-07-06T01:09:04.549143+00:00"
   },
   {
     "slug": "novel-131-supreme-emperor",
@@ -4139,9 +4141,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1214,
+    "total_chapters": 1215,
     "id": 131,
-    "title_zh": "帝道至尊"
+    "title_zh": "帝道至尊",
+    "updated_at": "2026-07-06T01:09:04.549603+00:00"
   },
   {
     "slug": "novel-132-journey-to-the-west-from-scratch",
@@ -4168,9 +4171,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 169,
+    "total_chapters": 170,
     "id": 132,
-    "title_zh": "穿越西游之从零开始"
+    "title_zh": "穿越西游之从零开始",
+    "updated_at": "2026-07-06T01:09:04.550316+00:00"
   },
   {
     "slug": "novel-133-emperor-xuantian",
