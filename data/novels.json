@@ -4201,9 +4201,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1273,
+    "total_chapters": 1274,
     "id": 133,
-    "title_zh": "帝玄天"
+    "title_zh": "帝玄天",
+    "updated_at": "2026-07-07T01:11:13.796760+00:00"
   },
   {
     "slug": "novel-134-peerless-martial-god",
@@ -4230,9 +4231,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1250,
+    "total_chapters": 1251,
     "id": 134,
-    "title_zh": "绝世武神"
+    "title_zh": "绝世武神",
+    "updated_at": "2026-07-07T01:11:13.797258+00:00"
   },
   {
     "slug": "novel-135-cultivators-in-another-world",
@@ -4259,9 +4261,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 574,
+    "total_chapters": 575,
     "id": 135,
-    "title_zh": "修真者在异世"
+    "title_zh": "修真者在异世",
+    "updated_at": "2026-07-07T01:11:13.798020+00:00"
   },
   {
     "slug": "novel-136-god-of-death",
@@ -4288,9 +4291,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 809,
+    "total_chapters": 810,
     "id": 136,
-    "title_zh": "杀神"
+    "title_zh": "杀神",
+    "updated_at": "2026-07-07T01:11:13.798455+00:00"
   },
   {
     "slug": "novel-137-legend-of-the-seven-realms",
