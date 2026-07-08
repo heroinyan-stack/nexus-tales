@@ -4321,9 +4321,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 2294,
+    "total_chapters": 2295,
     "id": 137,
-    "title_zh": "七界传说"
+    "title_zh": "七界传说",
+    "updated_at": "2026-07-08T09:30:29.168202+00:00"
   },
   {
     "slug": "novel-138-phantom-of-another-world",
@@ -4350,9 +4351,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 736,
+    "total_chapters": 737,
     "id": 138,
-    "title_zh": "异界魅影逍遥"
+    "title_zh": "异界魅影逍遥",
+    "updated_at": "2026-07-08T09:30:29.168678+00:00"
   },
   {
     "slug": "novel-139-swallow-the-sky",
@@ -4379,9 +4381,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1090,
+    "total_chapters": 1091,
     "id": 139,
-    "title_zh": "吞噬苍穹"
+    "title_zh": "吞噬苍穹",
+    "updated_at": "2026-07-08T09:30:29.169512+00:00"
   },
   {
     "slug": "novel-140-avenue-lord",
@@ -4408,9 +4411,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1546,
+    "total_chapters": 1547,
     "id": 140,
-    "title_zh": "大道主"
+    "title_zh": "大道主",
+    "updated_at": "2026-07-08T09:30:29.169958+00:00"
   },
   {
     "slug": "novel-141-world-of-warcraft-sword-saint-another",
