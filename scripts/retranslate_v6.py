@@ -40,42 +40,30 @@ def is_chinese(text, threshold=0.15):
     return cn / len(sample) > threshold
 
 def translate_google(text, timeout=15):
-    """Use batchexecute endpoint (web UI API) - no 429 rate limits."""
-    chunk = text[:2000]  # batchexecute handles ~2000 chars comfortably
-    payload = json.dumps([[[
-        "MkEWBc",
-        json.dumps([[chunk, "zh-CN", "en", True]]),
-        None,
-        "generic"
-    ]]])
-    data = ('f.req=' + urllib.parse.quote(payload)).encode()
-
-    req = urllib.request.Request(
-        'https://translate.google.com/_/TranslateWebserverUi/data/batchexecute',
-        data=data,
-        headers={
-            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-        }
-    )
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        resp = r.read().decode('utf-8')
-
-    # Parse batchexecute response
-    resp = resp[resp.index('\n')+1:]
+    """Use translate.googleapis.com/translate_a/single (public API, no key needed)."""
+    params = {
+        'client': 'gtx',
+        'sl': 'zh-CN',
+        'tl': 'en',
+        'dt': 't',
+        'q': text[:1800]
+    }
+    url = 'https://translate.googleapis.com/translate_a/single?' + urllib.parse.urlencode(params)
+    req = urllib.request.Request(url, headers={
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    })
+    # Retry SSL errors up to 3 times
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                resp = r.read().decode('utf-8')
+            break
+        except Exception as e:
+            if attempt == 2:
+                raise e
+            time.sleep(2 * (attempt + 1))
     parsed = json.loads(resp)
-    inner = json.loads(parsed[0][2])
-
-    if inner is None or not isinstance(inner, list) or len(inner) < 2:
-        raise Exception("Invalid response structure")
-
-    # Extract translated segments
-    try:
-        segments = inner[1][0][0][5]
-        result = ''.join(seg[0] for seg in segments if seg and seg[0])
-    except (IndexError, TypeError):
-        raise Exception("Cannot extract translation")
-
+    result = ''.join(seg[0] for seg in parsed[0] if seg and seg[0])
     if not result or len(result.strip()) < 3:
         raise Exception(f"Too short: {len(result) if result else 0}")
     return result.strip()
@@ -154,7 +142,13 @@ def main():
         except:
             continue
         ce = ch.get('content_en', '')
-        cn_text = ch.get('content_zh') or ch.get('content') or ''
+        cn_text = ch.get('content_zh') or ch.get('content') or ch.get('content_cn') or ''
+        # Handle chapters using 'lines' field
+        if not cn_text and ch.get('lines'):
+            if isinstance(ch['lines'], list):
+                cn_text = '\n'.join(str(l) for l in ch['lines'])
+            else:
+                cn_text = str(ch['lines'])
         if not cn_text:
             continue
         if not ce or len(ce) < 50 or is_chinese(ce):
@@ -193,7 +187,13 @@ def main():
             fail += 1
             continue
 
-        cn_text = ch.get('content_zh') or ch.get('content') or ''
+        cn_text = ch.get('content_zh') or ch.get('content') or ch.get('content_cn') or ''
+        # Handle chapters using 'lines' field
+        if not cn_text and ch.get('lines'):
+            if isinstance(ch['lines'], list):
+                cn_text = '\n'.join(str(l) for l in ch['lines'])
+            else:
+                cn_text = str(ch['lines'])
         title = ch.get('title', fn)
 
         # Detect garbled (corrupted encoding) content
