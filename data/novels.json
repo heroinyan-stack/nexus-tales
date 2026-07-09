@@ -4441,9 +4441,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 395,
+    "total_chapters": 396,
     "id": 141,
-    "title_zh": "魔兽剑圣异界纵横"
+    "title_zh": "魔兽剑圣异界纵横",
+    "updated_at": "2026-07-09T01:05:54.524463+00:00"
   },
   {
     "slug": "novel-142-dzi-bead-transformation",
@@ -4470,9 +4471,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 425,
+    "total_chapters": 426,
     "id": 142,
-    "title_zh": "天珠变"
+    "title_zh": "天珠变",
+    "updated_at": "2026-07-09T01:05:54.524900+00:00"
   },
   {
     "slug": "novel-143-fight-to-break-the-sky",
@@ -4499,9 +4501,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 822,
+    "total_chapters": 823,
     "id": 143,
-    "title_zh": "斗破苍穹"
+    "title_zh": "斗破苍穹",
+    "updated_at": "2026-07-09T01:05:54.525577+00:00"
   },
   {
     "slug": "novel-144-sword-god-reborn",
@@ -4528,9 +4531,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1597,
+    "total_chapters": 1598,
     "id": 144,
-    "title_zh": "剑神重生"
+    "title_zh": "剑神重生",
+    "updated_at": "2026-07-09T01:05:54.526370+00:00"
   },
   {
     "slug": "novel-145-evil-insect-god",

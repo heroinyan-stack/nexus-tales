@@ -1,16 +1,7 @@
 {
-  "last_index": 84,
-  "last_run": "2026-07-08T09:30:29.195987+00:00",
+  "last_index": 88,
+  "last_run": "2026-07-09T01:05:54.546080+00:00",
   "history": [
-    {
-      "date": "2026-06-06",
-      "updated": [
-        "renegade-immortal",
-        "hidden-marriage",
-        "city-of-sin",
-        "super-gene"
-      ]
-    },
     {
       "date": "2026-06-07",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-138-phantom-of-another-world",
         "novel-139-swallow-the-sky",
         "novel-140-avenue-lord"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "updated": [
+        "novel-141-world-of-warcraft-sword-saint-another",
+        "novel-142-dzi-bead-transformation",
+        "novel-143-fight-to-break-the-sky",
+        "novel-144-sword-god-reborn"
       ]
     }
   ]
