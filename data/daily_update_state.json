@@ -1,16 +1,7 @@
 {
-  "last_index": 88,
-  "last_run": "2026-07-09T01:05:54.546080+00:00",
+  "last_index": 92,
+  "last_run": "2026-07-10T01:05:18.332128+00:00",
   "history": [
-    {
-      "date": "2026-06-07",
-      "updated": [
-        "martial-god-asura",
-        "against-the-gods",
-        "i-shall-seal-the-heavens",
-        "reverend-insanity"
-      ]
-    },
     {
       "date": "2026-06-08",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-142-dzi-bead-transformation",
         "novel-143-fight-to-break-the-sky",
         "novel-144-sword-god-reborn"
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "updated": [
+        "novel-145-evil-insect-god",
+        "novel-146-tang-sect-masters-in-another-world",
+        "novel-147-my-best-sister-in-law",
+        "novel-148-urban-super-summoner"
       ]
     }
   ]
