@@ -4681,9 +4681,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 519,
+    "total_chapters": 520,
     "id": 149,
-    "title_zh": "极品相师"
+    "title_zh": "极品相师",
+    "updated_at": "2026-07-11T01:04:16.769145+00:00"
   },
   {
     "slug": "novel-150-veteran-legend",
@@ -4710,9 +4711,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1229,
+    "total_chapters": 1230,
     "id": 150,
-    "title_zh": "老兵传奇"
+    "title_zh": "老兵传奇",
+    "updated_at": "2026-07-11T01:04:16.769567+00:00"
   },
   {
     "slug": "novel-151-imperial-treasure-celestial-master",
@@ -4739,9 +4741,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 902,
+    "total_chapters": 903,
     "id": 151,
-    "title_zh": "御宝天师"
+    "title_zh": "御宝天师",
+    "updated_at": "2026-07-11T01:04:16.770123+00:00"
   },
   {
     "slug": "novel-152-the-best-beauty-training-system",
@@ -4768,9 +4771,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 325,
+    "total_chapters": 326,
     "id": 152,
-    "title_zh": "极品美女养成系统"
+    "title_zh": "极品美女养成系统",
+    "updated_at": "2026-07-11T01:04:16.770779+00:00"
   },
   {
     "slug": "novel-153-yanfu-fairy-doctor",
