@@ -4801,9 +4801,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 218,
+    "total_chapters": 219,
     "id": 153,
-    "title_zh": "艳福仙医"
+    "title_zh": "艳福仙医",
+    "updated_at": "2026-07-12T01:07:16.916388+00:00"
   },
   {
     "slug": "novel-154-cultivation-in-this-world",
@@ -4830,9 +4831,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 312,
+    "total_chapters": 313,
     "id": 154,
-    "title_zh": "现世修真"
+    "title_zh": "现世修真",
+    "updated_at": "2026-07-12T01:07:16.917025+00:00"
   },
   {
     "slug": "novel-155-campus-all-round-master",
@@ -4859,9 +4861,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1590,
+    "total_chapters": 1591,
     "id": 155,
-    "title_zh": "校园全能高手"
+    "title_zh": "校园全能高手",
+    "updated_at": "2026-07-12T01:07:16.917812+00:00"
   },
   {
     "slug": "novel-156-clairvoyant-eye",
@@ -4888,9 +4891,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 1268,
+    "total_chapters": 1269,
     "id": 156,
-    "title_zh": "透视之眼"
+    "title_zh": "透视之眼",
+    "updated_at": "2026-07-12T01:07:16.918632+00:00"
   },
   {
     "slug": "novel-157-official-career",
