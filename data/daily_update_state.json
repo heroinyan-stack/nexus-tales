@@ -1,16 +1,7 @@
 {
-  "last_index": 100,
-  "last_run": "2026-07-12T01:07:16.937537+00:00",
+  "last_index": 104,
+  "last_run": "2026-07-13T01:05:31.296700+00:00",
   "history": [
-    {
-      "date": "2026-06-10",
-      "updated": [
-        "novel-133988",
-        "novel-133515",
-        "novel-134081",
-        "novel-134033"
-      ]
-    },
     {
       "date": "2026-06-11",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-154-cultivation-in-this-world",
         "novel-155-campus-all-round-master",
         "novel-156-clairvoyant-eye"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "updated": [
+        "novel-157-official-career",
+        "novel-158-super-self-cultivation-bodyguard",
+        "novel-159-gangster-special-forces",
+        "novel-160-masters-of-cultivating-immortals-on-campus"
       ]
     }
   ]
