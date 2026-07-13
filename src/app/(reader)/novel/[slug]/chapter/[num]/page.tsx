@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getNovelBySlug, getChapterContent } from "@/lib/novels";
 import ChapterReaderClient from "./ChapterReaderClient";
 import ChapterGate from "@/components/ChapterGate";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const BASE_URL = "https://novelhub.beauty";
 const PLACEHOLDER_PREFIX = "This chapter is being translated";
@@ -106,6 +107,16 @@ export default async function ChapterPage({ params }: { params: { slug: string; 
         totalChapters={novel.available_chapters || novel.total_chapters}
         novelTitle={novel.title_en}
         zone={novel.zone}
+        breadcrumbs={
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Novels", href: "/novels" },
+              { label: novel.title_en, href: `/novel/${novel.slug}` },
+              { label: `Chapter ${chapterNum}` },
+            ]}
+          />
+        }
       />
     </>
   );

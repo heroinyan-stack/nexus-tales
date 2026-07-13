@@ -5,6 +5,7 @@ import { getNovelBySlug, getChapterList, getAllNovels, getCoverUrl } from "@/lib
 import { notFound } from "next/navigation";
 import ChapterListClient from "@/components/ChapterListClient";
 import ReadButton from "@/components/ReadButton";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const BASE_URL = "https://novelhub.beauty";
 
@@ -78,22 +79,20 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
 
   return (
     <div className="pt-24 pb-24">
-      {/* JSON-LD Structured Data */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify(jsonLdBreadcrumb),
-      }} />
+      {/* JSON-LD Structured Data (inline, Breadcrumbs component injects its own) */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(jsonLd),
       }} />
       <div className="max-w-7xl mx-auto px-6">
-        {/* Back */}
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-moon/50 hover:text-neon-cyan transition-colors mb-8 text-sm"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          Back to Library
-        </Link>
+        {/* Visual breadcrumbs for SEO */}
+        <Breadcrumbs
+          className="mb-6"
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Novels", href: "/novels" },
+            { label: novel.title_en },
+          ]}
+        />
 
         {/* Header */}
         <div className="grid lg:grid-cols-[280px_1fr] gap-10 mb-16">

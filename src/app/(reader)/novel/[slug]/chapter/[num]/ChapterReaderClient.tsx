@@ -48,6 +48,7 @@ export default function ChapterReaderClient({
   totalChapters,
   novelTitle = "",
   zone = "free",
+  breadcrumbs,
 }: {
   content: string;
   novelSlug: string;
@@ -55,6 +56,7 @@ export default function ChapterReaderClient({
   totalChapters: number;
   novelTitle?: string;
   zone?: string;
+  breadcrumbs?: React.ReactNode;
 }) {
   const { data: session } = useSession();
   const [theme, setTheme] = useState<Theme>("dark");
@@ -189,22 +191,33 @@ export default function ChapterReaderClient({
         />
       </div>
 
-      {/* Top bar: back button + full screen toggle */}
+      {/* Top bar: breadcrumbs + full screen toggle */}
       {!isImmersive && (
-        <div className="fixed top-4 left-4 right-4 z-40 flex items-center justify-between">
-          <Link
-            href={`/novel/${novelSlug}`}
-            className={`flex items-center gap-1.5 ${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
-          >
-            <ArrowLeft className="w-3.5 h-3.5" />
-            <span>Back to Novel</span>
-          </Link>
-          <button
-            onClick={() => setIsImmersive(true)}
-            className={`${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
-          >
-            Full Screen
-          </button>
+        <div className="fixed top-0 left-0 right-0 z-40">
+          {/* Visual breadcrumbs for SEO */}
+          {breadcrumbs && (
+            <div className={`${colors.bg} ${colors.border} border-b`}>
+              <div className="max-w-2xl mx-auto px-6 py-1.5">
+                {breadcrumbs}
+              </div>
+            </div>
+          )}
+          {/* Back button + full screen toggle */}
+          <div className="flex items-center justify-between px-4 py-2">
+            <Link
+              href={`/novel/${novelSlug}`}
+              className={`flex items-center gap-1.5 ${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
+            >
+              <ArrowLeft className="w-3.5 h-3.5" />
+              <span>Back to Novel</span>
+            </Link>
+            <button
+              onClick={() => setIsImmersive(true)}
+              className={`${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
+            >
+              Full Screen
+            </button>
+          </div>
         </div>
       )}
 
