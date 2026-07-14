@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fccb90"/>
+      <stop offset="100%" style="stop-color:#d57eeb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" rx="8"/>
+  <text x="200" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="white" font-weight="bold">266406</text>
+  <text x="200" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">NovelHub</text>
+</svg>
