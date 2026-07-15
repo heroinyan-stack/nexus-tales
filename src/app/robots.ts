@@ -16,6 +16,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Bingbot",
         allow: "/",
       },
+      {
+        userAgent: "Baiduspider",
+        allow: "/",
+      },
     ],
     sitemap: "https://novelhub.beauty/sitemap.xml",
   };
