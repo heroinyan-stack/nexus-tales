@@ -144,6 +144,19 @@ def clean_text(text):
     text = re.sub(r'(?:一秒记住|笔趣阁|手机用户请浏览|记住本站|网址[：:]?\s*|www\.|https?://)[^\n]{0,50}[\n]?', '', text)
     text = re.sub(r'(?:记住|收藏|打开|阅读)[^\n]{0,30}[\n]?', '', text)
     lines = [l.strip() for l in text.split('\n') if l.strip() and len(l.strip()) > 3]
+    # Filter out placeholder/anti-piracy lines
+    placeholder_patterns = [
+        r'暂无阅读资源',
+        r'侵权.*投诉',
+        r'寻找可用资源',
+        r'通过报错提供',
+        r'收藏|笔趣阁更新速度全网最快',
+        r'本章暂无',
+        r'请点击访问.*版权',
+        r'将在全网为您寻找',
+        r'DMCA',
+    ]
+    lines = [l for l in lines if not any(re.search(p, l) for p in placeholder_patterns)]
     # Filter out navigation/site lines
     lines = [l for l in lines if not re.match(r'^(首页|返回|目录|上一(章|页)|下一(章|页)|列表)$', l)]
     return lines
@@ -834,11 +847,444 @@ def crawl_23wx(limit_novels=40, limit_chapters=20):
 
 
 # ─────────────────────────────────────────────────
+# CRAWLER 5: jubiquge.com (mobile 笔趣阁)
+# ─────────────────────────────────────────────────
+def _extract_jubiquge_content(html):
+    """Extract chapter text from jubiquge.com page.
+    Content split across nr1/nr2/nr3 divs."""
+    all_text = []
+    for div_id in ['nr1', 'nr2', 'nr3']:
+        m = re.search(r'<div id="' + div_id + r'"[^>]*>(.*?)</div>', html, re.S)
+        if m:
+            text = re.sub(r'<[^>]*?>', '', m.group(1))
+            text = text.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"').replace('&nbsp;', ' ')
+            all_text.append(text.strip())
+    if not all_text:
+        return []
+    full_text = '\n'.join(all_text)
+    return clean_text(full_text)
+
+def crawl_jubiquge(limit_novels=30, limit_chapters=15):
+    """Discover novels from m.jubiquge.com and scrape chapters."""
+    DOMAIN = "https://m.jubiquge.com"
+    novels_db = load_novels()
+    existing_sources = {n.get('source_url', '') for n in novels_db}
+    existing_slugs = {n['slug'] for n in novels_db}
+    new_count = 0
+    total_chapters = 0
+
+    print(f"  Fetching jubiquge.com top/rank pages...")
+    discovered = []
+    seen_ids = set()
+
+    # Discover from rank sub-pages (allvisit, monthvisit, weekvisit, goodnum, postdate, lastupdate)
+    rank_pages = ['/allvisit/', '/monthvisit/', '/weekvisit/', '/goodnum/', '/postdate/', '/lastupdate/']
+    for rank_path in rank_pages:
+        if len(discovered) >= limit_novels * 2:
+            break
+        html = fetch_curl(f"{DOMAIN}{rank_path}")
+        if not html:
+            continue
+        # Pattern: /xiaoshuo{id}.html with title (can be href or title attr)
+        novels_found = re.findall(r'href="(/xiaoshuo(\d+)\.html)"[^>]*title="([^"]+)"', html)
+        if not novels_found:
+            novels_found = re.findall(r'href="(/xiaoshuo(\d+)\.html)"[^>]*>([^<]+)<', html)
+        for url, nid, title in novels_found:
+            nid = int(nid) if nid.isdigit() else nid
+            if nid in seen_ids or len(discovered) >= limit_novels * 2:
+                continue
+            seen_ids.add(nid)
+            source_url = f"{DOMAIN}{url}"
+            if source_url not in existing_sources:
+                discovered.append({
+                    "source_url": source_url,
+                    "novel_id": nid,
+                    "domain": "jubiquge.com",
+                    "title": title.strip(),
+                })
+        time.sleep(0.2)
+
+    print(f"  jubiquge: discovered {len(discovered)} candidate novels")
+
+    for novel in discovered[:limit_novels]:
+        nid = novel['novel_id']
+        html = fetch_curl(novel['source_url'])
+        if not html:
+            continue
+
+        # Extract metadata
+        title = novel['title']
+        m = re.search(r'<title>([^<]+)</title>', html)
+        if m:
+            title = re.sub(r'\s*-\s*笔趣阁.*', '', m.group(1)).strip() or title
+
+        author = 'Unknown'
+        m = re.search(r'作者[：:]\s*<a[^>]*>([^<]+)</a>', html)
+        if not m:
+            m = re.search(r'作者[：:]\s*([^<\s]{2,10})', html)
+        if m:
+            author = m.group(1).strip()
+
+        desc = ''
+        m = re.search(r'<p[^>]*style="[^"]*webkit-line-clamp[^"]*"[^>]*>(.*?)</p>', html, re.S)
+        if m:
+            desc = re.sub(r'<[^>]*?>', '', m.group(1)).strip()[:200]
+
+        # Chapter list: from /{nid}/ page
+        ch_html = fetch_curl(f"{DOMAIN}/{nid}/")
+        if not ch_html:
+            continue
+        chapter_links = re.findall(r'href="(/%s/(\d+)\.html)"[^>]*>([^<]+)' % nid, ch_html)
+        if not chapter_links:
+            chapter_links = re.findall(r'href="(/%s/(\d+)\.html)"[^>]*title="([^"]+)"' % nid, ch_html)
+
+        if not chapter_links:
+            continue
+
+        slug = slugify(title)
+        if slug in existing_slugs:
+            slug = slug[:50] + '-' + str(nid)
+
+        new_novel = {
+            "id": len(novels_db) + 1,
+            "slug": slug,
+            "title": title,
+            "author": author,
+            "category": "Wuxia & Xianxia",
+            "source_url": novel['source_url'],
+            "source_domain": novel['domain'],
+            "cover_url": f"/covers/{slug}.svg",
+            "totalChapters": len(chapter_links),
+            "available_chapters": 0,
+            "description": desc or f"Read {title} online free at jubiquge.com.",
+        }
+        novels_db.append(new_novel)
+
+        chapters_scraped = 0
+        for ch_url, _, ch_title in chapter_links[:limit_chapters]:
+            ch_html_page = fetch_curl(f"{DOMAIN}{ch_url}")
+            if not ch_html_page:
+                continue
+            lines = _extract_jubiquge_content(ch_html_page)
+            if not lines or len(lines) < 2:
+                continue
+            chapters_scraped += 1
+            save_chapter(slug, chapters_scraped, ch_title.strip(), lines)
+            time.sleep(0.3)
+
+        new_novel['available_chapters'] = chapters_scraped
+        print(f"    {title[:30]}... scraped {chapters_scraped} chapters")
+        new_count += 1
+        total_chapters += chapters_scraped
+        save_novels(novels_db)
+        time.sleep(0.5)
+
+    return new_count, total_chapters
+
+
+# ─────────────────────────────────────────────────
+# CRAWLER 6: biquge8.xyz
+# ─────────────────────────────────────────────────
+def _extract_biquge8_content(html):
+    """Extract chapter text from biquge8.xyz page."""
+    m = re.search(r'<article[^>]*id="article"[^>]*>(.*?)</article>', html, re.S)
+    if not m:
+        return []
+    text = re.sub(r'<br\s*/?>', '\n', m.group(1))
+    text = re.sub(r'<[^>]*?>', '', text)
+    text = text.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"').replace('&nbsp;', ' ')
+    return clean_text(text)
+
+def crawl_biquge8(limit_novels=30, limit_chapters=15):
+    """Discover novels from biquge8.xyz and scrape chapters."""
+    DOMAIN = "https://www.biquge8.xyz"
+    novels_db = load_novels()
+    existing_sources = {n.get('source_url', '') for n in novels_db}
+    existing_slugs = {n['slug'] for n in novels_db}
+    new_count = 0
+    total_chapters = 0
+
+    print(f"  Fetching biquge8.xyz rank/category pages...")
+    discovered = []
+    seen_ids = set()
+
+    # Discover from rank and category pages
+    pages_to_crawl = ['/ph'] + [f'/ph/{p}' for p in range(2, 5)]
+    for path in ['/xh', '/xz', '/ds', '/cy', '/wj']:
+        pages_to_crawl.append(path)
+        pages_to_crawl.extend(f'{path}/{p}' for p in range(2, 4))
+
+    for path in pages_to_crawl:
+        if len(discovered) >= limit_novels * 3:
+            break
+        html = fetch_curl(f"{DOMAIN}{path}")
+        if not html:
+            continue
+        # Pattern: /{id} with title
+        novels_found = re.findall(r'href="(/(\d+))"[^>]*title="([^"]+)"', html)
+        for url, nid, title in novels_found:
+            nid = int(nid)
+            if nid in seen_ids or len(discovered) >= limit_novels * 3:
+                continue
+            seen_ids.add(nid)
+            source_url = f"{DOMAIN}{url}"
+            if source_url not in existing_sources:
+                discovered.append({
+                    "source_url": source_url,
+                    "novel_id": nid,
+                    "domain": "biquge8.xyz",
+                    "title": title.strip(),
+                })
+        time.sleep(0.3)
+
+    print(f"  biquge8: discovered {len(discovered)} candidate novels")
+
+    for novel in discovered[:limit_novels]:
+        nid = novel['novel_id']
+        html = fetch_curl(novel['source_url'])
+        if not html:
+            continue
+
+        # Extract metadata
+        title = novel['title']
+        m = re.search(r'<h1>([^<]+)</h1>', html)
+        if not m:
+            m = re.search(r'<title>([^<]+)</title>', html)
+        if m:
+            title = re.sub(r'\s*-\s*新版笔趣阁.*', '', m.group(1)).strip() or title
+
+        author = 'Unknown'
+        m = re.search(r'作者[：:]\s*<a[^>]*>([^<]+)</a>', html)
+        if m:
+            author = m.group(1).strip()
+
+        desc = ''
+        m = re.search(r'class="indent"[^>]*>(.*?)</p>', html, re.S)
+        if m:
+            desc = re.sub(r'<[^>]*?>', '', m.group(1)).strip()[:200]
+
+        # Chapter list
+        chapter_links = re.findall(r'href="(/%s/(\d+))"[^>]*>([^<]+)' % nid, html)
+        if not chapter_links:
+            continue
+
+        slug = slugify(title)
+        if slug in existing_slugs:
+            slug = slug[:50] + '-' + str(nid)
+
+        new_novel = {
+            "id": len(novels_db) + 1,
+            "slug": slug,
+            "title": title,
+            "author": author,
+            "category": "Wuxia & Xianxia",
+            "source_url": novel['source_url'],
+            "source_domain": novel['domain'],
+            "cover_url": f"/covers/{slug}.svg",
+            "totalChapters": len(chapter_links),
+            "available_chapters": 0,
+            "description": desc or f"Read {title} online free at biquge8.xyz.",
+        }
+        novels_db.append(new_novel)
+
+        chapters_scraped = 0
+        for ch_url, _, ch_title in chapter_links[:limit_chapters]:
+            ch_html_page = fetch_curl(f"{DOMAIN}{ch_url}")
+            if not ch_html_page:
+                continue
+            lines = _extract_biquge8_content(ch_html_page)
+            if not lines or len(lines) < 2:
+                # fallback: try desktop pattern
+                lines = extract_title_desktop(ch_html_page)
+            if not lines or len(lines) < 2:
+                continue
+            chapters_scraped += 1
+            save_chapter(slug, chapters_scraped, ch_title.strip(), lines)
+            time.sleep(0.3)
+
+        new_novel['available_chapters'] = chapters_scraped
+        print(f"    {title[:30]}... scraped {chapters_scraped} chapters")
+        new_count += 1
+        total_chapters += chapters_scraped
+        save_novels(novels_db)
+        time.sleep(0.5)
+
+    return new_count, total_chapters
+
+
+# ─────────────────────────────────────────────────
+# CRAWLER 7: bxwx9.org
+# ─────────────────────────────────────────────────
+def _extract_bxwx9_content(html):
+    """Extract chapter text from bxwx9.org.
+    Content is in <body> as raw text blocks, not inside a specific content div.
+    We strip HTML tags and find long text blocks (>30 chars)."""
+    # Remove header/nav/footer/scripts/style sections
+    html = re.sub(r'<(?:header|footer|nav|script|style|noscript)[^>]*>.*?</(?:header|footer|nav|script|style|noscript)>', '', html, flags=re.S)
+    # Get body
+    m = re.search(r'<body[^>]*>(.*?)</body>', html, re.S)
+    if not m:
+        return []
+    body = m.group(1)
+    # Replace common tags with newlines before stripping
+    body = re.sub(r'<(?:br|p|div|li|h\d)[^>]*/?>', '\n', body)
+    body = re.sub(r'<[^>]*?>', '', body)
+    body = body.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
+    # Split into lines, keep long ones
+    lines = [l.strip() for l in body.split('\n') if l.strip()]
+    # Filter short lines and navigation/branding/junk
+    junk = [
+        r'字体', r'换手', r'全屏阅读', r'关灯', r'加入书架', r'投票', r'打赏',
+        r'笔下文学', r'bxwx9', r'最快更新', r'无错小说', r'手机阅读',
+        r'章节内容正在手打', r'请稍等片刻', r'内容更新后', r'重新刷新',
+        r'侵权', r'删除', r'DMCA', r'投诉', r'请记住', r'记住本站',
+        r'首页', r'目录', r'上一章', r'下一章', r'返回',
+        r'copyright', r'备案', r'统计', r'广告',
+    ]
+    lines = [l for l in lines 
+             if len(l) > 30 and not any(re.search(p, l, re.I) for p in junk)]
+    return lines
+
+def crawl_bxwx9(limit_novels=30, limit_chapters=15):
+    """Discover novels from bxwx9.org and scrape chapters.
+    URL pattern: /b/{main_id}/{sub_id}/ with chapters at /b/{main_id}/{sub_id}/{num}.html"""
+    DOMAIN = "https://www.bxwx9.org"
+    novels_db = load_novels()
+    existing_sources = {n.get('source_url', '') for n in novels_db}
+    existing_slugs = {n['slug'] for n in novels_db}
+    new_count = 0
+    total_chapters = 0
+
+    print(f"  Fetching bxwx9.org rank/home pages...")
+    discovered = []
+    seen_ids = set()
+
+    # Discover from homepage (48 novels shown) + category pages
+    pages = ['/'] + [f'/sort/{i}/' for i in range(1, 6)]
+    for path in pages:
+        if len(discovered) >= limit_novels * 2:
+            break
+        html = fetch_curl(f"{DOMAIN}{path}")
+        if not html:
+            continue
+        # Pattern: /b/{main_id}/{sub_id}/
+        novels_found = re.findall(r'href="(/b/(\d+)/(\d+)/)"', html)
+        seen_in_page = set()
+        for url, main_id, sub_id in novels_found:
+            key = f'{main_id}/{sub_id}'
+            if key in seen_ids or key in seen_in_page:
+                continue
+            seen_ids.add(key)
+            seen_in_page.add(key)
+            source_url = f"{DOMAIN}{url}"
+            if source_url not in existing_sources:
+                # Title extraction will happen when visiting the novel page
+                discovered.append({
+                    "source_url": source_url,
+                    "main_id": main_id,
+                    "sub_id": sub_id,
+                    "domain": "bxwx9.org",
+                    "title": None,  # Will extract from novel page
+                })
+        time.sleep(0.3)
+
+    print(f"  bxwx9: discovered {len(discovered)} candidate novels")
+
+    for novel in discovered[:limit_novels]:
+        mid, sid = novel['main_id'], novel['sub_id']
+        html = fetch_curl(novel['source_url'])
+        if not html:
+            continue
+
+        # Extract metadata
+        title = novel['title']
+        m = re.search(r'<title>([^<]+)</title>', html)
+        if m:
+            title = re.sub(r'目录.*|全文免费阅读.*|最新章节.*|_笔下文学.*', '', m.group(1)).strip()
+        if not title or len(title) < 2:
+            m = re.search(r'<h1[^>]*>([^<]+)</h1>', html)
+            if m:
+                title = m.group(1).strip()
+        if not title or len(title) < 2:
+            continue
+
+        author = 'Unknown'
+        m = re.search(r'作者[：:]\s*<a[^>]*>([^<]+)</a>', html)
+        if not m:
+            m = re.search(r'作者[：:]\s*([^<\s]{2,10})', html)
+        if m:
+            author = m.group(1).strip()
+
+        desc = ''
+        m = re.search(r'class="intro"[^>]*>(.*?)</div>', html, re.S)
+        if not m:
+            m = re.search(r'class="desc"[^>]*>(.*?)</div>', html, re.S)
+        if not m:
+            m = re.search(r'name="description"[^>]*content="([^"]+)"', html)
+        if m:
+            desc = re.sub(r'<[^>]*?>', '', m.group(1) if 'content="' in str(m.group()) else m.group(1)).strip()[:200]
+
+        # Chapter list
+        # Pattern: /b/{mid}/{sid}/{num}.html
+        chapter_links = re.findall(rf'href="(/b/{mid}/{sid}/(\d+)\.html)"[^>]*>([^<]+)', html)
+        if not chapter_links:
+            # Try relative URLs
+            chapter_links = re.findall(rf'href="((?:{sid}/)?(\d+)\.html)"[^>]*>([^<]+)', html)
+            chapter_links = [(f"/b/{mid}/{sid}/{url}" if not url.startswith('/') else f"/b/{mid}/{sid}/{url.split('/')[-1]}", num, title) 
+                            for url, num, title in chapter_links]
+
+        if not chapter_links:
+            continue
+
+        slug = slugify(title)
+        if slug in existing_slugs:
+            slug = slug[:50] + '-' + mid + sid
+
+        new_novel = {
+            "id": len(novels_db) + 1,
+            "slug": slug,
+            "title": title,
+            "author": author,
+            "category": "Wuxia & Xianxia",
+            "source_url": novel['source_url'],
+            "source_domain": novel['domain'],
+            "cover_url": f"/covers/{slug}.svg",
+            "totalChapters": len(chapter_links),
+            "available_chapters": 0,
+            "description": desc or f"Read {title} online free at bxwx9.org.",
+        }
+        novels_db.append(new_novel)
+
+        chapters_scraped = 0
+        for ch_url, _, ch_title in chapter_links[:limit_chapters]:
+            full_url = ch_url if ch_url.startswith('http') else f"{DOMAIN}{ch_url}"
+            ch_html_page = fetch_curl(full_url)
+            if not ch_html_page:
+                continue
+            lines = _extract_bxwx9_content(ch_html_page)
+            if not lines or len(lines) < 3:
+                continue
+            chapters_scraped += 1
+            ctitle = re.sub(r'<[^>]*?>', '', ch_title).strip()
+            save_chapter(slug, chapters_scraped, ctitle, lines)
+            time.sleep(0.3)
+
+        new_novel['available_chapters'] = chapters_scraped
+        print(f"    {title[:30]}... scraped {chapters_scraped} chapters")
+        new_count += 1
+        total_chapters += chapters_scraped
+        save_novels(novels_db)
+        time.sleep(0.5)
+
+    return new_count, total_chapters
+
+
+# ─────────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────────
 if __name__ == "__main__":
     import sys
-    sites = sys.argv[1:] if len(sys.argv) > 1 else ['quanwenyuedu', 'tmwxw', 'yqxxs', '23wx']
+    sites = sys.argv[1:] if len(sys.argv) > 1 else ['quanwenyuedu', 'tmwxw', 'yqxxs', '23wx', 'jubiquge', 'biquge8']
     
     print("=" * 60)
     print("Multi-site Novel Crawler")
@@ -874,7 +1320,28 @@ if __name__ == "__main__":
         total_novels += n
         total_chapters += c
         print(f"  → {n} novels, {c} chapters")
-    
+
+    if 'jubiquge' in sites:
+        print("\n📚 Crawling jubiquge.com...")
+        n, c = crawl_jubiquge(limit_novels=30, limit_chapters=15)
+        total_novels += n
+        total_chapters += c
+        print(f"  → {n} novels, {c} chapters")
+
+    if 'biquge8' in sites:
+        print("\n📚 Crawling biquge8.xyz...")
+        n, c = crawl_biquge8(limit_novels=30, limit_chapters=15)
+        total_novels += n
+        total_chapters += c
+        print(f"  → {n} novels, {c} chapters")
+
+    if 'bxwx9' in sites:
+        print("\n📚 Crawling bxwx9.org...")
+        n, c = crawl_bxwx9(limit_novels=30, limit_chapters=15)
+        total_novels += n
+        total_chapters += c
+        print(f"  → {n} novels, {c} chapters")
+
     print(f"\n{'=' * 60}")
     print(f"TOTAL: {total_novels} new novels, {total_chapters} new chapters")
     
