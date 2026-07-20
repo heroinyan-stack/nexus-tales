@@ -1,16 +1,7 @@
 {
-  "last_index": 104,
-  "last_run": "2026-07-13T01:05:31.296700+00:00",
+  "last_index": 108,
+  "last_run": "2026-07-20T13:10:20.809741+00:00",
   "history": [
-    {
-      "date": "2026-06-11",
-      "updated": [
-        "novel-133775",
-        "novel-133647",
-        "novel-133629",
-        "novel-134053"
-      ]
-    },
     {
       "date": "2026-06-12",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-158-super-self-cultivation-bodyguard",
         "novel-159-gangster-special-forces",
         "novel-160-masters-of-cultivating-immortals-on-campus"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "updated": [
+        "novel-161-the-return-of-the-legitimate-daughter",
+        "novel-162-village-woman-who-is-a-miracle",
+        "novel-163-jianghu-yeyu-ten-years-of-love",
+        "novel-164-the-dandy-nun-flirts-with-everyone"
       ]
     }
   ]

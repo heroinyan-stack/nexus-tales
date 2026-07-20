@@ -5701,10 +5701,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 51,
+    "total_chapters": 52,
     "id": 161,
     "title_zh": "嫡女归来：权臣掌心娇",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-20T13:10:20.719417+00:00"
   },
   {
     "slug": "novel-162-village-woman-who-is-a-miracle",
@@ -5736,11 +5737,12 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 162,
     "title_zh": "神医小傻驴的乡村女人",
     "chapter_count": 30,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-20T13:10:20.720070+00:00"
   },
   {
     "slug": "novel-163-jianghu-yeyu-ten-years-of-love",
@@ -5772,10 +5774,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 11,
+    "total_chapters": 12,
     "id": 163,
     "title_zh": "江湖夜雨十年情",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-20T13:10:20.722353+00:00"
   },
   {
     "slug": "novel-164-the-dandy-nun-flirts-with-everyone",
@@ -5807,9 +5810,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 33,
+    "total_chapters": 34,
     "id": 164,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-20T13:10:20.723045+00:00"
   },
   {
     "slug": "novel-165-mortals-cultivating-immortality-who-said-spiritual",
