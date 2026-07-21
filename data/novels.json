@@ -5845,9 +5845,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 54,
+    "total_chapters": 55,
     "id": 165,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-21T01:07:40.565821+00:00"
   },
   {
     "slug": "novel-166-cai-wenjis-path-to-immortality-and",
@@ -5879,10 +5880,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 35,
+    "total_chapters": 36,
     "id": 166,
     "title_zh": "蔡文姬的修仙长生路",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-21T01:07:40.567001+00:00"
   },
   {
     "slug": "novel-167-i-cultivated-immortality-in-kunlun-mountain",
@@ -5914,9 +5916,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 167,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-21T01:07:40.567941+00:00"
   },
   {
     "slug": "novel-168-the-slain-wife-preached-through-the",
@@ -5948,9 +5951,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 27,
+    "total_chapters": 28,
     "id": 168,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-21T01:07:40.569077+00:00"
   },
   {
     "slug": "novel-169-lao-chou-counterattacks-fairy-tears",
