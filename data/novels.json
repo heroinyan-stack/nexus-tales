@@ -5986,10 +5986,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 13,
+    "total_chapters": 14,
     "id": 169,
     "title_zh": "老丑逆袭，仙子泪",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-22T01:08:34.374018+00:00"
   },
   {
     "slug": "novel-170-goudao-sword-master-immortal-life-begins",
@@ -6021,9 +6022,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 49,
+    "total_chapters": 50,
     "id": 170,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-22T01:08:34.374783+00:00"
   },
   {
     "slug": "novel-171-crow-immortal",
@@ -6055,11 +6057,12 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 171,
     "title_zh": "鸦仙人",
     "chapter_count": 30,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-22T01:08:34.375855+00:00"
   },
   {
     "slug": "novel-172-mortal-bones-hold-down-the-sky",
@@ -6091,10 +6094,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 172,
     "title_zh": "凡骨镇天",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-22T01:08:34.376664+00:00"
   },
   {
     "slug": "novel-173-fairy-eye",
