@@ -6130,10 +6130,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 173,
     "title_zh": "仙眼",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-23T01:05:16.263241+00:00"
   },
   {
     "slug": "novel-174-in-the-pre-qin-period-qi-was",
@@ -6165,9 +6166,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 174,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-23T01:05:16.264572+00:00"
   },
   {
     "slug": "novel-175-celestial-being",
@@ -6199,10 +6201,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 59,
+    "total_chapters": 60,
     "id": 175,
     "title_zh": "仙醮",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-23T01:05:16.265932+00:00"
   },
   {
     "slug": "novel-176-silly-big-and-strong-the-countryside",
@@ -6234,10 +6237,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 176,
     "title_zh": "傻大壮，乡野好快活",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-23T01:05:16.266716+00:00"
   },
   {
     "slug": "novel-177-adventures-of-a-young-hero",
