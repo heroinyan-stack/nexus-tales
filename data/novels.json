@@ -6273,11 +6273,12 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 177,
     "title_zh": "少侠奇遇记",
     "chapter_count": 30,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-24T01:04:52.969705+00:00"
   },
   {
     "slug": "novel-178-momen-players-are-unethical",
@@ -6309,10 +6310,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 178,
     "title_zh": "魔门玩家，不讲道义",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-24T01:04:52.970505+00:00"
   },
   {
     "slug": "novel-179-bind-to-the-trouble-making-system-i",
@@ -6344,9 +6346,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 38,
+    "total_chapters": 39,
     "id": 179,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-24T01:04:52.971468+00:00"
   },
   {
     "slug": "novel-180-conferring-gods-starting-from-the-princes",
@@ -6378,10 +6381,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 63,
+    "total_chapters": 64,
     "id": 180,
     "title_zh": "封神：从诸侯世子开始",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-24T01:04:52.972280+00:00"
   },
   {
     "slug": "novel-181-the-vicious-female-supporting-role-pretends",
