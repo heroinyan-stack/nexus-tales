@@ -6417,9 +6417,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 24,
+    "total_chapters": 25,
     "id": 181,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-25T01:04:06.338798+00:00"
   },
   {
     "slug": "novel-182-my-ex-has-been-a-scumbag",
@@ -6451,9 +6452,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 29,
+    "total_chapters": 30,
     "id": 182,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-25T01:04:06.339886+00:00"
   },
   {
     "slug": "novel-183-brother-dog-if-you-lick-the",
@@ -6485,9 +6487,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 15,
+    "total_chapters": 16,
     "id": 183,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-25T01:04:06.340666+00:00"
   },
   {
     "slug": "novel-184-traveling-through-the-era-with-my",
@@ -6519,9 +6522,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 30,
+    "total_chapters": 31,
     "id": 184,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-25T01:04:06.341820+00:00"
   },
   {
     "slug": "novel-185-grocery-store-in-tehran-my-information",
