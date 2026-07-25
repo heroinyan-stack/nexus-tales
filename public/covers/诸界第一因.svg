@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e56ebd"/>
+      <stop offset="100%" style="stop-color:#3122f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#g)"/>
+  <text x="150" y="200" text-anchor="middle" fill="white" font-family="sans-serif" font-size="16" opacity="0.9">诸界第一因</text>
+</svg>
