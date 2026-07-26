@@ -6557,9 +6557,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 185,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-26T01:05:30.421409+00:00"
   },
   {
     "slug": "novel-186-shan-ye-xiao-shennong",
@@ -6591,10 +6592,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 186,
     "title_zh": "山野小神农",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-26T01:05:30.422029+00:00"
   },
   {
     "slug": "novel-187-young-love-was-betrayed-he-knelt",
@@ -6626,9 +6628,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 33,
+    "total_chapters": 34,
     "id": 187,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-26T01:05:30.422836+00:00"
   },
   {
     "slug": "novel-188-i-became-famous-after-the-love",
@@ -6660,9 +6663,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 53,
+    "total_chapters": 54,
     "id": 188,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-26T01:05:30.423452+00:00"
   },
   {
     "slug": "novel-189-when-im-on-night-shift-all",
