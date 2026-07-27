@@ -1,16 +1,7 @@
 {
-  "last_index": 132,
-  "last_run": "2026-07-26T01:05:30.455678+00:00",
+  "last_index": 136,
+  "last_run": "2026-07-27T01:01:38.080231+00:00",
   "history": [
-    {
-      "date": "2026-06-18",
-      "updated": [
-        "novel-133988",
-        "novel-133515",
-        "novel-134081",
-        "novel-134033"
-      ]
-    },
     {
       "date": "2026-06-19",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-186-shan-ye-xiao-shennong",
         "novel-187-young-love-was-betrayed-he-knelt",
         "novel-188-i-became-famous-after-the-love"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "updated": [
+        "novel-189-when-im-on-night-shift-all",
+        "novel-190-great-variety-show-directors-starting-from",
+        "novel-191-drunk-and-kissing-the-wrong-person",
+        "novel-192-shenhao-starting-from-taking-in-the"
       ]
     }
   ]
