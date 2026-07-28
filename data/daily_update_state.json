@@ -1,16 +1,7 @@
 {
-  "last_index": 136,
-  "last_run": "2026-07-27T01:01:38.080231+00:00",
+  "last_index": 140,
+  "last_run": "2026-07-28T01:08:01.173168+00:00",
   "history": [
-    {
-      "date": "2026-06-19",
-      "updated": [
-        "novel-133775",
-        "novel-133647",
-        "novel-133629",
-        "novel-134053"
-      ]
-    },
     {
       "date": "2026-06-20",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-190-great-variety-show-directors-starting-from",
         "novel-191-drunk-and-kissing-the-wrong-person",
         "novel-192-shenhao-starting-from-taking-in-the"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "updated": [
+        "novel-193-let-me-open-a-breakfast-shopi",
+        "novel-194-china-entertainment-started-by-inheriting-the",
+        "novel-195-scalper-agency-i-didnt-expect-you",
+        "novel-196-wasteland-code"
       ]
     }
   ]

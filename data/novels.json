@@ -6838,9 +6838,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 193,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-28T01:08:01.125688+00:00"
   },
   {
     "slug": "novel-194-china-entertainment-started-by-inheriting-the",
@@ -6872,9 +6873,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 79,
+    "total_chapters": 80,
     "id": 194,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-28T01:08:01.126696+00:00"
   },
   {
     "slug": "novel-195-scalper-agency-i-didnt-expect-you",
@@ -6906,9 +6908,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 195,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-28T01:08:01.127896+00:00"
   },
   {
     "slug": "novel-196-wasteland-code",
@@ -6940,10 +6943,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 44,
+    "total_chapters": 45,
     "id": 196,
     "title_zh": "废土法典",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-07-28T01:08:01.128624+00:00"
   },
   {
     "slug": "novel-197-fishing-and-hunting-in-xishan-1988",
