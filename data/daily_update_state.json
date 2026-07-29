@@ -1,16 +1,7 @@
 {
-  "last_index": 140,
-  "last_run": "2026-07-28T01:08:01.173168+00:00",
+  "last_index": 144,
+  "last_run": "2026-07-29T01:06:27.868762+00:00",
   "history": [
-    {
-      "date": "2026-06-20",
-      "updated": [
-        "novel-134056",
-        "novel-133975",
-        "novel-133977",
-        "novel-133981"
-      ]
-    },
     {
       "date": "2026-06-20",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-194-china-entertainment-started-by-inheriting-the",
         "novel-195-scalper-agency-i-didnt-expect-you",
         "novel-196-wasteland-code"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "updated": [
+        "novel-197-fishing-and-hunting-in-xishan-1988",
+        "novel-198-what-the-cool-school-beauties-who",
+        "novel-199",
+        "novel-200-temporarily-add-a-bride-pricemarry-another"
       ]
     }
   ]
