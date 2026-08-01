@@ -7121,9 +7121,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 43,
+    "total_chapters": 44,
     "id": 201,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-01T01:04:33.093203+00:00"
   },
   {
     "slug": "novel-202-the-dandy-prince-the-princess-broke",
@@ -7155,9 +7156,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 202,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-01T01:04:33.094300+00:00"
   },
   {
     "slug": "novel-203-eunuch-ye-you-have-the-guts",
@@ -7189,10 +7191,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 97,
+    "total_chapters": 98,
     "id": 203,
     "title_zh": "叶公公，有种！",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-01T01:04:33.095450+00:00"
   },
   {
     "slug": "novel-204-happy-little-royal-physician-congratulations-to",
@@ -7224,9 +7227,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 70,
+    "total_chapters": 71,
     "id": 204,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-01T01:04:33.096353+00:00"
   },
   {
     "slug": "novel-205-royal-magistrate-i-lie-down-every",

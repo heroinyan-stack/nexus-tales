@@ -1,16 +1,7 @@
 {
-  "last_index": 144,
-  "last_run": "2026-07-29T01:06:27.868762+00:00",
+  "last_index": 148,
+  "last_run": "2026-08-01T01:04:33.137142+00:00",
   "history": [
-    {
-      "date": "2026-06-20",
-      "updated": [
-        "novel-133930",
-        "novel-133934",
-        "novel-133856",
-        "novel-133896"
-      ]
-    },
     {
       "date": "2026-06-21",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-198-what-the-cool-school-beauties-who",
         "novel-199",
         "novel-200-temporarily-add-a-bride-pricemarry-another"
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "updated": [
+        "novel-201-the-hotel-kissed-the-wrong-persona",
+        "novel-202-the-dandy-prince-the-princess-broke",
+        "novel-203-eunuch-ye-you-have-the-guts",
+        "novel-204-happy-little-royal-physician-congratulations-to"
       ]
     }
   ]
