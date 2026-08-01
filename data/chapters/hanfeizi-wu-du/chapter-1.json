@@ -2,18 +2,7 @@
   "num": 1,
   "title": "The Five Vermin",
   "slug": "hanfeizi-wu-du",
-  "lines": [
-    "Han Fei was the greatest Legalist philosopher of ancient China.",
-    "\"When times are orderly, the people are virtuous.",
-    "When times are disorderly, the people are rebellious.",
-    "The sage does not cultivate the ways of antiquity",
-    "Nor does he follow the fixed patterns of ritual.",
-    "He examines the affairs of the age and acts accordingly.\"",
-    "\"There was once a farmer of Song who saw a rabbit",
-    "Run into a tree stump, break its neck, and die.",
-    "Thereupon he abandoned his plow and waited by the stump,",
-    "Hoping another rabbit would run into it.",
-    "He never caught another rabbit, and became the laughingstock of Song.\"",
-    "The wise ruler does not wait for luck — he creates his own."
-  ]
+  "content_zh": "Han Fei was the greatest Legalist philosopher of ancient China.\n\"When times are orderly, the people are virtuous.\nWhen times are disorderly, the people are rebellious.\nThe sage does not cultivate the ways of antiquity\nNor does he follow the fixed patterns of ritual.\nHe examines the affairs of the age and acts accordingly.\"\n\"There was once a farmer of Song who saw a rabbit\nRun into a tree stump, break its neck, and die.\nThereupon he abandoned his plow and waited by the stump,\nHoping another rabbit would run into it.\nHe never caught another rabbit, and became the laughingstock of Song.\"\nThe wise ruler does not wait for luck — he creates his own.",
+  "content_en": "Han Fei was the greatest Legalist philosopher of ancient China.\n\"When times are orderly, the people are virtuous.\nWhen times are disorderly, the people are rebelling.\nThe sage does not cultivate the ways of antiquity\nNor does he follow the fixed patterns of ritual.\nHe examines the affairs of the age and acts accordingly.\"\n\"There was once a farmer of Song who saw a rabbit\nRun into a tree stump, break its neck, and die.\nThereupon he abandoned his plow and waited by the stump,\nHoping another rabbit would run into it.\nHe never caught another rabbit, and became the laughingstock of Song.\"\nThe wise ruler does not wait for luck — he creates his own.",
+  "translated": true
 }

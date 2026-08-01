@@ -2,12 +2,7 @@
   "num": 1,
   "title": "Lesser Court Hymns",
   "slug": "book-of-songs-shijing-xiao-ya",
-  "lines": [
-    "The guests come to the court with dignity,",
-    "Though not from a single state.",
-    "Ah, the ceremonial caps in rows,",
-    "The wine cups circle round.",
-    "At home abroad, alike they praise",
-    "The virtue of the sovereign."
-  ]
+  "content_zh": "The guests come to the court with dignity,\nThough not from a single state.\nAh, the ceremonial caps in rows,\nThe wine cups circle round.\nAt home abroad, alike they praise\nThe virtue of the sovereign.",
+  "content_en": "The guests come to the court with dignity,\nThough not from a single state.\nAh, the ceremonial caps in rows,\nThe wine cups circle round.\nAt home abroad, alike they praise\nThe virtue of the sovereign.",
+  "translated": true
 }

@@ -2,13 +2,7 @@
   "num": 1,
   "title": "Greater Court Hymns",
   "slug": "book-of-songs-shijing-da-ya-1",
-  "lines": [
-    "Great and illustrious is King Wen!",
-    "Oh, how glorious was his virtue.",
-    "Heaven protects and secures your throne —",
-    "Your reign shall know no end.",
-    "Grandly flows the Zhou dynasty.",
-    "The ruler makes no errors.",
-    "He serves as model to all the lands."
-  ]
+  "content_zh": "Great and illustrious is King Wen!\nOh, how glorious was his virtue.\nHeaven protects and secures your throne —\nYour reign shall know no end.\nGrandly flows the Zhou dynasty.\nThe ruler makes no errors.\nHe serves as model to all the lands.",
+  "content_en": "Great and illustrious is King Wen!\nOh, how glorious was his virtue.\nHeaven protects and secures your throne —\nYour reign shall know no end.\nGrandly flows the Zhou Dynasty.\nThe ruler makes no errors.\nHe serves as model to all the lands.",
+  "translated": true
 }

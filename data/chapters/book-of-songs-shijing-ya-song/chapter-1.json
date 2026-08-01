@@ -2,13 +2,7 @@
   "num": 1,
   "title": "Court Hymns",
   "slug": "book-of-songs-shijing-ya-song",
-  "lines": [
-    "Solemn and silent is the temple of Zhou.",
-    "Upright and reverent are the officers.",
-    "Illustrious are the assistants of the king.",
-    "The virtue of Zhou is patterned on Heaven.",
-    "In the ancestral hall of Zhou is sacrifice.",
-    "None shall fail at the ceremony.",
-    "May their offerings be accepted by Heaven."
-  ]
+  "content_zh": "Solemn and silent is the temple of Zhou.\nUpright and reverent are the officers.\nIllustrious are the assistants of the king.\nThe virtue of Zhou is patterned on Heaven.\nIn the ancestral hall of Zhou is sacrifice.\nNone shall fail at the ceremony.\nMay their offerings be accepted by Heaven.",
+  "content_en": "Solemn and silent is the temple of Zhou.\nUpright and reverent are the officers.\nIllustrious are the assistants of the king.\nThe virtue of Zhou is patterned on Heaven.\nIn the ancestral hall of Zhou is sacrifice.\nNone shall fail at the ceremony.\nMay their offerings be accepted by Heaven.",
+  "translated": true
 }

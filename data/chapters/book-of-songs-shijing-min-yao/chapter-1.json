@@ -2,12 +2,7 @@
   "num": 1,
   "title": "Folk Songs of the States",
   "slug": "book-of-songs-shijing-min-yao",
-  "lines": [
-    "Gone is the youth, who left in spring.",
-    "When will he return from his wandering?",
-    "The mulberry fields stretch green and vast.",
-    "Young girl, do not be too forward in love.",
-    "For a man may love and still walk away.",
-    "But when a maiden loves, no one pities her."
-  ]
+  "content_zh": "Gone is the youth, who left in spring.\nWhen will he return from his wandering?\nThe mulberry fields stretch green and vast.\nYoung girl, do not be too forward in love.\nFor a man may love and still walk away.\nBut when a maiden loves, no one pities her.",
+  "content_en": "Gone is the youth, who left in spring.\nWhen will he return from his wandering?\nThe mulberry fields stretch green and vast.\nYoung girl, do not be too forward in love.\nFor a man may love and still walk away.\nBut when a maiden loves, no one pities her.",
+  "translated": true
 }
