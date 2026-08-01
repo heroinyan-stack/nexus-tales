@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // Vercel handles public/ and .next automatically — standalone breaks cover delivery
 };
 
 export default nextConfig;
