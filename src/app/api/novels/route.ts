@@ -40,10 +40,10 @@ export async function GET() {
     }
 
     for (const n of novels) {
-      const ext = extMap[n.slug] || "jpg";
+      const ext = extMap[n.slug] || ".jpg";
       n.cover_ext = ext;
-      // Build full cover URL (handles -gen.svg suffix correctly)
-      n.cover_url = ext.startsWith('-gen.') ? `/covers/${n.slug}${ext}` : `/covers/${n.slug}.${ext}`;
+      // ext already includes leading dot (e.g., ".svg"), don't add another
+      n.cover_url = ext.startsWith('-gen') ? `/covers/${n.slug}${ext}` : `/covers/${n.slug}${ext}`;
       n.available_chapters = chapterCounts[n.slug] || 0;
     }
 

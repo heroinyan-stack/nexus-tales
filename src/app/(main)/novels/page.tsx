@@ -76,11 +76,12 @@ function loadNovels(): { novels: Novel[]; genres: Genre[] } {
   }
 
   for (const n of novels) {
-    const ext = extMap[n.slug] || "jpg";
+    const ext = extMap[n.slug] || ".jpg";
     n.cover_ext = ext;
-    n.cover_url = ext.startsWith("-gen.")
+    // ext already includes leading dot (e.g., ".svg")
+    n.cover_url = ext.startsWith("-gen")
       ? `/covers/${n.slug}${ext}`
-      : `/covers/${n.slug}.${ext}`;
+      : `/covers/${n.slug}${ext}`;
     n.available_chapters = chapterCounts[n.slug] || 0;
   }
 

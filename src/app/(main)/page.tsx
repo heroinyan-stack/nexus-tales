@@ -354,7 +354,9 @@ export default function HomePage() {
 
 /* ── Reusable Novel Card ──────────────────────────────── */
 function NovelCard({ novel, isFree = false }: { novel: Novel; isFree?: boolean }) {
-  const coverSrc = (novel as any).cover_url || `/covers/${novel.slug}.${(novel as any).cover_ext || "svg"}`;
+  // cover_ext already includes leading dot (e.g., ".svg")
+  const ext = (novel as any).cover_ext || ".svg";
+  const coverSrc = (novel as any).cover_url || `/covers/${novel.slug}${ext}`;
   return (
     <Link
       href={`/novel/${novel.slug}`}
