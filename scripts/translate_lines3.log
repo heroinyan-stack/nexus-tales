@@ -1,0 +1,70 @@
+🔍 Scanning for 'lines' format chapters...
+📊 Need translate: 1284, Done: 355, Failed: 5
+  ⏳ 20 done, 0 failed, 1264 left (~12.0/s, ETA 0.0h)
+  ⏳ 46 done, 0 failed, 1238 left (~15.6/s, ETA 0.0h)
+  ⏳ 70 done, 0 failed, 1214 left (~14.4/s, ETA 0.0h)
+  ⏳ 96 done, 0 failed, 1188 left (~15.5/s, ETA 0.0h)
+  ⏳ 134 done, 0 failed, 1150 left (~22.8/s, ETA 0.0h)
+  ⏳ 161 done, 0 failed, 1123 left (~16.2/s, ETA 0.0h)
+  ⏳ 194 done, 0 failed, 1090 left (~19.8/s, ETA 0.0h)
+  ⏳ 214 done, 0 failed, 1070 left (~12.0/s, ETA 0.0h)
+  ⏳ 235 done, 0 failed, 1049 left (~12.6/s, ETA 0.0h)
+  ⏳ 267 done, 0 failed, 1017 left (~19.4/s, ETA 0.0h)
+  ⏳ 298 done, 0 failed, 986 left (~18.6/s, ETA 0.0h)
+  ⏳ 331 done, 0 failed, 953 left (~19.8/s, ETA 0.0h)
+  ⏳ 365 done, 0 failed, 919 left (~20.4/s, ETA 0.0h)
+  ⏳ 382 done, 0 failed, 902 left (~10.2/s, ETA 0.0h)
+  ⏳ 409 done, 0 failed, 875 left (~16.2/s, ETA 0.0h)
+  ⏳ 432 done, 0 failed, 852 left (~13.8/s, ETA 0.0h)
+  ⏳ 454 done, 0 failed, 830 left (~13.2/s, ETA 0.0h)
+  ⏳ 471 done, 0 failed, 813 left (~10.2/s, ETA 0.0h)
+  ⏳ 484 done, 0 failed, 800 left (~7.8/s, ETA 0.0h)
+  ⏳ 508 done, 0 failed, 776 left (~14.4/s, ETA 0.0h)
+  ⏳ 539 done, 0 failed, 745 left (~18.6/s, ETA 0.0h)
+  ⏳ 568 done, 0 failed, 716 left (~17.4/s, ETA 0.0h)
+  ⏳ 589 done, 0 failed, 695 left (~12.6/s, ETA 0.0h)
+  ⏳ 612 done, 0 failed, 672 left (~13.8/s, ETA 0.0h)
+  ⏳ 635 done, 0 failed, 649 left (~13.8/s, ETA 0.0h)
+  ⏳ 657 done, 0 failed, 627 left (~13.2/s, ETA 0.0h)
+  ⏳ 678 done, 0 failed, 606 left (~12.6/s, ETA 0.0h)
+  ⏳ 705 done, 0 failed, 579 left (~16.2/s, ETA 0.0h)
+  ⏳ 723 done, 0 failed, 561 left (~10.8/s, ETA 0.0h)
+  ⏳ 746 done, 0 failed, 538 left (~13.8/s, ETA 0.0h)
+  ⏳ 766 done, 0 failed, 518 left (~12.0/s, ETA 0.0h)
+  ⏳ 787 done, 0 failed, 497 left (~12.6/s, ETA 0.0h)
+  ⏳ 826 done, 0 failed, 458 left (~23.4/s, ETA 0.0h)
+  ⏳ 843 done, 0 failed, 441 left (~10.2/s, ETA 0.0h)
+  ⏳ 864 done, 0 failed, 420 left (~12.6/s, ETA 0.0h)
+  ⏳ 886 done, 0 failed, 398 left (~13.2/s, ETA 0.0h)
+  ⏳ 910 done, 0 failed, 374 left (~14.4/s, ETA 0.0h)
+  ⏳ 934 done, 0 failed, 350 left (~14.3/s, ETA 0.0h)
+  ⏳ 964 done, 0 failed, 320 left (~18.0/s, ETA 0.0h)
+  ⏳ 997 done, 0 failed, 287 left (~19.8/s, ETA 0.0h)
+  ⏳ 1015 done, 0 failed, 269 left (~10.8/s, ETA 0.0h)
+  ⏳ 1032 done, 0 failed, 252 left (~10.2/s, ETA 0.0h)
+  ⏳ 1049 done, 0 failed, 235 left (~10.2/s, ETA 0.0h)
+  ⏳ 1071 done, 0 failed, 213 left (~13.2/s, ETA 0.0h)
+  ⏳ 1094 done, 0 failed, 190 left (~13.8/s, ETA 0.0h)
+  ⏳ 1120 done, 0 failed, 164 left (~15.6/s, ETA 0.0h)
+  ⏳ 1143 done, 0 failed, 141 left (~13.8/s, ETA 0.0h)
+  ⏳ 1164 done, 0 failed, 120 left (~12.6/s, ETA 0.0h)
+  ⏳ 1182 done, 0 failed, 102 left (~10.8/s, ETA 0.0h)
+  ⏳ 1208 done, 0 failed, 76 left (~15.6/s, ETA 0.0h)
+  ⏳ 1228 done, 0 failed, 56 left (~12.0/s, ETA 0.0h)
+  ⏳ 1257 done, 0 failed, 27 left (~17.4/s, ETA 0.0h)
+  ⏳ 1277 done, 0 failed, 7 left (~12.0/s, ETA 0.0h)
+
+  Worker 5 done: 213 chapters
+
+  Worker 1 done: 214 chapters
+
+  Worker 3 done: 219 chapters
+
+  Worker 6 done: 209 chapters
+
+  Worker 4 done: 215 chapters
+
+  Worker 2 done: 214 chapters
+  ⏳ 1284 done, 0 failed, 0 left (~4.2/s, ETA 0.0h)
+
+🏁 Done! Success: 1284, Failed: 0
