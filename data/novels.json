@@ -7262,9 +7262,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 92,
+    "total_chapters": 93,
     "id": 205,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-02T01:05:09.128899+00:00"
   },
   {
     "slug": "novel-206-after-being-exchanged-with-the-eldest",
@@ -7296,10 +7297,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 206,
     "title_zh": "被长姐换亲之后",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-02T01:05:09.129973+00:00"
   },
   {
     "slug": "novel-207-border-army-starting-from-receiving-the",
@@ -7331,9 +7333,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 207,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-02T01:05:09.131293+00:00"
   },
   {
     "slug": "novel-208-frontier-bandits",
@@ -7365,10 +7368,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 55,
+    "total_chapters": 56,
     "id": 208,
     "title_zh": "边疆悍匪",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-02T01:05:09.132220+00:00"
   },
   {
     "slug": "novel-209-heroes-in-the-late-song-dynasty",

@@ -1,16 +1,7 @@
 {
-  "last_index": 148,
-  "last_run": "2026-08-01T01:04:33.137142+00:00",
+  "last_index": 152,
+  "last_run": "2026-08-02T01:05:09.165104+00:00",
   "history": [
-    {
-      "date": "2026-06-21",
-      "updated": [
-        "novel-133941",
-        "novel-133879",
-        "novel-133985",
-        "novel-133651"
-      ]
-    },
     {
       "date": "2026-06-22",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-202-the-dandy-prince-the-princess-broke",
         "novel-203-eunuch-ye-you-have-the-guts",
         "novel-204-happy-little-royal-physician-congratulations-to"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "updated": [
+        "novel-205-royal-magistrate-i-lie-down-every",
+        "novel-206-after-being-exchanged-with-the-eldest",
+        "novel-207-border-army-starting-from-receiving-the",
+        "novel-208-frontier-bandits"
       ]
     }
   ]
