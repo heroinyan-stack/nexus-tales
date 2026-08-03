@@ -7404,10 +7404,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 77,
+    "total_chapters": 78,
     "id": 209,
     "title_zh": "宋末枭雄",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-03T01:05:34.749379+00:00"
   },
   {
     "slug": "novel-210-during-the-republic-of-china-i",
@@ -7439,10 +7440,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 79,
+    "total_chapters": 80,
     "id": 210,
     "title_zh": "民国，我包国维黄埔一期",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-03T01:05:34.750361+00:00"
   },
   {
     "slug": "novel-211-the-strongest-emperor-in-history",
@@ -7474,10 +7476,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 113,
+    "total_chapters": 114,
     "id": 211,
     "title_zh": "史上最强汉天子",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-03T01:05:34.751921+00:00"
   },
   {
     "slug": "novel-212-crossing-the-border-i-went-from",
@@ -7509,9 +7512,10 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 33,
+    "total_chapters": 34,
     "id": 212,
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-03T01:05:34.753060+00:00"
   },
   {
     "slug": "novel-213-dianjianlu-chu-han-chapter",
