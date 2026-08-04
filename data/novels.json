@@ -7547,10 +7547,11 @@
     "status": "ongoing",
     "readers": 0,
     "is_adult": false,
-    "total_chapters": 38,
+    "total_chapters": 39,
     "id": 213,
     "title_zh": "典鉴录（楚汉篇）",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-04T01:05:17.212496+00:00"
   },
   {
     "id": 214,
@@ -7579,13 +7580,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 23,
+    "total_chapters": 24,
     "zone": "vip",
     "source": "0515red",
     "source_url": "http://www.0515red.com/rd/1770035/26448208.html",
     "available_chapters": 23,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-214-1960-nine-sisters-dote-me-to.svg"
+    "cover_url": "/covers/novel-214-1960-nine-sisters-dote-me-to.svg",
+    "updated_at": "2026-08-04T01:05:17.214730+00:00"
   },
   {
     "id": 215,
@@ -7614,14 +7616,15 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 16,
+    "total_chapters": 17,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 0,
     "chapter_count": 0,
     "cover_ext": "svg",
-    "cover_url": "/covers/wu-ling-da-lu-zhi-guang-ying-cheng-shen.svg"
+    "cover_url": "/covers/wu-ling-da-lu-zhi-guang-ying-cheng-shen.svg",
+    "updated_at": "2026-08-04T01:05:17.217703+00:00"
   },
   {
     "id": 216,
@@ -7650,13 +7653,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 37,
+    "total_chapters": 38,
     "zone": "vip",
     "source": "0515red",
     "source_url": "http://www.0515red.com/rd/1768727/26399376.html",
     "available_chapters": 37,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-216-a-plump-little-village-woman-the.svg"
+    "cover_url": "/covers/novel-216-a-plump-little-village-woman-the.svg",
+    "updated_at": "2026-08-04T01:05:17.219112+00:00"
   },
   {
     "id": 217,

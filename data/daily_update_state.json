@@ -1,16 +1,7 @@
 {
-  "last_index": 156,
-  "last_run": "2026-08-03T01:05:34.793164+00:00",
+  "last_index": 160,
+  "last_run": "2026-08-04T01:05:17.266842+00:00",
   "history": [
-    {
-      "date": "2026-06-23",
-      "updated": [
-        "novel-93-under-the-moonlight",
-        "novel-94-tianxin-battle-path",
-        "novel-95-i-can-activate-skills",
-        "novel-96-i-exposed-the-system-at-the"
-      ]
-    },
     {
       "date": "2026-06-24",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-210-during-the-republic-of-china-i",
         "novel-211-the-strongest-emperor-in-history",
         "novel-212-crossing-the-border-i-went-from"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "updated": [
+        "novel-213-dianjianlu-chu-han-chapter",
+        "novel-214-1960-nine-sisters-dote-me-to",
+        "wu-ling-da-lu-zhi-guang-ying-cheng-shen",
+        "novel-216-a-plump-little-village-woman-the"
       ]
     }
   ]
