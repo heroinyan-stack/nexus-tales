@@ -7689,13 +7689,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 2,
+    "total_chapters": 3,
     "zone": "vip",
     "source": "0515red",
     "source_url": "http://www.0515red.com/rd/1770051/26455676.html",
     "available_chapters": 2,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-217-sixty-happythe-retired-guy-goes-crazy.svg"
+    "cover_url": "/covers/novel-217-sixty-happythe-retired-guy-goes-crazy.svg",
+    "updated_at": "2026-08-05T01:01:21.242323+00:00"
   },
   {
     "id": 218,
@@ -7724,13 +7725,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 5,
+    "total_chapters": 6,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 5,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-218-commoner-country.svg"
+    "cover_url": "/covers/novel-218-commoner-country.svg",
+    "updated_at": "2026-08-05T01:01:21.245034+00:00"
   },
   {
     "id": 219,
@@ -7759,13 +7761,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 17,
+    "total_chapters": 18,
     "zone": "vip",
     "source": "0515red",
     "source_url": "http://www.0515red.com/rd/1770028/26444923.html",
     "available_chapters": 17,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-219-ive-been-working-as-a-temporary.svg"
+    "cover_url": "/covers/novel-219-ive-been-working-as-a-temporary.svg",
+    "updated_at": "2026-08-05T01:01:21.246192+00:00"
   },
   {
     "id": 220,
@@ -7794,13 +7797,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "0515red",
     "source_url": "http://www.0515red.com/rd/1770176/26466789.html",
     "available_chapters": 10,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-220-holding-the-power-of-the-past.svg"
+    "cover_url": "/covers/novel-220-holding-the-power-of-the-past.svg",
+    "updated_at": "2026-08-05T01:01:21.247269+00:00"
   },
   {
     "id": 221,
