@@ -7833,14 +7833,15 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 2,
     "chapter_count": 2,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-221-concubine-seeks-to-marry-the-best.svg"
+    "cover_url": "/covers/novel-221-concubine-seeks-to-marry-the-best.svg",
+    "updated_at": "2026-08-06T01:04:51.754897+00:00"
   },
   {
     "id": 222,
@@ -7869,13 +7870,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 3,
+    "total_chapters": 4,
     "zone": "vip",
     "source": "0515red",
     "source_url": "http://www.0515red.com/rd/1770050/26455322.html",
     "available_chapters": 3,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-222-frame-mei-treat-you-to-the.svg"
+    "cover_url": "/covers/novel-222-frame-mei-treat-you-to-the.svg",
+    "updated_at": "2026-08-06T01:04:51.756784+00:00"
   },
   {
     "id": 223,
@@ -7904,13 +7906,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 10,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-223-romantic-medical-sage.svg"
+    "cover_url": "/covers/novel-223-romantic-medical-sage.svg",
+    "updated_at": "2026-08-06T01:04:51.757983+00:00"
   },
   {
     "id": 224,
@@ -7939,13 +7942,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 10,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-224-black-card.svg"
+    "cover_url": "/covers/novel-224-black-card.svg",
+    "updated_at": "2026-08-06T01:04:51.759070+00:00"
   },
   {
     "id": 225,

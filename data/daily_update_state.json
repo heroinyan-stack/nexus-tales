@@ -1,16 +1,7 @@
 {
-  "last_index": 164,
-  "last_run": "2026-08-05T01:01:21.285658+00:00",
+  "last_index": 168,
+  "last_run": "2026-08-06T01:04:51.802682+00:00",
   "history": [
-    {
-      "date": "2026-06-28",
-      "updated": [
-        "novel-101-i-have-a-dark-secret-martial",
-        "novel-102-traveling-across-the-source-card-continent",
-        "novel-103-debt-book",
-        "novel-104-the-nine-evil-concubines-ask-every"
-      ]
-    },
     {
       "date": "2026-06-29",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-218-commoner-country",
         "novel-219-ive-been-working-as-a-temporary",
         "novel-220-holding-the-power-of-the-past"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "updated": [
+        "novel-221-concubine-seeks-to-marry-the-best",
+        "novel-222-frame-mei-treat-you-to-the",
+        "novel-223-romantic-medical-sage",
+        "novel-224-black-card"
       ]
     }
   ]
