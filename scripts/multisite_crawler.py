@@ -635,7 +635,7 @@ def crawl_23wx(limit_novels=40, limit_chapters=20):
     - Book page: /book/{id}/ shows info + chapter list (100 per page)
     - Chapter list pagination: /book/{id}/ml_2.html, ml_3.html, ...
     - Chapter content: /book/{id}/{cid}.html (base64 via qsbs.bb())"""
-    DOMAIN = "https://www.23wx.io"
+    DOMAIN = "https://www.23wx.tv"
     novels_db = load_novels()
     existing_sources = {n.get('source_url', '') for n in novels_db}
     existing_slugs = {n['slug'] for n in novels_db}
@@ -690,7 +690,7 @@ def crawl_23wx(limit_novels=40, limit_chapters=20):
                     "book_id": book_id,
                     "source_url": source_url,
                     "category_id": cat_id,
-                    "domain": "23wx.io",
+                    "domain": "23wx.tv",
                 })
             time.sleep(0.3)
 
