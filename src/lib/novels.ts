@@ -7,6 +7,7 @@ export interface Novel {
   slug: string;
   title_en: string;
   author_en: string;
+  author_zh?: string;
   genre: string;
   tags: string[];
   is_adult: boolean;

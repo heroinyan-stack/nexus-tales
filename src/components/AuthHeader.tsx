@@ -43,6 +43,12 @@ export default function AuthHeader() {
           <Link href="/novels" className="text-moon hover:text-neon-cyan transition-colors">
             Browse
           </Link>
+          <Link href="/blog" className="text-moon hover:text-neon-cyan transition-colors">
+            Blog
+          </Link>
+          <Link href="/about" className="text-moon hover:text-neon-cyan transition-colors">
+            About
+          </Link>
           <Link href="/pricing" className="text-moon hover:text-neon-cyan transition-colors">
             Pricing
           </Link>

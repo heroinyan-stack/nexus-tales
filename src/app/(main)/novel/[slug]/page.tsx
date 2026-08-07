@@ -149,7 +149,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
               {novel.title_en}
             </h1>
             <p className="text-moon/50 mb-6">
-              by {novel.author_en}
+              by <Link href={`/author/${encodeURIComponent(novel.author_en || '')}`} className="text-neon-cyan hover:underline">{novel.author_en}</Link>
             </p>
 
             {/* Stats */}
