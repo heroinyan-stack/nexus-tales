@@ -1,16 +1,7 @@
 {
-  "last_index": 168,
-  "last_run": "2026-08-06T01:04:51.802682+00:00",
+  "last_index": 172,
+  "last_run": "2026-08-08T01:06:13.885280+00:00",
   "history": [
-    {
-      "date": "2026-06-29",
-      "updated": [
-        "novel-105-the-tomb-is-opened-and-i",
-        "novel-106-the-sect-accepts-disciples-i-can",
-        "novel-107-star-gods",
-        "novel-108-first-wife-escapes-at-night"
-      ]
-    },
     {
       "date": "2026-07-01",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-222-frame-mei-treat-you-to-the",
         "novel-223-romantic-medical-sage",
         "novel-224-black-card"
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "updated": [
+        "novel-225-sect-medical-girl",
+        "novel-226-arrogant-mommy-with-genius-son",
+        "novel-227-genius-doctor",
+        "novel-228-the-goddesss-super-bodyguard"
       ]
     }
   ]
