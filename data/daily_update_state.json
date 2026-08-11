@@ -1,16 +1,7 @@
 {
-  "last_index": 180,
-  "last_run": "2026-08-10T01:05:33.212806+00:00",
+  "last_index": 184,
+  "last_run": "2026-08-11T01:04:51.006977+00:00",
   "history": [
-    {
-      "date": "2026-07-03",
-      "updated": [
-        "novel-117-strategy-for-finding-a-husband-phoenix",
-        "novel-118-strategy-for-finding-a-husband-phoenix",
-        "novel-119-crown-princess-leyan",
-        "novel-120-dandy-pants-leyan"
-      ]
-    },
     {
       "date": "2026-07-04",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-234-qing-ben-heimeng-is-a-guest",
         "novel-235-famous-doctor-and-noble-lady",
         "novel-236-four-husbands-fight-for-love-of"
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "updated": [
+        "novel-237-become-immortal",
+        "novel-238-flower-guarding-dragon",
+        "novel-239-killer-landlord-and-pretty-tenant",
+        "novel-240-special-military-doctor"
       ]
     }
   ]
