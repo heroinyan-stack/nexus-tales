@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { BookOpen, Star, TrendingUp, Search, ChevronLeft, Lock } from "lucide-react";
-import { getNovelBySlug, getChapterList, getAllNovels, getCoverUrl } from "@/lib/novels";
+import { getNovelBySlug, getAllNovels, getCoverUrl } from "@/lib/novels";
 import { notFound } from "next/navigation";
 import ChapterListClient from "@/components/ChapterListClient";
 import ReadButton from "@/components/ReadButton";
@@ -10,7 +10,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 const BASE_URL = "https://novelhub.beauty";
 
 export function generateStaticParams() {
-  return getAllNovels().map((n) => ({ slug: n.slug }));
+  // Dynamic rendering — avoids reading all 28k chapter files at build time
+  return [];
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -49,7 +50,6 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
     notFound();
   }
 
-  const chapters = getChapterList(novel.slug);
   const coverUrl = getCoverUrl(novel.slug);
 
   const jsonLdBreadcrumb = {
@@ -203,14 +203,16 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
               <span className="text-gradient">Chapters</span>
             </h2>
             <div className="text-sm text-moon/40">
-              Showing {chapters.length} of {(novel.available_chapters || novel.total_chapters).toLocaleString()} chapters
+              Showing all {(novel.available_chapters || novel.total_chapters).toLocaleString()} chapters — free to read
             </div>
+
           </div>
 
           <ChapterListClient
             slug={novel.slug}
             zone={novel.zone}
-            chapters={chapters}
+            chapters={[]}
+            availableChapters={novel.available_chapters || novel.total_chapters}
           />
         </section>
       </div>

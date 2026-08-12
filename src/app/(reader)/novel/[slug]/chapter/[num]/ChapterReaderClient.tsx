@@ -30,443 +30,397 @@ const THEMES: Record<Theme, { bg: string; text: string; muted: string; border: s
   },
 };
 
-const FONT_FAMILY: Record<FontFamily, string> = {
+const FONTS: Record<FontFamily, string> = {
   sans: "font-sans",
   serif: "font-serif",
 };
 
 const LINE_HEIGHTS: Record<LineHeight, string> = {
-  tight: "leading-relaxed",
-  normal: "leading-loose",
-  relaxed: "leading-[2.2]",
+  tight: "leading-tight",
+  normal: "leading-relaxed",
+  relaxed: "leading-loose",
 };
 
-export default function ChapterReaderClient({
-  content,
-  novelSlug,
-  chapterNum,
-  totalChapters,
-  novelTitle = "",
-  zone = "free",
-  breadcrumbs,
-}: {
-  content: string;
+interface ChapterReaderClientProps {
+  // For static shell (passed even before content loads)
   novelSlug: string;
   chapterNum: number;
   totalChapters: number;
   novelTitle?: string;
   zone?: string;
-  breadcrumbs?: React.ReactNode;
-}) {
-  const { data: session } = useSession();
-  const [theme, setTheme] = useState<Theme>("dark");
-  const [fontFamily, setFontFamily] = useState<FontFamily>("serif");
-  const [fontSize, setFontSize] = useState(18);
-  const [lineHeight, setLineHeight] = useState<LineHeight>("normal");
+  initialContent?: string; // optional, for SSG compatibility
+}
+
+export default function ChapterReaderClient({
+  novelSlug,
+  chapterNum,
+  totalChapters,
+  novelTitle = "",
+  zone = "free",
+  initialContent,
+}: ChapterReaderClientProps) {
+  // Chapter content — fetched client-side from Blob API
+  const [content, setContent] = useState<string>(initialContent || "");
+  const [loading, setLoading] = useState(!initialContent);
+  const [error, setError] = useState<string | null>(null);
+
+  // Reading progress
+  const [progress, setProgress] = useState({ chapterNum, scrollPercent: 0 });
+
+  // Settings drawer
   const [showSettings, setShowSettings] = useState(false);
-  const [showChapterList, setShowChapterList] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [isImmersive, setIsImmersive] = useState(false);
+  const [showChapters, setShowChapters] = useState(false);
+
+  // Display settings
+  const [theme, setTheme] = useState<Theme>("dark");
+  const [fontSize, setFontSize] = useState(18);
+  const [fontFamily, setFontFamily] = useState<FontFamily>("serif");
+  const [lineHeight, setLineHeight] = useState<LineHeight>("normal");
+
+  // Auth
+  const { data: session } = useSession();
+
   const contentRef = useRef<HTMLDivElement>(null);
   const lastSavedRef = useRef({ chapterNum, scrollPercent: 0 });
-  const saveTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Calculate reading time
-  const wordCount = content.split(/\s+/).length;
-  const readingTime = Math.ceil(wordCount / 200);
-
-  // Save reading progress — always localStorage, +API when logged in (debounced)
-  const saveProgress = useCallback((chNum: number, scrollPct: number) => {
-    if (chNum === lastSavedRef.current.chapterNum && 
-        Math.abs(scrollPct - lastSavedRef.current.scrollPercent) < 5) return;
-
-    lastSavedRef.current = { chapterNum: chNum, scrollPercent: scrollPct };
-
-    // Always save to localStorage (guest + logged-in)
-    try {
-      localStorage.setItem(`reading_progress_${novelSlug}`, JSON.stringify({
-        chapterNum: chNum,
-        scrollPercent: Math.round(scrollPct),
-        finished: scrollPct > 90,
-        updatedAt: Date.now(),
-      }));
-    } catch {} // quota exceeded or private browsing
-
-    // Also POST to API for logged-in users
-    if (!(session?.user as any)?.id) return;
-
-    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
-    saveTimerRef.current = setTimeout(() => {
-      fetch("/api/progress", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          novelSlug,
-          chapterNum: chNum,
-          scrollPercent: Math.round(scrollPct),
-          finished: scrollPct > 90,
-        }),
-      }).catch(() => {});
-    }, 2000);
-  }, [session, novelSlug]);
-
-  // Track reading progress
+  // Fetch chapter from Blob API
   useEffect(() => {
-    const handleScroll = () => {
-      if (!contentRef.current) return;
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      const pct = Math.min(100, Math.max(0, scrollPercent));
-      setProgress(pct);
-      saveProgress(chapterNum, pct);
-    };
+    if (initialContent) {
+      setContent(initialContent);
+      setLoading(false);
+      return;
+    }
+    let cancelled = false;
+    setLoading(true);
+    setError(null);
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    fetch(`/api/chapters/${encodeURIComponent(novelSlug)}/${chapterNum}`)
+      .then((r) => {
+        if (!r.ok) throw new Error("Chapter not found");
+        return r.json();
+      })
+      .then((data) => {
+        if (cancelled) return;
+        setContent(data.content_en || data.content || "");
+        setLoading(false);
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        setError(err.message || "Failed to load chapter");
+        setLoading(false);
+      });
+
+    return () => { cancelled = true; };
+  }, [novelSlug, chapterNum, initialContent]);
+
+  // Restore scroll position
+  useEffect(() => {
+    if (!contentRef.current) return;
+    const saved = localStorage.getItem(`reading-progress-${novelSlug}`);
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (data.chapterNum === chapterNum) {
+          const el = contentRef.current;
+          const scrollPct = data.scrollPercent / 100;
+          const targetY = scrollPct * el.scrollHeight;
+          el.scrollTop = targetY;
+        }
+      } catch {}
+    }
+  }, [content, chapterNum, novelSlug]);
+
+  const saveProgress = useCallback(
+    (chNum: number, pct: number) => {
+      if (typeof window === "undefined") return;
+      localStorage.setItem(
+        `reading-progress-${novelSlug}`,
+        JSON.stringify({ chapterNum: chNum, scrollPercent: pct })
+      );
+    },
+    [novelSlug]
+  );
+
+  // Track scroll progress
+  const handleScroll = useCallback(() => {
+    if (!contentRef.current) return;
+    const el = contentRef.current;
+    const scrollPct = Math.round((el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100);
+    setProgress({ chapterNum, scrollPercent: scrollPct });
+    if (el.scrollHeight > el.clientHeight) {
+      saveProgress(chapterNum, scrollPct);
+    }
   }, [chapterNum, saveProgress]);
 
-  // Save progress on chapter change
   useEffect(() => {
-    saveProgress(chapterNum, 0);
-    window.scrollTo(0, 0);
-  }, [chapterNum]);
+    const el = contentRef.current;
+    if (!el) return;
+    el.addEventListener("scroll", handleScroll, { passive: true });
+    return () => el.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
-  // Save on leaving (localStorage sync + API beacon)
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      // Always flush to localStorage
-      try {
-        localStorage.setItem(`reading_progress_${novelSlug}`, JSON.stringify({
-          chapterNum,
-          scrollPercent: Math.round(progress),
-          finished: progress > 90,
-          updatedAt: Date.now(),
-        }));
-      } catch {}
-      // API beacon for logged-in users
-      if ((session?.user as any)?.id) {
-        if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
-        navigator.sendBeacon("/api/progress", JSON.stringify({
-          novelSlug,
-          chapterNum,
-          scrollPercent: Math.round(progress),
-          finished: progress > 90,
-        }));
-      }
-    };
-    window.addEventListener("beforeunload", handleBeforeUnload);
-    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
-  }, [chapterNum, progress, novelSlug]);
+  const wordCount = content ? content.split(/\s+/).length : 0;
 
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft" && chapterNum > 1) {
-        window.location.href = `/novel/${novelSlug}/chapter/${chapterNum - 1}`;
-      } else if (e.key === "ArrowRight" && chapterNum < totalChapters) {
-        window.location.href = `/novel/${novelSlug}/chapter/${chapterNum + 1}`;
-      } else if (e.key === "Escape") {
-        setShowSettings(false);
-        setShowChapterList(false);
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [chapterNum, totalChapters, novelSlug]);
+  // Navigate chapters
+  const prevChapter = chapterNum > 1 ? chapterNum - 1 : null;
+  const nextChapter = chapterNum < totalChapters ? chapterNum + 1 : null;
 
-  // Generate chapter list
-  const chapters = Array.from({ length: totalChapters }, (_, i) => i + 1);
+  const navigateTo = (num: number) => {
+    const el = contentRef.current;
+    if (el) el.scrollTop = 0;
+    lastSavedRef.current = { chapterNum: num, scrollPercent: 0 };
+    window.location.href = `/novel/${novelSlug}/chapter/${num}`;
+  };
 
-  // Theme colors
-  const colors = THEMES[theme];
+  // Theme/typography classes
+  const themeStyle = THEMES[theme];
+  const fontClass = FONTS[fontFamily];
+  const lhClass = LINE_HEIGHTS[lineHeight];
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${colors.bg}`}>
-      {/* Progress bar */}
-      <div className="fixed top-0 left-0 right-0 h-1 z-50 bg-black/20">
-        <div
-          className="h-full bg-gradient-to-r from-[#00f0ff] to-[#b44dff] transition-all duration-150"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
-
-      {/* Top bar: breadcrumbs + full screen toggle */}
-      {!isImmersive && (
-        <div className="fixed top-0 left-0 right-0 z-40">
-          {/* Visual breadcrumbs for SEO */}
-          {breadcrumbs && (
-            <div className={`${colors.bg} ${colors.border} border-b`}>
-              <div className="max-w-2xl mx-auto px-6 py-1.5">
-                {breadcrumbs}
-              </div>
-            </div>
-          )}
-          {/* Back button + full screen toggle */}
-          <div className="flex items-center justify-between px-4 py-2">
-            <Link
-              href={`/novel/${novelSlug}`}
-              className={`flex items-center gap-1.5 ${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Back to Novel</span>
-            </Link>
-            <button
-              onClick={() => setIsImmersive(true)}
-              className={`${colors.bg} ${colors.text} ${colors.border} border px-3 py-1.5 rounded-full text-xs opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              Full Screen
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Main content area */}
-      <div
-        ref={contentRef}
-        className={`max-w-2xl mx-auto px-6 pt-16 pb-32 ${
-          isImmersive ? "pt-8" : ""
-        }`}
-      >
-        {/* Reading time & progress */}
-        <div
-          className={`flex items-center justify-between mb-8 text-xs ${colors.muted}`}
+    <div className={`min-h-screen ${themeStyle.bg} ${themeStyle.text} ${fontClass} flex flex-col`}>
+      {/* Fixed top bar */}
+      <div className={`sticky top-0 z-20 flex items-center justify-between px-4 py-3 border-b ${themeStyle.border} ${themeStyle.bg} backdrop-blur-sm`}>
+        <Link
+          href={`/novel/${novelSlug}`}
+          className={`flex items-center gap-1 text-sm ${themeStyle.muted} hover:${themeStyle.text} transition-colors`}
         >
-          <span>{readingTime} min read</span>
-          <span>
-            {chapterNum} / {totalChapters}
+          <ChevronLeft size={16} />
+          <span className="hidden sm:inline">Back</span>
+        </Link>
+
+        <div className="flex items-center gap-2">
+          {/* Progress */}
+          <span className={`text-xs ${themeStyle.muted}`}>
+            {progress.scrollPercent}%
           </span>
-        </div>
 
-        {/* Chapter content */}
-        <article
-          className={`${colors.text} ${FONT_FAMILY[fontFamily]} ${LINE_HEIGHTS[lineHeight]}`}
-          style={{ fontSize: `${fontSize}px` }}
-        >
-          {content.split("\n\n").map((paragraph, i) => (
-            <p
-              key={i}
-              className="mb-6 text-indent-8"
-              style={{ textIndent: "2rem" }}
-            >
-              {paragraph.trim()}
-            </p>
-          ))}
-        </article>
-      </div>
-
-      {/* Bottom navigation bar */}
-      <div
-        className={`fixed bottom-0 left-0 right-0 z-40 ${colors.bg} ${colors.border} border-t`}
-      >
-        {/* Chapter navigation */}
-        <div className="flex items-center justify-between px-4 py-3 max-w-2xl mx-auto">
-          {chapterNum > 1 ? (
-            <Link
-              href={`/novel/${novelSlug}/chapter/${chapterNum - 1}`}
-              className={`flex items-center gap-1 ${colors.text} opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              <ChevronLeft className="w-5 h-5" />
-              <span className="text-sm">Prev</span>
-            </Link>
-          ) : (
-            <div />
-          )}
-
-          {/* Center controls */}
-          <div className="flex items-center gap-3">
-            {/* Back to novel */}
-            <Link
-              href={`/novel/${novelSlug}`}
-              className={`flex items-center gap-1 ${colors.text} opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              <Home className="w-4 h-4" />
-              <span className="text-xs">Novel</span>
-            </Link>
-
-            {/* Chapter list button */}
-            <button
-              onClick={() => setShowChapterList(true)}
-              className={`flex items-center gap-1 ${colors.text} opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              <span className="text-sm font-medium">Ch. {chapterNum}</span>
-              <ChevronDown className="w-4 h-4" />
-            </button>
-
-            {/* Settings button */}
-            <button
-              onClick={() => setShowSettings(true)}
-              className={`p-2 ${colors.text} opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              <Settings className="w-5 h-5" />
-            </button>
-          </div>
-
-          {chapterNum < totalChapters ? (
-            <Link
-              href={`/novel/${novelSlug}/chapter/${chapterNum + 1}`}
-              className={`flex items-center gap-1 ${colors.text} opacity-60 hover:opacity-100 transition-opacity`}
-            >
-              <span className="text-sm">Next</span>
-              <ChevronRight className="w-5 h-5" />
-            </Link>
-          ) : (
-            <div />
-          )}
+          <button
+            onClick={() => setShowChapters(!showChapters)}
+            className={`p-1.5 rounded-lg ${themeStyle.border} hover:bg-white/5 transition-colors`}
+            title="Chapters"
+          >
+            <List size={16} />
+          </button>
+          <button
+            onClick={() => setShowSettings(!showSettings)}
+            className={`p-1.5 rounded-lg ${themeStyle.border} hover:bg-white/5 transition-colors`}
+            title="Settings"
+          >
+            <Settings size={16} />
+          </button>
         </div>
       </div>
 
-      {/* Settings panel */}
+      {/* Settings drawer */}
       {showSettings && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
-          onClick={() => setShowSettings(false)}
-        >
-          <div
-            className={`${colors.bg} ${colors.text} ${colors.border} border rounded-2xl p-6 w-full max-w-sm mx-4 shadow-2xl`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between mb-6">
-              <h3 className="font-semibold text-lg">Reading Settings</h3>
+        <div className={`${themeStyle.bg} border-b ${themeStyle.border} px-4 py-3 space-y-3`}>
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-medium">Font Size</span>
+            <div className="flex items-center gap-2">
               <button
-                onClick={() => setShowSettings(false)}
-                className="opacity-60 hover:opacity-100"
+                onClick={() => setFontSize((s) => Math.max(14, s - 2))}
+                className={`p-1.5 rounded ${themeStyle.border}`}
               >
-                <X className="w-5 h-5" />
+                <Minus size={14} />
               </button>
-            </div>
-
-            {/* Theme */}
-            <div className="mb-6">
-              <label className={`text-xs ${colors.muted} mb-2 block`}>
-                Theme
-              </label>
-              <div className="flex gap-2">
-                {(["dark", "light", "sepia"] as Theme[]).map((t) => (
-                  <button
-                    key={t}
-                    onClick={() => setTheme(t)}
-                    className={`flex-1 py-2.5 rounded-lg border transition-all ${
-                      theme === t
-                        ? "border-[#00f0ff] bg-[#00f0ff]/10"
-                        : colors.border
-                    }`}
-                  >
-                    <span className="text-sm capitalize">{t}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Font family */}
-            <div className="mb-6">
-              <label className={`text-xs ${colors.muted} mb-2 block`}>
-                Font Style
-              </label>
-              <div className="flex gap-2">
-                {(["sans", "serif"] as FontFamily[]).map((f) => (
-                  <button
-                    key={f}
-                    onClick={() => setFontFamily(f)}
-                    className={`flex-1 py-2.5 rounded-lg border transition-all ${
-                      fontFamily === f
-                        ? "border-[#00f0ff] bg-[#00f0ff]/10"
-                        : colors.border
-                    } ${FONT_FAMILY[f]}`}
-                  >
-                    <span className="text-sm">{f === "sans" ? "Modern" : "Classic"}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Font size */}
-            <div className="mb-6">
-              <label className={`text-xs ${colors.muted} mb-2 block`}>
-                Font Size: {fontSize}px
-              </label>
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={() => setFontSize((s) => Math.max(14, s - 2))}
-                  className={`${colors.border} border w-10 h-10 rounded-lg flex items-center justify-center hover:bg-white/5`}
-                >
-                  <Minus className="w-4 h-4" />
-                </button>
-                <div className="flex-1 h-2 rounded-full bg-white/10 relative">
-                  <div
-                    className="absolute h-full bg-gradient-to-r from-[#00f0ff] to-[#b44dff] rounded-full"
-                    style={{ width: `${((fontSize - 14) / 10) * 100}%` }}
-                  />
-                </div>
-                <button
-                  onClick={() => setFontSize((s) => Math.min(24, s + 2))}
-                  className={`${colors.border} border w-10 h-10 rounded-lg flex items-center justify-center hover:bg-white/5`}
-                >
-                  <Plus className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-
-            {/* Line height */}
-            <div>
-              <label className={`text-xs ${colors.muted} mb-2 block`}>
-                Line Spacing
-              </label>
-              <div className="flex gap-2">
-                {(["tight", "normal", "relaxed"] as LineHeight[]).map((l) => (
-                  <button
-                    key={l}
-                    onClick={() => setLineHeight(l)}
-                    className={`flex-1 py-2.5 rounded-lg border transition-all ${
-                      lineHeight === l
-                        ? "border-[#00f0ff] bg-[#00f0ff]/10"
-                        : colors.border
-                    }`}
-                  >
-                    <span className="text-sm capitalize">{l}</span>
-                  </button>
-                ))}
-              </div>
+              <span className="text-sm w-8 text-center">{fontSize}px</span>
+              <button
+                onClick={() => setFontSize((s) => Math.min(24, s + 2))}
+                className={`p-1.5 rounded ${themeStyle.border}`}
+              >
+                <Plus size={14} />
+              </button>
             </div>
           </div>
-        </div>
-      )}
-
-      {/* Chapter list panel */}
-      {showChapterList && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
-          onClick={() => setShowChapterList(false)}
-        >
-          <div
-            className={`${colors.bg} ${colors.text} ${colors.border} border rounded-2xl w-full max-w-md mx-4 max-h-[70vh] overflow-hidden shadow-2xl`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between p-4 border-b border-white/10">
-              <h3 className="font-semibold">Chapters</h3>
-              <button
-                onClick={() => setShowChapterList(false)}
-                className="opacity-60 hover:opacity-100"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-            <div className="overflow-y-auto max-h-[calc(70vh-60px)]">
-              {chapters.map((num) => (
-                <Link
-                  key={num}
-                  href={`/novel/${novelSlug}/chapter/${num}`}
-                  className={`block px-4 py-3 hover:bg-white/5 transition-colors ${
-                    num === chapterNum ? "bg-[#00f0ff]/10 text-[#00f0ff]" : ""
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-medium">Theme</span>
+            <div className="flex gap-2">
+              {(["dark", "light", "sepia"] as Theme[]).map((t) => (
+                <button
+                  key={t}
+                  onClick={() => setTheme(t)}
+                  className={`px-3 py-1 text-xs rounded capitalize ${
+                    theme === t ? "bg-purple-600 text-white" : `${themeStyle.border}`
                   }`}
                 >
-                  <span className="text-sm">Chapter {num}</span>
-                </Link>
+                  {t}
+                </button>
               ))}
             </div>
           </div>
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-medium">Font</span>
+            <div className="flex gap-2">
+              {([["serif", "Serif"], ["sans", "Sans"]] as [FontFamily, string][]).map(
+                ([f, label]) => (
+                  <button
+                    key={f}
+                    onClick={() => setFontFamily(f)}
+                    className={`px-3 py-1 text-xs rounded ${
+                      fontFamily === f ? "bg-purple-600 text-white" : `${themeStyle.border}`
+                    }`}
+                  >
+                    {label}
+                  </button>
+                )
+              )}
+            </div>
+          </div>
         </div>
       )}
+
+      {/* Chapters drawer */}
+      {showChapters && (
+        <ChapterDrawer
+          novelSlug={novelSlug}
+          currentChapter={chapterNum}
+          totalChapters={totalChapters}
+          onSelect={navigateTo}
+          themeStyle={themeStyle}
+          theme={theme}
+        />
+      )}
+
+      {/* Main content area */}
+      <div className="flex-1 flex">
+        {/* Mobile chapter nav */}
+        <div className="flex-1 overflow-auto" ref={contentRef}>
+          <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8">
+            {loading ? (
+              <div className="space-y-4 animate-pulse">
+                {[...Array(8)].map((_, i) => (
+                  <div
+                    key={i}
+                    className={`h-4 ${themeStyle.muted} rounded`}
+                    style={{ width: `${70 + Math.random() * 30}%` }}
+                  />
+                ))}
+              </div>
+            ) : error ? (
+              <div className="text-center py-16">
+                <p className={`${themeStyle.muted} text-lg mb-4`}>{error}</p>
+                <button
+                  onClick={() => window.location.reload()}
+                  className="px-4 py-2 bg-purple-600 text-white rounded-lg"
+                >
+                  Retry
+                </button>
+              </div>
+            ) : (
+              <article
+                className={`prose-custom ${lhClass}`}
+                style={{ fontSize: `${fontSize}px` }}
+                dangerouslySetInnerHTML={{ __html: formatContent(content) }}
+              />
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom navigation */}
+      <div className={`sticky bottom-0 border-t ${themeStyle.border} ${themeStyle.bg} backdrop-blur-sm`}>
+        <div className="max-w-2xl mx-auto flex items-center justify-between px-4 py-3">
+          {prevChapter ? (
+            <button
+              onClick={() => navigateTo(prevChapter)}
+              className={`flex items-center gap-1 text-sm px-3 py-1.5 rounded-lg border ${themeStyle.border} hover:bg-white/5 transition-colors`}
+            >
+              <ChevronLeft size={16} />
+              <span className="hidden sm:inline">Ch.{prevChapter}</span>
+              <span className="sm:hidden">Prev</span>
+            </button>
+          ) : (
+            <div />
+          )}
+
+          <span className={`text-xs ${themeStyle.muted}`}>
+            {chapterNum} / {totalChapters} · {wordCount.toLocaleString()} words
+          </span>
+
+          {nextChapter ? (
+            <button
+              onClick={() => navigateTo(nextChapter)}
+              className={`flex items-center gap-1 text-sm px-3 py-1.5 rounded-lg border ${themeStyle.border} hover:bg-white/5 transition-colors`}
+            >
+              <span className="hidden sm:inline">Ch.{nextChapter}</span>
+              <span className="sm:hidden">Next</span>
+              <ChevronRight size={16} />
+            </button>
+          ) : (
+            <div />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Format content: paragraph breaks, no raw newlines, basic cleanup
+function formatContent(text: string): string {
+  if (!text) return "";
+  return text
+    .replace(/\r\n/g, "\n")
+    .split(/\n\n+/)
+    .map((p) => {
+      const trimmed = p.trim();
+      if (!trimmed) return "";
+      if (trimmed.startsWith("<") && trimmed.endsWith(">")) return trimmed;
+      return `<p>${trimmed.replace(/\n/g, "<br/>")}</p>`;
+    })
+    .filter(Boolean)
+    .join("");
+}
+
+// Chapters drawer
+function ChapterDrawer({
+  novelSlug,
+  currentChapter,
+  totalChapters,
+  onSelect,
+  themeStyle,
+  theme,
+}: {
+  novelSlug: string;
+  currentChapter: number;
+  totalChapters: number;
+  onSelect: (n: number) => void;
+  themeStyle: { bg: string; text: string; muted: string; border: string };
+  theme: Theme;
+}) {
+  const [chapters, setChapters] = useState<{ num: number; title_en: string }[]>([]);
+
+  useEffect(() => {
+    // Fetch chapter list from /api/chapters-list/[slug] or fall back to localStorage
+    fetch(`/api/novels/${encodeURIComponent(novelSlug)}`)
+      .then((r) => r.ok ? r.json() : null)
+      .then((data) => {
+        if (data?.chapters) setChapters(data.chapters);
+      })
+      .catch(() => {});
+  }, [novelSlug]);
+
+  return (
+    <div className={`${themeStyle.bg} border-b ${themeStyle.border} max-h-64 overflow-y-auto`}>
+      <div className="px-4 py-2 grid grid-cols-4 gap-1">
+        {[...Array(totalChapters)].map((_, i) => {
+          const num = i + 1;
+          const isActive = num === currentChapter;
+          return (
+            <button
+              key={num}
+              onClick={() => onSelect(num)}
+              className={`px-2 py-1 text-xs rounded text-center transition-colors ${
+                isActive
+                  ? "bg-purple-600 text-white"
+                  : `${themeStyle.border} hover:bg-white/5`
+              }`}
+            >
+              {num}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
