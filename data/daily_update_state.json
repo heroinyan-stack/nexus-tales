@@ -1,16 +1,7 @@
 {
-  "last_index": 184,
-  "last_run": "2026-08-11T01:04:51.006977+00:00",
+  "last_index": 188,
+  "last_run": "2026-08-12T01:06:12.571309+00:00",
   "history": [
-    {
-      "date": "2026-07-04",
-      "updated": [
-        "novel-121-continued-string-leyan",
-        "novel-122-concubine-leyan",
-        "novel-123-the-proud-alchemy-god",
-        "novel-124-the-evil-king-from-another-world"
-      ]
-    },
     {
       "date": "2026-07-05",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-238-flower-guarding-dragon",
         "novel-239-killer-landlord-and-pretty-tenant",
         "novel-240-special-military-doctor"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "updated": [
+        "novel-241-the-pot-is-returned-to-the",
+        "novel-242-tweezers-and-stirrups",
+        "novel-243-urban-all-round-system",
+        "novel-244"
       ]
     }
   ]

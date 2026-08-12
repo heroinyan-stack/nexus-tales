@@ -8554,14 +8554,15 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 1,
     "chapter_count": 1,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-241-the-pot-is-returned-to-the.svg"
+    "cover_url": "/covers/novel-241-the-pot-is-returned-to-the.svg",
+    "updated_at": "2026-08-12T01:06:12.515137+00:00"
   },
   {
     "id": 242,
@@ -8590,13 +8591,14 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 10,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-242-tweezers-and-stirrups.svg"
+    "cover_url": "/covers/novel-242-tweezers-and-stirrups.svg",
+    "updated_at": "2026-08-12T01:06:12.516306+00:00"
   },
   {
     "id": 243,
@@ -8625,14 +8627,15 @@
     "status": "ongoing",
     "rating": 4.0,
     "readers": 0,
-    "total_chapters": 10,
+    "total_chapters": 11,
     "zone": "vip",
     "source": "",
     "source_url": "",
     "available_chapters": 9,
     "chapter_count": 9,
     "cover_ext": "svg",
-    "cover_url": "/covers/novel-243-urban-all-round-system.svg"
+    "cover_url": "/covers/novel-243-urban-all-round-system.svg",
+    "updated_at": "2026-08-12T01:06:12.517382+00:00"
   },
   {
     "slug": "novel-244",
@@ -8653,13 +8656,14 @@
       "webnovel"
     ],
     "rating": 4.0,
-    "total_chapters": 15,
+    "total_chapters": 16,
     "readers": 0,
     "status": "ongoing",
     "is_adult": false,
     "zone": "vip",
     "title_en": "大明：死谏一百次，老朱破防了",
-    "cover_ext": "svg"
+    "cover_ext": "svg",
+    "updated_at": "2026-08-12T01:06:12.519562+00:00"
   },
   {
     "slug": "novel-245",
