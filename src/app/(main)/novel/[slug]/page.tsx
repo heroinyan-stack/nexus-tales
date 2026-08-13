@@ -74,7 +74,7 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
     isAccessibleForFree: novel.zone === "free",
     url: `${BASE_URL}/novel/${novel.slug}`,
     publisher: { "@type": "Organization", name: "Nexus Tales", url: BASE_URL },
-    numberOfPages: chapters.length,
+    numberOfPages: novel.available_chapters || novel.total_chapters,
   };
 
   return (

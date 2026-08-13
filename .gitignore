@@ -31,3 +31,9 @@ yarn-error.log*
 next-env.d.ts
 data/chapters/wu-ling-da-lu-zhi-guang-ying-cheng-shen/
 .env.bak
+
+# R2 migration: chapters now served from Cloudflare R2, not git
+data/chapters/
+data/r2_upload_progress.json
+data/r2_upload_failed.json
+data/blob_upload*.log

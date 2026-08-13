@@ -52,24 +52,6 @@ export function getCoverUrl(slug: string): string {
   return `/covers/default.svg`; // absolute fallback
 }
 
-// Vercel Blob config for production chapter serving
-const BLOB_BASE = "https://izr20vnpplvtebl1.private.blob.vercel-storage.com";
-const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN || "";
-
-// ========== Blob helpers ==========
-async function fetchBlobJson<T>(blobPath: string): Promise<T | null> {
-  if (!BLOB_TOKEN) return null;
-  try {
-    const res = await fetch(`${BLOB_BASE}/${blobPath}`, {
-      headers: { Authorization: `Bearer ${BLOB_TOKEN}` },
-      next: { revalidate: 60 },
-    });
-    if (!res.ok) return null;
-    return res.json() as Promise<T>;
-  } catch {
-    return null;
-  }
-}
 function readJsonFile<T>(filePath: string): T | null {
   try {
     if (!fs.existsSync(filePath)) {

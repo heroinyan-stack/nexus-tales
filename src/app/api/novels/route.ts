@@ -1,50 +1,14 @@
 import { NextResponse } from "next/server";
-
-// Blob store — public URLs (no Bearer needed for reads)
-const BLOB_BASE = "https://izr20vnpplvtebl1.private.blob.vercel-storage.com";
-const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN || "";
+import { getR2Json } from "@/lib/r2";
 
 // Minimum chapters to show on homepage
 const MIN_HOMEPAGE_CHAPTERS = 3;
 
-async function fetchBlobJson<T>(path: string): Promise<T | null> {
-  if (!BLOB_TOKEN) {
-    // Fallback to local fs for local dev
-    try {
-      const fs = await import("fs");
-      const filePath = `${process.cwd()}/data/${path}`;
-      const content = fs.readFileSync(filePath, "utf-8");
-      return JSON.parse(content) as T;
-    } catch {
-      return null;
-    }
-  }
-  try {
-    const res = await fetch(`${BLOB_BASE}/${path}`, {
-      next: { revalidate: 60 },
-    });
-    if (!res.ok) {
-      // Fallback: try with Bearer token
-      if (BLOB_TOKEN) {
-        const res2 = await fetch(`${BLOB_BASE}/${path}`, {
-          headers: { Authorization: `Bearer ${BLOB_TOKEN}` },
-          next: { revalidate: 60 },
-        });
-        if (res2.ok) return res2.json() as Promise<T>;
-      }
-      return null;
-    }
-    return res.json() as Promise<T>;
-  } catch {
-    return null;
-  }
-}
-
 export async function GET() {
   try {
     const [novels, extMap] = await Promise.all([
-      fetchBlobJson<any[]>("novels.json"),
-      fetchBlobJson<Record<string, string>>("cover-manifest.json"),
+      getR2Json<any[]>("data/novels.json"),
+      getR2Json<Record<string, string>>("data/cover-manifest.json"),
     ]);
 
     if (!novels) {
@@ -55,9 +19,7 @@ export async function GET() {
     for (const n of novels) {
       const ext = extMap?.[n.slug] || ".jpg";
       n.cover_ext = ext;
-      n.cover_url = ext.startsWith("-gen")
-        ? `/covers/${n.slug}${ext}`
-        : `/covers/${n.slug}${ext}`;
+      n.cover_url = `/covers/${n.slug}${ext}`;
     }
 
     // Filter: enough chapters + valid English (not CJK-heavy)
@@ -85,7 +47,7 @@ export async function GET() {
       genres: Array.from(genreMap.values()),
     });
   } catch (error) {
-    console.error("Error loading novels from Blob:", error);
+    console.error("Error loading novels:", error);
     return NextResponse.json(
       { novels: [], genres: [], error: "Failed to load" },
       { status: 500 }
