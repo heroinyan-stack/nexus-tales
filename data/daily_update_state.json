@@ -1,16 +1,7 @@
 {
-  "last_index": 188,
-  "last_run": "2026-08-12T01:06:12.571309+00:00",
+  "last_index": 192,
+  "last_run": "2026-08-13T01:05:31.526993+00:00",
   "history": [
-    {
-      "date": "2026-07-05",
-      "updated": [
-        "novel-125-ten-directions-celestial-beings",
-        "novel-126-extreme-martial-lord",
-        "novel-127-douluo-dalu",
-        "novel-128-supreme-immortal-emperor"
-      ]
-    },
     {
       "date": "2026-07-06",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-242-tweezers-and-stirrups",
         "novel-243-urban-all-round-system",
         "novel-244"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "updated": [
+        "novel-245",
+        "novel-246",
+        "novel-247",
+        "novel-248"
       ]
     }
   ]
