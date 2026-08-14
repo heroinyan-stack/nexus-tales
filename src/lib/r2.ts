@@ -15,6 +15,10 @@ function getClient(): S3Client | null {
     region: "auto",
     endpoint: `https://${ACCOUNT_ID}.r2.cloudflarestorage.com`,
     credentials: { accessKeyId: ACCESS_KEY_ID, secretAccessKey: SECRET_ACCESS_KEY },
+    // R2 returns incorrect x-amz-checksum-crc32 headers for some objects,
+    // causing false ChecksumMismatch errors on GET. Content is correct,
+    // so we disable response checksum validation.
+    responseChecksumValidation: "NEVER",
   });
 }
 
