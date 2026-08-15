@@ -1,16 +1,7 @@
 {
-  "last_index": 192,
-  "last_run": "2026-08-13T01:05:31.526993+00:00",
+  "last_index": 196,
+  "last_run": "2026-08-15T01:06:10.406823+00:00",
   "history": [
-    {
-      "date": "2026-07-06",
-      "updated": [
-        "novel-129-seek-magic",
-        "novel-130-supreme-supernatural-power",
-        "novel-131-supreme-emperor",
-        "novel-132-journey-to-the-west-from-scratch"
-      ]
-    },
     {
       "date": "2026-07-07",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-246",
         "novel-247",
         "novel-248"
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "updated": [
+        "novel-249",
+        "novel-250",
+        "novel-251",
+        "novel-252"
       ]
     }
   ]
