@@ -1,16 +1,7 @@
 {
-  "last_index": 204,
-  "last_run": "2026-08-18T01:05:06.396939+00:00",
+  "last_index": 208,
+  "last_run": "2026-08-19T01:05:25.412608+00:00",
   "history": [
-    {
-      "date": "2026-07-09",
-      "updated": [
-        "novel-141-world-of-warcraft-sword-saint-another",
-        "novel-142-dzi-bead-transformation",
-        "novel-143-fight-to-break-the-sky",
-        "novel-144-sword-god-reborn"
-      ]
-    },
     {
       "date": "2026-07-10",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-258",
         "novel-259",
         "novel-260"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "updated": [
+        "novel-261",
+        "novel-262",
+        "novel-263",
+        "novel-264"
       ]
     }
   ]
