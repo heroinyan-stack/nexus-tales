@@ -1,16 +1,7 @@
 {
-  "last_index": 208,
-  "last_run": "2026-08-19T01:05:25.412608+00:00",
+  "last_index": 212,
+  "last_run": "2026-08-20T01:05:33.034380+00:00",
   "history": [
-    {
-      "date": "2026-07-10",
-      "updated": [
-        "novel-145-evil-insect-god",
-        "novel-146-tang-sect-masters-in-another-world",
-        "novel-147-my-best-sister-in-law",
-        "novel-148-urban-super-summoner"
-      ]
-    },
     {
       "date": "2026-07-11",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-262",
         "novel-263",
         "novel-264"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "updated": [
+        "novel-265",
+        "novel-266",
+        "novel-267",
+        "novel-268"
       ]
     }
   ]
