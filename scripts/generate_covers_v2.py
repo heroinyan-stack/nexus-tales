@@ -76,8 +76,8 @@ def wrap_title(title, max_chars=14):
 
 def generate_cover(novel):
     slug = novel.get('slug', '')
-    title = clean_title(novel.get('title_en') or novel.get('title_zh') or '')
-    author = clean_title(novel.get('author_en') or novel.get('author_zh') or '')
+    title = clean_title(novel.get('title_en') or novel.get('title_zh') or slug)
+    author = clean_title(novel.get('author_en') or novel.get('author_zh') or 'Unknown Author')
     genre = novel.get('genre', '')
     c1, c2, c3, motif = get_theme(genre)
 
