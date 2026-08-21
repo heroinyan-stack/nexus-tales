@@ -18,7 +18,7 @@ function getClient(): S3Client | null {
     // R2 returns incorrect x-amz-checksum-crc32 headers for some objects,
     // causing false ChecksumMismatch errors on GET. Content is correct,
     // so we disable response checksum validation.
-    responseChecksumValidation: "NEVER",
+    responseChecksumValidation: "NEVER" as any,
   });
 }
 
