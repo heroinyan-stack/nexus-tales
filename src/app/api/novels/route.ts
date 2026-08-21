@@ -22,13 +22,13 @@ export async function GET() {
       n.cover_url = `/covers/${n.slug}${ext}`;
     }
 
-    // Filter: enough chapters + some description (>=30 chars)
-    // Remove CJK-heavy filter so Chinese-only novels are also shown
+    // Filter: enough chapters + English-or-Chinese description (>=30 chars, CJK-free)
+    // description_zh added as fallback so Chinese-only novels still pass
     const filtered = novels.filter((n: any) => {
       const chCount = n.available_chapters || n.chapter_count || 0;
       if (chCount < MIN_HOMEPAGE_CHAPTERS) return false;
-      const desc = (n.description_en || n.description_zh || "");
-      if (desc.length < 30) return false;
+      const desc = n.description_en || n.description_zh || "";
+      if (desc.length >= 30 && isMostlyCJK(desc)) return false;
       return true;
     });
 
