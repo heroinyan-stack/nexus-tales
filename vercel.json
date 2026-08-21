@@ -2,11 +2,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_BLOB_URL": {
-      "description": "Vercel Blob private URL for novel data",
-      "value": "https://izr20vnpplvtebl1.private.blob.vercel-storage.com"
-    }
-  }
+  "framework": "nextjs"
 }
