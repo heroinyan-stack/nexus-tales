@@ -1,16 +1,7 @@
 {
-  "last_index": 240,
-  "last_run": "2026-08-30T01:03:49.649575+00:00",
+  "last_index": 244,
+  "last_run": "2026-08-31T01:08:48.903458+00:00",
   "history": [
-    {
-      "date": "2026-07-24",
-      "updated": [
-        "novel-177-adventures-of-a-young-hero",
-        "novel-178-momen-players-are-unethical",
-        "novel-179-bind-to-the-trouble-making-system-i",
-        "novel-180-conferring-gods-starting-from-the-princes"
-      ]
-    },
     {
       "date": "2026-07-25",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-294",
         "novel-295",
         "novel-296"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "updated": [
+        "novel-297",
+        "novel-298",
+        "novel-299",
+        "novel-300"
       ]
     }
   ]
