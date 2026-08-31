@@ -367,10 +367,10 @@ def main():
 
         chapter = generate_chapter(novel, new_num)
 
-        # 保存章节文件
+        # 保存章节文件（与现有约定一致：4位零填充 ch-XXXX.json）
         ch_dir = os.path.join(CHAPTERS_DIR, slug)
         os.makedirs(ch_dir, exist_ok=True)
-        ch_file = os.path.join(ch_dir, f"ch-{new_num}.json")
+        ch_file = os.path.join(ch_dir, f"ch-{new_num:04d}.json")
         with open(ch_file, "w") as f:
             json.dump(chapter, f, indent=2, ensure_ascii=False)
 
