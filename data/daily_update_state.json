@@ -1,16 +1,7 @@
 {
-  "last_index": 248,
-  "last_run": "2026-09-01T01:04:55.355274+00:00",
+  "last_index": 252,
+  "last_run": "2026-09-04T01:02:38.516577+00:00",
   "history": [
-    {
-      "date": "2026-07-26",
-      "updated": [
-        "novel-185-grocery-store-in-tehran-my-information",
-        "novel-186-shan-ye-xiao-shennong",
-        "novel-187-young-love-was-betrayed-he-knelt",
-        "novel-188-i-became-famous-after-the-love"
-      ]
-    },
     {
       "date": "2026-07-27",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-302",
         "novel-303",
         "novel-304"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "updated": [
+        "novel-305",
+        "novel-306",
+        "novel-307",
+        "novel-308"
       ]
     }
   ]
