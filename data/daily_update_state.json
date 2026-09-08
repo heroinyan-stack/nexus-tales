@@ -1,16 +1,7 @@
 {
-  "last_index": 252,
-  "last_run": "2026-09-04T01:02:38.516577+00:00",
+  "last_index": 256,
+  "last_run": "2026-09-08T02:05:33.714775+00:00",
   "history": [
-    {
-      "date": "2026-07-27",
-      "updated": [
-        "novel-189-when-im-on-night-shift-all",
-        "novel-190-great-variety-show-directors-starting-from",
-        "novel-191-drunk-and-kissing-the-wrong-person",
-        "novel-192-shenhao-starting-from-taking-in-the"
-      ]
-    },
     {
       "date": "2026-07-28",
       "updated": [
@@ -270,6 +261,15 @@
         "novel-306",
         "novel-307",
         "novel-308"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "updated": [
+        "novel-309",
+        "novel-310",
+        "novel-311",
+        "novel-312"
       ]
     }
   ]
