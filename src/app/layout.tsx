@@ -17,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="baidu-site-verification" content="codeva-OYDDFq8qrc" />
         <meta name="monetag" content="26d155b4626b3775cbea02e37d44a95c" />
         <script dangerouslySetInnerHTML={{__html: `(function(s){s.dataset.zone='12095522',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}} />
+        <script dangerouslySetInnerHTML={{__html: `(function(s){s.dataset.zone='12095613',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}} />
         <script src="https://quge5.com/88/tag.min.js" data-zone="300214" async data-cfasync="false"></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8291464992255712" crossOrigin="anonymous" />
         {process.env.NEXT_PUBLIC_GA_ID && (
