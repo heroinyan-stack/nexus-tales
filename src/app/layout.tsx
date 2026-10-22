@@ -15,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-site-verification" content="googleb9b9f9e82e3320b9" />
         <meta name="baidu-site-verification" content="codeva-OYDDFq8qrc" />
+        <meta name="monetag" content="26d155b4626b3775cbea02e37d44a95c" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8291464992255712" crossOrigin="anonymous" />
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
