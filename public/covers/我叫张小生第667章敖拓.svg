@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="560" viewBox="0 0 400 560">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#41295a"/>
+      <stop offset="55%" style="stop-color:#2f0743"/>
+      <stop offset="100%" style="stop-color:#7b4397"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="22%" r="65%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.18)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="560" fill="url(#bg)"/>
+  <rect width="400" height="560" fill="url(#glow)"/>
+  <!-- 左侧书脊阴影，增加立体感 -->
+  <rect x="0" y="0" width="14" height="560" fill="rgba(0,0,0,0.28)"/>
+  <!-- 背景大号水印字 -->
+  <text x="200" y="430" text-anchor="middle" font-size="300" fill="rgba(255,255,255,0.06)" font-family="serif" font-weight="bold">我</text>
+  <!-- 双线边框 -->
+  <rect x="22" y="22" width="356" height="516" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.6"/>
+  <rect x="28" y="28" width="344" height="504" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="0.8"/>
+  <!-- 顶部分类标签 -->
+  <text x="200" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.75)" letter-spacing="3">仙侠 · XIANXIA</text>
+  <line x1="150" y1="74" x2="250" y2="74" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+  <!-- 顶部装饰符 -->
+  <text x="200" y="118" text-anchor="middle" font-size="30" fill="rgba(255,255,255,0.22)">❖</text>
+  <!-- 书名 -->
+    <text x="200" y="278" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Georgia,serif" font-size="23" fill="#ffffff" font-weight="bold" style="text-shadow:0 2px 6px rgba(0,0,0,0.45)">我叫张小生第66</text>
+    <text x="200" y="312" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Georgia,serif" font-size="23" fill="#ffffff" font-weight="bold" style="text-shadow:0 2px 6px rgba(0,0,0,0.45)">7章敖拓</text>
+  <!-- 分隔线 -->
+  <line x1="120" y1="430" x2="280" y2="430" stroke="rgba(255,255,255,0.30)" stroke-width="1"/>
+  <!-- 作者 -->
+  <text x="200" y="462" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Georgia,serif" font-size="16" fill="rgba(255,255,255,0.82)" font-style="italic">作 者：徐徐一笔</text>
+  <!-- 站点角标 -->
+  <text x="200" y="528" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" letter-spacing="4">NOVELHUB</text>
+</svg>
