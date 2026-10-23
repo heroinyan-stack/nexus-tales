@@ -233,6 +233,17 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ========== 📢 BANNER AD (728x90, homepage middle) ========== */}
+        <section className="mb-14 flex justify-center overflow-hidden">
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `atOptions = { 'key': '51b62dee749b1ad153b15f8799745309', 'format': 'iframe', 'height': 90, 'width': 728, 'params': {} };`
+            }}
+          />
+          <script type="text/javascript" src="https://bauval.org/22/51b62dee749b1ad153b15f8799745309" />
+        </section>
+
         {/* ========== 📚 FREE ZONE (Classics — in the middle) ========== */}
         <section className="mb-14">
           <div className="flex items-center gap-3 mb-6">
