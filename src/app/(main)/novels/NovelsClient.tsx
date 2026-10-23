@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import AdBanner from "@/components/AdBanner";
 import {
   Search,
   Star,
@@ -193,6 +194,9 @@ export default function NovelsClient({
             </div>
           </section>
         )}
+
+        {/* Banner ad */}
+        <AdBanner />
 
         {/* All Novels */}
         <section>

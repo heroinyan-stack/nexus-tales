@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, Globe, Sparkles, HeartHandshake } from "lucide-react";
+import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
   title: "About Nexus Tales — Your Home for Translated Chinese Web Novels",
@@ -79,6 +80,9 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        {/* Banner ad */}
+        <AdBanner />
 
         {/* CTA */}
         <div className="text-center mt-12">

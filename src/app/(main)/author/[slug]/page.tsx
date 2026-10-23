@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import { BookOpen, PenLine, Layers } from "lucide-react";
+import AdBanner from "@/components/AdBanner";
 
 const NOVELS_FILE = path.join(process.cwd(), "data", "novels.json");
 
@@ -82,6 +83,9 @@ export default function AuthorPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </div>
+
+        {/* Banner ad */}
+        <AdBanner />
 
         {/* Works */}
         <h2 className="text-xl font-bold text-stardust mb-6 flex items-center gap-2">

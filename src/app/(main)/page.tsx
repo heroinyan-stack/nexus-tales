@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
+import AdBanner from "@/components/AdBanner";
 import {
   BookOpen,
   Search,
@@ -234,15 +235,7 @@ export default function HomePage() {
         </section>
 
         {/* ========== 📢 BANNER AD (728x90, homepage middle) ========== */}
-        <section className="mb-14 flex justify-center overflow-hidden">
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: `atOptions = { 'key': '51b62dee749b1ad153b15f8799745309', 'format': 'iframe', 'height': 90, 'width': 728, 'params': {} };`
-            }}
-          />
-          <script type="text/javascript" src="https://bauval.org/22/51b62dee749b1ad153b15f8799745309" />
-        </section>
+        <AdBanner />
 
         {/* ========== 📚 FREE ZONE (Classics — in the middle) ========== */}
         <section className="mb-14">

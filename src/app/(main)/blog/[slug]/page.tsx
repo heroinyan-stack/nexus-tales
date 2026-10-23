@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import { Calendar, ArrowLeft, Clock } from "lucide-react";
+import AdBanner from "@/components/AdBanner";
 
 interface Post {
   slug: string;
@@ -113,6 +114,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             return <p key={i}>{line}</p>;
           })}
         </div>
+
+        {/* Banner ad */}
+        <AdBanner />
 
         {/* Back to Blog */}
         <div className="mt-14 pt-8 border-t border-white/5 text-center">

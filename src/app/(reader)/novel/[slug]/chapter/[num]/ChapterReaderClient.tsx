@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import AdBanner from "@/components/AdBanner";
 import { ChevronLeft, ChevronRight, ChevronDown, Settings, List, X, Minus, Plus, ArrowLeft, Home } from "lucide-react";
 
 type Theme = "dark" | "light" | "sepia";
@@ -314,6 +315,9 @@ export default function ChapterReaderClient({
                 dangerouslySetInnerHTML={{ __html: formatContent(content) }}
               />
             )}
+
+            {/* Banner ad after chapter content */}
+            <AdBanner />
           </div>
         </div>
       </div>

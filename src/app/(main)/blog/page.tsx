@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import { BookOpen, Calendar, ArrowRight } from "lucide-react";
+import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
   title: "Blog — Nexus Tales | Chinese Web Novel Guides & Insights",
@@ -76,6 +77,9 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {/* Banner ad */}
+        <AdBanner />
 
         {/* CTA */}
         <div className="glass-card rounded-2xl p-8 text-center mt-14">

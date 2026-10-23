@@ -1,5 +1,6 @@
 // Contact page — static
 import type { Metadata } from "next";
+import AdBanner from "@/components/AdBanner";
 
 export const metadata: Metadata = {
   title: "Contact Us — Nexus Tales",
@@ -39,6 +40,9 @@ export default function ContactPage() {
           with the URL of the content and proof of ownership. We will respond within 48 hours.
         </p>
       </section>
+
+      {/* Banner ad */}
+      <AdBanner />
 
       <section className="glass-card rounded-2xl p-8">
         <h2 className="text-xl font-bold text-stardust mb-4">Business Inquiries</h2>

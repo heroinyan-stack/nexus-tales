@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { BookOpen, Star, TrendingUp, Search, ChevronLeft, Lock } from "lucide-react";
 import { getNovelBySlug, getAllNovels, getCoverUrl } from "@/lib/novels";
 import { notFound } from "next/navigation";
+import AdBanner from "@/components/AdBanner";
 import ChapterListClient from "@/components/ChapterListClient";
 import ReadButton from "@/components/ReadButton";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -192,6 +193,9 @@ export default function NovelDetailPage({ params }: { params: { slug: string } }
             </div>
           </div>
         </div>
+
+        {/* Banner ad */}
+        <AdBanner />
 
         {/* Chapters */}
         <section>
